@@ -1,0 +1,184 @@
+.boat-details-page {
+  composes: page-container from '../styles/shared.css';
+  padding: 2rem;
+}
+
+.details-header {
+  max-width: 1400px;
+  margin: 0 auto 2rem;
+  text-align: left;
+}
+
+.details-header h1 {
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.details-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.main-image-container {
+  position: relative;
+  grid-column: 1 / -1;
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.favorite-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.favorite-btn:hover {
+  opacity: 1;
+}
+
+.info-section {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.description-section,
+.location-section,
+.features-section {
+  margin-bottom: 2rem;
+}
+
+.description-section h2,
+.location-section h2,
+.features-section h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.location-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-color);
+}
+
+.booking-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.special-offer-card,
+.booking-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.special-offer-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.discount {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.offer-description {
+  color: var(--light-text);
+}
+
+.booking-card {
+  text-align: center;
+}
+
+.price-info {
+  margin: 1.5rem 0;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.duration {
+  color: var(--light-text);
+}
+
+.book-btn {
+  composes: button from '../styles/shared.css';
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.booking-note {
+  font-size: 0.9rem;
+  color: var(--light-text);
+  font-style: italic;
+}
+
+@media (max-width: 1024px) {
+  .details-content {
+    grid-template-columns: 1fr;
+  }
+
+  .main-image-container {
+    height: 300px;
+  }
+
+  .booking-section {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .boat-details-page {
+    padding: 1rem;
+  }
+
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+} 

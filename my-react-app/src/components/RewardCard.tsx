@@ -6,11 +6,12 @@ interface RewardCardProps {
   image: string;
   alt: string;
   description: string;
+  onClick?: () => void;
 }
 
-const RewardCard: React.FC<RewardCardProps> = ({ title, image, alt, description }) => {
+const RewardCard: React.FC<RewardCardProps> = ({ title, image, alt, description, onClick }) => {
   return (
-    <div className="reward-card">
+    <div className="reward-card" onClick={onClick}>
       <div className="reward-image">
         <img src={image} alt={alt} />
       </div>

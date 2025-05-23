@@ -1,3 +1,5 @@
+@import './styles/shared.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +17,8 @@ body {
 .App {
   text-align: center;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -50,4 +54,23 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.back-button {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--accent-color);
+  color: var(--white);
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  z-index: 100;
+}
+
+.back-button:hover {
+  background-color: var(--accent-color-dark);
 }
