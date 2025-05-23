@@ -1,0 +1,60 @@
+{
+  "rewards": [
+    {
+      "id": "1",
+      "title": "Boat Tours",
+      "image": "/images/boat-tours.jpg",
+      "alt": "Luxury yacht on the ocean",
+      "description": "Experience luxury boat tours along the beautiful coast"
+    },
+    {
+      "id": "2",
+      "title": "Fine Dining",
+      "image": "/images/fine-dining.jpg",
+      "alt": "Gourmet dish presentation",
+      "description": "Enjoy exquisite meals at premium restaurants"
+    },
+    {
+      "id": "3",
+      "title": "Activities",
+      "image": "/images/activities.jpg",
+      "alt": "Water park activities",
+      "description": "Exciting water activities for the whole family"
+    },
+    {
+      "id": "4",
+      "title": "Winery Tours",
+      "image": "/images/winery.jpg",
+      "alt": "Wine cellar with bottles",
+      "description": "Discover local wineries and taste premium wines"
+    },
+    {
+      "id": "5",
+      "title": "Wellness",
+      "image": "/images/wellness.jpg",
+      "alt": "Wellness center",
+      "description": "Relax and rejuvenate at premium spa facilities"
+    },
+    {
+      "id": "6",
+      "title": "Restaurants",
+      "image": "/images/restaurants.jpg",
+      "alt": "Restaurant experience",
+      "description": "Access to exclusive dining establishments"
+    },
+    {
+      "id": "7",
+      "title": "Chef at Home",
+      "image": "/images/chef.jpg",
+      "alt": "Personal chef service",
+      "description": "Private chef experience in your accommodation"
+    },
+    {
+      "id": "8",
+      "title": "Winery Tours",
+      "image": "/images/winery-coastal.jpg",
+      "alt": "Coastal winery view",
+      "description": "Scenic winery tours with ocean views"
+    }
+  ]
+} 
