@@ -1,32 +1,111 @@
 import React from 'react';
-import { getRewards } from '../services/rewardService';
-import './Sidebar.css';
+import { Link } from 'react-router-dom';
 
 interface SidebarProps {
-  className?: string;
+  isOpen: boolean;
+  onClose: () => void;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
-  const rewards = getRewards();
-  const categories = Array.from(new Set(rewards.map(reward => reward.title)));
-
+const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
   return (
-    <div className={`sidebar ${className}`}>
-      <h2>Categories</h2>
-      <ul className="category-list">
-        {categories.map((category, index) => (
-          <li key={index}>
-            <a href={`#${category.toLowerCase().replace(/\s+/g, '-')}`}>
-              {category}
-            </a>
-          </li>
-        ))}
-      </ul>
-      <div className="sidebar-logo">
-        <img src="/clever-details-logo.svg" alt="Clever Details" />
-        <p>VILAMOURA LOCAL RENTALS</p>
+    <>
+      {/* Overlay */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-40"
+          onClick={onClose}
+        />
+      )}
+
+      {/* Sidebar */}
+      <div
+        className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${
+          isOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        <div className="p-4">
+          <button
+            onClick={onClose}
+            className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+          >
+            ✕
+          </button>
+
+          <div className="mt-8">
+            <h2 className="text-xl font-bold text-primary mb-4">Menu</h2>
+            <nav className="space-y-2">
+              <Link
+                to="/boat-tours"
+                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                onClick={onClose}
+              >
+                Boat Tours
+              </Link>
+              <Link
+                to="/restaurants"
+                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                onClick={onClose}
+              >
+                Restaurants
+              </Link>
+              <Link
+                to="/activities"
+                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                onClick={onClose}
+              >
+                Activities
+              </Link>
+              <Link
+                to="/winery-tours"
+                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                onClick={onClose}
+              >
+                Winery Tours
+              </Link>
+              <Link
+                to="/wellness"
+                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                onClick={onClose}
+              >
+                Wellness
+              </Link>
+              <Link
+                to="/chef-service"
+                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                onClick={onClose}
+              >
+                Chef Service
+              </Link>
+            </nav>
+
+            <h2 className="text-xl font-bold text-primary mt-8 mb-4">More</h2>
+            <nav className="space-y-2">
+              <Link
+                to="/news"
+                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                onClick={onClose}
+              >
+                News
+              </Link>
+              <Link
+                to="/access"
+                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                onClick={onClose}
+              >
+                Access
+              </Link>
+              <Link
+                to="/partnership"
+                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                onClick={onClose}
+              >
+                Partnership
+              </Link>
+            </nav>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
