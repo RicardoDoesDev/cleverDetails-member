@@ -1,47 +1,51 @@
 import React, { useState, useMemo } from 'react';
-import { getCategory, getLocations } from '../services/dataService';
+import { useNavigate } from 'react-router-dom';
+import { getLocations } from '../services/dataService';
 import ListPage from '../components/ListPage';
 import SearchBar from '../components/SearchBar';
 import { appData } from '../data/appData';
-import { useNavigate } from 'react-router-dom';
+import { Item } from '../types';
 
-interface CategoryPageProps {
-  categoryId: string;
-  title: string;
-}
-
-const CategoryPage: React.FC<CategoryPageProps> = ({ categoryId, title }) => {
+const AllItemsPage: React.FC = () => {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedLocation, setSelectedLocation] = useState<number | ''>('');
+  const [selectedCategory, setSelectedCategory] = useState('');
   
-  const category = getCategory(categoryId);
+  // Get all items from all categories
+  const allItems: (Item & { categoryId: string })[] = useMemo(() => {
+    return appData.categories.flatMap(category => 
+      category.items.map(item => ({
+        ...item,
+        categoryId: category.id
+      }))
+    );
+  }, []);
+
   const locations = getLocations();
   const categories = appData.categories;
 
-  const handleCategoryChange = (newCategoryId: string) => {
-    if (newCategoryId) {
-      navigate(`/${newCategoryId}`);
+  const handleCategoryChange = (categoryId: string) => {
+    if (categoryId) {
+      navigate(`/${categoryId}`);
+    } else {
+      setSelectedCategory(categoryId);
     }
   };
 
   const filteredItems = useMemo(() => {
-    if (!category) return [];
-
-    return category.items.filter(item => {
+    return allItems.filter(item => {
       const matchesSearch = 
         item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         item.description.toLowerCase().includes(searchQuery.toLowerCase());
       
       const matchesLocation = !selectedLocation || item.locationId === selectedLocation;
+      
+      const matchesCategory = !selectedCategory || item.categoryId === selectedCategory;
 
-      return matchesSearch && matchesLocation;
+      return matchesSearch && matchesLocation && matchesCategory;
     });
-  }, [category, searchQuery, selectedLocation]);
-
-  if (!category) {
-    return <div>Category not found</div>;
-  }
+  }, [allItems, searchQuery, selectedLocation, selectedCategory]);
 
   return (
     <div>
@@ -52,19 +56,20 @@ const CategoryPage: React.FC<CategoryPageProps> = ({ categoryId, title }) => {
         onLocationChange={setSelectedLocation}
         locations={locations}
         showLocationFilter={true}
-        selectedCategory={categoryId}
+        selectedCategory={selectedCategory}
         onCategoryChange={handleCategoryChange}
         categories={categories}
         showCategoryFilter={true}
       />
 
       <ListPage
-        title={title}
+        title="All Experiences"
         items={filteredItems}
-        categoryRoute={`/${categoryId}`}
+        categoryRoute="/all"
+        isAllPage={true}
       />
     </div>
   );
 };
 
-export default CategoryPage; 
+export default AllItemsPage; 

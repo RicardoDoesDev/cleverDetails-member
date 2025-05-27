@@ -1,37 +1,20 @@
-export interface BaseItem {
+export interface Item {
   id: number;
   name: string;
   image: string;
   description: string;
-  location: string;
+  locationId: number;
   rating: number;
-}
-
-export interface BoatTour extends BaseItem {
-  specialOffer: {
+  mapsUrl: string;
+  specialOffer?: {
     type: string;
     discount: string;
   };
-}
-
-export interface Restaurant extends BaseItem {
-  cuisine: string;
-}
-
-export interface Activity extends BaseItem {
-  price: string;
-}
-
-export interface WineryTour extends BaseItem {
-  duration: string;
-}
-
-export interface Wellness extends BaseItem {
-  type: string;
-}
-
-export interface BeautySalon extends BaseItem {
-  services: string[];
+  cuisine?: string;
+  price?: string;
+  duration?: string;
+  type?: string;
+  services?: string[];
 }
 
 export interface Category {
@@ -40,9 +23,17 @@ export interface Category {
   route: string;
   description: string;
   image: string;
-  items: (BoatTour | Restaurant | Activity | WineryTour | Wellness | BeautySalon)[];
+  items: Item[];
+}
+
+export interface Location {
+  id: number;
+  name: string;
+  image: string;
+  description: string;
 }
 
 export interface AppData {
   categories: Category[];
+  locations: Location[];
 } 

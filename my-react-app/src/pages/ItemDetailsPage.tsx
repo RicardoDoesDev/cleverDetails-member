@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { getItemById } from '../services/dataService';
-import { BaseItem, BoatTour, Restaurant, Activity, WineryTour, Wellness, BeautySalon } from '../types';
+import { getItemById, getLocationName } from '../services/dataService';
+import { Item } from '../types';
 
 interface ItemDetailsPageProps {
   category: string;
@@ -21,7 +21,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
   const [comment, setComment] = useState('');
   const [rating, setRating] = useState(5);
 
-  const item = id ? getItemById(category, Number(id)) : undefined;
+  const item = id ? getItemById(category, Number(id)) as Item : undefined;
 
   // Mock reviews data
   const reviews: Review[] = [
@@ -64,87 +64,13 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
     return Array(rating).fill('⭐').join('');
   };
 
-  // Type guards
-  const isBoatTour = (item: BaseItem): item is BoatTour => {
-    return 'specialOffer' in item;
-  };
-
-  const isRestaurant = (item: BaseItem): item is Restaurant => {
-    return 'cuisine' in item;
-  };
-
-  const isActivity = (item: BaseItem): item is Activity => {
-    return 'price' in item;
-  };
-
-  const isWineryTour = (item: BaseItem): item is WineryTour => {
-    return 'duration' in item;
-  };
-
-  const isWellness = (item: BaseItem): item is Wellness => {
-    return 'type' in item;
-  };
-
-  const isBeautySalon = (item: BaseItem): item is BeautySalon => {
-    return 'services' in item;
-  };
-
   const renderExtraInfo = () => {
-    if (isBoatTour(item)) {
-      return (
-        <div className="bg-secondary p-6 rounded-lg mb-8 w-1/2 mx-auto text-center text-white">
-          <h3 className="text-5xl mb-2">{item.specialOffer.discount} Off – You Deserve It!</h3>
-          <p className="text-xl font-bold">Bookings must be made directly with Clever Details team</p>
-        </div>
-      );
-    }
-    if (isRestaurant(item)) {
-      return (
-        <div className="bg-secondary/10 p-6 rounded-lg mb-8">
-          <h3 className="text-secondary text-xl mb-2">Cuisine</h3>
-          <p className="text-xl">{item.cuisine}</p>
-        </div>
-      );
-    }
-    if (isActivity(item)) {
-      return (
-        <div className="bg-secondary/10 p-6 rounded-lg mb-8">
-          <h3 className="text-secondary text-xl mb-2">Price</h3>
-          <p className="text-3xl font-bold text-secondary">{item.price}</p>
-        </div>
-      );
-    }
-    if (isWineryTour(item)) {
-      return (
-        <div className="bg-secondary/10 p-6 rounded-lg mb-8">
-          <h3 className="text-secondary text-xl mb-2">Duration</h3>
-          <p className="text-xl">{item.duration}</p>
-        </div>
-      );
-    }
-    if (isWellness(item)) {
-      return (
-        <div className="bg-secondary/10 p-6 rounded-lg mb-8">
-          <h3 className="text-secondary text-xl mb-2">Type</h3>
-          <p className="text-xl">{item.type}</p>
-        </div>
-      );
-    }
-    if (isBeautySalon(item)) {
-      return (
-        <div className="bg-secondary/10 p-6 rounded-lg mb-8">
-          <h3 className="text-secondary text-xl mb-2">Services</h3>
-          <div className="flex flex-wrap gap-2">
-            {item.services.map((service, index) => (
-              <span key={index} className="bg-secondary/20 text-secondary px-3 py-1 rounded-full">
-                {service}
-              </span>
-            ))}
-          </div>
-        </div>
-      );
-    }
-    return null;
+    return (
+      <div className="bg-secondary p-6 rounded-lg mb-8 w-full md:w-3/4 mx-auto text-center text-white">
+          <h3 className="text-3xl md:text-6xl mb-2">{item.specialOffer?.discount} - You deserve it!</h3>
+          <p className="text-lg md:text-2xl font-bold">Bookings must be made directly with Clever Details team</p>
+      </div>
+    );
   };
 
   const handleSubmitComment = (e: React.FormEvent) => {
@@ -184,9 +110,9 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
           </button>
 
           {/* Images */}
-          <div className="flex-1 flex items-center justify-center gap-4">
-            {/* Previous Image */}
-            <div className="w-1/4 aspect-[4/3] rounded-lg overflow-hidden opacity-75">
+          <div className="flex-1 flex items-center justify-center gap-2 md:gap-4">
+            {/* Previous Image - Hidden on mobile */}
+            <div className="hidden md:block w-1/4 aspect-[4/3] rounded-lg overflow-hidden opacity-75">
               <img
                 src={images[(selectedImageIndex - 1 + images.length) % images.length]}
                 alt={`${item.name} previous`}
@@ -199,7 +125,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
             </div>
 
             {/* Current Image */}
-            <div className="w-1/2 aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
+            <div className="w-full md:w-1/2 aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
               <img
                 src={images[selectedImageIndex]}
                 alt={`${item.name} current`}
@@ -211,8 +137,8 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
               />
             </div>
 
-            {/* Next Image */}
-            <div className="w-1/4 aspect-[4/3] rounded-lg overflow-hidden opacity-75">
+            {/* Next Image - Hidden on mobile */}
+            <div className="hidden md:block w-1/4 aspect-[4/3] rounded-lg overflow-hidden opacity-75">
               <img
                 src={images[(selectedImageIndex + 1) % images.length]}
                 alt={`${item.name} next`}
@@ -250,66 +176,101 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
         </div>
       </div>
 
-      {renderExtraInfo()}
+      <div className="px-4 md:px-0">
+        {renderExtraInfo()}
+      </div>
 
       {/* Description and Reviews Section */}
       <div className="relative left-[50%] right-[50%] mx-[-50vw] w-screen bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 py-12">
-          <p className="text-xl mb-8">{item.description}</p>
+          <div className="flex flex-col lg:flex-row gap-8">
+            {/* Left Column - Details and Reviews */}
+            <div className="flex-1">
+              <p className="text-xl mb-8">{item.description}</p>
 
-          {/* Location */}
-          <div className="flex items-center text-primary mb-8">
-            <span className="mr-2">📍</span>
-            {item.location}
-          </div>
+              {/* Location */}
+              <div className="flex items-center text-primary mb-8">
+                <span className="mr-2">📍</span>
+                {getLocationName(item.locationId)}
+              </div>
 
-          {/* Reviews */}
-          <div className="mt-8">
-            <h2 className="text-3xl mb-6">Reviews</h2>
-            <div className="space-y-4">
-              {reviews.map((review) => (
-                <div key={review.id} className="bg-white p-6 rounded-lg shadow-sm">
-                  <div className="flex justify-between items-center mb-2">
-                    <div className="font-bold">{review.author}</div>
-                    <div>{renderStars(review.rating)}</div>
-                  </div>
-                  <p>{review.comment}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Comment Form */}
-          <div className="mt-8">
-            <h2 className="text-3xl mb-6">Leave a Review</h2>
-            <form onSubmit={handleSubmitComment}>
-              <div className="mb-4">
-                <div className="flex gap-2 mb-4">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <button
-                      key={star}
-                      type="button"
-                      className={`text-2xl ${star <= rating ? 'text-yellow-400' : 'text-gray-300'}`}
-                      onClick={() => setRating(star)}
-                    >
-                      ⭐
-                    </button>
-                  ))}
-                </div>
-                <textarea
-                  value={comment}
-                  onChange={(e) => setComment(e.target.value)}
-                  className="w-full h-32 p-4 rounded-lg border border-gray-300 focus:outline-none focus:border-secondary"
-                  placeholder="Write your comment..."
+              {/* Map - Shown on mobile */}
+              <div className="lg:hidden mb-8">
+                <iframe
+                  src={item.mapsUrl}
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Google Maps Location"
+                  className="rounded-lg"
                 />
               </div>
-              <button
-                type="submit"
-                className="bg-secondary text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-secondary-hover transition-colors"
-              >
-                Submit Review
-              </button>
-            </form>
+
+              {/* Reviews */}
+              <div className="mt-8">
+                <h2 className="text-3xl mb-6">Reviews</h2>
+                <div className="space-y-4">
+                  {reviews.map((review) => (
+                    <div key={review.id} className="bg-white p-6 rounded-lg shadow-sm">
+                      <div className="flex justify-between items-center mb-2">
+                        <div className="font-bold">{review.author}</div>
+                        <div>{renderStars(review.rating)}</div>
+                      </div>
+                      <p>{review.comment}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Comment Form */}
+              <div className="mt-8">
+                <h2 className="text-2xl md:text-3xl mb-6">Leave a Review</h2>
+                <form onSubmit={handleSubmitComment} className="space-y-4">
+                  <div className="flex gap-2 mb-4">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <button
+                        key={star}
+                        type="button"
+                        className={`text-2xl ${star <= rating ? 'text-yellow-400' : 'text-gray-300'}`}
+                        onClick={() => setRating(star)}
+                      >
+                        ⭐
+                      </button>
+                    ))}
+                  </div>
+                  <textarea
+                    value={comment}
+                    onChange={(e) => setComment(e.target.value)}
+                    className="w-full h-32 p-4 rounded-lg border border-gray-300 focus:outline-none focus:border-secondary"
+                    placeholder="Write your comment..."
+                  />
+                  <button
+                    type="submit"
+                    className="w-full md:w-auto bg-secondary text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-secondary-hover transition-colors"
+                  >
+                    Submit Review
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            {/* Right Column - Map (Hidden on mobile) */}
+            <div className="hidden lg:block lg:w-1/3 sticky top-4">
+              <iframe
+                src={item.mapsUrl}
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Google Maps Location"
+                className="rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </div>

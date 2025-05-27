@@ -32,21 +32,14 @@ const PartnershipPage: React.FC = () => {
         {/* Partnership Benefits */}
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-primary mb-6">Why Partner with Clever Details?</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="text-center">
-              <div className="text-4xl mb-4">🌟</div>
+          <div className="flex flex-row items-center justify-center">
+            <div className="text-center w-1/2">
               <h3 className="font-bold mb-2">Increased Visibility</h3>
               <p className="text-gray-600">Reach a wider audience through our established platform</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl mb-4">💼</div>
-              <h3 className="font-bold mb-2">Professional Network</h3>
-              <p className="text-gray-600">Join our network of premium service providers</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl mb-4">📈</div>
-              <h3 className="font-bold mb-2">Business Growth</h3>
-              <p className="text-gray-600">Expand your business with our marketing support</p>
+            <div className="text-center w-1/2">
+              <h3 className="font-bold mb-2">Increased Visibility</h3>
+              <p className="text-gray-600">Reach a wider audience through our established platform</p>
             </div>
           </div>
         </div>

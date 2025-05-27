@@ -16,7 +16,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: ['Helvetica Neue', 'Arial', 'sans-serif'],
+        sans: ['Cinzel', 'serif'],
       },
     },
   },

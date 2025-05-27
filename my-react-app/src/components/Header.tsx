@@ -60,16 +60,16 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
       </div>
 
       {/* Navigation Bar - Positioned to hover over the header */}
-      <nav className="absolute bottom-0 left-0 right-0 transform translate-y-1/2 z-[50] pt-12 bg-primary">
+      <nav className="absolute bottom-0 left-0 right-0 transform translate-y-1/2 z-[50] pt-12 pb-2 shadow-lg bg-primary">
         <div className="max-w-xl mx-auto">
           <div className="flex justify-center items-center gap-8 px-8 py-3">
-            <Link to="/news" className="text-white hover:text-secondary transition-colors font-medium whitespace-nowrap">
+            <Link to="/news" className="text-white hover:text-secondary transition-colors font-medium whitespace-nowrap text-3xl">
               News
             </Link>
-            <Link to="/access" className="text-white hover:text-secondary transition-colors font-medium whitespace-nowrap">
+            <Link to="/access" className="text-white hover:text-secondary transition-colors font-medium whitespace-nowrap text-3xl">
               Access
             </Link>
-            <Link to="/partnership" className="text-white hover:text-secondary transition-colors font-medium whitespace-nowrap">
+            <Link to="/partnership" className="text-white hover:text-secondary transition-colors font-medium whitespace-nowrap text-3xl">
               Partnership
             </Link>
           </div>
