@@ -104,6 +104,11 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
             </nav>
           </div>
         </div>
+        {/* Add image to the bottom of the sidebar */}
+        <div className="absolute bottom-0 left-0 right-0">
+          <img src="https://www.cleverdetails.com/images/logo.png" alt="Logo" className="h-auto mx-auto mb-2" />
+          <h2 className="text-xl font-bold text-primary mt-8 mb-4 text-center">We ❤️ Vilamoura ...</h2>
+        </div>
       </div>
     </>
   );

@@ -10,7 +10,7 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-40">
       {/* Main Header */}
-      <div className="bg-white relative z-50">
+      <div className="bg-white relative z-[60]">
         <div 
           className="relative"
           style={{
@@ -60,7 +60,7 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
       </div>
 
       {/* Navigation Bar - Positioned to hover over the header */}
-      <nav className="absolute bottom-0 left-0 right-0 transform translate-y-1/2 z-50 pt-12 bg-primary">
+      <nav className="absolute bottom-0 left-0 right-0 transform translate-y-1/2 z-[50] pt-12 bg-primary">
         <div className="max-w-xl mx-auto">
           <div className="flex justify-center items-center gap-8 px-8 py-3">
             <Link to="/news" className="text-white hover:text-secondary transition-colors font-medium whitespace-nowrap">

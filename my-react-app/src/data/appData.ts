@@ -18,7 +18,7 @@ export const appData: AppData = {
           rating: 5,
           specialOffer: {
             type: "Special Offer",
-            discount: "5% OFF"
+            discount: "5%"
           }
         },
         {
@@ -30,7 +30,7 @@ export const appData: AppData = {
           rating: 5,
           specialOffer: {
             type: "Special Offer",
-            discount: "10% OFF"
+            discount: "10%"
           }
         }
       ]

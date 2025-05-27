@@ -44,12 +44,14 @@ const App: React.FC = () => {
           <Route path="/winery-tours" element={<CategoryPage categoryId="winery-tours" title="Winery Tours" />} />
           <Route path="/wellness" element={<CategoryPage categoryId="wellness" title="Wellness" />} />
           <Route path="/chef-service" element={<CategoryPage categoryId="chef-service" title="Chef at Home" />} />
+          
           <Route path="/boat-tours/:id" element={<ItemDetailsPage category="boat-tours" />} />
           <Route path="/restaurants/:id" element={<ItemDetailsPage category="restaurants" />} />
           <Route path="/activities/:id" element={<ItemDetailsPage category="activities" />} />
           <Route path="/winery-tours/:id" element={<ItemDetailsPage category="winery-tours" />} />
           <Route path="/wellness/:id" element={<ItemDetailsPage category="wellness" />} />
           <Route path="/chef-service/:id" element={<ItemDetailsPage category="chef-service" />} />
+          
           <Route path="/news" element={<NewsPage />} />
           <Route path="/access" element={<AccessPage />} />
           <Route path="/partnership" element={<PartnershipPage />} />

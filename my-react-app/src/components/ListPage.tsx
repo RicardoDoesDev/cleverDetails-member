@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { BaseItem, BoatTour, Restaurant, Activity, WineryTour, Wellness, ChefService } from '../types';
+import { BaseItem, BoatTour, Restaurant, Activity, WineryTour, Wellness, BeautySalon } from '../types';
 
 interface ListPageProps {
   title: string;
@@ -23,7 +23,7 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute }) => {
         </div>
       );
     }
-    if (isRestaurant(item) || isChefService(item)) {
+    if (isRestaurant(item)) {
       return <div className="text-secondary">Cuisine: {item.cuisine}</div>;
     }
     if (isActivity(item)) {
@@ -35,6 +35,13 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute }) => {
     if (isWellness(item)) {
       return <div className="text-secondary">Type: {item.type}</div>;
     }
+    if (isBeautySalon(item)) {
+      return (
+        <div className="text-secondary">
+          Services: {item.services.join(', ')}
+        </div>
+      );
+    }
     return null;
   };
 
@@ -44,7 +51,7 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute }) => {
   };
 
   const isRestaurant = (item: BaseItem): item is Restaurant => {
-    return 'cuisine' in item && !('specialOffer' in item);
+    return 'cuisine' in item;
   };
 
   const isActivity = (item: BaseItem): item is Activity => {
@@ -59,8 +66,8 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute }) => {
     return 'type' in item;
   };
 
-  const isChefService = (item: BaseItem): item is ChefService => {
-    return 'cuisine' in item && !('specialOffer' in item);
+  const isBeautySalon = (item: BaseItem): item is BeautySalon => {
+    return 'services' in item;
   };
 
   return (
@@ -96,11 +103,16 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute }) => {
                   <span className="mr-2">📍</span>
                   {item.location}
                 </div>
-                {renderExtraInfo(item)}
               </div>
               <div className="p-6 bg-gray-50 flex flex-col justify-center items-center w-full md:w-48">
+                {isBoatTour(item) && (
+                  <div className="text-secondary font-bold mb-4 text-center">
+                    {item.specialOffer.type}:
+                    <div className="text-xl">{item.specialOffer.discount}</div>
+                  </div>
+                )}
                 <button className="bg-secondary text-white px-6 py-2 rounded hover:bg-secondary-hover transition-colors w-full">
-                  View Details
+                  Details
                 </button>
               </div>
             </div>

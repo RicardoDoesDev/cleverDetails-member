@@ -30,8 +30,8 @@ export interface Wellness extends BaseItem {
   type: string;
 }
 
-export interface ChefService extends BaseItem {
-  cuisine: string;
+export interface BeautySalon extends BaseItem {
+  services: string[];
 }
 
 export interface Category {
@@ -40,7 +40,7 @@ export interface Category {
   route: string;
   description: string;
   image: string;
-  items: (BoatTour | Restaurant | Activity | WineryTour | Wellness | ChefService)[];
+  items: (BoatTour | Restaurant | Activity | WineryTour | Wellness | BeautySalon)[];
 }
 
 export interface AppData {

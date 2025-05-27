@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const categories = [
-  { title: 'Boat Tours', route: '/boat-tours' },
-  { title: 'Restaurants', route: '/restaurants' },
-  { title: 'Activities', route: '/activities' },
-  { title: 'Winery Tours', route: '/winery-tours' },
+  { title: 'Gastronomia', route: '/gastronomia' },
+  { title: 'Adegas/Winery Tours', route: '/winery-tours' },
+  { title: 'Atividades', route: '/atividades' },
   { title: 'Wellness', route: '/wellness' },
-  { title: 'Chef at Home', route: '/chef-service' }
+  { title: 'Beauty & Hair Salons', route: '/beauty-salons' },
+  { title: 'Boat Tours/Passeios de Barco', route: '/boat-tours' }
 ];
 
 const Navbar: React.FC = () => {
