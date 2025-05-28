@@ -4,7 +4,6 @@ import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import CategoryPage from './pages/CategoryPage';
 import ItemDetailsPage from './pages/ItemDetailsPage';
-import NewsPage from './pages/NewsPage';
 import AccessPage from './pages/AccessPage';
 import PartnershipPage from './pages/PartnershipPage';
 import AllItemsPage from './pages/AllItemsPage';
@@ -24,7 +23,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <div className="min-h-screen bg-primary">
         <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
         <Header onToggleSidebar={toggleSidebar} />
-        <main className="max-w-7xl mx-auto px-4 py-8 pt-48">
+        <main className="max-w-7xl mx-auto px-4 py-8 pt-64">
           {children}
         </main>
       </div>
@@ -54,7 +53,6 @@ const App: React.FC = () => {
           <Route path="/wellness/:id" element={<ItemDetailsPage category="wellness" />} />
           <Route path="/beauty-and-hair-salons/:id" element={<ItemDetailsPage category="beauty-and-hair-salons" />} />
           
-          <Route path="/news" element={<NewsPage />} />
           <Route path="/access" element={<AccessPage />} />
           <Route path="/partnership" element={<PartnershipPage />} />
         </Routes>

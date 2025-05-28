@@ -81,11 +81,11 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
             <h2 className="text-xl font-bold text-primary mt-8 mb-4">More</h2>
             <nav className="space-y-2">
               <Link
-                to="/news"
+                to="/all"
                 className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
                 onClick={onClose}
               >
-                News
+                Advantages
               </Link>
               <Link
                 to="/access"

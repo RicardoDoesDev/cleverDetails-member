@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Item } from '../types';
 import { getLocationName } from '../services/dataService';
+import Slideshow from './Slideshow';
 
 interface ListPageProps {
   title: string;
@@ -48,18 +49,15 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
           >
             <div className="flex flex-col md:flex-row h-[300px]">
               <div className="w-full md:w-1/3 h-64 md:h-auto relative">
-                <img
-                  src={`/images/fotos/${item.rootFolder}/${item.images?.[0]}`}
-                  alt={item.name}
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = `/images/fotos/${item.rootFolder}/${item.images?.[0]}`;
-                  }}
+                <Slideshow
+                  items={item.images?.map(image => ({
+                    image: `/images/fotos/${item.rootFolder}/${image}`
+                  })) || []}
+                  height="100%"
+                  autoPlayInterval={4000}
+                  showCaption={false}
+                  showDots={false}
                 />
-                <div className="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full">
-                  {renderStars(item.rating)}
-                </div>
               </div>
               <div className="p-6 flex-1">
                 <h2 className="text-2xl text-primary mb-4">{item.name}</h2>

@@ -101,7 +101,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 md:gap-0">
             <div className="flex items-center">
-              <img src="/images/Logo_Clever_Branco.png" alt="Clever Details" className="w-1/4 mr-12 mb-4" />
+              <img src={`/images/logo/${item.logo}`} alt={item.name} className="w-1/4 mr-12 mb-4" />
               <h1 className="text-3xl md:text-4xl">{item.name}</h1>
             </div>
             <div className="text-xl md:text-2xl">{renderStars(item.rating)}</div>
@@ -127,7 +127,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
             {/* Previous Image - Hidden on mobile */}
             <div className="hidden md:block w-1/4 aspect-[4/3] rounded-lg overflow-hidden opacity-75">
               <img
-                src={images[(selectedImageIndex - 1 + images.length) % images.length]}
+                src={`/images/fotos/${item.rootFolder}/${images[(selectedImageIndex - 1 + images.length) % images.length]}`}
                 alt={`${item.name} previous`}
                 className="w-full h-full object-cover"
                 onError={(e) => {
@@ -140,7 +140,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
             {/* Current Image */}
             <div className="w-full md:w-1/2 aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
               <img
-                src={images[selectedImageIndex]}
+                src={`/images/fotos/${item.rootFolder}/${images[selectedImageIndex]}`}
                 alt={`${item.name} current`}
                 className="w-full h-full object-cover"
                 onError={(e) => {
@@ -153,7 +153,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
             {/* Next Image - Hidden on mobile */}
             <div className="hidden md:block w-1/4 aspect-[4/3] rounded-lg overflow-hidden opacity-75">
               <img
-                src={images[(selectedImageIndex + 1) % images.length]}
+                src={`/images/fotos/${item.rootFolder}/${images[(selectedImageIndex + 1) % images.length]}`}
                 alt={`${item.name} next`}
                 className="w-full h-full object-cover"
                 onError={(e) => {

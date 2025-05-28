@@ -34,18 +34,25 @@ const Slideshow: React.FC<SlideshowProps> = ({
     }
   }, [items.length, autoPlayInterval]);
 
-  const handlePrevSlide = () => {
+  const handlePrevSlide = (e: React.MouseEvent) => {
+    e.stopPropagation();
     setCurrentSlide((prev) => (prev - 1 + items.length) % items.length);
   };
 
-  const handleNextSlide = () => {
+  const handleNextSlide = (e: React.MouseEvent) => {
+    e.stopPropagation();
     setCurrentSlide((prev) => (prev + 1) % items.length);
+  };
+
+  const handleDotClick = (e: React.MouseEvent, index: number) => {
+    e.stopPropagation();
+    setCurrentSlide(index);
   };
 
   if (!items.length) return null;
 
   return (
-    <div className="relative overflow-hidden rounded-lg" style={{ height }}>
+    <div className="relative overflow-hidden" style={{ height }}>
       <div 
         className="absolute inset-0 transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -57,12 +64,12 @@ const Slideshow: React.FC<SlideshowProps> = ({
             style={{ transform: `translateX(${index * 100}%)` }}
           >
             <img
-              src={`/images/photos/${item.image}`}
+              src={`${item.image}`}
               alt={item.title || `Slide ${index + 1}`}
               className="w-full h-full object-cover"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
-                target.src = "https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600nw-1037719192.jpg";
+                target.src = item.image;
               }}
             />
             {showCaption && (item.title || item.description) && (
@@ -102,7 +109,7 @@ const Slideshow: React.FC<SlideshowProps> = ({
           {items.map((_, index) => (
             <button
               key={index}
-              onClick={() => setCurrentSlide(index)}
+              onClick={(e) => handleDotClick(e, index)}
               className={`w-2 h-2 rounded-full transition-all ${
                 index === currentSlide ? 'bg-white w-4' : 'bg-white bg-opacity-50'
               }`}
