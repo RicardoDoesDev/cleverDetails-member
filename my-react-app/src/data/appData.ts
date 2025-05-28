@@ -502,7 +502,7 @@ export const appData: AppData = {
             description: "15% desconto"
           },
           rootFolder: "Teresa Estética",
-          images: ["beauty1.jpg", "beauty2.jpg"]
+          images: ["480701348_4010568695930914_2910058108693305940_n.jpg", "beauty2.jpg"]
         },
         {
           id: 2,
