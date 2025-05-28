@@ -20,7 +20,7 @@ const HomePage: React.FC = () => {
             >
               <div className="relative h-48">
                 <img
-                  src={category.image}
+                  src={`/images/categorias/${category.image}`}
                   alt={category.title}
                   className="w-full h-full object-cover"
                   onError={(e) => {

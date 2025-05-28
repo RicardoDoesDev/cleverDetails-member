@@ -7,7 +7,7 @@ export const appData: AppData = {
       title: "Boat Tours",
       route: "/boat-tours",
       description: "Explore the Algarve coastline with our luxury boat tours",
-      image: "/boat-tours.jpg",
+      image: "ai-generated-boat-picture.jpg",
       items: [
         {
           id: 1,
@@ -58,7 +58,7 @@ export const appData: AppData = {
       title: "Fine Dining",
       route: "/restaurants",
       description: "Experience exquisite cuisine at selected restaurants",
-      image: "/fine-dining.jpg",
+      image: "pexels-pixabay-262978.jpg",
       items: [
         {
           id: 1,
@@ -109,7 +109,7 @@ export const appData: AppData = {
       title: "Activities",
       route: "/activities",
       description: "Enjoy exclusive access to premium activities",
-      image: "/activities.jpg",
+      image: "card_slides.jpg",
       items: [
         {
           id: 1,
@@ -162,7 +162,7 @@ export const appData: AppData = {
       title: "Winery Tours",
       route: "/winery-tours",
       description: "Discover the finest wines of the region",
-      image: "/winery.jpg",
+      image: "vertical-shot-person-holding-glass-wine-vineyard-sunlight.jpg",
       items: [
         {
           id: 1,
@@ -215,7 +215,7 @@ export const appData: AppData = {
       title: "Wellness",
       route: "/wellness",
       description: "Relax and rejuvenate with our wellness partners",
-      image: "/wellness.jpg",
+      image: "close-up-therapist-hand-massaging-woman-s-back-with-hot-towel-spa.jpg",
       items: [
         {
           id: 1,
@@ -264,11 +264,11 @@ export const appData: AppData = {
       ]
     },
     {
-      id: "chef-service",
-      title: "Private Chef",
-      route: "/chef-service",
+      id: "other",
+      title: "Other",
+      route: "/other",
       description: "Private dining experience in your accommodation",
-      image: "/chef.jpg",
+      image: "pexels-valeriya-939836.jpg",
       items: [
         {
           id: 1,

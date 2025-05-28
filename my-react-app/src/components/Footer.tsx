@@ -24,9 +24,9 @@ const Footer: React.FC = () => {
       {/* Bottom logo and text */}
       <div className="absolute bottom-8 left-8">
         <img 
-          src='https://www.cleverdetails.com/images/logo.png' 
+          src='/images/Logo_Clever_Branco.png'
           alt='Clever Details' 
-          className='h-20 mb-4' 
+          className='w-1/3' 
         />
         <span className="text-white font-bold text-xl block">
           We ❤️ Vilamoura ...
@@ -34,21 +34,27 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="absolute bottom-4 right-8 flex flex-row gap-4">
-        <img 
-          src='https://acbrd.org.au/wp-content/uploads/2020/08/facebook-circular-logo.png' 
-          alt='Facebook' 
-          className='h-10 mb-4' 
-        />
-        <img 
-          src='https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-circle-512.png' 
-          alt='Instagram' 
-          className='h-10 mb-4' 
-        />
-        <img 
-          src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png' 
-          alt='LinkedIn' 
-          className='h-10 mb-4' 
-        />
+        <a href='https://www.facebook.com/cleverdetails.holiday.rentals/' target='_blank' rel='noopener noreferrer'>
+          <img 
+            src='https://acbrd.org.au/wp-content/uploads/2020/08/facebook-circular-logo.png' 
+            alt='Facebook' 
+            className='h-10 mb-4' 
+          />
+        </a>
+        <a href='https://www.instagram.com/cleverdetails_holiday_rentals' target='_blank' rel='noopener noreferrer'>
+          <img 
+            src='https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-circle-512.png' 
+            alt='Instagram' 
+            className='h-10 mb-4' 
+          />
+        </a>
+        <a href='https://www.linkedin.com/company/cleverdetails-holiday-rentals' target='_blank' rel='noopener noreferrer'>
+          <img 
+            src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png' 
+            alt='LinkedIn' 
+            className='h-10 mb-4' 
+          />
+        </a>
       </div>
     </footer>
   );

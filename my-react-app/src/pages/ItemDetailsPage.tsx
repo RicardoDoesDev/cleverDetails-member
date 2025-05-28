@@ -105,7 +105,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 md:gap-0">
             <div className="flex items-center">
-              <div className="text-3xl md:text-4xl font-bold mr-4">SA</div>
+              <img src="/images/Logo_Clever_Branco.png" alt="Clever Details" className="w-1/4 mr-12 mb-4" />
               <h1 className="text-3xl md:text-4xl">{item.name}</h1>
             </div>
             <div className="text-xl md:text-2xl">{renderStars(item.rating)}</div>
