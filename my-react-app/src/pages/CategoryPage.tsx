@@ -22,6 +22,8 @@ const CategoryPage: React.FC<CategoryPageProps> = ({ categoryId, title }) => {
   const handleCategoryChange = (newCategoryId: string) => {
     if (newCategoryId) {
       navigate(`/${newCategoryId}`);
+    } else {
+      navigate('/all');
     }
   };
 

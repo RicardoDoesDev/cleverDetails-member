@@ -6,6 +6,14 @@ export interface Item {
   locationId: number;
   rating: number;
   mapsUrl: string;
+  openingHours: string;
+  address: string;
+  phone: string;
+  socialMedia: {
+    facebook: string;
+    instagram: string;
+    website: string;
+  };
   specialOffer?: {
     type: string;
     discount: string;

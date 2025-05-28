@@ -26,20 +26,18 @@ const PartnershipPage: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-serif text-secondary text-center mb-8">Partner with Us</h1>
-
       <div className="max-w-4xl mx-auto">
         {/* Partnership Benefits */}
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <h2 className="text-2xl font-bold text-primary mb-6">Why Partner with Clever Details?</h2>
+          <h2 className="text-2xl font-bold text-primary mb-6 text-center">Why Partner with Clever Details?</h2>
           <div className="flex flex-row items-center justify-center">
             <div className="text-center w-1/2">
-              <h3 className="font-bold mb-2">Increased Visibility</h3>
-              <p className="text-gray-600">Reach a wider audience through our established platform</p>
+              <h3 className="font-bold mb-2 text-secondary text-xl">Reach over 6,000 quality guests annually</h3>
+              <p className="text-gray-600">A nossa rede inclui milhares de turistas nacionais e internacionais que valorizam experiências locais</p>
             </div>
             <div className="text-center w-1/2">
-              <h3 className="font-bold mb-2">Increased Visibility</h3>
-              <p className="text-gray-600">Reach a wider audience through our established platform</p>
+              <h3 className="font-bold mb-2 text-secondary text-xl">Boost your business visibility</h3>
+              <p className="text-gray-600">Destacamos o seu negócio no nosso website e redes sociais, aumentando o seu alcance.</p>
             </div>
           </div>
         </div>

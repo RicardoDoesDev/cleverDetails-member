@@ -10,6 +10,9 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-40">
       {/* Main Header */}
+      <div className="absolute top-0 right-5 z-[70] text-secondary font-bold text-xl py-2 hidden lg:block">
+        We ❤️ Vilamoura ...
+      </div>
       <div className="bg-white relative z-[60]">
         <div 
           className="relative"
@@ -62,14 +65,14 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
       {/* Navigation Bar - Positioned to hover over the header */}
       <nav className="absolute bottom-0 left-0 right-0 transform translate-y-1/2 z-[50] pt-12 pb-2 shadow-lg bg-primary">
         <div className="max-w-xl mx-auto">
-          <div className="flex justify-center items-center gap-8 px-8 py-3">
-            <Link to="/news" className="text-white hover:text-secondary transition-colors font-medium whitespace-nowrap text-3xl">
+          <div className="flex justify-center items-center gap-4 md:gap-8 px-4 md:px-8 py-3 overflow-x-auto whitespace-nowrap">
+            <Link to="/news" className="text-white hover:text-secondary transition-colors font-medium text-xl md:text-3xl">
               News
             </Link>
-            <Link to="/access" className="text-white hover:text-secondary transition-colors font-medium whitespace-nowrap text-3xl">
+            <Link to="/access" className="text-white hover:text-secondary transition-colors font-medium text-xl md:text-3xl">
               Access
             </Link>
-            <Link to="/partnership" className="text-white hover:text-secondary transition-colors font-medium whitespace-nowrap text-3xl">
+            <Link to="/partnership" className="text-white hover:text-secondary transition-colors font-medium text-xl md:text-3xl">
               Partnership
             </Link>
           </div>

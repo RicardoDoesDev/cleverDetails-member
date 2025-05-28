@@ -16,6 +16,14 @@ export const appData: AppData = {
           description: "Explore the Algarve by boat from Vilamoura, Albufeira, and Faro. Discover hidden caves, stunning beaches, and breathtaking coastlines. Perfect for relaxing days or unforgettable adventures on the water.",
           locationId: 1,
           rating: 5,
+          openingHours: "09am - 18pm",
+          address: "Rua das oliveiras",
+          phone: "912 345 678",
+          socialMedia: {
+            facebook: "https://www.facebook.com/cleverdetails",
+            instagram: "https://www.instagram.com/cleverdetails",
+            website: "https://www.cleverdetails.com"
+          },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.122345!3d37.082651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Special Offer",
@@ -29,6 +37,14 @@ export const appData: AppData = {
           description: "Explore the Algarve by boat from Vilamoura, Albufeira, and Faro. Discover hidden caves, stunning beaches, and breathtaking coastlines. Perfect for relaxing days or unforgettable adventures on the water.",
           locationId: 1,
           rating: 5,
+          openingHours: "09am - 18pm",
+          address: "Rua das oliveiras",
+          phone: "912 345 678",
+          socialMedia: {
+            facebook: "https://www.facebook.com/cleverdetails",
+            instagram: "https://www.instagram.com/cleverdetails",
+            website: "https://www.cleverdetails.com"
+          },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Special Offer",
@@ -51,6 +67,14 @@ export const appData: AppData = {
           description: "Fine dining with stunning ocean views. Mediterranean cuisine with a modern twist.",
           locationId: 1,
           rating: 5,
+          openingHours: "09am - 18pm",
+          address: "Rua das oliveiras",
+          phone: "912 345 678",
+          socialMedia: {
+            facebook: "https://www.facebook.com/cleverdetails",
+            instagram: "https://www.instagram.com/cleverdetails",
+            website: "https://www.cleverdetails.com"
+          },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.134567!3d37.091234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Special Offer",
@@ -64,6 +88,14 @@ export const appData: AppData = {
           description: "Contemporary Portuguese cuisine using local ingredients and traditional recipes.",
           locationId: 2,
           rating: 5,
+          openingHours: "09am - 18pm",
+          address: "Rua das oliveiras",
+          phone: "912 345 678",
+          socialMedia: {
+            facebook: "https://www.facebook.com/cleverdetails",
+            instagram: "https://www.instagram.com/cleverdetails",
+            website: "https://www.cleverdetails.com"
+          },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.142345!3d37.087654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Special Offer",
@@ -87,6 +119,14 @@ export const appData: AppData = {
           locationId: 2,
           rating: 5,
           price: "€35 per person",
+          openingHours: "09am - 18pm",
+          address: "Rua das oliveiras",
+          phone: "912 345 678",
+          socialMedia: {
+            facebook: "https://www.facebook.com/cleverdetails",
+            instagram: "https://www.instagram.com/cleverdetails",
+            website: "https://www.cleverdetails.com"
+          },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.156789!3d37.098765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Special Offer",
@@ -101,6 +141,14 @@ export const appData: AppData = {
           locationId: 1,
           rating: 5,
           price: "€120 per round",
+          openingHours: "09am - 18pm",
+          address: "Rua das oliveiras",
+          phone: "912 345 678",
+          socialMedia: {
+            facebook: "https://www.facebook.com/cleverdetails",
+            instagram: "https://www.instagram.com/cleverdetails",
+            website: "https://www.cleverdetails.com"
+          },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.167890!3d37.102345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Special Offer",
@@ -124,6 +172,14 @@ export const appData: AppData = {
           locationId: 3,
           rating: 5,
           duration: "4 hours",
+          openingHours: "09am - 18pm",
+          address: "Rua das oliveiras",
+          phone: "912 345 678",
+          socialMedia: {
+            facebook: "https://www.facebook.com/cleverdetails",
+            instagram: "https://www.instagram.com/cleverdetails",
+            website: "https://www.cleverdetails.com"
+          },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.178901!3d37.112345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Special Offer",
@@ -138,6 +194,14 @@ export const appData: AppData = {
           locationId: 4,
           rating: 5,
           duration: "3 hours",
+          openingHours: "09am - 18pm",
+          address: "Rua das oliveiras",
+          phone: "912 345 678",
+          socialMedia: {
+            facebook: "https://www.facebook.com/cleverdetails",
+            instagram: "https://www.instagram.com/cleverdetails",
+            website: "https://www.cleverdetails.com"
+          },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.189012!3d37.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Special Offer",
@@ -161,6 +225,14 @@ export const appData: AppData = {
           locationId: 1,
           rating: 5,
           type: "Full Day Spa",
+          openingHours: "09am - 18pm",
+          address: "Rua das oliveiras",
+          phone: "912 345 678",
+          socialMedia: {
+            facebook: "https://www.facebook.com/cleverdetails",
+            instagram: "https://www.instagram.com/cleverdetails",
+            website: "https://www.cleverdetails.com"
+          },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.198765!3d37.134567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Special Offer",
@@ -175,6 +247,14 @@ export const appData: AppData = {
           locationId: 1,
           rating: 5,
           type: "Yoga & Meditation",
+          openingHours: "09am - 18pm",
+          address: "Rua das oliveiras",
+          phone: "912 345 678",
+          socialMedia: {
+            facebook: "https://www.facebook.com/cleverdetails",
+            instagram: "https://www.instagram.com/cleverdetails",
+            website: "https://www.cleverdetails.com"
+          },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.209876!3d37.145678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Special Offer",
@@ -198,6 +278,14 @@ export const appData: AppData = {
           locationId: 0,
           rating: 5,
           cuisine: "International",
+          openingHours: "09am - 18pm",
+          address: "Rua das oliveiras",
+          phone: "912 345 678",
+          socialMedia: {
+            facebook: "https://www.facebook.com/cleverdetails",
+            instagram: "https://www.instagram.com/cleverdetails",
+            website: "https://www.cleverdetails.com"
+          },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.219876!3d37.156789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Special Offer",
@@ -212,6 +300,14 @@ export const appData: AppData = {
           locationId: 0,
           rating: 5,
           cuisine: "Portuguese",
+          openingHours: "09am - 18pm",
+          address: "Rua das oliveiras",
+          phone: "912 345 678",
+          socialMedia: {
+            facebook: "https://www.facebook.com/cleverdetails",
+            instagram: "https://www.instagram.com/cleverdetails",
+            website: "https://www.cleverdetails.com"
+          },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.229876!3d37.167890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Special Offer",

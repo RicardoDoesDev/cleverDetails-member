@@ -1,17 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getItemById, getLocationName } from '../services/dataService';
+import { reviewService } from '../services/reviewService';
 import { Item } from '../types';
 
 interface ItemDetailsPageProps {
   category: string;
-}
-
-interface Review {
-  id: number;
-  author: string;
-  rating: number;
-  comment: string;
 }
 
 const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
@@ -20,24 +14,22 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [comment, setComment] = useState('');
   const [rating, setRating] = useState(5);
+  const [author, setAuthor] = useState('');
+  const [reviews, setReviews] = useState<any[]>([]);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const item = id ? getItemById(category, Number(id)) as Item : undefined;
 
-  // Mock reviews data
-  const reviews: Review[] = [
-    {
-      id: 1,
-      author: "Duarte.D",
-      rating: 5,
-      comment: "Adorámos a experiência. Obrigado À Clever Details"
-    },
-    {
-      id: 2,
-      author: "Duarte.D",
-      rating: 5,
-      comment: "Adorámos a experiência. Obrigado À Clever Details"
-    }
-  ];
+  // Load reviews from JSON file
+  useEffect(() => {
+    const loadReviews = async () => {
+      if (item) {
+        const savedReviews = await reviewService.getItemReviews(category, item.id);
+        setReviews(savedReviews);
+      }
+    };
+    loadReviews();
+  }, [category, item]);
 
   // Mock multiple images
   const images = [
@@ -73,38 +65,63 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
     );
   };
 
-  const handleSubmitComment = (e: React.FormEvent) => {
+  const handleSubmitComment = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle comment submission
-    console.log({ rating, comment });
-    setComment('');
-    setRating(5);
+    if (!author.trim()) {
+      alert('Please enter your name');
+      return;
+    }
+    if (!comment.trim()) {
+      alert('Please enter a comment');
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      const newReview = await reviewService.saveReview(category, item.id, {
+        author,
+        rating,
+        comment,
+      });
+
+      if (newReview) {
+        setReviews([...reviews, newReview]);
+        setComment('');
+        setRating(5);
+        setAuthor('');
+      }
+    } catch (error) {
+      console.error('Error saving review:', error);
+      alert('Failed to save review. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <div className="w-full">
       {/* Header */}
-      <div className="bg-primary text-white p-8">
+      <div className="bg-primary text-white p-4 md:p-8">
         <div className="container mx-auto">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 md:gap-0">
             <div className="flex items-center">
-              <div className="text-4xl font-bold mr-4">SA</div>
-              <h1 className="text-4xl">{item.name}</h1>
+              <div className="text-3xl md:text-4xl font-bold mr-4">SA</div>
+              <h1 className="text-3xl md:text-4xl">{item.name}</h1>
             </div>
-            <div className="text-2xl">{renderStars(item.rating)}</div>
+            <div className="text-xl md:text-2xl">{renderStars(item.rating)}</div>
           </div>
         </div>
       </div>
 
       {/* Image Gallery */}
-      <div className="relative px-12 bg-primary">
+      <div className="relative px-4 md:px-12 bg-primary">
         <div className="flex items-center justify-between gap-4 p-4">
           {/* Left Arrow */}
           <button
             onClick={() => setSelectedImageIndex((prev) => (prev - 1 + images.length) % images.length)}
-            className="absolute left-0 top-1/2 -translate-y-1/2 bg-secondary text-white p-2 rounded-full hover:bg-secondary-hover transition-colors z-10"
+            className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-secondary text-white p-2 rounded-full hover:bg-secondary-hover transition-colors z-10"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
@@ -154,26 +171,30 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
           {/* Right Arrow */}
           <button
             onClick={() => setSelectedImageIndex((prev) => (prev + 1) % images.length)}
-            className="absolute right-0 top-1/2 -translate-y-1/2 bg-secondary text-white p-2 rounded-full hover:bg-secondary-hover transition-colors z-10"
+            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-secondary text-white p-2 rounded-full hover:bg-secondary-hover transition-colors z-10"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
 
           {/* Dots */}
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2 pb-4">
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
             {images.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setSelectedImageIndex(index)}
                 className={`w-2 h-2 rounded-full transition-all ${
-                  index === selectedImageIndex ? 'bg-secondary w-4' : 'bg-gray-300'
+                  index === selectedImageIndex ? 'bg-white w-4' : 'bg-white bg-opacity-50'
                 }`}
               />
             ))}
           </div>
         </div>
+      </div>
+
+      <div className="flex flex-row items-center justify-center gap-4 text-white text-4xl py-12">
+        <p className="text-lg md:text-3xl mb-8">{item.description}</p>
       </div>
 
       <div className="px-4 md:px-0">
@@ -182,11 +203,10 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
 
       {/* Description and Reviews Section */}
       <div className="relative left-[50%] right-[50%] mx-[-50vw] w-screen bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 py-12">
+        <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Left Column - Details and Reviews */}
             <div className="flex-1">
-              <p className="text-xl mb-8">{item.description}</p>
 
               {/* Location */}
               <div className="flex items-center text-primary mb-8">
@@ -209,17 +229,42 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
                 />
               </div>
 
+              {/* Details */}
+              <div className="mt-8">
+                <h2 className="text-2xl md:text-4xl mb-6 font-bold">Details</h2>
+                <div className="space-y-4">
+                  <p className="text-xl md:text-2xl">09am - 18pm</p>
+                  <p className="text-xl md:text-2xl">Rua das oliveiras</p>
+                  <p className="text-xl md:text-2xl">912 345 678</p>
+                </div>
+                {/* three social media icons in a row */}
+                <div className="flex flex-row gap-4 mt-8">
+                  <a href="https://www.facebook.com/cleverdetails" target="_blank" rel="noopener noreferrer">
+                    <img src="https://acbrd.org.au/wp-content/uploads/2020/08/facebook-circular-logo.png" alt="Facebook" className="w-10 h-10" />
+                  </a>
+                  <a href="https://www.instagram.com/cleverdetails" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-circle-512.png" alt="Instagram" className="w-10 h-10" />
+                  </a>
+                  <a href="https://www.twitter.com/cleverdetails" target="_blank" rel="noopener noreferrer">
+                    <img src="https://w7.pngwing.com/pngs/27/375/png-transparent-round-logo-computer-icons-web-button-internet-web-design-text-logo.png" alt="Website" className="w-10 h-10" />
+                  </a>
+                </div>
+              </div>
+
               {/* Reviews */}
               <div className="mt-8">
-                <h2 className="text-3xl mb-6">Reviews</h2>
+                <h2 className="text-2xl md:text-4xl mb-6 font-bold">Reviews</h2>
                 <div className="space-y-4">
                   {reviews.map((review) => (
-                    <div key={review.id} className="bg-white p-6 rounded-lg shadow-sm">
-                      <div className="flex justify-between items-center mb-2">
+                    <div key={review.id} className="bg-white p-4 md:p-6 rounded-lg shadow-sm">
+                      <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2 md:gap-0 mb-2">
                         <div className="font-bold">{review.author}</div>
                         <div>{renderStars(review.rating)}</div>
                       </div>
                       <p>{review.comment}</p>
+                      <div className="text-sm text-gray-500 mt-2">
+                        {new Date(review.createdAt).toLocaleDateString()}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -229,12 +274,19 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
               <div className="mt-8">
                 <h2 className="text-2xl md:text-3xl mb-6">Leave a Review</h2>
                 <form onSubmit={handleSubmitComment} className="space-y-4">
+                  <input
+                    type="text"
+                    value={author}
+                    onChange={(e) => setAuthor(e.target.value)}
+                    placeholder="Your name"
+                    className="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:border-secondary"
+                  />
                   <div className="flex gap-2 mb-4">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <button
                         key={star}
                         type="button"
-                        className={`text-2xl ${star <= rating ? 'text-yellow-400' : 'text-gray-300'}`}
+                        className={`text-xl md:text-2xl ${star <= rating ? 'text-yellow-400' : 'text-gray-300'}`}
                         onClick={() => setRating(star)}
                       >
                         ⭐
@@ -249,9 +301,12 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
                   />
                   <button
                     type="submit"
-                    className="w-full md:w-auto bg-secondary text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-secondary-hover transition-colors"
+                    disabled={isSubmitting}
+                    className={`w-full md:w-auto bg-secondary text-white px-6 py-3 rounded-lg text-lg font-medium transition-colors ${
+                      isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-secondary-hover'
+                    }`}
                   >
-                    Submit Review
+                    {isSubmitting ? 'Submitting...' : 'Submit Review'}
                   </button>
                 </form>
               </div>
