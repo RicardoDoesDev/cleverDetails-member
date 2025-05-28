@@ -60,8 +60,12 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
                 />
               </div>
               <div className="p-6 flex-1">
-                <h2 className="text-2xl text-primary mb-4">{item.name}</h2>
-                <p className="text-gray-600 mb-4">{item.description}</p>
+                <h2 className="text-2xl text-primary mb-4 font-bold">{item.name}</h2>
+                <p className="text-gray-600 mb-4">
+                  {item.description.length > 200 ?
+                    `${item.description.substring(0, 200)}...` : item.description
+                  }
+                </p>
                 <div className="flex items-center text-primary">
                   <span className="mr-2">📍</span>
                   {getLocationName(item.locationId)}

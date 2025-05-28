@@ -13,7 +13,7 @@ export const appData: AppData = {
           id: 1,
           name: "Cool Charters",
           email: "info@coolchartersvilamoura.com",
-          logo: "cool-charters.jpg",
+          logo: "Cool-Charters-BSQUAREwhite.png",
           description: "Oferece experiências náuticas personalizadas, ideais para ocasiões especiais como aniversários, despedidas de solteiro(a), casamentos ou eventos corporativos. Os passeios incluem visitas a grutas, praias isoladas e observação de golfinhos, além de atividades aquáticas como jet ski. A equipa dedicada assegura um serviço de excelência, criando memórias inesquecíveis no mar.",
           locationId: 1,
           rating: 5,
