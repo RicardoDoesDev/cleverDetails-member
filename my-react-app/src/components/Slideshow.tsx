@@ -57,7 +57,7 @@ const Slideshow: React.FC<SlideshowProps> = ({
             style={{ transform: `translateX(${index * 100}%)` }}
           >
             <img
-              src={item.image}
+              src={`/images/photos/${item.image}`}
               alt={item.title || `Slide ${index + 1}`}
               className="w-full h-full object-cover"
               onError={(e) => {

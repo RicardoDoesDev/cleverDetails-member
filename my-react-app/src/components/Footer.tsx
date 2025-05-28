@@ -6,16 +6,20 @@ const Footer: React.FC = () => {
       <div>
         {/* Right side heading */}
         <div className="text-center">
-          <h3 className="text-white text-4xl mb-6">Book your holiday home</h3>
+          <h3 className="text-white text-4xl mb-6">
+            <a href="https://www.cleverdetails.com" target="_blank" rel="noopener noreferrer" className="text-white no-underline opacity-90 hover:opacity-100 hover:text-secondary transition-all duration-300 text-2xl">
+              Book your holiday home
+            </a>
+          </h3>
         </div>
         {/* Left side contact info */}
         <div className="text-center">
           <ul className="list-none p-0 m-0">
             <li className="mb-3">
-              <a href="mailto:info@cleverdetails.com" className="text-white no-underline opacity-90 hover:opacity-100 hover:text-secondary transition-all duration-300 text-2xl">info@cleverdetails.com</a>
+              <a href="mailto:info@cleverdetails.com" className="text-white no-underline opacity-90 hover:opacity-100 hover:text-secondary transition-all duration-300 text-xl">info@cleverdetails.com</a>
             </li>
             <li className="mb-3">
-              <a href="tel:+351912345678" className="text-white no-underline opacity-90 hover:opacity-100 hover:text-secondary transition-all duration-300 text-2xl">+351 912 345 678</a>
+              <a href="tel:+351289314500" className="text-white no-underline opacity-90 hover:opacity-100 hover:text-secondary transition-all duration-300 text-xl">+351 289 314 500</a>
             </li>
           </ul>
         </div>

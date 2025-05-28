@@ -26,7 +26,7 @@ const NewsPage: React.FC = () => {
   // Format items for slideshow
   const slideshowItems = useMemo(() => {
     return allItems.map(item => ({
-      image: item.image,
+      image: item.images?.[0] || '',
       title: item.name,
       description: item.description,
       tag: item.categoryTitle
@@ -58,15 +58,6 @@ const NewsPage: React.FC = () => {
             onClick={() => navigate(`/${item.categoryId}/${item.id}`)}
           >
             <div className="relative">
-              <img
-                src={item.image}
-                alt={item.name}
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.src = "https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600nw-1037719192.jpg";
-                }}
-              />
             </div>
             <div className="p-6 text-center">
               <h2 className="text-4xl font-semibold text-primary mb-2">{item.name}</h2>

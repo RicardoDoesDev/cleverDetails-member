@@ -26,14 +26,14 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
   };
 
   const renderExtraInfo = (item: Item) => {
-
     return (
       <div className="text-secondary font-bold mb-4 text-center">
         {item.specialOffer?.type}:
-        <div className="text-xl">{item.specialOffer?.discount}</div>
+        <div className="text-xl">{item.specialOffer?.description}</div>
       </div>
     );
   };
+  
 
   return (
     <div>
@@ -43,18 +43,18 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
         {items.map((item) => (
           <div
             key={item.id}
-            className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.02]"
+            className="bg-white h-[300px] rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.02]"
             onClick={() => handleItemClick(item)}
           >
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row h-[300px]">
               <div className="w-full md:w-1/3 h-64 md:h-auto relative">
                 <img
-                  src={item.image}
+                  src={`/images/fotos/${item.rootFolder}/${item.images?.[0]}`}
                   alt={item.name}
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = "https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600nw-1037719192.jpg";
+                    target.src = `/images/fotos/${item.rootFolder}/${item.images?.[0]}`;
                   }}
                 />
                 <div className="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full">

@@ -1,7 +1,8 @@
 export interface Item {
   id: number;
   name: string;
-  image: string;
+  email: string;
+  logo: string;
   description: string;
   locationId: number;
   rating: number;
@@ -16,13 +17,15 @@ export interface Item {
   };
   specialOffer?: {
     type: string;
-    discount: string;
+    description: string;
   };
   cuisine?: string;
   price?: string;
   duration?: string;
   type?: string;
   services?: string[];
+  rootFolder?: string;
+  images?: string[];
 }
 
 export interface Category {

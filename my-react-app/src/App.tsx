@@ -41,18 +41,18 @@ const App: React.FC = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/all" element={<AllItemsPage />} />
           <Route path="/boat-tours" element={<CategoryPage categoryId="boat-tours" title="Boat Tours" />} />
-          <Route path="/restaurants" element={<CategoryPage categoryId="restaurants" title="Fine Dining" />} />
+          <Route path="/gastronomy" element={<CategoryPage categoryId="gastronomy" title="Gastronomy" />} />
           <Route path="/activities" element={<CategoryPage categoryId="activities" title="Activities" />} />
           <Route path="/winery-tours" element={<CategoryPage categoryId="winery-tours" title="Winery Tours" />} />
           <Route path="/wellness" element={<CategoryPage categoryId="wellness" title="Wellness" />} />
-          <Route path="/chef-service" element={<CategoryPage categoryId="chef-service" title="Chef at Home" />} />
+          <Route path="/beauty-and-hair-salons" element={<CategoryPage categoryId="beauty-and-hair-salons" title="Beauty & Hair Salons" />} />
           
           <Route path="/boat-tours/:id" element={<ItemDetailsPage category="boat-tours" />} />
-          <Route path="/restaurants/:id" element={<ItemDetailsPage category="restaurants" />} />
+          <Route path="/gastronomy/:id" element={<ItemDetailsPage category="gastronomy" />} />
           <Route path="/activities/:id" element={<ItemDetailsPage category="activities" />} />
           <Route path="/winery-tours/:id" element={<ItemDetailsPage category="winery-tours" />} />
           <Route path="/wellness/:id" element={<ItemDetailsPage category="wellness" />} />
-          <Route path="/chef-service/:id" element={<ItemDetailsPage category="chef-service" />} />
+          <Route path="/beauty-and-hair-salons/:id" element={<ItemDetailsPage category="beauty-and-hair-salons" />} />
           
           <Route path="/news" element={<NewsPage />} />
           <Route path="/access" element={<AccessPage />} />

@@ -32,11 +32,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
   }, [category, item]);
 
   // Mock multiple images
-  const images = [
-    item?.image || '',
-    '/boat2.jpg',
-    '/boat3.jpg'
-  ];
+  const images = item?.images || [];
 
   if (!item) {
     return (
@@ -59,7 +55,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
   const renderExtraInfo = () => {
     return (
       <div className="bg-secondary p-6 rounded-lg mb-8 w-full md:w-3/4 mx-auto text-center text-white">
-          <h3 className="text-3xl md:text-6xl mb-2">{item.specialOffer?.discount} - You deserve it!</h3>
+          <h3 className="text-3xl md:text-6xl mb-2">{item.specialOffer?.description} - You deserve it!</h3>
           <p className="text-lg md:text-2xl font-bold">Bookings must be made directly with Clever Details team</p>
       </div>
     );

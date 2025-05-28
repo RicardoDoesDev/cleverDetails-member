@@ -42,11 +42,11 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                 Boat Tours
               </Link>
               <Link
-                to="/restaurants"
+                to="/gastronomy"
                 className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
                 onClick={onClose}
               >
-                Restaurants
+                Gastronomy
               </Link>
               <Link
                 to="/activities"
@@ -70,11 +70,11 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                 Wellness
               </Link>
               <Link
-                to="/chef-service"
+                to="/beauty-and-hair-salons"
                 className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
                 onClick={onClose}
               >
-                Chef Service
+                Beauty & Hair Salons
               </Link>
             </nav>
 
