@@ -76,6 +76,13 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
               >
                 Beauty & Hair Salons
               </Link>
+              <Link
+                to="/contact"
+                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors font-bold"
+                onClick={onClose}
+              >
+                Contact Us
+              </Link>
             </nav>
 
             <h2 className="text-xl font-bold text-primary mt-8 mb-4">More</h2>

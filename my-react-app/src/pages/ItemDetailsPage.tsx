@@ -53,10 +53,23 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
   };
 
   const renderExtraInfo = () => {
+    const handleContactClick = () => {
+      const subject = `Booking Request: ${item.name}`;
+      const message = `Hi, I'm interested in booking ${item.name} with the following special offer: ${item.specialOffer?.description}.\n\nPlease provide me with more information.`;
+      
+      navigate(`/contact?subject=${encodeURIComponent(subject)}&message=${encodeURIComponent(message)}`);
+    };
+
     return (
       <div className="bg-secondary p-6 rounded-lg mb-8 w-full md:w-3/4 mx-auto text-center text-white">
-          <h3 className="text-3xl md:text-6xl mb-2">{item.specialOffer?.description} - You deserve it!</h3>
-          <p className="text-lg md:text-2xl font-bold">Bookings must be made directly with Clever Details team</p>
+        <h3 className="text-3xl md:text-6xl mb-2">{item.specialOffer?.description} - You deserve it!</h3>
+        <p className="text-lg md:text-2xl font-bold mb-6">Bookings must be made directly with Clever Details team</p>
+        <button
+          onClick={handleContactClick}
+          className="bg-white text-secondary hover:bg-primary hover:text-white transition-colors duration-300 font-bold py-3 px-8 rounded-lg text-xl"
+        >
+          Book Now
+        </button>
       </div>
     );
   };

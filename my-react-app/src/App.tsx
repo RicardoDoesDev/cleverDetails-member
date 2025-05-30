@@ -7,6 +7,7 @@ import ItemDetailsPage from './pages/ItemDetailsPage';
 import AccessPage from './pages/AccessPage';
 import PartnershipPage from './pages/PartnershipPage';
 import AllItemsPage from './pages/AllItemsPage';
+import EmailPage from './pages/EmailPage';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 
@@ -55,6 +56,7 @@ const App: React.FC = () => {
           
           <Route path="/access" element={<AccessPage />} />
           <Route path="/partnership" element={<PartnershipPage />} />
+          <Route path="/contact" element={<EmailPage />} />
         </Routes>
       </Layout>
     </Router>

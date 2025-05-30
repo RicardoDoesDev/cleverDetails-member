@@ -99,7 +99,7 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
 
       {/* Navigation Bar - Positioned to hover over the header */}
       <nav className="absolute bottom-0 left-0 right-0 transform translate-y-1/2 z-[50] pt-12 pb-2 shadow-lg bg-primary">
-        <div className="max-w-xl mx-auto">
+        <div className="hidden lg:block mx-auto">
           <div className="flex justify-center items-center gap-4 md:gap-8 px-4 md:px-8 py-3 overflow-x-auto whitespace-nowrap">
             <Link to="/all" className="text-white hover:text-secondary transition-colors font-medium text-xl md:text-3xl">
               Advantages
@@ -109,6 +109,9 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
             </Link>
             <Link to="/partnership" className="text-white hover:text-secondary transition-colors font-medium text-xl md:text-3xl">
               Partnership
+            </Link>
+            <Link to="/contact" className="text-white hover:text-secondary transition-colors font-medium text-xl md:text-3xl">
+              Contact
             </Link>
           </div>
         </div>
