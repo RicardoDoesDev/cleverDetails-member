@@ -1,3 +1,8 @@
+export interface OpeningHours {
+  day: string;
+  hours: string;
+}
+
 export interface Item {
   id: number;
   name: string;
@@ -7,7 +12,7 @@ export interface Item {
   locationIds: number[];
   rating: number;
   mapsUrl: string;
-  openingHours: string;
+  openingHours: OpeningHours[];
   address: string;
   phone: string;
   socialMedia: {

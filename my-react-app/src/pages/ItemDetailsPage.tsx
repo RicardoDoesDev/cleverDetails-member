@@ -242,9 +242,21 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
               <div className="mt-8">
                 <h2 className="text-2xl md:text-4xl mb-6 font-bold">Details</h2>
                 <div className="space-y-4">
-                  <p className="text-xl md:text-2xl">09am - 18pm</p>
-                  <p className="text-xl md:text-2xl">Rua das oliveiras</p>
-                  <p className="text-xl md:text-2xl">912 345 678</p>
+                  {/* Opening Hours */}
+                  <div className="mb-6">
+                    <h3 className="text-xl md:text-2xl font-semibold mb-3">Opening Hours</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                      {item.openingHours.map((schedule) => (
+                        <div key={schedule.day} className="flex justify-between items-center py-2 px-4 bg-white rounded-lg shadow-sm">
+                          <span className="font-medium">{schedule.day}</span>
+                          <span>{schedule.hours}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  {/* Address and Phone */}
+                  <p className="text-xl md:text-2xl">{item.address}</p>
+                  <p className="text-xl md:text-2xl">{item.phone}</p>
                 </div>
                 {/* three social media icons in a row */}
                 <div className="flex flex-row gap-4 mt-8">

@@ -18,7 +18,15 @@ export const appData: AppData = {
           locationIds: [3],
           rating: 5,
           type: "Boat Tours",
-          openingHours: "09:00 - 19:00",
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 00:00" },
+            { day: "Tuesday", hours: "09:00 - 00:00" },
+            { day: "Wednesday", hours: "09:00 - 00:00" },
+            { day: "Thursday", hours: "09:00 - 00:00" },
+            { day: "Friday", hours: "09:00 - 00:00" },
+            { day: "Saturday", hours: "09:00 - 00:00" },
+            { day: "Sunday", hours: "09:00 - 00:00" }
+          ],
           address: "Marina de Vilamoura",
           phone: "+351 912 345 678",
           socialMedia: {
@@ -56,7 +64,15 @@ export const appData: AppData = {
           locationIds: [5],
           rating: 5,
           type: "Boat Tours",
-          openingHours: "09:00 - 18:00",
+          openingHours: [
+            { day: "Monday", hours: "08:00 - 20:00" },
+            { day: "Tuesday", hours: "08:00 - 20:00" },
+            { day: "Wednesday", hours: "08:00 - 20:00" },
+            { day: "Thursday", hours: "08:00 - 20:00" },
+            { day: "Friday", hours: "08:00 - 20:00" },
+            { day: "Saturday", hours: "08:00 - 20:00" },
+            { day: "Sunday", hours: "08:00 - 20:00" }
+          ],
           address: "Ria Formosa",
           phone: "+351 912 345 679",
           socialMedia: {
@@ -81,7 +97,15 @@ export const appData: AppData = {
           locationIds: [5],
           rating: 5,
           type: "Boat Tours",
-          openingHours: "09:00 - 18:00",
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 19:00" },
+            { day: "Tuesday", hours: "09:00 - 19:00" },
+            { day: "Wednesday", hours: "09:00 - 19:00" },
+            { day: "Thursday", hours: "09:00 - 19:00" },
+            { day: "Friday", hours: "09:00 - 19:00" },
+            { day: "Saturday", hours: "09:00 - 19:00" },
+            { day: "Sunday", hours: "09:00 - 19:00" }
+          ],
           address: "Ria Formosa",
           phone: "+351 912 345 680",
           socialMedia: {
@@ -107,7 +131,15 @@ export const appData: AppData = {
           rating: 5,
           logo: "algarexperience-vect.svg",
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
-          openingHours: "09:00 - 18:00",
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 20:00" },
+            { day: "Tuesday", hours: "09:00 - 20:00" },
+            { day: "Wednesday", hours: "09:00 - 20:00" },
+            { day: "Thursday", hours: "09:00 - 20:00" },
+            { day: "Friday", hours: "09:00 - 20:00" },
+            { day: "Saturday", hours: "09:00 - 20:00" },
+            { day: "Sunday", hours: "09:00 - 20:00" }
+          ],
           address: "Algarve",
           phone: "+351 912 345 681",
           socialMedia: {
@@ -130,9 +162,17 @@ export const appData: AppData = {
           description: "Descubra a costa algarvia a bordo do majestoso Condor de Vilamoura, um veleiro de 34 metros inspirado nas escunas americanas do século XIX. Com capacidade para até 120 passageiros, oferece cruzeiros de 3 horas até à Praia da Galé e passeios de dia inteiro até Benagil, com paragens para nadar, explorar grutas e desfrutar de um delicioso churrasco na praia. Uma experiência única para toda a família, combinando conforto, tradição e paisagens deslumbrantes.",
           locationIds: [3],
           rating: 5,
-          logo: "condor-de-vilamoura.jpg",
+          logo: "condor_logo branco.avif",
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
-          openingHours: "09:00 - 18:00",
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 18:00" },
+            { day: "Tuesday", hours: "09:00 - 18:00" },
+            { day: "Wednesday", hours: "09:00 - 18:00" },
+            { day: "Thursday", hours: "09:00 - 18:00" },
+            { day: "Friday", hours: "09:00 - 18:00" },
+            { day: "Saturday", hours: "09:00 - 18:00" },
+            { day: "Sunday", hours: "09:00 - 18:00" }
+          ],
           address: "Vilamoura",
           phone: "+351 912 345 682",
           socialMedia: {
@@ -155,9 +195,17 @@ export const appData: AppData = {
           description: "Explora o melhor da costa algarvia com a Ocean Quest. Passeios de barco, grutas, golfinhos e parasailing desde Vilamoura, com uma equipa apaixonada por proporcionar experiências únicas no mar. Porque a vida é bela.",
           locationIds: [3],
           rating: 5,
-          logo: "ocean-quest.jpg",
+          logo: "Ocean Quest.png",
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
-          openingHours: "09:00 - 18:00",
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 18:00" },
+            { day: "Tuesday", hours: "09:00 - 18:00" },
+            { day: "Wednesday", hours: "09:00 - 18:00" },
+            { day: "Thursday", hours: "09:00 - 18:00" },
+            { day: "Friday", hours: "09:00 - 18:00" },
+            { day: "Saturday", hours: "09:00 - 18:00" },
+            { day: "Sunday", hours: "09:00 - 18:00" }
+          ],
           address: "Vilamoura",
           phone: "+351 912 345 683",
           socialMedia: {
@@ -182,7 +230,15 @@ export const appData: AppData = {
           rating: 5,
           logo: "Vilamoura-Watersports-Centre-logo-Design-01-e1602070771419.webp",
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
-          openingHours: "09:00 - 18:00",
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 23:00" },
+            { day: "Tuesday", hours: "09:00 - 23:00" },
+            { day: "Wednesday", hours: "09:00 - 23:00" },
+            { day: "Thursday", hours: "09:00 - 23:00" },
+            { day: "Friday", hours: "09:00 - 23:00" },
+            { day: "Saturday", hours: "09:00 - 23:00" },
+            { day: "Sunday", hours: "09:00 - 23:00" }
+          ],
           address: "Vilamoura",
           phone: "+351 912 345 684",
           socialMedia: {
@@ -216,7 +272,15 @@ export const appData: AppData = {
           rating: 5,
           logo: "AverTavira.png",
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.122345!3d37.082651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
-          openingHours: "12pm - 11pm",
+          openingHours: [
+            { day: "Monday", hours: "Closed" },
+            { day: "Tuesday", hours: "18:30 - 21:30" },
+            { day: "Wednesday", hours: "12:00 - 14:30, 18:30 - 21:30" },
+            { day: "Thursday", hours: "12:00 - 14:30, 18:30 - 21:30" },
+            { day: "Friday", hours: "12:00 - 14:30, 18:30 - 21:30" },
+            { day: "Saturday", hours: "12:00 - 14:30, 18:30 - 21:30" },
+            { day: "Sunday", hours: "Closed" }
+          ],
           address: "Rua de Tavira, 12",
           phone: "912 345 678",
           socialMedia: {
@@ -241,7 +305,15 @@ export const appData: AppData = {
           rating: 5,
           logo: "Logo-Authentic-dourado.png",
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
-          openingHours: "12pm - 11pm",
+          openingHours: [
+            { day: "Monday", hours: "Closed" },
+            { day: "Tuesday", hours: "Closed" },
+            { day: "Wednesday", hours: "18:00 - 23:00" },
+            { day: "Thursday", hours: "18:00 - 23:00" },
+            { day: "Friday", hours: "18:00 - 23:00" },
+            { day: "Saturday", hours: "18:00 - 23:00" },
+            { day: "Sunday", hours: "18:00 - 23:00" }
+          ],
           address: "Rua Authentic, 45",
           phone: "912 345 679",
           socialMedia: {
@@ -266,7 +338,15 @@ export const appData: AppData = {
           rating: 5,
           logo: "CAFEZIQUE-487bb404-679w.webp",
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.134567!3d37.091234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
-          openingHours: "12pm - 11pm",
+          openingHours: [
+            { day: "Monday", hours: "19:00 - 22:30" },
+            { day: "Tuesday", hours: "19:00 - 22:30" },
+            { day: "Wednesday", hours: "19:00 - 22:30" },
+            { day: "Thursday", hours: "19:00 - 22:30" },
+            { day: "Friday", hours: "19:00 - 22:30" },
+            { day: "Saturday", hours: "19:00 - 22:30" },
+            { day: "Sunday", hours: "Closed" }
+          ],
           address: "Rua Cafezique, 78",
           phone: "912 345 680",
           socialMedia: {
@@ -291,7 +371,15 @@ export const appData: AppData = {
           rating: 4,
           logo: "GranSorvete.avif",
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.156789!3d37.098765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
-          openingHours: "8am - 8pm",
+          openingHours: [
+            { day: "Monday", hours: "11:00 - 23:00" },
+            { day: "Tuesday", hours: "11:00 - 23:00" },
+            { day: "Wednesday", hours: "11:00 - 23:00" },
+            { day: "Thursday", hours: "11:00 - 23:00" },
+            { day: "Friday", hours: "11:00 - 23:00" },
+            { day: "Saturday", hours: "11:00 - 23:00" },
+            { day: "Sunday", hours: "11:00 - 23:00" }
+          ],
           address: "Rua Gran Sorvete, 23",
           phone: "912 345 682",
           socialMedia: {
@@ -316,7 +404,15 @@ export const appData: AppData = {
           rating: 5,
           logo: "Retinto+Vilamoura-330w.webp",
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.167890!3d37.102345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
-          openingHours: "12pm - 11pm",
+          openingHours: [
+            { day: "Monday", hours: "18:30 - 23:30" },
+            { day: "Tuesday", hours: "18:30 - 23:30" },
+            { day: "Wednesday", hours: "18:30 - 23:30" },
+            { day: "Thursday", hours: "18:30 - 23:30" },
+            { day: "Friday", hours: "18:30 - 23:30" },
+            { day: "Saturday", hours: "18:30 - 23:30" },
+            { day: "Sunday", hours: "Closed" }
+          ],
           address: "Rua Retinto, 56",
           phone: "912 345 683",
           socialMedia: {
@@ -349,7 +445,15 @@ export const appData: AppData = {
           locationIds: [6],
           rating: 5,
           type: "Racing Experience",
-          openingHours: "09:00 - 18:00",
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 18:00" },
+            { day: "Tuesday", hours: "09:00 - 18:00" },
+            { day: "Wednesday", hours: "09:00 - 18:00" },
+            { day: "Thursday", hours: "09:00 - 18:00" },
+            { day: "Friday", hours: "09:00 - 18:00" },
+            { day: "Saturday", hours: "09:00 - 18:00" },
+            { day: "Sunday", hours: "09:00 - 18:00" }
+          ],
           address: "Autódromo Internacional do Algarve",
           phone: "+351 282 405 600",
           socialMedia: {
@@ -374,7 +478,15 @@ export const appData: AppData = {
           locationIds: [6],
           rating: 5,
           type: "Karting",
-          openingHours: "10:00 - 19:00",
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Tuesday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Wednesday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Thursday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Friday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Saturday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Sunday", hours: "09:00 - 13:00, 14:00 - 17:30" }
+          ],
           address: "Parkalgar, Portimão",
           phone: "+351 282 405 650",
           socialMedia: {
@@ -395,11 +507,19 @@ export const appData: AppData = {
           name: "Slide & Splash",
           email: "info@slidesplash.com",
           logo: "logo_slidesplash.png",
-          description: "O Slide & Splash, em Lagoa, é um parque aquático familiar com diversas atrações para todas as idades. Além de escorregas emocionantes, oferece áreas infantis, zonas de relaxamento e espetáculos com animais. Ideal para um dia de diversão no Algarve.",
+          description: "O Slide & Splash, em Lagoa, é um parque aquático familiar com diversas atrações para todas as idades. Além de escorregas emocionantes, oferece áreas infantis, zonas de relaxamento e espetáculos com animais. Ideal para um dia de diversão no Algarve.\n\nHorário Sazonal:\n- Junho: 10:00 - 17:30\n- 1 Julho a 12 Setembro: 10:00 - 18:00\n- 13 Setembro a 31 Outubro: 10:00 - 17:00",
           locationIds: [7],
           rating: 5,
           type: "Waterpark",
-          openingHours: "10:00 - 17:00",
+          openingHours: [
+            { day: "Monday", hours: "10:00 - 18:00 (horário varia por época)" },
+            { day: "Tuesday", hours: "10:00 - 18:00 (horário varia por época)" },
+            { day: "Wednesday", hours: "10:00 - 18:00 (horário varia por época)" },
+            { day: "Thursday", hours: "10:00 - 18:00 (horário varia por época)" },
+            { day: "Friday", hours: "10:00 - 18:00 (horário varia por época)" },
+            { day: "Saturday", hours: "10:00 - 18:00 (horário varia por época)" },
+            { day: "Sunday", hours: "10:00 - 18:00 (horário varia por época)" }
+          ],
           address: "Vale de Deus, 8401-901 Estombar, Lagoa",
           phone: "+351 282 340 800",
           socialMedia: {
@@ -419,12 +539,20 @@ export const appData: AppData = {
           id: 4,
           name: "Family Golf Park",
           email: "info@familygolfpark.com",
-          logo: "familygolfpark.png",
+          logo: "family-golf-park-logo-white.png",
           description: "Situado no coração de Vilamoura, o Family Golf Park é um destino imperdível para famílias e grupos que procuram diversão e lazer. Com dois percursos de mini golfe temáticos inspirados na Roma Antiga, o Via Áppia e o Via Lusitânia, o parque oferece uma experiência única em meio a jardins exuberantes e arquitetura romana. Além disso, dispõe de uma área de jogos para crianças, sala de jogos, snack-bar com esplanada e até um comboio turístico que percorre os principais pontos de Vilamoura. Aberto diariamente, o Family Golf Park é perfeito para um dia de diversão em família.",
           locationIds: [3],
           rating: 5,
           type: "Golf",
-          openingHours: "09:00 - 18:00",
+          openingHours: [
+            { day: "Monday", hours: "10:00 - 19:00" },
+            { day: "Tuesday", hours: "10:00 - 19:00" },
+            { day: "Wednesday", hours: "10:00 - 19:00" },
+            { day: "Thursday", hours: "10:00 - 19:00" },
+            { day: "Friday", hours: "10:00 - 19:00" },
+            { day: "Saturday", hours: "10:00 - 19:00" },
+            { day: "Sunday", hours: "10:00 - 19:00" }
+          ],
           address: "Family Golf Park",
           phone: "+351 282 912 345",
           socialMedia: {
@@ -444,12 +572,20 @@ export const appData: AppData = {
           id: 5,
           name: "Zoomarine",
           email: "info@zoomarine.pt",
-          logo: "zoomarine.png",
-          description: "O Zoomarine, localizado perto de Albufeira, é um parque temático que combina diversão, educação e natureza. Com espetáculos de golfinhos, leões-marinhos, aves tropicais, escorregas aquáticos e uma praia artificial, é perfeito para um dia inesquecível em família. Uma aventura mágica no coração do Algarve!",
+          logo: "logozoomarine.png",
+          description: "O Zoomarine, localizado perto de Albufeira, é um parque temático que combina diversão, educação e natureza. Com espetáculos de golfinhos, leões-marinhos, aves tropicais, escorregas aquáticos e uma praia artificial, é perfeito para um dia inesquecível em família. Uma aventura mágica no coração do Algarve!\n\nHorário Sazonal:\n- Março, Outubro, Novembro: 10:00 - 17:00\n- Abril a 22 de Junho & 10 Setembro a 28 de Setembro: 10:00 - 18:00\n- 23 de Junho a 7 Setembro: 10:00 - 19:30",
           locationIds: [4],
           rating: 5,
           type: "Theme Park",
-          openingHours: "10:00 - 19:00",
+          openingHours: [
+            { day: "Monday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Tuesday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Wednesday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Thursday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Friday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Saturday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Sunday", hours: "10:00 - 19:30 (horário varia por época)" }
+          ],
           address: "EN 125, Km 65, 8201-864 Guia, Albufeira",
           phone: "+351 289 560 300",
           socialMedia: {
@@ -469,12 +605,20 @@ export const appData: AppData = {
           id: 6,
           name: "Slide & Splash",
           email: "info@slideandsplash.com",
-          logo: "slideandsplash.png",
+          logo: "logo_slidesplash.png",
           description: "Slide & Splash é um parque aquático que oferece uma experiência única com piscinas, slides e atrações aquáticas. É um local ideal para relaxar e desfrutar de uma tarde de diversão.",
           locationIds: [3],
           rating: 5,
           type: "Theme Park",
-          openingHours: "10:00 - 19:00",
+          openingHours: [
+            { day: "Monday", hours: "10:00 - 19:00" },
+            { day: "Tuesday", hours: "10:00 - 19:00" },
+            { day: "Wednesday", hours: "10:00 - 19:00" },
+            { day: "Thursday", hours: "10:00 - 19:00" },
+            { day: "Friday", hours: "10:00 - 19:00" },
+            { day: "Saturday", hours: "10:00 - 19:00" },
+            { day: "Sunday", hours: "10:00 - 19:00" }
+          ],
           address: "Slide & Splash",
           phone: "+351 289 560 300",
           socialMedia: {
@@ -496,12 +640,20 @@ export const appData: AppData = {
           id: 7,
           name: "Algarve Riders",
           email: "info@algarveriders.com",
-          logo: "algarveriders.png",
+          logo: "logo_algarveriders.png",
           description: "Algarve Riders é uma empresa de aluguer de motos que oferece uma experiência única com motos de alta performance. É um local ideal para desfrutar de uma tarde de diversão.",
           locationIds: [3],
           rating: 5,
           type: "Theme Park",
-          openingHours: "10:00 - 19:00",
+          openingHours: [
+            { day: "Monday", hours: "8:30 - 18:00" },
+            { day: "Tuesday", hours: "8:30 - 18:00" },
+            { day: "Wednesday", hours: "8:30 - 18:00" },
+            { day: "Thursday", hours: "8:30 - 18:00" },
+            { day: "Friday", hours: "8:30 - 18:00" },
+            { day: "Saturday", hours: "8:30 - 18:00" },
+            { day: "Sunday", hours: "8:30 - 18:00" }
+          ],
           address: "Algarve Riders",
           phone: "+351 289 560 300",
           socialMedia: {
@@ -522,12 +674,20 @@ export const appData: AppData = {
           id: 8,
           name: "Aquashow",
           email: "info@aquashow.com",
-          logo: "aquashow.png",
+          logo: "aquashow_logo.png",
           description: "O Aquashow Outdoor é o maior parque aquático ao ar livre de Portugal, situado no coração do Algarve. Com escorregas gigantes, piscina de ondas, atrações para todas as idades e muita animação, é o local ideal para um dia de verão cheio de diversão, adrenalina e memórias em família ou entre amigos.",
           locationIds: [8],
           rating: 5,
           type: "Theme Park",
-          openingHours: "10:00 - 19:00",
+          openingHours: [
+            { day: "Monday", hours: "10:00 - 18:00" },
+            { day: "Tuesday", hours: "10:00 - 18:00" },
+            { day: "Wednesday", hours: "10:00 - 18:00" },
+            { day: "Thursday", hours: "10:00 - 18:00" },
+            { day: "Friday", hours: "10:00 - 18:00" },
+            { day: "Saturday", hours: "10:00 - 18:00" },
+            { day: "Sunday", hours: "10:00 - 18:00" }
+          ],
           address: "Aquashow",
           phone: "+351 289 560 300",
           socialMedia: {
@@ -561,7 +721,15 @@ export const appData: AppData = {
           locationIds: [4],
           rating: 5,
           type: "Winery Tours",
-          openingHours: "09:00 - 18:00",
+          openingHours: [
+            { day: "Monday", hours: "11:00 - 13:00, 14:30 - 18:30" },
+            { day: "Tuesday", hours: "11:00 - 13:00, 14:30 - 18:30" },
+            { day: "Wednesday", hours: "11:00 - 13:00, 14:30 - 18:30" },
+            { day: "Thursday", hours: "11:00 - 13:00, 14:30 - 18:30" },
+            { day: "Friday", hours: "11:00 - 13:00, 14:30 - 18:30" },
+            { day: "Saturday", hours: "Closed" },
+            { day: "Sunday", hours: "Closed" }
+          ],
           address: "Quinta do Canhoto",
           phone: "+351 912 345 678",
           socialMedia: {
@@ -582,11 +750,19 @@ export const appData: AppData = {
           name: "Morgado do Quintão",
           email: "info@morgadodoquintao.pt",
           logo: "Morgado do quintao.png",
+          type: "Winery Tours",
           description: "O Morgado do Quintão, em Lagoa, une tradição e sustentabilidade na produção de vinhos autênticos. Oferece provas e almoços vínicos, proporcionando uma experiência genuína e memorável no Algarve.",
           locationIds: [7],
           rating: 5,
-          type: "Winery Tours",
-          openingHours: "10:00 - 19:00",
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 22:00" },
+            { day: "Tuesday", hours: "09:00 - 22:00" },
+            { day: "Wednesday", hours: "09:00 - 22:00" },
+            { day: "Thursday", hours: "09:00 - 22:00" },
+            { day: "Friday", hours: "09:00 - 22:00" },
+            { day: "Saturday", hours: "09:00 - 22:00" },
+            { day: "Sunday", hours: "Closed" }
+          ],
           address: "Morgado do Quintão",
           phone: "+351 282 912 345",
           socialMedia: {
@@ -606,12 +782,20 @@ export const appData: AppData = {
           id: 3,
           name: "Adega do Cantor",
           email: "info@adegadocantor.com",
-          logo: "Adega do Cantor.png",
+          logo: "Adega do Cantor.webp",
           description: "Descubra os sabores do Algarve na Adega do Cantor, em Albufeira. Visite as vinhas, conheça o processo de produção e prove vinhos premiados numa experiência única de enoturismo. Uma paragem obrigatória para amantes de vinho e da natureza.",
           locationIds: [7],
           rating: 5,
           type: "Winery Tours",
-          openingHours: "09:00 - 18:00",
+          openingHours: [
+            { day: "Monday", hours: "10:00 - 13:00, 14:00 - 17:00" },
+            { day: "Tuesday", hours: "10:00 - 13:00, 14:00 - 17:00" },
+            { day: "Wednesday", hours: "10:00 - 13:00, 14:00 - 17:00" },
+            { day: "Thursday", hours: "10:00 - 13:00, 14:00 - 17:00" },
+            { day: "Friday", hours: "10:00 - 13:00, 14:00 - 17:00" },
+            { day: "Saturday", hours: "Closed" },
+            { day: "Sunday", hours: "Closed" }
+          ],
           address: "Adega do Cantor",
           phone: "+351 282 912 345",
           socialMedia: {
@@ -645,7 +829,15 @@ export const appData: AppData = {
           locationIds: [3],
           rating: 5,
           type: "Full Day Spa",
-          openingHours: "09am - 18pm",
+          openingHours: [
+            { day: "Monday", hours: "09:45 - 21:00" },
+            { day: "Tuesday", hours: "09:45 - 21:00" },
+            { day: "Wednesday", hours: "09:45 - 21:00" },
+            { day: "Thursday", hours: "09:45 - 21:00" },
+            { day: "Friday", hours: "09:45 - 21:00" },
+            { day: "Saturday", hours: "09:45 - 20:00" },
+            { day: "Sunday", hours: "09:45 - 20:00" }
+          ],
           address: "Rua das oliveiras",
           phone: "912 345 678",
           socialMedia: {
@@ -670,7 +862,15 @@ export const appData: AppData = {
           locationIds: [3],
           rating: 5,
           type: "Wellness",
-          openingHours: "09:00 - 18:00",
+          openingHours: [
+            { day: "Monday", hours: "10:00 - 13:00, 14:30 - 19:00" },
+            { day: "Tuesday", hours: "10:00 - 13:00, 14:30 - 19:00" },
+            { day: "Wednesday", hours: "10:00 - 13:00, 14:30 - 19:00" },
+            { day: "Thursday", hours: "10:00 - 13:00, 14:30 - 19:00" },
+            { day: "Friday", hours: "10:00 - 13:00, 14:30 - 19:00" },
+            { day: "Saturday", hours: "10:00 - 13:00, 14:30 - 19:00" },
+            { day: "Sunday", hours: "Closed" }
+          ],
           address: "Vilamoura",
           phone: "+351 282 000 000",
           socialMedia: {
@@ -690,12 +890,20 @@ export const appData: AppData = {
           id: 3,
           name: "DMed Clinic",
           email: "info@dmedclinic.com",
-          logo: "DMed Clinic.png",
+          logo: "DmedClinic.png",
           description: "A DMed Clinic oferece serviços médicos ao domicílio em toda a região, incluindo consultas de Medicina Geral, Psicologia, Nutrição, Psiquiatria e Telemedicina, evitando deslocações desnecessárias.",
           locationIds: [3],
           rating: 5,
           type: "Wellness",
-          openingHours: "09:00 - 18:00",
+          openingHours: [
+            { day: "Monday", hours: "24h" },
+            { day: "Tuesday", hours: "24h" },
+            { day: "Wednesday", hours: "24h" },
+            { day: "Thursday", hours: "24h" },
+            { day: "Friday", hours: "24h" },
+            { day: "Saturday", hours: "24h" },
+            { day: "Sunday", hours: "24h" }
+          ],
           address: "DMed Clinic",
           phone: "+351 282 000 000",
           socialMedia: {
@@ -725,7 +933,15 @@ export const appData: AppData = {
           locationIds: [3],
           rating: 5,
           type: "Beauty Services",
-          openingHours: "09:00 - 19:00",
+          openingHours: [
+            { day: "Monday", hours: "Closed" },
+            { day: "Tuesday", hours: "10:00 - 19:00" },
+            { day: "Wednesday", hours: "10:00 - 19:00" },
+            { day: "Thursday", hours: "10:00 - 19:00" },
+            { day: "Friday", hours: "10:00 - 19:00" },
+            { day: "Saturday", hours: "10:00 - 19:00" },
+            { day: "Sunday", hours: "Closed" }
+          ],
           address: "Vilamoura",
           phone: "+351 282 000 000",
           socialMedia: {
@@ -750,7 +966,15 @@ export const appData: AppData = {
           locationIds: [3],
           rating: 5,
           type: "Beauty Services",
-          openingHours: "09:00 - 19:00",
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 19:00" },
+            { day: "Tuesday", hours: "09:00 - 19:00" },
+            { day: "Wednesday", hours: "09:00 - 19:00" },
+            { day: "Thursday", hours: "09:00 - 19:00" },
+            { day: "Friday", hours: "09:00 - 19:00" },
+            { day: "Saturday", hours: "09:00 - 19:00" },
+            { day: "Sunday", hours: "09:00 - 19:00" }
+          ],
           address: "Vilamoura",
           phone: "+351 282 000 000",
           socialMedia: {
@@ -782,7 +1006,15 @@ export const appData: AppData = {
           rating: 5,
           logo: "ChefAndréSimao.jpg",
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.178901!3d37.112345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
-          openingHours: "By appointment",
+          openingHours: [
+            { day: "Monday", hours: "By appointment" },
+            { day: "Tuesday", hours: "By appointment" },
+            { day: "Wednesday", hours: "By appointment" },
+            { day: "Thursday", hours: "By appointment" },
+            { day: "Friday", hours: "By appointment" },
+            { day: "Saturday", hours: "By appointment" },
+            { day: "Sunday", hours: "By appointment" }
+          ],
           address: "Service at your location",
           socialMedia: {
             facebook: "https://www.facebook.com/chefandresimao",
@@ -806,7 +1038,15 @@ export const appData: AppData = {
           rating: 5,
           logo: "Fancy kitchen.webp",
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.142345!3d37.087654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
-          openingHours: "By appointment",
+          openingHours: [
+            { day: "Monday", hours: "By appointment" },
+            { day: "Tuesday", hours: "By appointment" },
+            { day: "Wednesday", hours: "By appointment" },
+            { day: "Thursday", hours: "By appointment" },
+            { day: "Friday", hours: "By appointment" },
+            { day: "Saturday", hours: "By appointment" },
+            { day: "Sunday", hours: "By appointment" }
+          ],
           address: "Service at your location",
           phone: "912 345 681",
           socialMedia: {
