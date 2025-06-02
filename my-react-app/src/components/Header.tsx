@@ -35,25 +35,6 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
         </div>
       </div>
       {/* Main Header */}
-      <div className="absolute top-0 right-0 z-[70] hidden md:block lg:block">
-        <div className="flex items-center space-x-4 bg-white px-4 py-2">
-          <a href="/system/languages/change/1/Lw%3D%3D" className="flex items-center hover:text-secondary transition-colors">
-            <img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="EN" className="w-5 h-4 mr-1" />
-            <span>EN</span>
-          </a>
-          <a href="/system/languages/change/34/Lw%3D%3D" className="flex items-center hover:text-secondary transition-colors">
-            <img src="https://flagicons.lipis.dev/flags/4x3/fr.svg" alt="FR" className="w-5 h-4 mr-1" />
-            <span>FR</span>
-          </a>
-          <a href="/system/languages/change/89/Lw%3D%3D" className="flex items-center hover:text-secondary transition-colors">
-            <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="PT" className="w-5 h-4 mr-1" />
-            <span>PT</span>
-          </a>
-        </div>
-        <div className="text-secondary font-bold text-xl py-2 text-right pr-5">
-          We ❤️ Vilamoura ...
-        </div>
-      </div>
       <div className="bg-white relative z-[60]">
         <div 
           className="relative"
@@ -62,7 +43,26 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
             backgroundSize: 'contain',
           }}
         >
-          <div className="max-w-7xl mx-auto px-4 py-4">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div className="hidden md:block lg:block absolute top-0 right-0">
+              <div className="flex items-center space-x-4 bg-white px-4 py-2">
+                <a href="/system/languages/change/1/Lw%3D%3D" className="flex items-center hover:text-secondary transition-colors">
+                  <img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="EN" className="w-5 h-4 mr-1" />
+                  <span>EN</span>
+                </a>
+                <a href="/system/languages/change/34/Lw%3D%3D" className="flex items-center hover:text-secondary transition-colors">
+                  <img src="https://flagicons.lipis.dev/flags/4x3/fr.svg" alt="FR" className="w-5 h-4 mr-1" />
+                  <span>FR</span>
+                </a>
+                <a href="/system/languages/change/89/Lw%3D%3D" className="flex items-center hover:text-secondary transition-colors">
+                  <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="PT" className="w-5 h-4 mr-1" />
+                  <span>PT</span>
+                </a>
+              </div>
+              <div className="text-secondary font-bold text-xl py-2 text-right">
+                We ❤️ Vilamoura ...
+              </div>
+            </div>
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
                 <button

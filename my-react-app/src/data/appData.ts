@@ -156,7 +156,7 @@ export const appData: AppData = {
             type: "Discount",
             description: "10%"
           },
-          rootFolder: "Ocean Quest",
+          rootFolder: "ocean quest",
           images: ["see-the-wonderful-algarvian.jpg", "swimming-stop.jpg", "traditional-cultural (1).jpg", "vilamoura-yacht-charter.jpg", "vilamoura-speed-boat-trips.jpeg", "cesar-live-on-the-guitar.jpg", "traditional-cultural.jpg", "life-is-beautiful.jpg", "exceptional-view.jpg", "dolphin-quest.jpg"]
         },
         {
@@ -340,7 +340,7 @@ export const appData: AppData = {
             type: "Welcome Drink",
             description: "Sparkling Wine Welcome Drink"
           },
-          rootFolder: "Retinto - Rodízio & Wine",
+          rootFolder: "Retinto",
           images: ["5c594138-f690-4ea1-add1-3fce2e15ef55.avif", "photo0jpg.jpg", "entrecote-argentino-ribye.jpg", "ff1ed75b-d71b-42f7-9d93-7f3a39464c45.jpg", "59f45f21-e373-42d3-8ed2-8946008e0b3f.jpg", "b15f5500-b73f-421d-b7bc-a9412784f5d8.webp", "b8685ec1-a1b4-4cbd-bd41-3b8cdb1bfa11.avif", "d56aaf4a-be2e-4cd3-99d9-f70d63c5826c.avif", "7701aa02-a0c2-4ec5-9af1-e1c80a4263d6.webp"]
         },
         {
@@ -365,7 +365,7 @@ export const appData: AppData = {
             type: "Welcome Package",
             description: "Porto wine and traditional Algarve sweets"
           },
-          rootFolder: "Chef André Simão",
+          rootFolder: "ChefAndreSimao",
           images: ["Captura de ecrã 2025-05-30, às 14.00.44.png", "Captura de ecrã 2025-05-30, às 14.01.45.png", "Captura de ecrã 2025-05-30, às 14.01.52.png", "Captura de ecrã 2025-05-30, às 14.01.18.png", "Captura de ecrã 2025-05-30, às 14.01.05.png", "Captura de ecrã 2025-05-30, às 14.02.12.png", "Captura de ecrã 2025-05-30, às 14.02.29.png", "Captura de ecrã 2025-05-30, às 14.00.58.png"]
         }
       ]
@@ -424,7 +424,7 @@ export const appData: AppData = {
             type: "Discount",
             description: ""
           },
-          rootFolder: "Karting Portimão",
+          rootFolder: "KartingPortimao",
           images: ["39129269_2071071279603968_9122454272632422400_n.jpg", "Kartodromo2-scaled.jpg", "490851637_1218406543617808_2741633398730202739_n.jpg", "488211910_1210059391119190_5497740365812582147_n.jpg", "489446312_1210956781029451_2393478272773825535_n.jpg", "kartodromo6-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg", "kartodromo3-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg", "490229418_1218688256922970_8436650453256995830_n.jpg", "IMG_2422.jpg"]
         },
         {
@@ -672,7 +672,7 @@ export const appData: AppData = {
             type: "Discount",
             description: "15%"
           },
-          rootFolder: "Teresa Estética",
+          rootFolder: "Teresa",
           images: ["480701348_4010568695930914_2910058108693305940_n.jpg", "491933473_4066849246969525_5195761018195095810_n.jpg", "492114092_4066954960292287_2649987048273042468_n.jpg", "492200895_4066850363636080_3484388594312717179_n.jpg", "277158294_3199246580396467_9054406006485547937_n.jpg", "489830761_1237845965017546_3086407899245374858_n.jpg"]
         },
         {

@@ -8,7 +8,7 @@ const AccessPage: React.FC = () => {
 
         <div className="text-center text-3xl py-12 text-white">
           <p className="mb-12">These advantages are reserved for those who <a href="https://www.cleverdetails.com" target="_blank" rel="noopener noreferrer" className="text-secondary">book their holiday</a> with Clever Details or entrust us with their property. It's our way of saying thank you by making your stay or investment even more rewarding.</p>
-          <p className="mb-12">Explore the <a href="https://www.cleverdetails.com" target="_blank" rel="noopener noreferrer" className="text-secondary">full list</a> of partner perks and enjoy more than just a stay.</p>
+          <p className="mb-12">Explore the <a href="/all" target="_blank" rel="noopener noreferrer" className="text-secondary">full list</a> of partner perks and enjoy more than just a stay.</p>
           <p className="mb-12">With Clever Details, your holiday or home comes with much more than just a key.</p>
         </div>
       </div>
