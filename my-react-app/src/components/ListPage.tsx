@@ -26,7 +26,7 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
     return (
       <div className="font-bold mb-2 text-center">
         <div className="text-primary text-lg md:text-xl">Special Offer:</div>
-        <div className="text-secondary text-lg md:text-xl">{item.specialOffer?.description}</div>
+        <div className="text-secondary text-lg">{item.specialOffer?.description}</div>
       </div>
     );
   };
@@ -67,7 +67,7 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
                   {getLocationName(item.locationId)}
                 </div>
               </div>
-              <div className="p-4 md:p-6 bg-gray-50 flex flex-col justify-center items-center w-full md:w-48">
+              <div className="p-4 md:p-4 bg-gray-50 flex flex-col justify-center items-center w-full md:w-48">
                 {renderExtraInfo(item)}
                 <button className="bg-secondary text-white px-4 md:px-6 py-2 rounded hover:bg-secondary-hover transition-colors w-full text-sm md:text-base">
                   Details

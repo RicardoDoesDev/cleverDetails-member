@@ -53,8 +53,8 @@ export const appData: AppData = {
           },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
-            type: "Discount",
-            description: "Blue Lagoon 5% - Birds & Seahorses Observation 10%"
+            type: "-",
+            description: "-"
           },
           rootFolder: "Passeios Ria Formosa",
           images: ["sailing-tour.jpg", "featured-2-horas-fuseta.webp", "birdwatching.jpg", "sealife-observation.jpg", "dolphins-observation.jpg", "DJI_20240427_200812_220.webp", "dji_fly_20240425_145136_206_1714164247660_timed.webp"]
@@ -313,7 +313,7 @@ export const appData: AppData = {
           },
           specialOffer: {
             type: "Welcome Drink",
-            description: "Sparkling Wine Welcome Drink"
+            description: "Welcome Drink"
           },
           rootFolder: "Retinto",
           images: ["5c594138-f690-4ea1-add1-3fce2e15ef55.avif", "photo0jpg.jpg", "entrecote-argentino-ribye.jpg", "ff1ed75b-d71b-42f7-9d93-7f3a39464c45.jpg", "59f45f21-e373-42d3-8ed2-8946008e0b3f.jpg", "b15f5500-b73f-421d-b7bc-a9412784f5d8.webp", "b8685ec1-a1b4-4cbd-bd41-3b8cdb1bfa11.avif", "d56aaf4a-be2e-4cd3-99d9-f70d63c5826c.avif", "7701aa02-a0c2-4ec5-9af1-e1c80a4263d6.webp"]
@@ -372,7 +372,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.167890!3d37.102345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Discount",
-            description: ""
+            description: "10% OFF"
           },
           rootFolder: "KartingPortimao",
           images: ["39129269_2071071279603968_9122454272632422400_n.jpg", "Kartodromo2-scaled.jpg", "490851637_1218406543617808_2741633398730202739_n.jpg", "488211910_1210059391119190_5497740365812582147_n.jpg", "489446312_1210956781029451_2393478272773825535_n.jpg", "kartodromo6-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg", "kartodromo3-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg", "490229418_1218688256922970_8436650453256995830_n.jpg", "IMG_2422.jpg"]
@@ -397,7 +397,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.502345!3d37.143210!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Discount",
-            description: ""
+            description: "12% OFF"
           },
           rootFolder: "Slide&Splash",
           images: ["Slide-Splash-Torre-sector-4-e-aereas_3-e1679392334545.webp", "atracoes31.jpg", "Slide-Splash-Water-Park-Algarve-Portugal.jpg", "atracoes39.jpg", "slide-splash-water-slide.jpg", "new-ride-2018-disco-river.jpg", "new-rides-2018.jpg", "black-hole.jpg", "slide-splash-2019 (1).jpg", "the-big-wave.jpg", "big-slides-tower.jpg", "slide-splash-2019.jpg", "slide-2020.jpg"]
@@ -447,7 +447,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.312345!3d37.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Discount",
-            description: "10% off tickets"
+            description: "-3,5€ Normal & -2,5€ Sénior/Júnior -12€ Dolphin Emotions"
           },
           rootFolder: "Zoomarine",
           images: ["145.jpg", "145 (1).jpg", "145 (2).jpg", "145 (3).jpg", "145 (4).jpg", "145 (5).jpg", "145 (6).jpg", "145 (7).jpg", "145 (8).jpg", "145 (9).jpg", "145 (10).jpg", "image_processing20240617-9-uc4gqx.jpg", "Zoomarine_2.jpg", "zoomarine.jpg"]
@@ -499,7 +499,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.312345!3d37.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Discount",
-            description: "10% off tickets"
+            description: "10% Discount -Tours / 5% Discount - Scooter"
           },
           rootFolder: "Algarve Riders",
           images: ["algarve-riders-available.jpg", "algarve-riders-off-road (7).jpg", "algarve-riders-off-road (6).jpg", "algarve-riders-off-road (5).jpg", "algarve-riders-off-road (4).jpg", "algarve-riders-off-road (3).jpg", "algarve-riders-off-road (2).jpg", "algarve-riders-off-road (1).jpg", "algarve-quad-tours-fun.jpg", "team-building-buggy-tour.jpg", "algarve-riders-off-road.jpg"]
@@ -643,7 +643,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.198765!3d37.134567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Special Offer",
-            description: "15% Off the Menu & Therapeutic Circuit for €35"
+            description: "15% Off the Menu & €5 Off Therapeutic Circuit"
           },
           rootFolder: "7 Seven Spa Vilamoura",
           images: ["7-Seven-Spa_-scaled.jpg", "7Spa6.jpg", "7spa-02.jpg", "7spa-01.jpg", "FAO_70271_Hilton_Vilamoura_Golf_Resort_&_Spa_0623_07.jpg", "7-seven-spa-hilton-vilamoura-bem-estar-algarve_F.webp", "faohi-spa19-hilton-vilamoura.avif", "faohi-spa25-hilton-vilamoura.avif", "faohi-spa28-hilton-vilamoura.avif", "faohi-spa11-hilton-vilamoura.avif", "faohi-spa21-hilton-vilamoura.avif"]
@@ -668,7 +668,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.123456!3d37.134567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Premium Package",
-            description: "20% Off Premium Treatment; €5 Off Menu + 10min Neck/Head; Detox Circuit Access"
+            description: "20% Off Premium Treatment; €5 Off Menu; Detox Circuit Access..."
           },
           rootFolder: "Duo Spa & Life Care",
           images: ["474105319_527080770383605_5631574254499945256_n.jpg", "474381410_527080747050274_4179998407528808811_n.jpg", "479886329_544365938655088_6110947825713535078_n.jpg", "IMG_1721-1024x683.jpg", "piscina-interior-duo-spa-life-care-cegonha-country-club-quarteira-algarve_F.jpg"]
