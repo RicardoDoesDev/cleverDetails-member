@@ -5,7 +5,7 @@ const AccessPage: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const images = [
-    "/images/access/Carrosel/Cópia_de_condor-de-vilamoura.jpg",
+    "/images/access/Carrosel/Copia_de_condor-de-vilamoura.jpg",
     "/images/access/Carrosel/Cópia_de_0c8e01ad-d9ca-4b18-af60-26a700b19e31.avif",
     "/images/access/Carrosel/Cópia_de_the-detailed-combinations.jpg",
     "/images/access/Carrosel/Cópia_de_b8ce1f17-7758-47d7-9ad8-f4e8d68f6bc5.jpeg",
