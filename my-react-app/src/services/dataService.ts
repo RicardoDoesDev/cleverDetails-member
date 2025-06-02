@@ -27,7 +27,21 @@ export const getLocationById = (id: number): Location | undefined => {
   return appData.locations.find(location => location.id === id);
 };
 
-export const getLocationName = (locationId: number): string => {
-  const location = getLocationById(locationId);
+export const getLocationName = (locationIds: number | number[] | undefined): string => {
+  if (!locationIds) return 'Unknown Location';
+  
+  if (Array.isArray(locationIds)) {
+    if (locationIds.length === 0) return 'Unknown Location';
+    
+    return locationIds
+      .map(id => {
+        const location = getLocationById(id);
+        return location ? location.name : '';
+      })
+      .filter(name => name !== '')
+      .join(', ');
+  }
+  
+  const location = getLocationById(locationIds);
   return location ? location.name : 'Unknown Location';
 }; 

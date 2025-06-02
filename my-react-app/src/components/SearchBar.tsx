@@ -26,6 +26,20 @@ const SearchBar: React.FC<SearchBarProps> = ({
   categories = [],
   showCategoryFilter = false,
 }) => {
+  const handleLocationChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = e.target.value;
+    console.log('Location selected:', value);
+    onLocationChange(value === '' ? '' : parseInt(value, 10));
+  };
+
+  const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = e.target.value;
+    console.log('Category selected:', value);
+    if (onCategoryChange) {
+      onCategoryChange(value);
+    }
+  };
+
   return (
     <div className="flex flex-col md:flex-row gap-4 mb-8">
       <input
@@ -39,7 +53,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
       {showLocationFilter && (
         <select
           value={selectedLocation}
-          onChange={(e) => onLocationChange(e.target.value ? Number(e.target.value) : '')}
+          onChange={handleLocationChange}
           className="w-full md:w-auto px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-secondary"
         >
           <option value="">All Locations</option>
@@ -54,7 +68,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
       {showCategoryFilter && categories && onCategoryChange && (
         <select
           value={selectedCategory}
-          onChange={(e) => onCategoryChange(e.target.value)}
+          onChange={handleCategoryChange}
           className="w-full md:w-auto px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-secondary"
         >
           <option value="">All Categories</option>

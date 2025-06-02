@@ -13,11 +13,12 @@ const AllItemsPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('');
   
   // Get all items from all categories
-  const allItems: (Item & { categoryId: string })[] = useMemo(() => {
+  const allItems: (Item & { categoryId: string; uniqueId: string })[] = useMemo(() => {
     return appData.categories.flatMap(category => 
       category.items.map(item => ({
         ...item,
-        categoryId: category.id
+        categoryId: category.id,
+        uniqueId: `${category.id}-${item.id}` // Create a unique ID combining category and item IDs
       }))
     );
   }, []);
@@ -26,25 +27,29 @@ const AllItemsPage: React.FC = () => {
   const categories = appData.categories;
 
   const handleCategoryChange = (categoryId: string) => {
-    if (categoryId) {
-      navigate(`/${categoryId}`);
-    } else {
-      setSelectedCategory(categoryId);
-    }
+    console.log('Category changed to:', categoryId);
+    setSelectedCategory(categoryId);
   };
 
   const filteredItems = useMemo(() => {
-    return allItems.filter(item => {
+    console.log('Filtering with:', { selectedLocation, selectedCategory, searchQuery });
+    
+    const filtered = allItems.filter(item => {
       const matchesSearch = 
         item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         item.description.toLowerCase().includes(searchQuery.toLowerCase());
       
-      const matchesLocation = !selectedLocation || item.locationId === selectedLocation;
+      const matchesLocation = !selectedLocation || item.locationIds.includes(selectedLocation);
       
       const matchesCategory = !selectedCategory || item.categoryId === selectedCategory;
 
+      console.log('Item:', item.name, { matchesSearch, matchesLocation, matchesCategory });
+
       return matchesSearch && matchesLocation && matchesCategory;
     });
+
+    console.log('Filtered items:', filtered.length);
+    return filtered;
   }, [allItems, searchQuery, selectedLocation, selectedCategory]);
 
   return (

@@ -35,7 +35,7 @@ const CategoryPage: React.FC<CategoryPageProps> = ({ categoryId, title }) => {
         item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         item.description.toLowerCase().includes(searchQuery.toLowerCase());
       
-      const matchesLocation = !selectedLocation || item.locationId === selectedLocation;
+      const matchesLocation = !selectedLocation || item.locationIds.includes(selectedLocation);
 
       return matchesSearch && matchesLocation;
     });

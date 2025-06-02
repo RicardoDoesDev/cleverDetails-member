@@ -220,7 +220,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
               {/* Location */}
               <div className="flex items-center text-primary mb-8">
                 <span className="mr-2">📍</span>
-                {getLocationName(item.locationId)}
+                {getLocationName(item.locationIds)}
               </div>
 
               {/* Map - Shown on mobile */}

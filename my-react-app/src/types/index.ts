@@ -4,7 +4,7 @@ export interface Item {
   email: string;
   logo: string;
   description: string;
-  locationId: number;
+  locationIds: number[];
   rating: number;
   mapsUrl: string;
   openingHours: string;
