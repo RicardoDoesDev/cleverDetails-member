@@ -14,7 +14,6 @@ const AccessPage: React.FC = () => {
     "/images/access/Carrosel/Cópia_de_aquashow-park_(6).jpg",
     "/images/access/Carrosel/Cópia_de_algarve-riders-off-road.jpg",
     "/images/access/Carrosel/Cópia_de_4d07f2e9-70b3-4b8b-a1e1-91fe37279165.avif",
-    "/images/access/Carrosel/Cópia_de_Legionario_2.webp",
     "/images/access/Carrosel/Cópia_de_488211910_1210059391119190_5497740365812582147_n.jpg",
     "/images/access/Carrosel/Cópia_de_exceptional-view.jpg",
     "/images/access/Carrosel/Cópia_de_birdwatching.jpg",
