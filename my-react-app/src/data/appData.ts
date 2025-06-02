@@ -89,7 +89,7 @@ export const appData: AppData = {
           name: "AlgarExperience",
           email: "info@algarexperience.com",
           type: "Boat Tours",
-          description: "Experience the best of Algarve with AlgarExperience's expert guided tours",
+          description: "A AlgarExperience é líder em turismo marítimo no Algarve, oferecendo experiências únicas como passeios às grutas de Benagil, observação de golfinhos, parasailing e churrascos na praia. Com uma frota moderna e uma equipa dedicada, proporciona momentos inesquecíveis no mar.",
           locationId: 2,
           rating: 5,
           logo: "algarexperience.jpg",
@@ -114,7 +114,7 @@ export const appData: AppData = {
           name: "Condor de Vilamoura",
           email: "info@condorvilamoura.com",
           type: "Hotel",
-          description: "Experience the best of Algarve with Condor de Vilamoura's expert guided tours",
+          description: "Descubra a costa algarvia a bordo do majestoso Condor de Vilamoura, um veleiro de 34 metros inspirado nas escunas americanas do século XIX. Com capacidade para até 120 passageiros, oferece cruzeiros de 3 horas até à Praia da Galé e passeios de dia inteiro até Benagil, com paragens para nadar, explorar grutas e desfrutar de um delicioso churrasco na praia. Uma experiência única para toda a família, combinando conforto, tradição e paisagens deslumbrantes.",
           locationId: 2,
           rating: 5,
           logo: "condor-de-vilamoura.jpg",
@@ -139,7 +139,7 @@ export const appData: AppData = {
           name: "Ocean Quest",
           email: "info@oceanquest.com",
           type: "Boat Tours",
-          description: "Experience the best of Algarve with Ocean Quest's expert guided tours",
+          description: "Explora o melhor da costa algarvia com a Ocean Quest. Passeios de barco, grutas, golfinhos e parasailing desde Vilamoura, com uma equipa apaixonada por proporcionar experiências únicas no mar. Porque a vida é bela.",
           locationId: 2,
           rating: 5,
           logo: "ocean-quest.jpg",
@@ -164,7 +164,7 @@ export const appData: AppData = {
           name: "Vilamoura Water Sports Centre",
           email: "info@vilamourawatersportscentre.com",
           type: "Water Sports",
-          description: "Experience the best of Algarve with Vilamoura Water Sports Centre's expert guided tours",
+          description: "Situado na Marina de Vilamoura, o Vilamoura Watersports Centre oferece uma vasta gama de atividades aquáticas para todas as idades. Desde passeios de barco às grutas de Benagil, observação de golfinhos, parasailing, jet ski, wakeboard, pesca e aluguer de barcos privados, há opções para todos os gostos. Com uma equipa experiente e equipamentos de qualidade, garantem segurança e diversão em todas as experiências. Aberto diariamente, é o local perfeito para explorar a costa algarvia de uma forma única.",
           locationId: 2,
           rating: 5,
           logo: "vilamourawatersportscentre.jpg",
@@ -245,7 +245,7 @@ export const appData: AppData = {
         },
         {
           id: 3,
-          name: "CaféZique",
+          name: "CafeZique",
           email: "cafeziquept@gmail.com",
           type: "Fine Dining",
           description: "O restaurante CaféZique, em Loulé, combina sabores algarvios com técnicas contemporâneas, oferecendo uma experiência gastronómica única num ambiente descontraído junto ao castelo.",
@@ -400,14 +400,14 @@ export const appData: AppData = {
             description: ""
           },
           rootFolder: "Slide&Splash",
-          images: ["atracoes39.jpg", "the-big-wave.jpg", "slide-splash-water-slide.jpg", "new-rides-2018.jpg", "slide-2020.jpg", "big-slides-tower.jpg", "black-hole.jpg", "Slide-Splash-Water-Park-Algarve-Portugal.jpg", "new-ride-2018-disco-river.jpg", "Slide-Splash-Torre-sector-4-e-aereas_3-e1679392334545.webp", "slide-splash-2019.jpg"]
+          images: ["Slide-Splash-Torre-sector-4-e-aereas_3-e1679392334545.webp", "atracoes31.jpg", "Slide-Splash-Water-Park-Algarve-Portugal.jpg", "atracoes39.jpg", "slide-splash-water-slide.jpg", "new-ride-2018-disco-river.jpg", "new-rides-2018.jpg", "black-hole.jpg", "slide-splash-2019 (1).jpg", "the-big-wave.jpg", "big-slides-tower.jpg", "slide-splash-2019.jpg", "slide-2020.jpg"]
         },
         {
           id: 4,
           name: "Family Golf Park",
           email: "info@familygolfpark.com",
           logo: "familygolfpark.png",
-          description: "Experience the beauty of the Family Golf Park",
+          description: "Situado no coração de Vilamoura, o Family Golf Park é um destino imperdível para famílias e grupos que procuram diversão e lazer. Com dois percursos de mini golfe temáticos inspirados na Roma Antiga, o Via Áppia e o Via Lusitânia, o parque oferece uma experiência única em meio a jardins exuberantes e arquitetura romana. Além disso, dispõe de uma área de jogos para crianças, sala de jogos, snack-bar com esplanada e até um comboio turístico que percorre os principais pontos de Vilamoura. Aberto diariamente, o Family Golf Park é perfeito para um dia de diversão em família.",
           locationId: 1,
           rating: 5,
           type: "Golf",
@@ -432,7 +432,7 @@ export const appData: AppData = {
           name: "Zoomarine",
           email: "info@zoomarine.pt",
           logo: "zoomarine.png",
-          description: "O Zoomarine Algarve é um parque temático único que combina educação ambiental com diversão. Oferece espetáculos com golfinhos, focas e aves exóticas, além de piscinas, atrações aquáticas e apresentações educativas sobre vida marinha. Uma experiência inesquecível para toda a família.",
+          description: "O Zoomarine, localizado perto de Albufeira, é um parque temático que combina diversão, educação e natureza. Com espetáculos de golfinhos, leões-marinhos, aves tropicais, escorregas aquáticos e uma praia artificial, é perfeito para um dia inesquecível em família. Uma aventura mágica no coração do Algarve!",
           locationId: 3,
           rating: 5,
           type: "Theme Park",
@@ -450,8 +450,86 @@ export const appData: AppData = {
             description: "10% off tickets"
           },
           rootFolder: "Zoomarine",
-          images: ["zoomarine1.jpg", "zoomarine2.jpg", "zoomarine3.jpg", "zoomarine4.jpg", "zoomarine5.jpg", "zoomarine6.jpg", "zoomarine7.jpg", "zoomarine8.jpg"]
-        }
+          images: ["145.jpg", "145 (1).jpg", "145 (2).jpg", "145 (3).jpg", "145 (4).jpg", "145 (5).jpg", "145 (6).jpg", "145 (7).jpg", "145 (8).jpg", "145 (9).jpg", "145 (10).jpg", "image_processing20240617-9-uc4gqx.jpg", "Zoomarine_2.jpg", "zoomarine.jpg"]
+        },
+        {
+          id: 6,
+          name: "Slide & Splash",
+          email: "info@slideandsplash.com",
+          logo: "slideandsplash.png",
+          description: "Slide & Splash é um parque aquático que oferece uma experiência única com piscinas, slides e atrações aquáticas. É um local ideal para relaxar e desfrutar de uma tarde de diversão.",
+          locationId: 3,
+          rating: 5,
+          type: "Theme Park",
+          openingHours: "10:00 - 19:00",
+          address: "Slide & Splash",
+          phone: "+351 289 560 300",
+          socialMedia: {
+            facebook: "https://www.facebook.com/slideandsplash",
+            instagram: "https://www.instagram.com/slideandsplash",
+            website: "https://www.slideandsplash.com"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.312345!3d37.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% off tickets"
+          },
+          rootFolder: "Slide&Splash",
+          images: ["Slide-Splash-Torre-sector-4-e-aereas_3-e1679392334545.webp", "atracoes31.jpg", "Slide-Splash-Water-Park-Algarve-Portugal.jpg", "atracoes39.jpg", "slide-splash-water-slide.jpg", "new-ride-2018-disco-river.jpg", "new-rides-2018.jpg", "black-hole.jpg", "slide-splash-2019 (1).jpg", "the-big-wave.jpg", "big-slides-tower.jpg", "slide-splash-2019.jpg", "slide-2020.jpg"]
+        },
+
+        //add Algarve Riders
+        {
+          id: 7,
+          name: "Algarve Riders",
+          email: "info@algarveriders.com",
+          logo: "algarveriders.png",
+          description: "Algarve Riders é uma empresa de aluguer de motos que oferece uma experiência única com motos de alta performance. É um local ideal para desfrutar de uma tarde de diversão.",
+          locationId: 3,
+          rating: 5,
+          type: "Theme Park",
+          openingHours: "10:00 - 19:00",
+          address: "Algarve Riders",
+          phone: "+351 289 560 300",
+          socialMedia: {
+            facebook: "https://www.facebook.com/algarveriders",
+            instagram: "https://www.instagram.com/algarveriders",
+            website: "https://www.algarveriders.com"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.312345!3d37.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% off tickets"
+          },
+          rootFolder: "Algarve Riders",
+          images: ["algarve-riders-available.jpg", "algarve-riders-off-road (7).jpg", "algarve-riders-off-road (6).jpg", "algarve-riders-off-road (5).jpg", "algarve-riders-off-road (4).jpg", "algarve-riders-off-road (3).jpg", "algarve-riders-off-road (2).jpg", "algarve-riders-off-road (1).jpg", "algarve-quad-tours-fun.jpg", "team-building-buggy-tour.jpg", "algarve-riders-off-road.jpg"]
+        },
+        //add aquashow
+        {
+          id: 8,
+          name: "Aquashow",
+          email: "info@aquashow.com",
+          logo: "aquashow.png",
+          description: "O Aquashow Outdoor é o maior parque aquático ao ar livre de Portugal, situado no coração do Algarve. Com escorregas gigantes, piscina de ondas, atrações para todas as idades e muita animação, é o local ideal para um dia de verão cheio de diversão, adrenalina e memórias em família ou entre amigos.",
+          locationId: 3,
+          rating: 5,
+          type: "Theme Park",
+          openingHours: "10:00 - 19:00",
+          address: "Aquashow",
+          phone: "+351 289 560 300",
+          socialMedia: {
+            facebook: "https://www.facebook.com/aquashow",
+            instagram: "https://www.instagram.com/aquashow",
+            website: "https://www.aquashow.com"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.312345!3d37.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% off tickets"
+          },
+          rootFolder: "Aquashow",
+          images: ["IMG_2075.jpg", "Galeria-03.jpg", "aquashow-park (6).jpg", "air-race.jpg", "aquashow-park (5).jpg", "aquashow-park (4).jpg", "aquashow-park (3).jpg", "aquashow-park (2).jpg", "aquashow-park (1).jpg", "aquashow-park.jpg"]
+        },
       ]
     },
     {
@@ -516,7 +594,7 @@ export const appData: AppData = {
           name: "Adega do Cantor",
           email: "info@adegadocantor.com",
           logo: "Adega do Cantor.png",
-          description: "Experience the best of Algarve with Adega do Cantor's expert guided tours",
+          description: "Descubra os sabores do Algarve na Adega do Cantor, em Albufeira. Visite as vinhas, conheça o processo de produção e prove vinhos premiados numa experiência única de enoturismo. Uma paragem obrigatória para amantes de vinho e da natureza.",
           locationId: 4,
           rating: 5,
           type: "Winery Tours",
@@ -678,7 +756,7 @@ export const appData: AppData = {
       title: "Chef at Home",
       route: "/chef-at-home",
       description: "Experience gourmet dining in the comfort of your home",
-      image: "chef-at-home.jpg",
+      image: "professional-chef-preparing-food-kitchen.jpg",
       items: [
         {
           id: 1,

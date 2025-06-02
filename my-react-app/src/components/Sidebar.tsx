@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { appData } from '../data/appData';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -36,55 +37,16 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
           <div className="p-4">
             <div className="mt-8">
               <nav className="space-y-2">
-                <Link
-                  to="/boat-tours"
-                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
-                  onClick={onClose}
-                >
-                  Boat Tours
-                </Link>
-                <Link
-                  to="/gastronomy"
-                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
-                  onClick={onClose}
-                >
-                  Gastronomy
-                </Link>
-                <Link
-                  to="/activities"
-                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
-                  onClick={onClose}
-                >
-                  Activities
-                </Link>
-                <Link
-                  to="/winery-tours"
-                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
-                  onClick={onClose}
-                >
-                  Winery Tours
-                </Link>
-                <Link
-                  to="/wellness"
-                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
-                  onClick={onClose}
-                >
-                  Wellness
-                </Link>
-                <Link
-                  to="/beauty-and-hair-salons"
-                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
-                  onClick={onClose}
-                >
-                  Beauty & Hair Salons
-                </Link>
-                <Link
-                  to="/contact"
-                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
-                  onClick={onClose}
-                >
-                  Contact Us
-                </Link>
+                {appData.categories.map((category) => (
+                  <Link
+                    key={category.route}
+                    to={category.route}
+                    className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                    onClick={onClose}
+                  >
+                    {category.title}
+                  </Link>
+                ))}
               </nav>
               <nav className="space-y-2 mt-4">
                 <Link
