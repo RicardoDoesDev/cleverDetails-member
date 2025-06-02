@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Bottom logo and text */}
-      <div className="absolute bottom-8 left-8">
+      <div className="absolute bottom-8 left-8 hidden md:block">
         <img 
           src='/images/Logo_Clever_Branco.png'
           alt='Clever Details' 
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
         </span>
       </div>
 
-      <div className="absolute bottom-4 right-8 flex flex-row gap-4">
+      <div className="absolute bottom-4 right-8 hidden md:flex flex-row gap-4">
         <a href='https://www.facebook.com/cleverdetails.holiday.rentals/' target='_blank' rel='noopener noreferrer'>
           <img 
             src='https://acbrd.org.au/wp-content/uploads/2020/08/facebook-circular-logo.png' 

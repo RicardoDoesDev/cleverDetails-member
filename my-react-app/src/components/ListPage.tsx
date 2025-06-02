@@ -22,33 +22,29 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
     }
   };
 
-  const renderStars = (rating: number) => {
-    return Array(rating).fill('⭐').join('');
-  };
-
   const renderExtraInfo = (item: Item) => {
     return (
-      <div className="text-secondary font-bold mb-4 text-center">
+      <div className="text-secondary font-bold mb-2 text-center">
         {item.specialOffer?.type}:
-        <div className="text-xl">{item.specialOffer?.description}</div>
+        <div className="text-lg md:text-xl">{item.specialOffer?.description}</div>
       </div>
     );
   };
   
 
   return (
-    <div>
-      <h1 className="text-4xl text-white text-center mb-8">{title}</h1>
+    <div className="pb-8">
+      <h1 className="text-3xl md:text-4xl text-white text-center mb-6 md:mb-8 px-4">{title}</h1>
       
-      <div className="space-y-8">
+      <div className="space-y-6 md:space-y-8 px-4 md:px-0">
         {items.map((item) => (
           <div
             key={item.id}
-            className="bg-white h-[300px] rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.02]"
+            className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.02]"
             onClick={() => handleItemClick(item)}
           >
-            <div className="flex flex-col md:flex-row h-[300px]">
-              <div className="w-full md:w-1/3 h-64 md:h-auto relative">
+            <div className="flex flex-col md:flex-row">
+              <div className="w-full md:w-1/3 h-48 md:h-[300px] relative">
                 <Slideshow
                   items={item.images?.map(image => ({
                     image: `/images/fotos/${item.rootFolder}/${image}`
@@ -59,21 +55,21 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
                   showDots={false}
                 />
               </div>
-              <div className="p-6 flex-1">
-                <h2 className="text-2xl text-primary mb-4 font-bold">{item.name}</h2>
-                <p className="text-gray-600 mb-4">
-                  {item.description.length > 200 ?
-                    `${item.description.substring(0, 200)}...` : item.description
+              <div className="p-4 md:p-6 flex-1">
+                <h2 className="text-xl md:text-2xl text-primary mb-2 md:mb-4 font-bold">{item.name}</h2>
+                <p className="text-gray-600 mb-3 md:mb-4 text-sm md:text-base">
+                  {item.description.length > 150 ?
+                    `${item.description.substring(0, 150)}...` : item.description
                   }
                 </p>
-                <div className="flex items-center text-primary">
+                <div className="flex items-center text-primary text-sm md:text-base">
                   <span className="mr-2">📍</span>
                   {getLocationName(item.locationId)}
                 </div>
               </div>
-              <div className="p-6 bg-gray-50 flex flex-col justify-center items-center w-full md:w-48">
+              <div className="p-4 md:p-6 bg-gray-50 flex flex-col justify-center items-center w-full md:w-48">
                 {renderExtraInfo(item)}
-                <button className="bg-secondary text-white px-6 py-2 rounded hover:bg-secondary-hover transition-colors w-full">
+                <button className="bg-secondary text-white px-4 md:px-6 py-2 rounded hover:bg-secondary-hover transition-colors w-full text-sm md:text-base">
                   Details
                 </button>
               </div>

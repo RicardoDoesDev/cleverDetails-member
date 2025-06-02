@@ -32,7 +32,7 @@ export const appData: AppData = {
             description: "5%"
           },
           rootFolder: "Cool Charters",
-          images: ["3e7042db-69f6-4f1f-b8b0-487e20a38ce7.jpeg", "discover-algarve-s-famous.jpg", "b8ce1f17-7758-47d7-9ad8-f4e8d68f6bc5.jpeg", "caption.jpg", "background5.jpg", "you-will-find-a-wonderful.jpg", "kerry-is-vilamoura-s.jpg"]
+          images: ["3e7042db-69f6-4f1f-b8b0-487e20a38ce7.jpeg", "discover-algarve-s-famous.jpg", "b8ce1f17-7758-47d7-9ad8-f4e8d68f6bc5.jpeg", "caption.jpg", "background5.jpg", "you-will-find-a-wonderful.jpg", "kerry-is-vilamoura-s.jpg", "cool.jpg", "cc5c2fdf-0363-4d44-a721-5c1e3dd2343d.jpeg", "caption (1).jpg", "caption (2).jpg", "c7a1cfb6-68cf-4491-b024-306646e95c5e.jpeg", "the-detailed-combinations.jpg", "each-plate-prepared-with.jpg", "caption.jpg", "ce86969e3cec4b7bb0d0cde9e123fa0c.webp"]
         },
         {
           id: 2,
@@ -57,7 +57,7 @@ export const appData: AppData = {
             description: "Blue Lagoon 5% - Birds & Seahorses Observation 10%"
           },
           rootFolder: "Passeios Ria Formosa",
-          images: ["BarcoCasa_BarraVelha.webp", "DJI_20240427_200812_220.webp", "IMG_4864.webp", "birdwatching.jpg", "sealife-observation.jpg", "sailing-tour.jpg", "dolphins-observation.jpg", "featured-2-horas-fuseta.webp"]
+          images: ["sailing-tour.jpg", "featured-2-horas-fuseta.webp", "birdwatching.jpg", "sealife-observation.jpg", "dolphins-observation.jpg", "DJI_20240427_200812_220.webp", "dji_fly_20240425_145136_206_1714164247660_timed.webp"]
         },
         {
           id: 3,
@@ -82,7 +82,7 @@ export const appData: AppData = {
             description: "5%"
           },
           rootFolder: "Formosamar",
-          images: ["dolphin-watching-boat.jpg", "formosamar-sailboats-ria-formosa-island.jpg", "ria-formosa-islands-boat.jpg", "ilha-deserta-and-farol.jpg", "guided-boat-trip-in-ria.jpg", "formosamar-private-tour-cruise-ria-formosa-900x500.jpg"]
+          images: ["dolphin-watching-boat.jpg", "formosamar-sailboats-ria-formosa-island.jpg", "ria-formosa-islands-boat.jpg", "ilha-deserta-and-farol.jpg", "guided-boat-trip-in-ria.jpg", "formosamar-private-tour-cruise-ria-formosa-900x500.jpg", "formosamar.jpg", "formosamar (1).jpg", "formosamar (2).jpg"]
         },
         {
           id: 4,
@@ -107,7 +107,7 @@ export const appData: AppData = {
             description: "10%"
           },
           rootFolder: "AlgarExperience",
-          images: ["algarexperience.jpg", "algarexperience2.jpg", "algarexperience3.jpg", "algarexperience4.jpg", "algarexperience5.jpg", "algarexperience6.jpg", "algarexperience7.jpg"]
+          images: ["caves-coastline-tour.jpg", "dolphin-caves-catamaran.jpg", "gruta-de-benagil.jpg", "sunset.jpg", "grutas.jpg", "vista-aerea.jpg", "barbecue-na-praia.jpg", "parasailing.jpg", "belize-segundo-costa.jpg", "boat-party.jpg"]
         },
         {
           id: 5,
@@ -131,8 +131,8 @@ export const appData: AppData = {
             type: "Discount",
             description: "10%"
           },
-          rootFolder: "Condor de Vilamoura",
-          images: ["condor-de-vilamoura.jpg", "condor-de-vilamoura-2.jpg", "condor-de-vilamoura-3.jpg", "condor-de-vilamoura-4.jpg", "condor-de-vilamoura-5.jpg", "condor-de-vilamoura-6.jpg", "condor-de-vilamoura-7.jpg"]
+          rootFolder: "condor vilamoura",
+          images: ["photo0jpg.jpg", "caption (1).jpg", "vamos-para-a-praia.jpg", "caption (2).jpg", "caption.jpg", "21d228_8a694355938d49048feaba57ef829db2~mv2-1.avif", "condor-de-vilamoura (1).jpg", "condor-de-vilamoura.jpg", "21d228_28814368cb5446c1b0a8d17d8459fd48~mv2.avif", "21d228_8a694355938d49048feaba57ef829db2~mv2.avif"]
         },
         {
           id: 6,
@@ -157,7 +157,7 @@ export const appData: AppData = {
             description: "10%"
           },
           rootFolder: "Ocean Quest",
-          images: ["ocean-quest.jpg", "ocean-quest-2.jpg", "ocean-quest-3.jpg", "ocean-quest-4.jpg", "ocean-quest-5.jpg", "ocean-quest-6.jpg", "ocean-quest-7.jpg"]
+          images: ["see-the-wonderful-algarvian.jpg", "swimming-stop.jpg", "traditional-cultural (1).jpg", "vilamoura-yacht-charter.jpg", "vilamoura-speed-boat-trips.jpeg", "cesar-live-on-the-guitar.jpg", "traditional-cultural.jpg", "life-is-beautiful.jpg", "exceptional-view.jpg", "dolphin-quest.jpg"]
         },
         {
           id: 7,
@@ -181,8 +181,8 @@ export const appData: AppData = {
             type: "Discount",
             description: "10%"
           },
-          rootFolder: "Vilamoura Water Sports Centre",
-          images: ["vilamourawatersportscentre.jpg", "vilamourawatersportscentre-2.jpg", "vilamourawatersportscentre-3.jpg", "vilamourawatersportscentre-4.jpg", "vilamourawatersportscentre-5.jpg", "vilamourawatersportscentre-6.jpg", "vilamourawatersportscentre-7.jpg"]
+          rootFolder: "watersports vilamoura",
+          images: ["IMG_1046-scaled.webp", "photo5jpg.jpg", "foto1.webp", "jet-boat-ride-vilamoura.jpg", "Parasailing-Vilamoura-Experience-scaled.webp", "speed-boat-algarvexcite.jpg", "parasailing-boat-trips.jpg", "common-dolphin.jpg", "Fishing-In-Algarve.webp", "Dolphins-Algarve-.webp"]
         }
       ]
     },
@@ -216,7 +216,7 @@ export const appData: AppData = {
             description: "Welcome Glass of Champagne"
           },
           rootFolder: "A ver Tavira",
-          images: ["borrego-feijao-bago-de.jpg", "rooftop-tavira.webp", "chefe-luis-brito.jpg", "cavala-marinada-e-gaspacho.jpg", "peixe-de-linha.jpg", "carabineiro-caril-couve.jpg"]
+          images: ["borrego-feijao-bago-de.jpg", "rooftop-tavira.webp", "chefe-luis-brito.jpg", "cavala-marinada-e-gaspacho.jpg", "peixe-de-linha.jpg", "carabineiro-caril-couve.jpg", "the-detailed-combinations.jpg", "each-plate-prepared-with.jpg", "caption.jpg", "ce86969e3cec4b7bb0d0cde9e123fa0c.webp"]
         },
         {
           id: 2,
@@ -241,7 +241,7 @@ export const appData: AppData = {
             description: "Welcome Drink and 5% Discount on Dinner"
           },
           rootFolder: "Authentic",
-          images: ["4d07f2e9-70b3-4b8b-a1e1-91fe37279165.avif", "c4bd01b2-7c29-405a-94d6-b566a0328e36.avif", "5e949c5e-060e-457b-ad67-b7597677c446.avif", "ff05a4b6-f867-4243-9e4b-7141f87220af.avif", "44cf2c78-1fec-4650-9ed2-eedaf4708a25.avif"]
+          images: ["4d07f2e9-70b3-4b8b-a1e1-91fe37279165.avif", "c4bd01b2-7c29-405a-94d6-b566a0328e36.avif", "5e949c5e-060e-457b-ad67-b7597677c446.avif", "ff05a4b6-f867-4243-9e4b-7141f87220af.avif", "44cf2c78-1fec-4650-9ed2-eedaf4708a25.avif", "44aa29bd-0300-47b5-9ba5-83d8b8b19bd1.avif", "f818d5b4-5d61-4cc5-b0eb-e90fd92ac501.avif", "83dcbf96-9726-4f1b-a1c7-c13c5f223b98.avif", "843ccb2d-bf51-4c6a-bf0d-24ab6463b44c.avif", "036d2880-7465-460b-9c18-61260a3de321.avif"]
         },
         {
           id: 3,
@@ -266,7 +266,7 @@ export const appData: AppData = {
             description: "Glass of Sparkling Wine"
           },
           rootFolder: "CaféZique",
-          images: ["0c8e01ad-d9ca-4b18-af60-26a700b19e31.avif", "b7455fd9-1912-4dc4-9d75-b6e3c18c21e1.avif", "c10b8475-9033-4f81-96a7-89723f3537a6.avif", "562a5999-384a-4fcf-876a-191a283c4417.avif", "1fc2a2ef-0625-4d3c-a43b-538301aad3c4.avif"]
+          images: ["0c8e01ad-d9ca-4b18-af60-26a700b19e31.avif", "b7455fd9-1912-4dc4-9d75-b6e3c18c21e1.avif", "c10b8475-9033-4f81-96a7-89723f3537a6.avif", "562a5999-384a-4fcf-876a-191a283c4417.avif", "1fc2a2ef-0625-4d3c-a43b-538301aad3c4.avif", "eb5af52c-c6c9-411a-87ba-578fa3de1e3f.avif", "47a07484-d88c-447f-91ed-4c7bf0a542c3.avif", "d59e735d-141e-4359-b024-3352c31e5b83.avif", "cff64c57-1e91-4133-a445-f033ab8f5838.avif", "98b3ee01-5726-41de-93f9-23ce6da1c1b7.avif"]
         },
         {
           id: 4,
@@ -291,7 +291,7 @@ export const appData: AppData = {
             description: "Glass of Sparkling Wine and 2 Canapés per Person"
           },
           rootFolder: "Fancy Kitchen",
-          images: ["image1.webp", "image2.webp", "image3.webp", "image4.webp", "image5.webp", "image6.webp", "image7.webp"]
+          images: ["rs=w_700,cg_true,m.webp", "rs=w_800,cg_true,m.webp", "rs=w_612,cg_true,m.webp", "rs=w_1200,cg_true,m (2).webp", "rs=w_1200,cg_true,m (3).webp", "rs=w_1200,cg_true,m.webp", "rs=w_1200,cg_true,m (1).webp"]
         },
         {
           id: 5,
@@ -316,7 +316,7 @@ export const appData: AppData = {
             description: "10%"
           },
           rootFolder: "Gran Sorvete",
-          images: ["crepes-also-served-with.jpg", "gran-gelato.jpg", "gran-sorvete-in-the-heart.jpg", "in-the-heart-of-the-vilamoura.jpg", "our-delicious-mini-pancakes.jpg", "hot-chocolate-served.jpg", "enjoy-the-delicious-combinatio.jpg"]
+          images: ["crepes-also-served-with.jpg", "gran-gelato.jpg", "gran-sorvete-in-the-heart.jpg", "in-the-heart-of-the-vilamoura.jpg", "our-delicious-mini-pancakes.jpg", "hot-chocolate-served.jpg", "enjoy-the-delicious-combinatio.jpg", "gran-gelato (1).jpg"]
         },
         {
           id: 6,
@@ -341,7 +341,7 @@ export const appData: AppData = {
             description: "Sparkling Wine Welcome Drink"
           },
           rootFolder: "Retinto - Rodízio & Wine",
-          images: ["5c594138-f690-4ea1-add1-3fce2e15ef55.avif", "photo0jpg.jpg", "entrecote-argentino-ribye.jpg", "ff1ed75b-d71b-42f7-9d93-7f3a39464c45.jpg", "59f45f21-e373-42d3-8ed2-8946008e0b3f.jpg"]
+          images: ["5c594138-f690-4ea1-add1-3fce2e15ef55.avif", "photo0jpg.jpg", "entrecote-argentino-ribye.jpg", "ff1ed75b-d71b-42f7-9d93-7f3a39464c45.jpg", "59f45f21-e373-42d3-8ed2-8946008e0b3f.jpg", "b15f5500-b73f-421d-b7bc-a9412784f5d8.webp", "b8685ec1-a1b4-4cbd-bd41-3b8cdb1bfa11.avif", "d56aaf4a-be2e-4cd3-99d9-f70d63c5826c.avif", "7701aa02-a0c2-4ec5-9af1-e1c80a4263d6.webp"]
         },
         {
           id: 7,
@@ -352,7 +352,7 @@ export const appData: AppData = {
           description: "Chef executivo de cozinha do Monte Rei onde se encontra o restaurante recomendado pelo guia Michelin, Vistas Monte Rei. Proporciona estilos de cozinha descontraídos, para juntar amigos e familia à mesa com menus de tapas & drinks, barbecue, menu algarvio ou menu de degustação em 5 momentos para celebrações mais pormenorizadas.",
           locationId: 7,
           rating: 5,
-          logo: "ChefAndréSimao.jpg",
+          logo: "ChefAndréSimao.jpg",
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.178901!3d37.112345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           openingHours: "By appointment",
           address: "Service at your location",
@@ -366,7 +366,7 @@ export const appData: AppData = {
             description: "Porto wine and traditional Algarve sweets"
           },
           rootFolder: "Chef André Simão",
-          images: ["andresimao.jpg", "andresimao.jpg"]
+          images: ["Captura de ecrã 2025-05-30, às 14.00.44.png", "Captura de ecrã 2025-05-30, às 14.01.45.png", "Captura de ecrã 2025-05-30, às 14.01.52.png", "Captura de ecrã 2025-05-30, às 14.01.18.png", "Captura de ecrã 2025-05-30, às 14.01.05.png", "Captura de ecrã 2025-05-30, às 14.02.12.png", "Captura de ecrã 2025-05-30, às 14.02.29.png", "Captura de ecrã 2025-05-30, às 14.00.58.png"]
         }
       ]
     },
@@ -425,7 +425,7 @@ export const appData: AppData = {
             description: ""
           },
           rootFolder: "Karting Portimão",
-          images: ["39129269_2071071279603968_9122454272632422400_n.jpg", "Kartodromo2-scaled.jpg", "490851637_1218406543617808_2741633398730202739_n.jpg", "488211910_1210059391119190_5497740365812582147_n.jpg", "489446312_1210956781029451_2393478272773825535_n.jpg", "kartodromo6-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg"]
+          images: ["39129269_2071071279603968_9122454272632422400_n.jpg", "Kartodromo2-scaled.jpg", "490851637_1218406543617808_2741633398730202739_n.jpg", "488211910_1210059391119190_5497740365812582147_n.jpg", "489446312_1210956781029451_2393478272773825535_n.jpg", "kartodromo6-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg", "kartodromo3-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg", "490229418_1218688256922970_8436650453256995830_n.jpg", "IMG_2422.jpg"]
         },
         {
           id: 3,
@@ -450,7 +450,7 @@ export const appData: AppData = {
             description: ""
           },
           rootFolder: "Slide&Splash",
-          images: ["atracoes39.jpg", "the-big-wave.jpg", "slide-splash-water-slide.jpg", "new-rides-2018.jpg", "slide-2020.jpg", "big-slides-tower.jpg", "black-hole.jpg", "Slide-Splash-Water-Park-Algarve-Portugal.jpg"]
+          images: ["atracoes39.jpg", "the-big-wave.jpg", "slide-splash-water-slide.jpg", "new-rides-2018.jpg", "slide-2020.jpg", "big-slides-tower.jpg", "black-hole.jpg", "Slide-Splash-Water-Park-Algarve-Portugal.jpg", "new-ride-2018-disco-river.jpg", "Slide-Splash-Torre-sector-4-e-aereas_3-e1679392334545.webp", "slide-splash-2019.jpg"]
         },
         {
           id: 4,
@@ -475,7 +475,7 @@ export const appData: AppData = {
             description: "10%"
           },
           rootFolder: "Family Golf Park",
-          images: ["familygolfpark.jpg", "golf2.jpg"]
+          images: ["Family-Golf-Park_2.webp", "vulcanos.jpg", "relaxing-and-clever-minigolf.jpg", "family-golf-park-gallery-05-min.jpg", "welcome-to-the-best-europe.jpg", "lisbon-bridge.jpg", "family-golf-park.jpg", "1st-hole.jpg", "family-golf-park-gallery-10-min.jpg", "2sd-hole.jpg", "Legionario_2.webp", "Looping-Crazygolfe_2.webp"]
         }
       ]
     },
@@ -509,7 +509,7 @@ export const appData: AppData = {
             description: "15%"
           },
           rootFolder: "Quinta do Canhoto",
-          images: ["almoco-vinico.jpg", "as-vinhas.jpg", "espaco-exterior.jpg", "provas-de-vinho.jpg", "o-deck-da-adega.jpg", "great-day-out-lovely.jpg"]
+          images: ["almoco-vinico.jpg", "as-vinhas.jpg", "espaco-exterior.jpg", "provas-de-vinho.jpg", "o-deck-da-adega.jpg", "great-day-out-lovely.jpg", "caption.jpg", "great-day-out-lovely (1).jpg", "great-day-out-lovely (2).jpg"]
         },
         {
           id: 2,
@@ -534,7 +534,7 @@ export const appData: AppData = {
             description: "15%"
           },
           rootFolder: "Morgado do Quintão",
-          images: ["a-beautiful-plate-to.jpg", "morgado-do-quintao.jpg", "there-is-nothing-like.jpg", "wine-tasting-in-an-old.jpg", "palhete-our-best-selling.jpg", "typical-carapaus-alimados.jpg"]
+          images: ["a-beautiful-plate-to.jpg", "morgado-do-quintao.jpg", "there-is-nothing-like.jpg", "wine-tasting-in-an-old.jpg", "palhete-our-best-selling.jpg", "typical-carapaus-alimados.jpg", "photo0jpg.jpg", "caption.jpg", "palhete-our-best-selling (1).jpg"]
         },
         {
           id: 3,
@@ -559,7 +559,7 @@ export const appData: AppData = {
             description: "5%"
           },
           rootFolder: "Adega do Cantor",
-          images: ["adega-do-cantor.jpg", "adega-do-cantor-2.jpg", "adega-do-cantor-3.jpg", "adega-do-cantor-4.jpg", "adega-do-cantor-5.jpg", "adega-do-cantor-6.jpg", "adega-do-cantor-7.jpg"]
+          images: ["photo4jpg.jpg", "photo5jpg.jpg", "photo2jpg (1).jpg", "photo4jpg (1).jpg", "photo0jpg.jpg", "photo3jpg.jpg", "photo0jpg (1).jpg", "img-20190507-145609-largejpg.jpg", "img-20190507-142303-largejpg.jpg", "beautiful-cellar.jpg", "photo3jpg (1).jpg", "photo2jpg.jpg", "20181004-154037-largejpg.jpg"]
         }
       ]
     },
@@ -593,7 +593,7 @@ export const appData: AppData = {
             description: "15% Off the Menu & Therapeutic Circuit for €35"
           },
           rootFolder: "7 Seven Spa Vilamoura",
-          images: ["7-Seven-Spa_-scaled.jpg", "7Spa6.jpg", "7spa-02.jpg", "7spa-01.jpg", "FAO_70271_Hilton_Vilamoura_Golf_Resort_&_Spa_0623_07.jpg"]
+          images: ["7-Seven-Spa_-scaled.jpg", "7Spa6.jpg", "7spa-02.jpg", "7spa-01.jpg", "FAO_70271_Hilton_Vilamoura_Golf_Resort_&_Spa_0623_07.jpg", "7-seven-spa-hilton-vilamoura-bem-estar-algarve_F.webp", "faohi-spa19-hilton-vilamoura.avif", "faohi-spa25-hilton-vilamoura.avif", "faohi-spa28-hilton-vilamoura.avif", "faohi-spa11-hilton-vilamoura.avif", "faohi-spa21-hilton-vilamoura.avif"]
         },
         {
           id: 2,
@@ -638,8 +638,8 @@ export const appData: AppData = {
             website: "https://www.dmedclinic.com"
           },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.123456!3d37.134567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
-          rootFolder: "DMed Clinic",
-          images: ["dmed-clinic.jpg", "dmed-clinic-2.jpg", "dmed-clinic-3.jpg", "dmed-clinic-4.jpg", "dmed-clinic-5.jpg", "dmed-clinic-6.jpg", "dmed-clinic-7.jpg"]
+          rootFolder: "DmedClinic",
+          images: ["468288652_122196529190067954_5219035909363135589_n.jpg", "382379297_6903254336363281_5117175850526879907_n.jpg", "468219820_122196529196067954_5403389782633898697_n.jpg"]
         }
       ]
     },
@@ -673,7 +673,7 @@ export const appData: AppData = {
             description: "15%"
           },
           rootFolder: "Teresa Estética",
-          images: ["480701348_4010568695930914_2910058108693305940_n.jpg", "491933473_4066849246969525_5195761018195095810_n.jpg", "492114092_4066954960292287_2649987048273042468_n.jpg", "492200895_4066850363636080_3484388594312717179_n.jpg", "277158294_3199246580396467_9054406006485547937_n.jpg"]
+          images: ["480701348_4010568695930914_2910058108693305940_n.jpg", "491933473_4066849246969525_5195761018195095810_n.jpg", "492114092_4066954960292287_2649987048273042468_n.jpg", "492200895_4066850363636080_3484388594312717179_n.jpg", "277158294_3199246580396467_9054406006485547937_n.jpg", "489830761_1237845965017546_3086407899245374858_n.jpg"]
         },
         {
           id: 2,

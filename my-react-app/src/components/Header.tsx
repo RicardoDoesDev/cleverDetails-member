@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 interface HeaderProps {
   onToggleSidebar: () => void;
@@ -7,6 +7,12 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
+  const location = useLocation();
+
+  const isActive = (path: string) => {
+    return location.pathname === path;
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-40">
       {/* Top line */}
@@ -25,28 +31,28 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
                 <div className="text-sm opacity-75">(National fixed call network)</div>
               </div>
             </div>
-
-            {/* Language selector */}
-            <div className="flex items-center space-x-4">
-              <a href="/system/languages/change/1/Lw%3D%3D" className="flex items-center hover:text-secondary transition-colors">
-                <img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="EN" className="w-5 h-4 mr-1" />
-                <span>EN</span>
-              </a>
-              <a href="/system/languages/change/34/Lw%3D%3D" className="flex items-center hover:text-secondary transition-colors">
-                <img src="https://flagicons.lipis.dev/flags/4x3/fr.svg" alt="FR" className="w-5 h-4 mr-1" />
-                <span>FR</span>
-              </a>
-              <a href="/system/languages/change/89/Lw%3D%3D" className="flex items-center hover:text-secondary transition-colors">
-                <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="PT" className="w-5 h-4 mr-1" />
-                <span>PT</span>
-              </a>
-            </div>
           </div>
         </div>
       </div>
       {/* Main Header */}
-      <div className="absolute top-2 right-5 z-[70] text-secondary font-bold text-xl py-2 hidden lg:block">
-        We ❤️ Vilamoura ...
+      <div className="absolute top-0 right-0 z-[70] hidden md:block lg:block">
+        <div className="flex items-center space-x-4 bg-white px-4 py-2">
+          <a href="/system/languages/change/1/Lw%3D%3D" className="flex items-center hover:text-secondary transition-colors">
+            <img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="EN" className="w-5 h-4 mr-1" />
+            <span>EN</span>
+          </a>
+          <a href="/system/languages/change/34/Lw%3D%3D" className="flex items-center hover:text-secondary transition-colors">
+            <img src="https://flagicons.lipis.dev/flags/4x3/fr.svg" alt="FR" className="w-5 h-4 mr-1" />
+            <span>FR</span>
+          </a>
+          <a href="/system/languages/change/89/Lw%3D%3D" className="flex items-center hover:text-secondary transition-colors">
+            <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="PT" className="w-5 h-4 mr-1" />
+            <span>PT</span>
+          </a>
+        </div>
+        <div className="text-secondary font-bold text-xl py-2 text-right pr-5">
+          We ❤️ Vilamoura ...
+        </div>
       </div>
       <div className="bg-white relative z-[60]">
         <div 
@@ -101,16 +107,28 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
       <nav className="absolute bottom-0 left-0 right-0 transform translate-y-1/2 z-[50] pt-12 pb-2 shadow-lg bg-primary">
         <div className="hidden lg:block mx-auto">
           <div className="flex justify-center items-center gap-4 md:gap-8 px-4 md:px-8 py-3 overflow-x-auto whitespace-nowrap">
-            <Link to="/all" className="text-white hover:text-secondary transition-colors font-medium text-xl md:text-3xl">
+            <Link 
+              to="/all" 
+              className={`${isActive('/all') ? 'text-secondary' : 'text-white'} hover:text-secondary transition-colors font-medium text-xl md:text-3xl`}
+            >
               Advantages
             </Link>
-            <Link to="/access" className="text-white hover:text-secondary transition-colors font-medium text-xl md:text-3xl">
+            <Link 
+              to="/access" 
+              className={`${isActive('/access') ? 'text-secondary' : 'text-white'} hover:text-secondary transition-colors font-medium text-xl md:text-3xl`}
+            >
               Access
             </Link>
-            <Link to="/partnership" className="text-white hover:text-secondary transition-colors font-medium text-xl md:text-3xl">
+            <Link 
+              to="/partnership" 
+              className={`${isActive('/partnership') ? 'text-secondary' : 'text-white'} hover:text-secondary transition-colors font-medium text-xl md:text-3xl`}
+            >
               Partnership
             </Link>
-            <Link to="/contact" className="text-white hover:text-secondary transition-colors font-medium text-xl md:text-3xl">
+            <Link 
+              to="/contact" 
+              className={`${isActive('/contact') ? 'text-secondary' : 'text-white'} hover:text-secondary transition-colors font-medium text-xl md:text-3xl`}
+            >
               Contact
             </Link>
           </div>

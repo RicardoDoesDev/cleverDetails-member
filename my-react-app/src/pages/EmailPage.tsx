@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { emailService } from '../services/emailService';
 
 interface EmailFormData {
   name: string;
@@ -44,26 +45,29 @@ const EmailPage: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
     
     try {
-      // TODO: Implement actual email sending logic here
-      // This is a placeholder for demonstration
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const success = await emailService.sendEmail(formData);
       
-      setSubmitStatus({
-        type: 'success',
-        message: 'Your message has been sent successfully!'
-      });
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
+      if (success) {
+        setSubmitStatus({
+          type: 'success',
+          message: 'Your message has been sent successfully! We will get back to you soon.'
+        });
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      } else {
+        throw new Error('Failed to send email');
+      }
     } catch (error) {
       setSubmitStatus({
         type: 'error',
-        message: 'Failed to send message. Please try again later.'
+        message: 'Failed to send message. Please try again later or contact us directly at info@cleverdetails.com'
       });
     } finally {
       setIsSubmitting(false);

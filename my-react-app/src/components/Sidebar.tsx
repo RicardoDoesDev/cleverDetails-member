@@ -21,100 +21,128 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       <div
         className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
+        } flex flex-col`}
       >
-        <div className="p-4">
-          <button
-            onClick={onClose}
-            className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
-          >
-            ✕
-          </button>
+        {/* Close button */}
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+        >
+          ✕
+        </button>
 
-          <div className="mt-8">
-            <h2 className="text-xl font-bold text-primary mb-4">Menu</h2>
-            <nav className="space-y-2">
-              <Link
-                to="/boat-tours"
-                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
-                onClick={onClose}
-              >
-                Boat Tours
-              </Link>
-              <Link
-                to="/gastronomy"
-                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
-                onClick={onClose}
-              >
-                Gastronomy
-              </Link>
-              <Link
-                to="/activities"
-                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
-                onClick={onClose}
-              >
-                Activities
-              </Link>
-              <Link
-                to="/winery-tours"
-                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
-                onClick={onClose}
-              >
-                Winery Tours
-              </Link>
-              <Link
-                to="/wellness"
-                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
-                onClick={onClose}
-              >
-                Wellness
-              </Link>
-              <Link
-                to="/beauty-and-hair-salons"
-                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
-                onClick={onClose}
-              >
-                Beauty & Hair Salons
-              </Link>
-              <Link
-                to="/contact"
-                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors font-bold"
-                onClick={onClose}
-              >
-                Contact Us
-              </Link>
-            </nav>
+        {/* Main content */}
+        <div className="flex-1 overflow-y-auto">
+          <div className="p-4">
+            <div className="mt-8">
+              <nav className="space-y-2">
+                <Link
+                  to="/boat-tours"
+                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                  onClick={onClose}
+                >
+                  Boat Tours
+                </Link>
+                <Link
+                  to="/gastronomy"
+                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                  onClick={onClose}
+                >
+                  Gastronomy
+                </Link>
+                <Link
+                  to="/activities"
+                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                  onClick={onClose}
+                >
+                  Activities
+                </Link>
+                <Link
+                  to="/winery-tours"
+                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                  onClick={onClose}
+                >
+                  Winery Tours
+                </Link>
+                <Link
+                  to="/wellness"
+                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                  onClick={onClose}
+                >
+                  Wellness
+                </Link>
+                <Link
+                  to="/beauty-and-hair-salons"
+                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                  onClick={onClose}
+                >
+                  Beauty & Hair Salons
+                </Link>
+                <Link
+                  to="/contact"
+                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                  onClick={onClose}
+                >
+                  Contact Us
+                </Link>
+              </nav>
+              <nav className="space-y-2 mt-4">
+                <Link
+                  to="/all"
+                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                  onClick={onClose}
+                >
+                  Advantages
+                </Link>
+                <Link
+                  to="/access"
+                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                  onClick={onClose}
+                >
+                  Access
+                </Link>
+                <Link
+                  to="/partnership"
+                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                  onClick={onClose}
+                >
+                  Partnership
+                </Link>
+                <Link
+                  to="/contact"
+                  className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
+                  onClick={onClose}
+                >
+                  Contact
+                </Link>
+              </nav>
+            </div>
+          </div>
 
-            <h2 className="text-xl font-bold text-primary mt-8 mb-4">More</h2>
-            <nav className="space-y-2">
-              <Link
-                to="/all"
-                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
-                onClick={onClose}
-              >
-                Advantages
-              </Link>
-              <Link
-                to="/access"
-                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
-                onClick={onClose}
-              >
-                Access
-              </Link>
-              <Link
-                to="/partnership"
-                className="block py-2 px-4 text-gray-700 hover:bg-secondary hover:text-white rounded-lg transition-colors"
-                onClick={onClose}
-              >
-                Partnership
-              </Link>
-            </nav>
+          {/* Language Selector */}
+          <div className="p-4 border-t border-gray-200">
+            <h2 className="text-xl font-bold text-primary mb-4">Language</h2>
+            <div className="flex justify-center space-x-6">
+              <a href="/system/languages/change/1/Lw%3D%3D" className="flex flex-col items-center hover:text-secondary transition-colors">
+                <img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="EN" className="w-8 h-6 mb-1" />
+                <span className="text-sm">EN</span>
+              </a>
+              <a href="/system/languages/change/34/Lw%3D%3D" className="flex flex-col items-center hover:text-secondary transition-colors">
+                <img src="https://flagicons.lipis.dev/flags/4x3/fr.svg" alt="FR" className="w-8 h-6 mb-1" />
+                <span className="text-sm">FR</span>
+              </a>
+              <a href="/system/languages/change/89/Lw%3D%3D" className="flex flex-col items-center hover:text-secondary transition-colors">
+                <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="PT" className="w-8 h-6 mb-1" />
+                <span className="text-sm">PT</span>
+              </a>
+            </div>
           </div>
         </div>
-        {/* Add image to the bottom of the sidebar */}
-        <div className="absolute bottom-0 left-0 right-0">
+
+        {/* Footer */}
+        <div className="p-4 mt-auto border-t border-gray-200">
           <img src="https://www.cleverdetails.com/images/logo.png" alt="Logo" className="h-auto mx-auto mb-2" />
-          <h2 className="text-xl font-bold text-primary mt-8 mb-4 text-center">We ❤️ Vilamoura ...</h2>
+          <h2 className="text-xl font-bold text-primary text-center">We ❤️ Vilamoura ...</h2>
         </div>
       </div>
     </>
