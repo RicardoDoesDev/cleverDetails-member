@@ -6,7 +6,7 @@ const AccessPage: React.FC = () => {
 
   const images = [
     "/images/access/Carrosel/Cópia de condor-de-vilamoura.jpg",
-    "/images/access/Carrosel/Cópia de 0c8e01ad-d9ca-4b18-af60-26a700b19e31.avif",
+    "/images/access/Carrosel/Cópia_de_0c8e01ad-d9ca-4b18-af60-26a700b19e31.avif",
     "/images/access/Carrosel/Cópia de the-detailed-combinations.jpg",
     "/images/access/Carrosel/Cópia de b8ce1f17-7758-47d7-9ad8-f4e8d68f6bc5.jpeg",
     "/images/access/Carrosel/Cópia de 7Spa6.jpg",
@@ -25,7 +25,8 @@ const AccessPage: React.FC = () => {
     "/images/access/Carrosel/Cópia de Fishing-In-Algarve.webp",
     "/images/access/Carrosel/Cópia de 145.jpg",
     "/images/access/Carrosel/Cópia de 145 (8).jpg",
-    "/images/access/Carrosel/Cópia de zoomarine.jpg"
+    "/images/access/Carrosel/Cópia de zoomarine.jpg",
+    "/images/access/Carrosel/Cópia de photo0jpg.jpg",
   ];
 
   useEffect(() => {
