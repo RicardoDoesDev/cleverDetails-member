@@ -3,13 +3,14 @@ interface EmailData {
   email: string;
   subject: string;
   message: string;
+  formType?: 'item' | 'partnership';
 }
 
 export const emailService = {
   async sendEmail(data: EmailData): Promise<boolean> {
     try {
       const formattedMessage = `
-New Booking Request
+${data.formType === 'partnership' ? 'New Partnership Request' : 'New Booking Request'}
 ------------------
 
 Contact Details
@@ -23,7 +24,7 @@ Message
 ${data.message}
 
 ------------------
-Sent from: Clever Details Contact Form
+Sent from: Clever Details ${data.formType === 'partnership' ? 'Partnership' : 'Contact'} Form
 Date: ${new Date().toLocaleString('en-GB', { 
   dateStyle: 'full',
   timeStyle: 'short',
@@ -33,7 +34,7 @@ Date: ${new Date().toLocaleString('en-GB', {
       const autoResponse = `
 Dear ${data.name},
 
-Thank you for contacting Clever Details. We have received your booking request and will get back to you shortly.
+Thank you for contacting Clever Details. We have received your ${data.formType === 'partnership' ? 'partnership request' : 'booking request'} and will get back to you shortly.
 
 Your Request Details:
 - Subject: ${data.subject}
@@ -50,7 +51,9 @@ Vilamoura, Portugal
 www.cleverdetails.com
 +351 289 314 500`;
 
-      const response = await fetch('https://formsubmit.co/ajax/developing@cleverdetails.pt', {
+      const targetEmail = data.formType === 'partnership' ? 'marketing@cleverdetails.pt' : 'developing@cleverdetails.pt';
+
+      const response = await fetch(`https://formsubmit.co/ajax/${targetEmail}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -58,7 +61,7 @@ www.cleverdetails.com
         },
         body: JSON.stringify({
           _captcha: false,
-          _subject: `New Booking Request: ${data.subject}`,
+          _subject: `${data.formType === 'partnership' ? 'New Partnership Request' : 'New Booking Request'}: ${data.subject}`,
           name: data.name,
           email: data.email,
           message: formattedMessage,

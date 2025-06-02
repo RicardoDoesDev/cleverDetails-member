@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { emailService } from '../services/emailService';
 
 const PartnershipPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,11 @@ const PartnershipPage: React.FC = () => {
     businessType: '',
     description: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: '' });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -18,10 +24,53 @@ const PartnershipPage: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log(formData);
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
+
+    try {
+      const emailData = {
+        name: formData.contactName,
+        email: formData.email,
+        subject: `Partnership Request: ${formData.businessName} - ${formData.businessType}`,
+        message: `Business Details:
+- Business Name: ${formData.businessName}
+- Contact Name: ${formData.contactName}
+- Phone: ${formData.phone}
+- Business Type: ${formData.businessType}
+
+Description:
+${formData.description}`,
+        formType: 'partnership' as const
+      };
+
+      const success = await emailService.sendEmail(emailData);
+      
+      if (success) {
+        setSubmitStatus({
+          type: 'success',
+          message: 'Your partnership request has been sent successfully! We will get back to you soon.'
+        });
+        setFormData({
+          businessName: '',
+          contactName: '',
+          email: '',
+          phone: '',
+          businessType: '',
+          description: ''
+        });
+      } else {
+        throw new Error('Failed to send partnership request');
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: 'error',
+        message: 'Failed to send partnership request. Please try again later or contact us directly at marketing@cleverdetails.pt'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -45,6 +94,19 @@ const PartnershipPage: React.FC = () => {
         {/* Partnership Form */}
         <div className="bg-white rounded-lg shadow-lg p-8">
           <h2 className="text-2xl font-bold text-primary mb-6">Partnership Application</h2>
+          
+          {submitStatus.type && (
+            <div
+              className={`mb-6 p-4 rounded ${
+                submitStatus.type === 'success'
+                  ? 'bg-green-100 text-green-700'
+                  : 'bg-red-100 text-red-700'
+              }`}
+            >
+              {submitStatus.message}
+            </div>
+          )}
+
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
@@ -148,9 +210,13 @@ const PartnershipPage: React.FC = () => {
 
             <button
               type="submit"
-              className="w-full bg-secondary text-white py-3 px-4 rounded-lg hover:bg-secondary-hover transition-colors"
+              disabled={isSubmitting}
+              className={`
+                w-full bg-secondary text-white py-3 px-4 rounded-lg hover:bg-secondary-hover transition-colors
+                ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}
+              `}
             >
-              Submit Application
+              {isSubmitting ? 'Submitting...' : 'Submit Application'}
             </button>
           </form>
         </div>

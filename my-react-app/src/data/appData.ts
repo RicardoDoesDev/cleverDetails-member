@@ -270,31 +270,6 @@ export const appData: AppData = {
         },
         {
           id: 4,
-          name: "Fancy Kitchen Algarve",
-          email: "info@fancykitchenalgarve.com",
-          type: "Personal Chef",
-          description: "A Fancy Kitchen Algarve oferece experiências gastronómicas exclusivas com chefs privados e catering personalizado, elevando cada momento com requinte e sabor.",
-          locationId: 4,
-          rating: 5,
-          logo: "Fancy kitchen.webp",
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.142345!3d37.087654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
-          openingHours: "By appointment",
-          address: "Service at your location",
-          phone: "912 345 681",
-          socialMedia: {
-            facebook: "https://www.facebook.com/fancykitchen",
-            instagram: "https://www.instagram.com/fancykitchen",
-            website: "https://www.fancykitchenalgarve.com"
-          },
-          specialOffer: {
-            type: "Welcome Package",
-            description: "Glass of Sparkling Wine and 2 Canapés per Person"
-          },
-          rootFolder: "Fancy Kitchen",
-          images: ["rs=w_700,cg_true,m.webp", "rs=w_800,cg_true,m.webp", "rs=w_612,cg_true,m.webp", "rs=w_1200,cg_true,m (2).webp", "rs=w_1200,cg_true,m (3).webp", "rs=w_1200,cg_true,m.webp", "rs=w_1200,cg_true,m (1).webp"]
-        },
-        {
-          id: 5,
           name: "Gran Sorvete",
           email: "info@gransorvete.com",
           type: "Brunch Café",
@@ -319,7 +294,7 @@ export const appData: AppData = {
           images: ["crepes-also-served-with.jpg", "gran-gelato.jpg", "gran-sorvete-in-the-heart.jpg", "in-the-heart-of-the-vilamoura.jpg", "our-delicious-mini-pancakes.jpg", "hot-chocolate-served.jpg", "enjoy-the-delicious-combinatio.jpg", "gran-gelato (1).jpg"]
         },
         {
-          id: 6,
+          id: 5,
           name: "Retinto - Rodízio & Wine",
           email: "retinto.vilamoura@gmail.com",
           type: "Steakhouse",
@@ -342,31 +317,6 @@ export const appData: AppData = {
           },
           rootFolder: "Retinto",
           images: ["5c594138-f690-4ea1-add1-3fce2e15ef55.avif", "photo0jpg.jpg", "entrecote-argentino-ribye.jpg", "ff1ed75b-d71b-42f7-9d93-7f3a39464c45.jpg", "59f45f21-e373-42d3-8ed2-8946008e0b3f.jpg", "b15f5500-b73f-421d-b7bc-a9412784f5d8.webp", "b8685ec1-a1b4-4cbd-bd41-3b8cdb1bfa11.avif", "d56aaf4a-be2e-4cd3-99d9-f70d63c5826c.avif", "7701aa02-a0c2-4ec5-9af1-e1c80a4263d6.webp"]
-        },
-        {
-          id: 7,
-          name: "Chef André Simão",
-          email: "asimao2@hotmail.com",
-          phone: "9251500",
-          type: "Personal Chef",
-          description: "Chef executivo de cozinha do Monte Rei onde se encontra o restaurante recomendado pelo guia Michelin, Vistas Monte Rei. Proporciona estilos de cozinha descontraídos, para juntar amigos e familia à mesa com menus de tapas & drinks, barbecue, menu algarvio ou menu de degustação em 5 momentos para celebrações mais pormenorizadas.",
-          locationId: 7,
-          rating: 5,
-          logo: "ChefAndréSimao.jpg",
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.178901!3d37.112345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
-          openingHours: "By appointment",
-          address: "Service at your location",
-          socialMedia: {
-            facebook: "https://www.facebook.com/chefandresimao",
-            instagram: "https://www.instagram.com/chefandresimao",
-            website: "https://www.chefandresimao.pt"
-          },
-          specialOffer: {
-            type: "Welcome Package",
-            description: "Porto wine and traditional Algarve sweets"
-          },
-          rootFolder: "ChefAndreSimao",
-          images: ["Captura de ecrã 2025-05-30, às 14.00.44.png", "Captura de ecrã 2025-05-30, às 14.01.45.png", "Captura de ecrã 2025-05-30, às 14.01.52.png", "Captura de ecrã 2025-05-30, às 14.01.18.png", "Captura de ecrã 2025-05-30, às 14.01.05.png", "Captura de ecrã 2025-05-30, às 14.02.12.png", "Captura de ecrã 2025-05-30, às 14.02.29.png", "Captura de ecrã 2025-05-30, às 14.00.58.png"]
         }
       ]
     },
@@ -476,6 +426,31 @@ export const appData: AppData = {
           },
           rootFolder: "Family Golf Park",
           images: ["Family-Golf-Park_2.webp", "vulcanos.jpg", "relaxing-and-clever-minigolf.jpg", "family-golf-park-gallery-05-min.jpg", "welcome-to-the-best-europe.jpg", "lisbon-bridge.jpg", "family-golf-park.jpg", "1st-hole.jpg", "family-golf-park-gallery-10-min.jpg", "2sd-hole.jpg", "Legionario_2.webp", "Looping-Crazygolfe_2.webp"]
+        },
+        {
+          id: 5,
+          name: "Zoomarine",
+          email: "info@zoomarine.pt",
+          logo: "zoomarine.png",
+          description: "O Zoomarine Algarve é um parque temático único que combina educação ambiental com diversão. Oferece espetáculos com golfinhos, focas e aves exóticas, além de piscinas, atrações aquáticas e apresentações educativas sobre vida marinha. Uma experiência inesquecível para toda a família.",
+          locationId: 3,
+          rating: 5,
+          type: "Theme Park",
+          openingHours: "10:00 - 19:00",
+          address: "EN 125, Km 65, 8201-864 Guia, Albufeira",
+          phone: "+351 289 560 300",
+          socialMedia: {
+            facebook: "https://www.facebook.com/zoomarinealgarve",
+            instagram: "https://www.instagram.com/zoomarinealgarve",
+            website: "https://www.zoomarine.pt"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.312345!3d37.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% off tickets"
+          },
+          rootFolder: "Zoomarine",
+          images: ["zoomarine1.jpg", "zoomarine2.jpg", "zoomarine3.jpg", "zoomarine4.jpg", "zoomarine5.jpg", "zoomarine6.jpg", "zoomarine7.jpg", "zoomarine8.jpg"]
         }
       ]
     },
@@ -695,6 +670,65 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.123456!3d37.134567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           rootFolder: "Matilde",
           images: ["beauty3.jpg", "beauty4.jpg"]
+        }
+      ]
+    },
+    {
+      id: "chef-at-home",
+      title: "Chef at Home",
+      route: "/chef-at-home",
+      description: "Experience gourmet dining in the comfort of your home",
+      image: "chef-at-home.jpg",
+      items: [
+        {
+          id: 1,
+          name: "Chef André Simão",
+          email: "asimao2@hotmail.com",
+          phone: "9251500",
+          type: "Personal Chef",
+          description: "Chef executivo de cozinha do Monte Rei onde se encontra o restaurante recomendado pelo guia Michelin, Vistas Monte Rei. Proporciona estilos de cozinha descontraídos, para juntar amigos e familia à mesa com menus de tapas & drinks, barbecue, menu algarvio ou menu de degustação em 5 momentos para celebrações mais pormenorizadas.",
+          locationId: 7,
+          rating: 5,
+          logo: "ChefAndréSimao.jpg",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.178901!3d37.112345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          openingHours: "By appointment",
+          address: "Service at your location",
+          socialMedia: {
+            facebook: "https://www.facebook.com/chefandresimao",
+            instagram: "https://www.instagram.com/chefandresimao",
+            website: "https://www.chefandresimao.pt"
+          },
+          specialOffer: {
+            type: "Welcome Package",
+            description: "Porto wine and traditional Algarve sweets"
+          },
+          rootFolder: "ChefAndreSimao",
+          images: ["Captura de ecrã 2025-05-30, às 14.00.44.png", "Captura de ecrã 2025-05-30, às 14.01.45.png", "Captura de ecrã 2025-05-30, às 14.01.52.png", "Captura de ecrã 2025-05-30, às 14.01.18.png", "Captura de ecrã 2025-05-30, às 14.01.05.png", "Captura de ecrã 2025-05-30, às 14.02.12.png", "Captura de ecrã 2025-05-30, às 14.02.29.png", "Captura de ecrã 2025-05-30, às 14.00.58.png"]
+        },
+        {
+          id: 2,
+          name: "Fancy Kitchen Algarve",
+          email: "info@fancykitchenalgarve.com",
+          type: "Personal Chef",
+          description: "A Fancy Kitchen Algarve oferece experiências gastronómicas exclusivas com chefs privados e catering personalizado, elevando cada momento com requinte e sabor.",
+          locationId: 4,
+          rating: 5,
+          logo: "Fancy kitchen.webp",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.142345!3d37.087654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          openingHours: "By appointment",
+          address: "Service at your location",
+          phone: "912 345 681",
+          socialMedia: {
+            facebook: "https://www.facebook.com/fancykitchen",
+            instagram: "https://www.instagram.com/fancykitchen",
+            website: "https://www.fancykitchenalgarve.com"
+          },
+          specialOffer: {
+            type: "Welcome Package",
+            description: "Glass of Sparkling Wine and 2 Canapés per Person"
+          },
+          rootFolder: "Fancy Kitchen",
+          images: ["rs=w_700,cg_true,m.webp", "rs=w_800,cg_true,m.webp", "rs=w_612,cg_true,m.webp", "rs=w_1200,cg_true,m (2).webp", "rs=w_1200,cg_true,m (3).webp", "rs=w_1200,cg_true,m.webp", "rs=w_1200,cg_true,m (1).webp"]
         }
       ]
     }

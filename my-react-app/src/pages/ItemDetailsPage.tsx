@@ -57,7 +57,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
       const subject = `Booking Request: ${item.name}`;
       const message = `Hi, I'm interested in booking ${item.name} with the following special offer: ${item.specialOffer?.description}.\n\nPlease provide me with more information.`;
       
-      navigate(`/contact?subject=${encodeURIComponent(subject)}&message=${encodeURIComponent(message)}`);
+      navigate(`/contact?type=item&subject=${encodeURIComponent(subject)}&message=${encodeURIComponent(message)}`);
     };
 
     return (

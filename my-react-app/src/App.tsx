@@ -44,6 +44,7 @@ const AppContent: React.FC = () => {
         <Route path="/winery-tours" element={<CategoryPage categoryId="winery-tours" title="Winery Tours" />} />
         <Route path="/wellness" element={<CategoryPage categoryId="wellness" title="Wellness" />} />
         <Route path="/beauty-and-hair-salons" element={<CategoryPage categoryId="beauty-and-hair-salons" title="Beauty & Hair Salons" />} />
+        <Route path="/chef-at-home" element={<CategoryPage categoryId="chef-at-home" title="Chef at Home" />} />
         
         <Route path="/boat-tours/:id" element={<ItemDetailsPage category="boat-tours" />} />
         <Route path="/gastronomy/:id" element={<ItemDetailsPage category="gastronomy" />} />
@@ -51,6 +52,7 @@ const AppContent: React.FC = () => {
         <Route path="/winery-tours/:id" element={<ItemDetailsPage category="winery-tours" />} />
         <Route path="/wellness/:id" element={<ItemDetailsPage category="wellness" />} />
         <Route path="/beauty-and-hair-salons/:id" element={<ItemDetailsPage category="beauty-and-hair-salons" />} />
+        <Route path="/chef-at-home/:id" element={<ItemDetailsPage category="chef-at-home" />} />
         
         <Route path="/access" element={<AccessPage />} />
         <Route path="/partnership" element={<PartnershipPage />} />

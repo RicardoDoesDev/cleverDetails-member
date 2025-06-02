@@ -7,6 +7,7 @@ interface EmailFormData {
   email: string;
   subject: string;
   message: string;
+  formType?: 'item' | 'partnership';
 }
 
 const EmailPage: React.FC = () => {
@@ -15,7 +16,8 @@ const EmailPage: React.FC = () => {
     name: '',
     email: '',
     subject: searchParams.get('subject') || '',
-    message: searchParams.get('message') || ''
+    message: searchParams.get('message') || '',
+    formType: (searchParams.get('type') as 'item' | 'partnership') || 'item'
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{
@@ -28,7 +30,8 @@ const EmailPage: React.FC = () => {
     setFormData(prev => ({
       ...prev,
       subject: searchParams.get('subject') || prev.subject,
-      message: searchParams.get('message') || prev.message
+      message: searchParams.get('message') || prev.message,
+      formType: (searchParams.get('type') as 'item' | 'partnership') || prev.formType
     }));
   }, [searchParams]);
 
@@ -59,7 +62,8 @@ const EmailPage: React.FC = () => {
           name: '',
           email: '',
           subject: '',
-          message: ''
+          message: '',
+          formType: 'item'
         });
       } else {
         throw new Error('Failed to send email');
