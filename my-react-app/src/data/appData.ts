@@ -32,7 +32,20 @@ export const appData: AppData = {
             description: "5%"
           },
           rootFolder: "Cool Charters",
-          images: ["3e7042db-69f6-4f1f-b8b0-487e20a38ce7.jpeg", "discover-algarve-s-famous.jpg", "b8ce1f17-7758-47d7-9ad8-f4e8d68f6bc5.jpeg", "caption.jpg", "background5.jpg", "you-will-find-a-wonderful.jpg", "kerry-is-vilamoura-s.jpg", "cool.jpg", "cc5c2fdf-0363-4d44-a721-5c1e3dd2343d.jpeg", "caption (1).jpg", "caption (2).jpg", "c7a1cfb6-68cf-4491-b024-306646e95c5e.jpeg", "the-detailed-combinations.jpg", "each-plate-prepared-with.jpg", "caption.jpg", "ce86969e3cec4b7bb0d0cde9e123fa0c.webp"]
+          images: [
+            "3e7042db-69f6-4f1f-b8b0-487e20a38ce7.jpeg",
+            "b8ce1f17-7758-47d7-9ad8-f4e8d68f6bc5.jpeg",
+            "c7a1cfb6-68cf-4491-b024-306646e95c5e.jpeg",
+            "cc5c2fdf-0363-4d44-a721-5c1e3dd2343d.jpeg",
+            "caption.jpg",
+            "caption (1).jpg",
+            "caption (2).jpg",
+            "discover-algarve-s-famous.jpg",
+            "you-will-find-a-wonderful.jpg",
+            "background5.jpg",
+            "kerry-is-vilamoura-s.jpg",
+            "cool.jpg"
+          ],
         },
         {
           id: 2,
@@ -92,7 +105,7 @@ export const appData: AppData = {
           description: "A AlgarExperience é líder em turismo marítimo no Algarve, oferecendo experiências únicas como passeios às grutas de Benagil, observação de golfinhos, parasailing e churrascos na praia. Com uma frota moderna e uma equipa dedicada, proporciona momentos inesquecíveis no mar.",
           locationIds: [3],
           rating: 5,
-          logo: "algarexperience.jpg",
+          logo: "algarexperience-vect.svg",
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           openingHours: "09:00 - 18:00",
           address: "Algarve",
