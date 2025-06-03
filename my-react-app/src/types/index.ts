@@ -3,6 +3,17 @@ export interface OpeningHours {
   hours: string;
 }
 
+export interface Review {
+  id: string | number;
+  author: string;
+  rating: number;
+  comment: string;
+  createdAt: string;
+  source?: 'google' | 'local';
+  itemId?: number;
+  categoryId?: string;
+}
+
 export interface Item {
   id: number;
   name: string;
