@@ -1,47 +1,53 @@
-import { appData } from '../data/appData';
 import { Category, Item, Location } from '../types/index';
+import { appData } from '../data/appData';
+import { appDataFR } from '../data/appDataFR';
+import { appDataPT } from '../data/appDataPT';
 
-export const getCategories = (): Category[] => {
-  return appData.categories;
+const getDataForLanguage = (language: string) => {
+  switch (language) {
+    case 'fr':
+      return appDataFR;
+    case 'pt':
+      return appDataPT;
+    default:
+      return appData;
+  }
 };
 
-export const getCategory = (categoryId: string): Category | undefined => {
-  return appData.categories.find(category => category.id === categoryId);
+export const getCategories = (language: string): Category[] => {
+  const data = getDataForLanguage(language);
+  return data.categories;
 };
 
-export const getCategoryItems = (categoryId: string): Item[] => {
-  const category = getCategory(categoryId);
+export const getCategory = (categoryId: string, language: string): Category | undefined => {
+  const data = getDataForLanguage(language);
+  return data.categories.find(category => category.id === categoryId);
+};
+
+export const getCategoryItems = (categoryId: string, language: string): Item[] => {
+  const category = getCategory(categoryId, language);
   return category ? category.items : [];
 };
 
-export const getItemById = (categoryId: string, itemId: number): Item | undefined => {
-  const items = getCategoryItems(categoryId);
+export const getItemById = (categoryId: string, itemId: number, language: string): Item | undefined => {
+  const items = getCategoryItems(categoryId, language);
   return items.find(item => item.id === itemId);
 };
 
-export const getLocations = (): Location[] => {
-  return appData.locations;
+export const getLocations = (language: string): Location[] => {
+  const data = getDataForLanguage(language);
+  return data.locations;
 };
 
-export const getLocationById = (id: number): Location | undefined => {
-  return appData.locations.find(location => location.id === id);
+export const getLocationById = (id: number, language: string): Location | undefined => {
+  const data = getDataForLanguage(language);
+  return data.locations.find(location => location.id === id);
 };
 
-export const getLocationName = (locationIds: number | number[] | undefined): string => {
-  if (!locationIds) return 'Unknown Location';
-  
-  if (Array.isArray(locationIds)) {
-    if (locationIds.length === 0) return 'Unknown Location';
-    
-    return locationIds
-      .map(id => {
-        const location = getLocationById(id);
-        return location ? location.name : '';
-      })
-      .filter(name => name !== '')
-      .join(', ');
-  }
-  
-  const location = getLocationById(locationIds);
-  return location ? location.name : 'Unknown Location';
+export const getLocationName = (locationIds: number[], language: string): string => {
+  const data = getDataForLanguage(language);
+  return locationIds
+    .map(id => data.locations.find(loc => loc.id === id)?.name)
+    .filter(Boolean)
+    .join(', ');
 }; 

@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from 'react';
-import { getCategory, getLocations } from '../services/dataService';
+import { getCategory, getLocations, getCategories } from '../services/dataService';
+import { useLanguage } from '../contexts/LanguageContext';
 import ListPage from '../components/ListPage';
 import SearchBar from '../components/SearchBar';
-import { appData } from '../data/appData';
-import { useNavigate } from 'react-router-dom';
+import { Item } from '../types';
 
 interface CategoryPageProps {
   categoryId: string;
@@ -11,25 +11,17 @@ interface CategoryPageProps {
 }
 
 const CategoryPage: React.FC<CategoryPageProps> = ({ categoryId, title }) => {
-  const navigate = useNavigate();
+  const { language } = useLanguage();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedLocation, setSelectedLocation] = useState<number | ''>('');
   
-  const category = getCategory(categoryId);
-  const locations = getLocations();
-  const categories = appData.categories;
-
-  const handleCategoryChange = (newCategoryId: string) => {
-    if (newCategoryId) {
-      navigate(`/${newCategoryId}`);
-    } else {
-      navigate('/all');
-    }
-  };
+  const category = getCategory(categoryId, language);
+  const locations = getLocations(language);
+  const categories = getCategories(language);
 
   const filteredItems = useMemo(() => {
     if (!category) return [];
-
+    
     return category.items.filter(item => {
       const matchesSearch = 
         item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -46,7 +38,7 @@ const CategoryPage: React.FC<CategoryPageProps> = ({ categoryId, title }) => {
   }
 
   return (
-    <div>
+    <div className="max-w-7xl mx-auto px-4 py-8">
       <SearchBar
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
@@ -55,15 +47,16 @@ const CategoryPage: React.FC<CategoryPageProps> = ({ categoryId, title }) => {
         locations={locations}
         showLocationFilter={true}
         selectedCategory={categoryId}
-        onCategoryChange={handleCategoryChange}
+        onCategoryChange={() => {}} // Category is fixed in this view
         categories={categories}
-        showCategoryFilter={true}
+        showCategoryFilter={false} // Hide category filter since we're in a specific category
       />
 
       <ListPage
-        title={title}
+        title={category.title}
         items={filteredItems}
-        categoryRoute={`/${categoryId}`}
+        categoryRoute={category.route}
+        isAllPage={false}
       />
     </div>
   );

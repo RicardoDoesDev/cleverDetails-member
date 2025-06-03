@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { appData } from '../data/appData';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -86,50 +87,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
           {/* Language Selector */}
           <div className="p-4 border-t border-gray-200">
             <h2 className="text-xl font-bold text-primary mb-4">Language</h2>
-            <div className="flex justify-center space-x-6">
-              <a href="/system/languages/change/1/Lw%3D%3D" className="flex flex-col items-center hover:text-secondary transition-colors">
-                <img 
-                  src="https://flagicons.lipis.dev/flags/4x3/gb.svg" 
-                  alt="EN" 
-                  className="w-8 h-6 mb-1"
-                  loading="lazy"
-                  decoding="async"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = "/images/flags/gb.png";
-                  }}
-                />
-                <span className="text-sm">EN</span>
-              </a>
-              <a href="/system/languages/change/34/Lw%3D%3D" className="flex flex-col items-center hover:text-secondary transition-colors">
-                <img 
-                  src="https://flagicons.lipis.dev/flags/4x3/fr.svg" 
-                  alt="FR" 
-                  className="w-8 h-6 mb-1"
-                  loading="lazy"
-                  decoding="async"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = "/images/flags/fr.png";
-                  }}
-                />
-                <span className="text-sm">FR</span>
-              </a>
-              <a href="/system/languages/change/89/Lw%3D%3D" className="flex flex-col items-center hover:text-secondary transition-colors">
-                <img 
-                  src="https://flagicons.lipis.dev/flags/4x3/pt.svg" 
-                  alt="PT" 
-                  className="w-8 h-6 mb-1"
-                  loading="lazy"
-                  decoding="async"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = "/images/flags/pt.png";
-                  }}
-                />
-                <span className="text-sm">PT</span>
-              </a>
-            </div>
+            <LanguageSwitcher variant="sidebar" />
           </div>
         </div>
 

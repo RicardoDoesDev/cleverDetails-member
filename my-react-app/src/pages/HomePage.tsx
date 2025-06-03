@@ -1,10 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { getCategories } from '../services/dataService';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const HomePage: React.FC = () => {
-  const navigate = useNavigate();
-  const categories = getCategories();
+  const { language } = useLanguage();
+  const categories = getCategories(language);
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -13,31 +14,25 @@ const HomePage: React.FC = () => {
         <h2 className="text-2xl text-white text-center mb-8">Enjoy Exclusive Rewards</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category) => (
-            <div
+            <Link
               key={category.id}
-              className="bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer transform transition-transform hover:scale-105"
-              onClick={() => navigate(category.route)}
+              to={category.route}
+              className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="relative h-48">
+              <div className="h-64 relative overflow-hidden">
                 <img
                   src={`/images/categorias/${category.image}`}
                   alt={category.title}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = "/images/placeholder-image.jpg";
-                  }}
+                  className="absolute inset-0 w-full h-full object-cover object-center transform group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
-              <div className="p-4 text-center">
-                <h3 className="text-2xl text-primary mb-2">{category.title}</h3>
-                <button className="bg-secondary text-white px-6 py-2 rounded hover:bg-secondary-hover transition-colors w-1/2">
-                  Explore →
-                </button>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
+                <div className="absolute bottom-0 left-0 p-4">
+                  <h2 className="text-white text-xl font-semibold mb-2">{category.title}</h2>
+                  <p className="text-white/80 text-sm">{category.description}</p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

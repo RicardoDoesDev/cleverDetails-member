@@ -4,6 +4,7 @@ import { getItemById, getLocationName } from '../services/dataService';
 import { supabaseService } from '../services/supabaseService';
 import { googlePlacesService } from '../services/googlePlacesService';
 import { Item, Review } from '../types/index';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface StarRatingProps {
   rating: number;
@@ -164,7 +165,7 @@ const formatDate = (dateString: string) => {
 };
 
 const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
-  const { id } = useParams();
+  const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [comment, setComment] = useState('');
@@ -173,8 +174,9 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
   const [reviews, setReviews] = useState<Review[]>([]);
   const [averageRating, setAverageRating] = useState(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { language } = useLanguage();
 
-  const item = id ? getItemById(category, Number(id)) as Item : undefined;
+  const item = id ? getItemById(category, Number(id), language) : undefined;
 
   // Load reviews and average rating from Supabase
   useEffect(() => {
@@ -481,7 +483,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
               {/* Location */}
               <div className="flex items-center text-primary mb-8">
                 <span className="mr-2">📍</span>
-                {getLocationName(item.locationIds)}
+                {getLocationName(item.locationIds, language)}
               </div>
 
               {/* Map - Shown on mobile */}

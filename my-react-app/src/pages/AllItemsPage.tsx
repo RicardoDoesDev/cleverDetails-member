@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getLocations } from '../services/dataService';
+import { getLocations, getCategories } from '../services/dataService';
 import ListPage from '../components/ListPage';
 import SearchBar from '../components/SearchBar';
-import { appData } from '../data/appData';
+import { useLanguage } from '../contexts/LanguageContext';
 import { Item } from '../types/index';
 
 const AllItemsPage: React.FC = () => {
@@ -11,20 +11,21 @@ const AllItemsPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedLocation, setSelectedLocation] = useState<number | ''>('');
   const [selectedCategory, setSelectedCategory] = useState('');
+  const { language } = useLanguage();
   
   // Get all items from all categories
+  const categories = getCategories(language);
   const allItems: (Item & { categoryId: string; uniqueId: string })[] = useMemo(() => {
-    return appData.categories.flatMap(category => 
+    return categories.flatMap(category => 
       category.items.map(item => ({
         ...item,
         categoryId: category.id,
         uniqueId: `${category.id}-${item.id}` // Create a unique ID combining category and item IDs
       }))
     );
-  }, []);
+  }, [categories]);
 
-  const locations = getLocations();
-  const categories = appData.categories;
+  const locations = getLocations(language);
 
   const handleCategoryChange = (categoryId: string) => {
     console.log('Category changed to:', categoryId);
@@ -53,7 +54,7 @@ const AllItemsPage: React.FC = () => {
   }, [allItems, searchQuery, selectedLocation, selectedCategory]);
 
   return (
-    <div>
+    <div className="max-w-7xl mx-auto px-4 py-8">
       <SearchBar
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
@@ -70,7 +71,7 @@ const AllItemsPage: React.FC = () => {
       <ListPage
         title="All Experiences"
         items={filteredItems}
-        categoryRoute="/all"
+        categoryRoute=""
         isAllPage={true}
       />
     </div>

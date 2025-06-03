@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Item } from '../types/index';
 import { getLocationName } from '../services/dataService';
+import { useLanguage } from '../contexts/LanguageContext';
 import Slideshow from './Slideshow';
 
 interface ListPageProps {
@@ -15,6 +16,7 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
   console.log('ListPage rendering with items:', items.length);
   
   const navigate = useNavigate();
+  const { language } = useLanguage();
 
   const handleItemClick = (item: Item & { categoryId?: string }) => {
     if (isAllPage && item.categoryId) {
@@ -73,7 +75,7 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
                   </p>
                   <div className="flex items-center text-primary text-sm md:text-base">
                     <span className="mr-2">📍</span>
-                    {getLocationName(item.locationIds)}
+                    {getLocationName(item.locationIds, language)}
                   </div>
                 </div>
                 <div className="p-4 md:p-4 bg-gray-50 flex flex-col justify-center items-center w-full md:w-48">
