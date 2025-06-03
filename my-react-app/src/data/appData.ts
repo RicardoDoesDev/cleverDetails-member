@@ -959,7 +959,7 @@ export const appData: AppData = {
           id: 1,
           name: "Chef André Simão",
           email: "asimao2@hotmail.com",
-          logo: "Captura_de_ecrã_2025-06-03__às_11.54.00-removebg-preview.png",
+          logo: "teste",
           type: "Personal Chef",
           description: "Chef executivo de cozinha do Monte Rei onde se encontra o restaurante recomendado pelo guia Michelin, Vistas Monte Rei. Proporciona estilos de cozinha descontraídos, para juntar amigos e familia à mesa com menus de tapas & drinks, barbecue, menu algarvio ou menu de degustação em 5 momentos para celebrações mais pormenorizadas.",
           locationIds: [6],

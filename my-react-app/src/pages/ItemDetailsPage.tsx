@@ -8,6 +8,28 @@ interface ItemDetailsPageProps {
   category: string;
 }
 
+function LogoSection({ item }: { item: { logo: string; name: string } }) {
+  const [imageFailed, setImageFailed] = useState(false);
+
+  const hasLogo = item.logo && item.logo.trim() !== "";
+
+  return (
+    <div className="flex items-center">
+      {hasLogo && !imageFailed && (
+        <img
+          src={`/images/logo/${item.logo}`}
+          alt={`${item.name} logo`}
+          className="w-1/4 mr-12 mb-4"
+          loading="lazy"
+          decoding="async"
+          onError={() => setImageFailed(true)}
+        />
+      )}
+      <h1 className="text-3xl md:text-4xl">{item.name}</h1>
+    </div>
+  );
+}
+
 const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -113,20 +135,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
       <div className="bg-primary text-white p-4 md:p-8">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 md:gap-0">
-            <div className="flex items-center">
-              <img 
-                src={`/images/logo/${item.logo}`} 
-                alt={`${item.name} logo`} 
-                className="w-1/4 mr-12 mb-4"
-                loading="lazy"
-                decoding="async"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.src = "/images/placeholder-logo.png";
-                }}
-              />
-              <h1 className="text-3xl md:text-4xl">{item.name}</h1>
-            </div>
+            <LogoSection item={item} />
             <div className="text-xl md:text-2xl">{renderStars(item.rating)}</div>
           </div>
         </div>
