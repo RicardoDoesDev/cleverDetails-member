@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
             target.src = "/images/logo.png";
           }}
         />
-        <span className="text-white font-bold text-xl block">
+        <span className="text-white font-bold text-xl block" style={{ fontFamily: "'Tropika Script', cursive" }}>
           We ❤️ Vilamoura ...
         </span>
       </div>
@@ -83,6 +83,11 @@ const Footer: React.FC = () => {
             }}
           />
         </a>
+      </div>
+
+      {/* Copyright */}
+      <div className="text-center text-sm mt-8 opacity-75">
+        © {new Date().getFullYear()} Clever Details. All rights reserved.
       </div>
     </footer>
   );

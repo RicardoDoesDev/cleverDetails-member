@@ -4,7 +4,7 @@ import { getLocations } from '../services/dataService';
 import ListPage from '../components/ListPage';
 import SearchBar from '../components/SearchBar';
 import { appData } from '../data/appData';
-import { Item } from '../types';
+import { Item } from '../types/index';
 
 const AllItemsPage: React.FC = () => {
   const navigate = useNavigate();

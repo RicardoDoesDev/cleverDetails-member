@@ -1,5 +1,5 @@
 import { appData } from '../data/appData';
-import { Category, Item, Location } from '../types';
+import { Category, Item, Location } from '../types/index';
 
 export const getCategories = (): Category[] => {
   return appData.categories;

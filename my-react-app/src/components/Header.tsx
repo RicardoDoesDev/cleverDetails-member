@@ -78,7 +78,7 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
                 <span>PT</span>
               </a>
             </div>
-            <div className="text-secondary font-bold text-xl py-2 text-right pr-5">
+            <div className="text-secondary font-bold text-xl py-2 text-right pr-5" style={{ fontFamily: "'Tropika Script', cursive" }}>
               We ❤️ Vilamoura ...
             </div>
           </div>

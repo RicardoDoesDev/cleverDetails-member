@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getItemById, getLocationName } from '../services/dataService';
-import { reviewService } from '../services/reviewService';
+import { supabaseService } from '../services/supabaseService';
 import { googlePlacesService } from '../services/googlePlacesService';
-import { Item, Review } from '../types';
+import { Item, Review } from '../types/index';
 
 interface StarRatingProps {
   rating: number;
@@ -46,7 +46,7 @@ interface ItemDetailsPageProps {
   category: string;
 }
 
-function LogoSection({ item }: { item: { logo: string; name: string } }) {
+function LogoSection({ item }: { item: Item }) {
   const [imageFailed, setImageFailed] = useState(false);
 
   const hasLogo = item.logo && item.logo.trim() !== "";
@@ -68,6 +68,33 @@ function LogoSection({ item }: { item: { logo: string; name: string } }) {
   );
 }
 
+const formatDate = (dateString: string) => {
+  try {
+    console.log('Raw date string:', dateString);
+    
+    // Handle Supabase's timestamp format
+    const date = new Date(dateString);
+    
+    console.log('Parsed date object:', date);
+    
+    if (isNaN(date.getTime())) {
+      console.error('Invalid date:', dateString);
+      return 'Invalid Date';
+    }
+    
+    return new Intl.DateTimeFormat('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    }).format(date);
+  } catch (error) {
+    console.error('Error formatting date:', error);
+    return 'Invalid Date';
+  }
+};
+
 const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -80,11 +107,11 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
 
   const item = id ? getItemById(category, Number(id)) as Item : undefined;
 
-  // Load reviews from JSON file
+  // Load reviews from Supabase
   useEffect(() => {
     const loadReviews = async () => {
       if (item) {
-        const savedReviews = await reviewService.getItemReviews(category, item.id);
+        const savedReviews = await supabaseService.getItemReviews(category, item.id);
         setReviews(savedReviews);
       }
     };
@@ -143,18 +170,16 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
 
     setIsSubmitting(true);
     try {
-      const newReview = await reviewService.saveReview(category, item.id, {
+      const newReview = await supabaseService.saveReview(category, item.id, {
         author,
         rating,
-        comment,
+        comment
       });
 
-      if (newReview) {
-        setReviews([...reviews, newReview]);
-        setComment('');
-        setRating(5);
-        setAuthor('');
-      }
+      setReviews([newReview, ...reviews]);
+      setComment('');
+      setRating(5);
+      setAuthor('');
     } catch (error) {
       console.error('Error saving review:', error);
       alert('Failed to save review. Please try again.');
@@ -235,7 +260,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
             </div>
             <p>{review.comment}</p>
             <div className="text-sm text-gray-500 mt-2">
-              {new Date(review.createdAt).toLocaleDateString()}
+              {formatDate(review.createdAt)}
             </div>
           </div>
         ))}
@@ -251,30 +276,40 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
             onChange={(e) => setAuthor(e.target.value)}
             placeholder="Your name"
             className="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:border-secondary"
+            required
           />
-          <div className="flex gap-2 mb-4">
-            {[1, 2, 3, 4, 5].map((star) => (
-              <button
-                key={star}
-                type="button"
-                className={`text-xl md:text-2xl ${star <= rating ? 'text-yellow-400' : 'text-gray-300'}`}
-                onClick={() => setRating(star)}
-              >
-                ⭐
-              </button>
-            ))}
+          <div className="flex flex-col gap-2">
+            <label className="text-lg">Rating</label>
+            <div className="flex gap-2">
+              {[1, 2, 3, 4, 5].map((star) => (
+                <button
+                  key={star}
+                  type="button"
+                  onClick={() => setRating(star)}
+                  className={`text-2xl transition-transform hover:scale-110 ${
+                    star <= rating ? 'text-yellow-400' : 'text-gray-300'
+                  }`}
+                  aria-label={`Rate ${star} stars`}
+                >
+                  ⭐
+                </button>
+              ))}
+            </div>
           </div>
           <textarea
             value={comment}
             onChange={(e) => setComment(e.target.value)}
             className="w-full h-32 p-4 rounded-lg border border-gray-300 focus:outline-none focus:border-secondary"
             placeholder="Write your comment..."
+            required
           />
           <button
             type="submit"
-            disabled={isSubmitting}
+            disabled={isSubmitting || !author.trim() || !comment.trim()}
             className={`w-full md:w-auto bg-secondary text-white px-6 py-3 rounded-lg text-lg font-medium transition-colors ${
-              isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-secondary-hover'
+              isSubmitting || !author.trim() || !comment.trim()
+                ? 'opacity-50 cursor-not-allowed'
+                : 'hover:bg-secondary-hover'
             }`}
           >
             {isSubmitting ? 'Submitting...' : 'Submit Review'}

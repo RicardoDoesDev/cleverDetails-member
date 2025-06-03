@@ -1,5 +1,5 @@
 import React from 'react';
-import { Category, Location } from '../types';
+import { Category, Location } from '../types/index';
 
 interface SearchBarProps {
   searchQuery: string;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Item } from '../types';
+import { Item } from '../types/index';
 import { getLocationName } from '../services/dataService';
 import Slideshow from './Slideshow';
 

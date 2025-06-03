@@ -146,7 +146,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
               target.src = "/images/placeholder-logo.png";
             }}
           />
-          <h2 className="text-xl font-bold text-primary text-center">We ❤️ Vilamoura ...</h2>
+          <h2 className="text-xl font-bold text-primary text-center" style={{ fontFamily: "'Tropika Script', cursive" }}>We ❤️ Vilamoura ...</h2>
         </div>
       </div>
     </>

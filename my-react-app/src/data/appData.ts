@@ -1,4 +1,4 @@
-import { AppData } from '../types';
+import { AppData } from '../types/index';
 
 export const appData: AppData = {
   categories: [
@@ -442,13 +442,13 @@ export const appData: AppData = {
           locationIds: [6],
           rating: 5,
           openingHours: [
-            { day: "Monday", hours: "09:00 - 18:00" },
-            { day: "Tuesday", hours: "09:00 - 18:00" },
-            { day: "Wednesday", hours: "09:00 - 18:00" },
-            { day: "Thursday", hours: "09:00 - 18:00" },
-            { day: "Friday", hours: "09:00 - 18:00" },
-            { day: "Saturday", hours: "09:00 - 18:00" },
-            { day: "Sunday", hours: "09:00 - 18:00" }
+            { day: "Monday", hours: "09:00 - 18:00 By appointment" },
+            { day: "Tuesday", hours: "09:00 - 18:00 By appointment" },
+            { day: "Wednesday", hours: "09:00 - 18:00 By appointment" },
+            { day: "Thursday", hours: "09:00 - 18:00 By appointment" },
+            { day: "Friday", hours: "09:00 - 18:00 By appointment" },
+            { day: "Saturday", hours: "09:00 - 18:00 By appointment" },
+            { day: "Sunday", hours: "09:00 - 18:00 By appointment" }
           ],
           address: "Autódromo Internacional do Algarve",
           phone: "+351 282 405 600",
@@ -678,7 +678,7 @@ export const appData: AppData = {
           email: "info@quintadocanhoto.com",
           logo: "LOGO_QDC_WHITE_NEW.png",
           type: "Winery Tours",
-          description: "A Quinta do Canhoto, em Albufeira, é uma referência em vinhos do Algarve, combinando tradição familiar com inovação, e oferece provas de vinhos e experiências únicas em enoturismo.",
+          description: "A Quinta do Canhoto, em Albufeira, é uma referência em vinhos do Algarve, combinando tradição familiar com inovação, e oferece provas de vinhos e experiências únicas em enoturismo. As visitas devem ser previamente marcadas com 24h de antecedência.",
           locationIds: [4],
           rating: 5,
           openingHours: [
