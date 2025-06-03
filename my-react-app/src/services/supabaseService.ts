@@ -30,6 +30,27 @@ export const supabaseService = {
     })) as Review[];
   },
 
+  // Get average rating for an item
+  getItemAverageRating: async (category: string, itemId: number) => {
+    const { data, error } = await supabase
+      .from('reviews')
+      .select('rating')
+      .eq('category', category)
+      .eq('item_id', itemId);
+
+    if (error) {
+      console.error('Error fetching ratings:', error);
+      return 0;
+    }
+
+    if (!data || data.length === 0) {
+      return 0;
+    }
+
+    const sum = data.reduce((acc, review) => acc + review.rating, 0);
+    return Number((sum / data.length).toFixed(1));
+  },
+
   // Save a new review
   saveReview: async (category: string, itemId: number, review: ReviewInput) => {
     const { data, error } = await supabase

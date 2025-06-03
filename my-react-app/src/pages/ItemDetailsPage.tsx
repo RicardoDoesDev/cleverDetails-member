@@ -8,36 +8,104 @@ import { Item, Review } from '../types/index';
 interface StarRatingProps {
   rating: number;
   size?: 'sm' | 'md' | 'lg';
+  interactive?: boolean;
+  onRatingChange?: (rating: number) => void;
 }
 
-const StarRating: React.FC<StarRatingProps> = ({ rating, size = 'md' }) => {
+const StarRating: React.FC<StarRatingProps> = ({ 
+  rating, 
+  size = 'md', 
+  interactive = false,
+  onRatingChange
+}) => {
   const sizeClasses = {
-    sm: 'text-lg',
-    md: 'text-xl',
-    lg: 'text-2xl'
+    sm: 'w-5 h-5',
+    md: 'w-6 h-6',
+    lg: 'w-8 h-8'
   };
 
-  const fullStars = Math.floor(rating);
-  const decimal = rating % 1;
-  const hasHalfStar = decimal >= 0.3 && decimal < 0.8;
-  const hasFullStar = decimal >= 0.8;
+  const handleStarClick = (event: React.MouseEvent<HTMLButtonElement>, starNumber: number) => {
+    if (!onRatingChange) return;
+
+    const button = event.currentTarget;
+    const rect = button.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const halfWidth = rect.width / 2;
+
+    // If clicked on the left half, use half star
+    const newRating = x < halfWidth ? starNumber - 0.5 : starNumber;
+
+    // If clicking the same value, reset to the previous half star
+    if (rating === newRating) {
+      onRatingChange(newRating - 0.5);
+    } else {
+      onRatingChange(newRating);
+    }
+  };
+
+  const renderStar = (index: number) => {
+    const starNumber = index + 1;
+    const filled = starNumber <= Math.floor(rating);
+    const hasHalf = !filled && starNumber === Math.ceil(rating) && rating % 1 !== 0;
+    const starClass = filled ? 'text-yellow-400' : 'text-gray-300';
+
+    const star = (
+      <svg
+        className={`${sizeClasses[size]} ${starClass}`}
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+      </svg>
+    );
+
+    if (interactive) {
+      return (
+        <button
+          key={index}
+          type="button"
+          onClick={(e) => handleStarClick(e, starNumber)}
+          className="transition-transform hover:scale-110 relative group"
+          aria-label={`Rate ${starNumber} stars`}
+        >
+          <div className={`absolute inset-0 w-1/2 z-10 cursor-pointer group-hover:bg-gray-100/10`} />
+          {star}
+          {hasHalf && (
+            <div className="absolute inset-0 overflow-hidden w-1/2">
+              <svg
+                className={`${sizeClasses[size]} text-yellow-400`}
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+          )}
+        </button>
+      );
+    }
+
+    return (
+      <div key={index} className="relative">
+        {star}
+        {hasHalf && (
+          <div className="absolute inset-0 overflow-hidden w-1/2">
+            <svg
+              className={`${sizeClasses[size]} text-yellow-400`}
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+        )}
+      </div>
+    );
+  };
 
   return (
-    <div className={`${sizeClasses[size]} flex gap-1`}>
-      {[...Array(5)].map((_, index) => {
-        if (index < fullStars || (index === fullStars && hasFullStar)) {
-          return <span key={index} className="text-yellow-400">⭐</span>;
-        } else if (index === fullStars && hasHalfStar) {
-          return (
-            <span key={index} className="relative">
-              <span className="absolute text-yellow-400" style={{ width: '50%', overflow: 'hidden' }}>⭐</span>
-              <span className="opacity-30">⭐</span>
-            </span>
-          );
-        } else {
-          return <span key={index} className="opacity-30">⭐</span>;
-        }
-      })}
+    <div className="flex gap-1">
+      {[...Array(5)].map((_, index) => renderStar(index))}
     </div>
   );
 };
@@ -103,19 +171,24 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
   const [rating, setRating] = useState(5);
   const [author, setAuthor] = useState('');
   const [reviews, setReviews] = useState<Review[]>([]);
+  const [averageRating, setAverageRating] = useState(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const item = id ? getItemById(category, Number(id)) as Item : undefined;
 
-  // Load reviews from Supabase
+  // Load reviews and average rating from Supabase
   useEffect(() => {
-    const loadReviews = async () => {
+    const loadReviewData = async () => {
       if (item) {
-        const savedReviews = await supabaseService.getItemReviews(category, item.id);
+        const [savedReviews, avgRating] = await Promise.all([
+          supabaseService.getItemReviews(category, item.id),
+          supabaseService.getItemAverageRating(category, item.id)
+        ]);
         setReviews(savedReviews);
+        setAverageRating(avgRating);
       }
     };
-    loadReviews();
+    loadReviewData();
   }, [category, item]);
 
   // Mock multiple images
@@ -221,33 +294,10 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl md:text-4xl font-bold">Reviews</h2>
         <div className="flex items-center gap-4">
-          <a 
-            href={getGoogleReviewsUrl(item.mapsUrl)} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-sm hover:shadow-md transition-shadow"
-          >
-            <svg viewBox="0 0 24 24" className="w-6 h-6">
-              <path
-                fill="#4285F4"
-                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
-              />
-              <path
-                fill="#34A853"
-                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
-              />
-              <path
-                fill="#FBBC05"
-                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
-              />
-              <path
-                fill="#EA4335"
-                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
-              />
-            </svg>
-            <span className="text-lg font-medium">{item.rating} ⭐</span>
-            <span className="text-blue-600 hover:text-blue-800">View on Google</span>
-          </a>
+          <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-sm">
+            <StarRating rating={averageRating} size="lg" />
+            <span className="text-lg font-medium">({reviews.length} reviews)</span>
+          </div>
         </div>
       </div>
 
@@ -280,21 +330,12 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
           />
           <div className="flex flex-col gap-2">
             <label className="text-lg">Rating</label>
-            <div className="flex gap-2">
-              {[1, 2, 3, 4, 5].map((star) => (
-                <button
-                  key={star}
-                  type="button"
-                  onClick={() => setRating(star)}
-                  className={`text-2xl transition-transform hover:scale-110 ${
-                    star <= rating ? 'text-yellow-400' : 'text-gray-300'
-                  }`}
-                  aria-label={`Rate ${star} stars`}
-                >
-                  ⭐
-                </button>
-              ))}
-            </div>
+            <StarRating 
+              rating={rating} 
+              size="lg" 
+              interactive={true}
+              onRatingChange={setRating}
+            />
           </div>
           <textarea
             value={comment}
@@ -327,32 +368,10 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 md:gap-0">
             <LogoSection item={item} />
             <div className="flex flex-col items-end gap-2">
-              <a 
-                href={getGoogleReviewsUrl(item.mapsUrl)} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg hover:bg-white/20 transition-colors"
-              >
-                <svg viewBox="0 0 24 24" className="w-5 h-5">
-                  <path
-                    fill="#FFFFFF"
-                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
-                  />
-                  <path
-                    fill="#FFFFFF"
-                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
-                  />
-                  <path
-                    fill="#FFFFFF"
-                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
-                  />
-                  <path
-                    fill="#FFFFFF"
-                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
-                  />
-                </svg>
-                <StarRating rating={item.rating} size="lg" />
-              </a>
+              <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg">
+                <StarRating rating={averageRating} size="lg" />
+                <span className="text-lg">({reviews.length} reviews)</span>
+              </div>
             </div>
           </div>
         </div>
