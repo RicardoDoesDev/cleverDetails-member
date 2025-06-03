@@ -260,13 +260,13 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
                 </div>
                 {/* three social media icons in a row */}
                 <div className="flex flex-row gap-4 mt-8">
-                  <a href="https://www.facebook.com/cleverdetails" target="_blank" rel="noopener noreferrer">
+                  <a href={item.socialMedia.facebook} target="_blank" rel="noopener noreferrer">
                     <img src="https://acbrd.org.au/wp-content/uploads/2020/08/facebook-circular-logo.png" alt="Facebook" className="w-10 h-10" />
                   </a>
-                  <a href="https://www.instagram.com/cleverdetails" target="_blank" rel="noopener noreferrer">
+                  <a href={item.socialMedia.instagram} target="_blank" rel="noopener noreferrer">
                     <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-circle-512.png" alt="Instagram" className="w-10 h-10" />
                   </a>
-                  <a href="https://www.twitter.com/cleverdetails" target="_blank" rel="noopener noreferrer">
+                  <a href={item.socialMedia.website} target="_blank" rel="noopener noreferrer">
                     <img src="https://w7.pngwing.com/pngs/27/375/png-transparent-round-logo-computer-icons-web-button-internet-web-design-text-logo.png" alt="Website" className="w-10 h-10" />
                   </a>
                 </div>

@@ -14,10 +14,10 @@ export const appData: AppData = {
           name: "Cool Charters",
           email: "info@coolchartersvilamoura.com",
           logo: "Cool-Charters-BSQUAREwhite.png",
+          type: "Boat Tours",
           description: "Oferece experiências náuticas personalizadas, ideais para ocasiões especiais como aniversários, despedidas de solteiro(a), casamentos ou eventos corporativos. Os passeios incluem visitas a grutas, praias isoladas e observação de golfinhos, além de atividades aquáticas como jet ski. A equipa dedicada assegura um serviço de excelência, criando memórias inesquecíveis no mar.",
           locationIds: [3],
           rating: 5,
-          type: "Boat Tours",
           openingHours: [
             { day: "Monday", hours: "09:00 - 00:00" },
             { day: "Tuesday", hours: "09:00 - 00:00" },
@@ -31,10 +31,10 @@ export const appData: AppData = {
           phone: "+351 912 345 678",
           socialMedia: {
             facebook: "https://www.facebook.com/coolchartersvilamoura",
-            instagram: "https://www.instagram.com/coolchartersvilamoura",
-            website: "https://www.coolchartersvilamoura.com"
+            instagram: "https://www.instagram.com/coolchartersvilamoura/",
+            website: "https://coolchartersvilamoura.com/"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.122345!3d37.082651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.114271710697!2d-8.121552223229203!3d37.078585172169184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab593e20c0315%3A0xdbad05ad5ff33887!2sCool%20Charters!5e0!3m2!1spt-PT!2spt!4v1748883117704!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "5%"
@@ -53,17 +53,17 @@ export const appData: AppData = {
             "background5.jpg",
             "kerry-is-vilamoura-s.jpg",
             "cool.jpg"
-          ],
+          ]
         },
         {
           id: 2,
           name: "Passeios Ria Formosa",
           email: "reservas@passeios-ria-formosa.com",
           logo: "Passeios ria formosa.png",
+          type: "Boat Tours",
           description: "O Passeios Ria Formosa, em Olhão, oferece experiências únicas no Parque Natural da Ria Formosa. Além de passeios de barco pelas ilhas da região, disponibiliza alojamento em barcos-casa ecológicos, ideais para quem deseja dormir com as estrelas e explorar a natureza local. Os passeios incluem observação de golfinhos, cavalos-marinhos e aves, proporcionando uma imersão completa na fauna e flora da área.",
           locationIds: [5],
           rating: 5,
-          type: "Boat Tours",
           openingHours: [
             { day: "Monday", hours: "08:00 - 20:00" },
             { day: "Tuesday", hours: "08:00 - 20:00" },
@@ -76,11 +76,11 @@ export const appData: AppData = {
           address: "Ria Formosa",
           phone: "+351 912 345 679",
           socialMedia: {
-            facebook: "https://www.facebook.com/passeiosriaformosa",
-            instagram: "https://www.instagram.com/passeiosriaformosa",
-            website: "https://www.passeios-ria-formosa.com"
+            facebook: "https://www.facebook.com/passeiosbarcoriaformosa",
+            instagram: "https://www.instagram.com/passeiosriaformosa/",
+            website: "https://passeios-ria-formosa.com/"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101892.91828023992!2d-7.896293302734396!3d37.05382039999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd05530a88105cfb%3A0x696d59f8bd24833d!2sPasseios%20Ria%20Formosa!5e0!3m2!1spt-PT!2spt!4v1748883183737!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "-",
             description: "-"
@@ -93,10 +93,10 @@ export const appData: AppData = {
           name: "Formosamar",
           email: "info@formosamar.com",
           logo: "formosamar-main-logo-landscape-white.svg",
+          type: "Boat Tours",
           description: "A Formosamar, localizada em Faro, oferece experiências autênticas no Parque Natural da Ria Formosa. Disponibiliza passeios de barco, observação de aves e golfinhos, bem como aluguer de barcos, caiaques, bicicletas e equipamentos de desporto náutico. Ideal para quem deseja explorar a natureza e cultura local com guias experientes. A empresa é certificada em ecoturismo e compromete-se com práticas sustentáveis.",
           locationIds: [5],
           rating: 5,
-          type: "Boat Tours",
           openingHours: [
             { day: "Monday", hours: "09:00 - 19:00" },
             { day: "Tuesday", hours: "09:00 - 19:00" },
@@ -109,11 +109,11 @@ export const appData: AppData = {
           address: "Ria Formosa",
           phone: "+351 912 345 680",
           socialMedia: {
-            facebook: "https://www.facebook.com/formosamar",
-            instagram: "https://www.instagram.com/formosamar",
-            website: "https://www.formosamar.com"
+            facebook: "https://www.facebook.com/formosamar/",
+            instagram: "https://www.instagram.com/formosamar/",
+            website: "https://formosamar.com/"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.134567!3d37.091234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.8047220482727!2d-7.9389662732313235!3d37.014454772187065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd05533874923d89%3A0xd4bf971caf98216!2sFormosamar%20-%20Boat%20Tours%20Passeios%20na%20Ria%20Formosa!5e0!3m2!1spt-PT!2spt!4v1748883209882!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "5%"
@@ -125,12 +125,11 @@ export const appData: AppData = {
           id: 4,
           name: "AlgarExperience",
           email: "info@algarexperience.com",
+          logo: "algarexperience-vect.svg",
           type: "Boat Tours",
           description: "A AlgarExperience é líder em turismo marítimo no Algarve, oferecendo experiências únicas como passeios às grutas de Benagil, observação de golfinhos, parasailing e churrascos na praia. Com uma frota moderna e uma equipa dedicada, proporciona momentos inesquecíveis no mar.",
           locationIds: [3],
           rating: 5,
-          logo: "algarexperience-vect.svg",
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           openingHours: [
             { day: "Monday", hours: "09:00 - 20:00" },
             { day: "Tuesday", hours: "09:00 - 20:00" },
@@ -143,10 +142,11 @@ export const appData: AppData = {
           address: "Algarve",
           phone: "+351 912 345 681",
           socialMedia: {
-            facebook: "https://www.facebook.com/algarexperience",
-            instagram: "https://www.instagram.com/algarexperience",
-            website: "https://www.algarexperience.com"
+            facebook: "https://www.facebook.com/algarexperiencee",
+            instagram: "https://www.instagram.com/algarexperience/",
+            website: "https://algarexperience.com/"
           },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.162307877745!2d-8.126925009001342!3d37.077441000410495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab57f81075ba9%3A0x7aa138f8f2a3e9ed!2sAlgarExperience%20-%20Marina%20de%20Vilamoura!5e0!3m2!1spt-PT!2spt!4v1748883329499!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "10%"
@@ -158,12 +158,11 @@ export const appData: AppData = {
           id: 5,
           name: "Condor de Vilamoura",
           email: "info@condorvilamoura.com",
+          logo: "condor_logo branco.avif",
           type: "Hotel",
           description: "Descubra a costa algarvia a bordo do majestoso Condor de Vilamoura, um veleiro de 34 metros inspirado nas escunas americanas do século XIX. Com capacidade para até 120 passageiros, oferece cruzeiros de 3 horas até à Praia da Galé e passeios de dia inteiro até Benagil, com paragens para nadar, explorar grutas e desfrutar de um delicioso churrasco na praia. Uma experiência única para toda a família, combinando conforto, tradição e paisagens deslumbrantes.",
           locationIds: [3],
           rating: 5,
-          logo: "condor_logo branco.avif",
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           openingHours: [
             { day: "Monday", hours: "09:00 - 18:00" },
             { day: "Tuesday", hours: "09:00 - 18:00" },
@@ -176,10 +175,11 @@ export const appData: AppData = {
           address: "Vilamoura",
           phone: "+351 912 345 682",
           socialMedia: {
-            facebook: "https://www.facebook.com/condorvilamoura",
-            instagram: "https://www.instagram.com/condorvilamoura",
-            website: "https://www.condorvilamoura.com"
+            facebook: "https://www.facebook.com/CondorDeVilamoura/",
+            instagram: "https://www.instagram.com/condordevilamoura/",
+            website: "https://condorvilamoura.com/"
           },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Discount",
             description: "10%"
@@ -191,12 +191,11 @@ export const appData: AppData = {
           id: 6,
           name: "Ocean Quest",
           email: "info@oceanquest.com",
+          logo: "Ocean Quest.png",
           type: "Boat Tours",
           description: "Explora o melhor da costa algarvia com a Ocean Quest. Passeios de barco, grutas, golfinhos e parasailing desde Vilamoura, com uma equipa apaixonada por proporcionar experiências únicas no mar. Porque a vida é bela.",
           locationIds: [3],
           rating: 5,
-          logo: "Ocean Quest.png",
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           openingHours: [
             { day: "Monday", hours: "09:00 - 18:00" },
             { day: "Tuesday", hours: "09:00 - 18:00" },
@@ -209,10 +208,11 @@ export const appData: AppData = {
           address: "Vilamoura",
           phone: "+351 912 345 683",
           socialMedia: {
-            facebook: "https://www.facebook.com/oceanquest",
-            instagram: "https://www.instagram.com/oceanquest",
-            website: "https://www.oceanquest.com"
+            facebook: "https://www.facebook.com/boattripsvilamoura",
+            instagram: "https://www.instagram.com/oceanquestalgarve/",
+            website: "https://oceanquestalgarve.com/"
           },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sOcean%20Quest!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "10%"
@@ -224,12 +224,11 @@ export const appData: AppData = {
           id: 7,
           name: "Vilamoura Water Sports Centre",
           email: "info@vilamourawatersportscentre.com",
+          logo: "Vilamoura-Watersports-Centre-logo-Design-01-e1602070771419.webp",
           type: "Water Sports",
           description: "Situado na Marina de Vilamoura, o Vilamoura Watersports Centre oferece uma vasta gama de atividades aquáticas para todas as idades. Desde passeios de barco às grutas de Benagil, observação de golfinhos, parasailing, jet ski, wakeboard, pesca e aluguer de barcos privados, há opções para todos os gostos. Com uma equipa experiente e equipamentos de qualidade, garantem segurança e diversão em todas as experiências. Aberto diariamente, é o local perfeito para explorar a costa algarvia de uma forma única.",
           locationIds: [3],
           rating: 5,
-          logo: "Vilamoura-Watersports-Centre-logo-Design-01-e1602070771419.webp",
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           openingHours: [
             { day: "Monday", hours: "09:00 - 23:00" },
             { day: "Tuesday", hours: "09:00 - 23:00" },
@@ -242,10 +241,11 @@ export const appData: AppData = {
           address: "Vilamoura",
           phone: "+351 912 345 684",
           socialMedia: {
-            facebook: "https://www.facebook.com/vilamourawatersportscentre",
-            instagram: "https://www.instagram.com/vilamourawatersportscentre",
-            website: "https://www.vilamourawatersportscentre.com"
+            facebook: "https://www.facebook.com/VilamouraWatersportsCentre/?locale=pt_PT",
+            instagram: "https://www.instagram.com/vilamoura_watersportscentre/",
+            website: "https://www.watersportsvilamoura.com/pt-pt/"
           },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1531357987783!2d-8.124483123229288!3d37.07765947216944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab591f6e9b21f%3A0x407948f711a9e5ab!2sVilamoura%20Watersports%20Centre!5e0!3m2!1spt-PT!2spt!4v1748883466872!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "10%"
@@ -266,12 +266,11 @@ export const appData: AppData = {
           id: 1,
           name: "A ver Tavira",
           email: "restaurante@avertavira.pt",
+          logo: "AverTavira.png",
           type: "Fine Dining",
           description: "O restaurante A Ver Tavira, galardoado com uma estrela Michelin, oferece uma experiência gastronómica única no coração histórico de Tavira, com sabores algarvios e uma vista deslumbrante. Sob o comando do chef Luís Brito, junta tradição e criatividade num menu inovador.",
           locationIds: [0],
           rating: 5,
-          logo: "AverTavira.png",
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.122345!3d37.082651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           openingHours: [
             { day: "Monday", hours: "Closed" },
             { day: "Tuesday", hours: "18:30 - 21:30" },
@@ -284,10 +283,11 @@ export const appData: AppData = {
           address: "Rua de Tavira, 12",
           phone: "912 345 678",
           socialMedia: {
-            facebook: "https://www.facebook.com/avertavira",
-            instagram: "https://www.instagram.com/avertavira",
-            website: "https://www.avertavira.pt"
+            facebook: "https://www.facebook.com/avertavira.restaurante/",
+            instagram: "https://www.instagram.com/avertavirarestaurante/",
+            website: "https://avertavira.com/"
           },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.1350356455455!2d-7.653902723227645!3d37.125702272156204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd100379c4264773%3A0xca74ccd84b4f6fa!2sRestaurante%20A%20Ver%20Tavira!5e0!3m2!1spt-PT!2spt!4v1748882657083!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Welcome Drink",
             description: "Welcome Glass of Champagne"
@@ -299,12 +299,11 @@ export const appData: AppData = {
           id: 2,
           name: "Authentic",
           email: "reservations@authentic-restaurant.pt",
+          logo: "Logo-Authentic-dourado.png",
           type: "Fine Dining",
           description: "O restaurante Authentic, localizado na Quinta do Lago, oferece uma experiência gastronómica sofisticada, combinando cozinha clássica portuguesa com um toque contemporâneo, num ambiente de luxo e requinte.",
           locationIds: [1],
           rating: 5,
-          logo: "Logo-Authentic-dourado.png",
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           openingHours: [
             { day: "Monday", hours: "Closed" },
             { day: "Tuesday", hours: "Closed" },
@@ -317,27 +316,27 @@ export const appData: AppData = {
           address: "Rua Authentic, 45",
           phone: "912 345 679",
           socialMedia: {
-            facebook: "https://www.facebook.com/authentic",
-            instagram: "https://www.instagram.com/authentic",
-            website: "https://www.authentic-restaurant.pt"
+            facebook: "https://www.facebook.com/p/Restaurante-Authentic-61557286149118/",
+            instagram: "https://www.instagram.com/authentic_restaurant/",
+            website: "https://authentic-restaurant.pt/"
           },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12822.135700162466!2d-8.047785783215549!3d37.07197186103477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5007ddbbb2f%3A0xe5b9924c281ad489!2sAuthentic%20Restaurant!5e0!3m2!1spt-PT!2spt!4v1748882756760!5m2!1spt-PT!2spt",
           specialOffer: {
-            type: "Drink & Discount",
-            description: "Welcome Drink and 5% Discount on Dinner"
+            type: "Welcome Drink",
+            description: "Glass of Champagne"
           },
           rootFolder: "Authentic",
-          images: ["4d07f2e9-70b3-4b8b-a1e1-91fe37279165.avif", "c4bd01b2-7c29-405a-94d6-b566a0328e36.avif", "5e949c5e-060e-457b-ad67-b7597677c446.avif", "ff05a4b6-f867-4243-9e4b-7141f87220af.avif", "44cf2c78-1fec-4650-9ed2-eedaf4708a25.avif", "44aa29bd-0300-47b5-9ba5-83d8b8b19bd1.avif", "f818d5b4-5d61-4cc5-b0eb-e90fd92ac501.avif", "83dcbf96-9726-4f1b-a1c7-c13c5f223b98.avif", "843ccb2d-bf51-4c6a-bf0d-24ab6463b44c.avif", "036d2880-7465-460b-9c18-61260a3de321.avif"]
+          images: ["83dcbf96-9726-4f1b-a1c7-c13c5f223b98.avif", "5e949c5e-060e-457b-ad67-b7597677c446.avif", "44aa29bd-0300-47b5-9ba5-83d8b8b19bd1.avif", "4d07f2e9-70b3-4b8b-a1e1-91fe37279165.avif", "843ccb2d-bf51-4c6a-bf0d-24ab6463b44c.avif", "ff05a4b6-f867-4243-9e4b-7141f87220af.avif", "c4bd01b2-7c29-405a-94d6-b566a0328e36.avif", "44cf2c78-1fec-4650-9ed2-eedaf4708a25.avif", "036d2880-7465-460b-9c18-61260a3de321.avif", "f818d5b4-5d61-4cc5-b0eb-e90fd92ac501.avif"]
         },
         {
           id: 3,
           name: "CafeZique",
           email: "cafeziquept@gmail.com",
+          logo: "CAFEZIQUE-487bb404-679w.webp",
           type: "Fine Dining",
           description: "O restaurante CaféZique, em Loulé, combina sabores algarvios com técnicas contemporâneas, oferecendo uma experiência gastronómica única num ambiente descontraído junto ao castelo.",
           locationIds: [2],
           rating: 5,
-          logo: "CAFEZIQUE-487bb404-679w.webp",
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.134567!3d37.091234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           openingHours: [
             { day: "Monday", hours: "19:00 - 22:30" },
             { day: "Tuesday", hours: "19:00 - 22:30" },
@@ -350,27 +349,27 @@ export const appData: AppData = {
           address: "Rua Cafezique, 78",
           phone: "912 345 680",
           socialMedia: {
-            facebook: "https://www.facebook.com/cafezique",
-            instagram: "https://www.instagram.com/cafezique",
-            website: "https://www.cafezique.pt"
+            facebook: "https://www.facebook.com/Cafeziquept/?locale=pt_BR",
+            instagram: "https://www.instagram.com/cafeziquept/",
+            website: "https://www.cafezique.pt/"
           },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.5625743653195!2d-8.026760923227188!3d37.13932057215254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab18b3c096f37%3A0x3d8742940db522f6!2zQ2Fmw6law69xdWU!5e0!3m2!1spt-PT!2spt!4v1748882784435!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Welcome Drink",
             description: "Glass of Sparkling Wine"
           },
-          rootFolder: "CaféZique",
+          rootFolder: "CaféZique",
           images: ["0c8e01ad-d9ca-4b18-af60-26a700b19e31.avif", "b7455fd9-1912-4dc4-9d75-b6e3c18c21e1.avif", "c10b8475-9033-4f81-96a7-89723f3537a6.avif", "562a5999-384a-4fcf-876a-191a283c4417.avif", "1fc2a2ef-0625-4d3c-a43b-538301aad3c4.avif", "eb5af52c-c6c9-411a-87ba-578fa3de1e3f.avif", "47a07484-d88c-447f-91ed-4c7bf0a542c3.avif", "d59e735d-141e-4359-b024-3352c31e5b83.avif", "cff64c57-1e91-4133-a445-f033ab8f5838.avif", "98b3ee01-5726-41de-93f9-23ce6da1c1b7.avif"]
         },
         {
           id: 4,
           name: "Gran Sorvete",
           email: "info@gransorvete.com",
+          logo: "GranSorvete.avif",
           type: "Brunch Café",
           description: "O Gran Sorvete, na Marina de Vilamoura, é conhecido pelo seu gelado artesanal italiano, crepes e waffles, servidos num ambiente acolhedor com vista para o mar.",
           locationIds: [3],
           rating: 4,
-          logo: "GranSorvete.avif",
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.156789!3d37.098765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           openingHours: [
             { day: "Monday", hours: "11:00 - 23:00" },
             { day: "Tuesday", hours: "11:00 - 23:00" },
@@ -383,10 +382,11 @@ export const appData: AppData = {
           address: "Rua Gran Sorvete, 23",
           phone: "912 345 682",
           socialMedia: {
-            facebook: "https://www.facebook.com/gransorvete",
-            instagram: "https://www.instagram.com/gransorvete",
-            website: "https://www.gransorvete.com"
+            facebook: "https://www.facebook.com/GranSorveteVilamoura/",
+            instagram: "https://www.instagram.com/gransorvete/",
+            website: "https://gransorvete.com/"
           },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.113234707878!2d-8.12375902322921!3d37.078609872169125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5d5d983cd55%3A0xec7bb7c81350d92!2sGran%20sorvete!5e0!3m2!1spt-PT!2spt!4v1748882811766!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "10%"
@@ -398,12 +398,11 @@ export const appData: AppData = {
           id: 5,
           name: "Retinto - Rodízio & Wine",
           email: "retinto.vilamoura@gmail.com",
+          logo: "Retinto+Vilamoura-330w.webp",
           type: "Steakhouse",
           description: "O Retinto Rodízio & Wine, em Vilamoura, destaca-se pelo rodízio de carnes argentinas e brasileiras, acompanhado por uma seleção cuidada de vinhos. Ambiente acolhedor e serviço de excelência.",
           locationIds: [3],
           rating: 5,
-          logo: "Retinto+Vilamoura-330w.webp",
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.167890!3d37.102345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           openingHours: [
             { day: "Monday", hours: "18:30 - 23:30" },
             { day: "Tuesday", hours: "18:30 - 23:30" },
@@ -416,10 +415,11 @@ export const appData: AppData = {
           address: "Rua Retinto, 56",
           phone: "912 345 683",
           socialMedia: {
-            facebook: "https://www.facebook.com/retinto",
-            instagram: "https://www.instagram.com/retinto",
-            website: "https://www.retinto.pt"
+            facebook: "https://www.facebook.com/Retinto.Vilamoura/",
+            instagram: "https://www.instagram.com/retinto.vilamoura/",
+            website: "https://www.restauranteretinto.com/retinto-rodizio-n-wine"
           },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.0845960567867!2d-8.121846809000903!3d37.07929200040834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5940c8ecbd9%3A0x6755304fce06bfca!2sRetinto%20-%20Rod%C3%ADzio%20%26%20Wine%20-%20Vilamoura!5e0!3m2!1spt-PT!2spt!4v1748882848562!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Welcome Drink",
             description: "Welcome Drink"
@@ -440,11 +440,11 @@ export const appData: AppData = {
           id: 1,
           name: "Aia Racing School",
           email: "racingschool@autodromodoalgarve.com",
-          logo: "Autódromo_Internacional_Algarve_logo.png",
+          logo: "Autódromo_Internacional_Algarve_logo.png",
+          type: "Racing Experience",
           description: "Localizada no Autódromo Internacional do Algarve em Portimão, oferece experiências de condução desportiva em carros de alta performance como Porsche, Mercedes entre outros. Com instrutores experientes e uma infraestrutura de excelência, proporciona uma imersão segura e emocionante no mundo do automobilismo",
           locationIds: [6],
           rating: 5,
-          type: "Racing Experience",
           openingHours: [
             { day: "Monday", hours: "09:00 - 18:00" },
             { day: "Tuesday", hours: "09:00 - 18:00" },
@@ -457,11 +457,11 @@ export const appData: AppData = {
           address: "Autódromo Internacional do Algarve",
           phone: "+351 282 405 600",
           socialMedia: {
-            facebook: "https://www.facebook.com/autodromoalgarve",
-            instagram: "https://www.instagram.com/autodromoalgarve",
-            website: "https://www.autodromodoalgarve.com"
+            facebook: "https://www.facebook.com/AutodromodoAlgarve/",
+            instagram: "https://www.instagram.com/autodromodoalgarve/",
+            website: "https://autodromodoalgarve.com/"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.156789!3d37.098765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.7022489145315!2d-8.633461223223954!3d37.23104267212726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b255615ca13d7%3A0x1383e062c6c8f3e2!2sAia%20Racing%20School!5e0!3m2!1spt-PT!2spt!4v1748882929910!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "5%"
@@ -474,10 +474,10 @@ export const appData: AppData = {
           name: "Karting Portimão",
           email: "kia@parkalgar.com",
           logo: "Kartodromoalgarve.png",
+          type: "Karting",
           description: "O Kartódromo Internacional do Algarve, em Portimão, é uma das maiores pistas de kart da Europa, com 1,531 km de extensão. Oferece experiências para todas as idades, desde crianças até adultos, com karts adaptados às diferentes faixas etárias e níveis de experiência. Além de ser palco de competições oficiais e eventos privados, dispõe de infraestrutura completa, incluindo restaurante, boxes e lojas.",
           locationIds: [6],
           rating: 5,
-          type: "Karting",
           openingHours: [
             { day: "Monday", hours: "09:00 - 13:00, 14:00 - 17:30" },
             { day: "Tuesday", hours: "09:00 - 13:00, 14:00 - 17:30" },
@@ -490,11 +490,11 @@ export const appData: AppData = {
           address: "Parkalgar, Portimão",
           phone: "+351 282 405 650",
           socialMedia: {
-            facebook: "https://www.facebook.com/kartingportimao",
-            instagram: "https://www.instagram.com/kartingportimao",
-            website: "https://www.parkalgar.com"
+            facebook: "https://www.facebook.com/kartodromo.algarve",
+            instagram: "https://www.instagram.com/kartodromodoalgarve/",
+            website: "https://autodromodoalgarve.com/pt/the-park/kartodromo/"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.167890!3d37.102345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.658452607274!2d-8.638724023223917!3d37.23208217212703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b2498b60682cb%3A0xa6b4e4ed93bd2a1e!2sKart%C3%B3dromo%20Internacional%20do%20Algarve!5e0!3m2!1spt-PT!2spt!4v1748882967187!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "10% OFF"
@@ -507,10 +507,10 @@ export const appData: AppData = {
           name: "Slide & Splash",
           email: "info@slidesplash.com",
           logo: "logo_slidesplash.png",
+          type: "Waterpark",
           description: "O Slide & Splash, em Lagoa, é um parque aquático familiar com diversas atrações para todas as idades. Além de escorregas emocionantes, oferece áreas infantis, zonas de relaxamento e espetáculos com animais. Ideal para um dia de diversão no Algarve.\n\nHorário Sazonal:\n- Junho: 10:00 - 17:30\n- 1 Julho a 12 Setembro: 10:00 - 18:00\n- 13 Setembro a 31 Outubro: 10:00 - 17:00",
           locationIds: [7],
           rating: 5,
-          type: "Waterpark",
           openingHours: [
             { day: "Monday", hours: "10:00 - 18:00 (horário varia por época)" },
             { day: "Tuesday", hours: "10:00 - 18:00 (horário varia por época)" },
@@ -523,11 +523,11 @@ export const appData: AppData = {
           address: "Vale de Deus, 8401-901 Estombar, Lagoa",
           phone: "+351 282 340 800",
           socialMedia: {
-            facebook: "https://www.facebook.com/slidesplash",
-            instagram: "https://www.instagram.com/slidesplash",
-            website: "https://www.slidesplash.com"
+            facebook: "https://www.facebook.com/AquashowParque/?locale=pt_PT",
+            instagram: "https://www.instagram.com/aquashowparkhotel/",
+            website: "https://aquashowpark.com/"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.502345!3d37.143210!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1590.2913559327294!2d-8.474625460970353!3d37.1388415930381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ad7dcb0aff5c5%3A0xbe389806c01894c5!2sSlide%20%26%20Splash!5e0!3m2!1spt-PT!2spt!4v1748883086894!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "12% OFF"
@@ -540,10 +540,10 @@ export const appData: AppData = {
           name: "Family Golf Park",
           email: "info@familygolfpark.com",
           logo: "family-golf-park-logo-white.png",
+          type: "Golf",
           description: "Situado no coração de Vilamoura, o Family Golf Park é um destino imperdível para famílias e grupos que procuram diversão e lazer. Com dois percursos de mini golfe temáticos inspirados na Roma Antiga, o Via Áppia e o Via Lusitânia, o parque oferece uma experiência única em meio a jardins exuberantes e arquitetura romana. Além disso, dispõe de uma área de jogos para crianças, sala de jogos, snack-bar com esplanada e até um comboio turístico que percorre os principais pontos de Vilamoura. Aberto diariamente, o Family Golf Park é perfeito para um dia de diversão em família.",
           locationIds: [3],
           rating: 5,
-          type: "Golf",
           openingHours: [
             { day: "Monday", hours: "10:00 - 19:00" },
             { day: "Tuesday", hours: "10:00 - 19:00" },
@@ -556,27 +556,27 @@ export const appData: AppData = {
           address: "Family Golf Park",
           phone: "+351 282 912 345",
           socialMedia: {
-            facebook: "https://www.facebook.com/familygolfpark",
-            instagram: "https://www.instagram.com/familygolfpark",
-            website: "https://www.familygolfpark.com"
+            facebook: "https://www.facebook.com/familygolfpark.pt",
+            instagram: "https://www.instagram.com/familygolfpark/",
+            website: "https://familygolfpark.pt/"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.178901!3d37.112345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sFamily%20Golf%20Park!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "10%"
           },
           rootFolder: "Family Golf Park",
-          images: ["Family-Golf-Park_2.webp", "vulcanos.jpg", "relaxing-and-clever-minigolf.jpg", "family-golf-park-gallery-05-min.jpg", "welcome-to-the-best-europe.jpg", "lisbon-bridge.jpg", "family-golf-park.jpg", "1st-hole.jpg", "family-golf-park-gallery-10-min.jpg", "2sd-hole.jpg", "Legionario_2.webp", "Looping-Crazygolfe_2.webp"]
+          images: ["family-golf-park-gallery-05-min.jpg", "family-golf-park-gallery-10-min.jpg", "Legionario_2.webp", "Family-Golf-Park_2.webp", "Looping-Crazygolfe_2.webp", "family-golf-park.jpg", "lisbon-bridge.jpg", "relaxing-and-clever-minigolf.jpg", "vulcanos.jpg", "2sd-hole.jpg", "1st-hole.jpg", "welcome-to-the-best-europe.jpg"]
         },
         {
           id: 5,
           name: "Zoomarine",
           email: "info@zoomarine.pt",
           logo: "logozoomarine.png",
+          type: "Theme Park",
           description: "O Zoomarine, localizado perto de Albufeira, é um parque temático que combina diversão, educação e natureza. Com espetáculos de golfinhos, leões-marinhos, aves tropicais, escorregas aquáticos e uma praia artificial, é perfeito para um dia inesquecível em família. Uma aventura mágica no coração do Algarve!\n\nHorário Sazonal:\n- Março, Outubro, Novembro: 10:00 - 17:00\n- Abril a 22 de Junho & 10 Setembro a 28 de Setembro: 10:00 - 18:00\n- 23 de Junho a 7 Setembro: 10:00 - 19:30",
           locationIds: [4],
           rating: 5,
-          type: "Theme Park",
           openingHours: [
             { day: "Monday", hours: "10:00 - 19:30 (horário varia por época)" },
             { day: "Tuesday", hours: "10:00 - 19:30 (horário varia por época)" },
@@ -589,11 +589,11 @@ export const appData: AppData = {
           address: "EN 125, Km 65, 8201-864 Guia, Albufeira",
           phone: "+351 289 560 300",
           socialMedia: {
-            facebook: "https://www.facebook.com/zoomarinealgarve",
-            instagram: "https://www.instagram.com/zoomarinealgarve",
-            website: "https://www.zoomarine.pt"
+            facebook: "https://www.facebook.com/ZoomarineAlgarve/?locale=pt_PT",
+            instagram: "https://www.instagram.com/zoomarine_algarve_oficial/",
+            website: "https://www.zoomarine.pt/pt/"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.312345!3d37.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.16183350874!2d-8.317631323227639!3d37.12506467215641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ace4ed8ed7ec7%3A0x8cf7b5092d8538af!2sZoomarine%20Algarve!5e0!3m2!1spt-PT!2spt!4v1748883516694!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "-3,5€ Normal & -2,5€ Sénior/Júnior -12€ Dolphin Emotions"
@@ -602,49 +602,14 @@ export const appData: AppData = {
           images: ["145.jpg", "145 (1).jpg", "145 (2).jpg", "145 (3).jpg", "145 (4).jpg", "145 (5).jpg", "145 (6).jpg", "145 (7).jpg", "145 (8).jpg", "145 (9).jpg", "145 (10).jpg", "image_processing20240617-9-uc4gqx.jpg", "Zoomarine_2.jpg", "zoomarine.jpg"]
         },
         {
-          id: 6,
-          name: "Slide & Splash",
-          email: "info@slideandsplash.com",
-          logo: "logo_slidesplash.png",
-          description: "Slide & Splash é um parque aquático que oferece uma experiência única com piscinas, slides e atrações aquáticas. É um local ideal para relaxar e desfrutar de uma tarde de diversão.",
-          locationIds: [3],
-          rating: 5,
-          type: "Theme Park",
-          openingHours: [
-            { day: "Monday", hours: "10:00 - 19:00" },
-            { day: "Tuesday", hours: "10:00 - 19:00" },
-            { day: "Wednesday", hours: "10:00 - 19:00" },
-            { day: "Thursday", hours: "10:00 - 19:00" },
-            { day: "Friday", hours: "10:00 - 19:00" },
-            { day: "Saturday", hours: "10:00 - 19:00" },
-            { day: "Sunday", hours: "10:00 - 19:00" }
-          ],
-          address: "Slide & Splash",
-          phone: "+351 289 560 300",
-          socialMedia: {
-            facebook: "https://www.facebook.com/slideandsplash",
-            instagram: "https://www.instagram.com/slideandsplash",
-            website: "https://www.slideandsplash.com"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.312345!3d37.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
-          specialOffer: {
-            type: "Discount",
-            description: "10% off tickets"
-          },
-          rootFolder: "Slide&Splash",
-          images: ["Slide-Splash-Torre-sector-4-e-aereas_3-e1679392334545.webp", "atracoes31.jpg", "Slide-Splash-Water-Park-Algarve-Portugal.jpg", "atracoes39.jpg", "slide-splash-water-slide.jpg", "new-ride-2018-disco-river.jpg", "new-rides-2018.jpg", "black-hole.jpg", "slide-splash-2019 (1).jpg", "the-big-wave.jpg", "big-slides-tower.jpg", "slide-splash-2019.jpg", "slide-2020.jpg"]
-        },
-
-        //add Algarve Riders
-        {
           id: 7,
           name: "Algarve Riders",
           email: "info@algarveriders.com",
           logo: "logo_algarveriders.png",
+          type: "Theme Park",
           description: "Algarve Riders é uma empresa de aluguer de motos que oferece uma experiência única com motos de alta performance. É um local ideal para desfrutar de uma tarde de diversão.",
           locationIds: [3],
           rating: 5,
-          type: "Theme Park",
           openingHours: [
             { day: "Monday", hours: "8:30 - 18:00" },
             { day: "Tuesday", hours: "8:30 - 18:00" },
@@ -657,11 +622,11 @@ export const appData: AppData = {
           address: "Algarve Riders",
           phone: "+351 289 560 300",
           socialMedia: {
-            facebook: "https://www.facebook.com/algarveriders",
-            instagram: "https://www.instagram.com/algarveriders",
-            website: "https://www.algarveriders.com"
+            facebook: "https://www.facebook.com/algarveriders/?locale=pt_PT",
+            instagram: "https://www.instagram.com/algarveriders/",
+            website: "https://www.algarveriders.com/pt"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.312345!3d37.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.5144440743125!2d-8.241512908997843!3d37.09286990039514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1acc1c47179d53%3A0xae8f92aa7c2a4f1e!2sAlgarve%20Riders!5e0!3m2!1spt-PT!2spt!4v1748883603455!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "10% Discount -Tours / 5% Discount - Scooter"
@@ -669,16 +634,15 @@ export const appData: AppData = {
           rootFolder: "Algarve Riders",
           images: ["algarve-riders-available.jpg", "algarve-riders-off-road (7).jpg", "algarve-riders-off-road (6).jpg", "algarve-riders-off-road (5).jpg", "algarve-riders-off-road (4).jpg", "algarve-riders-off-road (3).jpg", "algarve-riders-off-road (2).jpg", "algarve-riders-off-road (1).jpg", "algarve-quad-tours-fun.jpg", "team-building-buggy-tour.jpg", "algarve-riders-off-road.jpg"]
         },
-        //add aquashow
         {
           id: 8,
           name: "Aquashow",
           email: "info@aquashow.com",
           logo: "aquashow_logo.png",
+          type: "Theme Park",
           description: "O Aquashow Outdoor é o maior parque aquático ao ar livre de Portugal, situado no coração do Algarve. Com escorregas gigantes, piscina de ondas, atrações para todas as idades e muita animação, é o local ideal para um dia de verão cheio de diversão, adrenalina e memórias em família ou entre amigos.",
           locationIds: [8],
           rating: 5,
-          type: "Theme Park",
           openingHours: [
             { day: "Monday", hours: "10:00 - 18:00" },
             { day: "Tuesday", hours: "10:00 - 18:00" },
@@ -691,11 +655,11 @@ export const appData: AppData = {
           address: "Aquashow",
           phone: "+351 289 560 300",
           socialMedia: {
-            facebook: "https://www.facebook.com/aquashow",
-            instagram: "https://www.instagram.com/aquashow",
-            website: "https://www.aquashow.com"
+            facebook: "https://www.facebook.com/AquashowParque/?locale=pt_PT",
+            instagram: "https://www.instagram.com/aquashowparkhotel/",
+            website: "https://aquashowpark.com/"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.312345!3d37.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.5023582651565!2d-8.074484223228705!3d37.09315767216503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab575a4f4c3dd%3A0xfddc87f54582acc1!2sAQUASHOW%20-%20Waterpark%20Outdoor%20%26%20Indoor!5e0!3m2!1spt-PT!2spt!4v1748883493782!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "10% off tickets"
@@ -717,10 +681,10 @@ export const appData: AppData = {
           name: "Quinta do Canhoto",
           email: "info@quintadocanhoto.com",
           logo: "LOGO_QDC_WHITE_NEW.png",
+          type: "Winery Tours",
           description: "A Quinta do Canhoto, em Albufeira, é uma referência em vinhos do Algarve, combinando tradição familiar com inovação, e oferece provas de vinhos e experiências únicas em enoturismo.",
           locationIds: [4],
           rating: 5,
-          type: "Winery Tours",
           openingHours: [
             { day: "Monday", hours: "11:00 - 13:00, 14:30 - 18:30" },
             { day: "Tuesday", hours: "11:00 - 13:00, 14:30 - 18:30" },
@@ -733,11 +697,11 @@ export const appData: AppData = {
           address: "Quinta do Canhoto",
           phone: "+351 912 345 678",
           socialMedia: {
-            facebook: "https://www.facebook.com/quintadocanhoto",
-            instagram: "https://www.instagram.com/quintadocanhoto",
-            website: "https://www.quintadocanhoto.com"
+            facebook: "https://www.facebook.com/p/Quinta-do-Canhoto-100049285896978/",
+            instagram: "https://www.instagram.com/quinta_do_canhoto/",
+            website: "https://www.quintadocanhoto.com/"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.178901!3d37.112345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.675044142391!2d-8.231442223228038!3d37.11285207215955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1acf3201d06d49%3A0xa8045a2667997fdb!2sQuinta%20do%20Canhoto%20Adega!5e0!3m2!1spt-PT!2spt!4v1748882885204!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "15%"
@@ -766,11 +730,11 @@ export const appData: AppData = {
           address: "Morgado do Quintão",
           phone: "+351 282 912 345",
           socialMedia: {
-            facebook: "https://www.facebook.com/morgadodoquintao",
-            instagram: "https://www.instagram.com/morgadodoquintao",
-            website: "https://www.morgadodoquintao.pt"
+            facebook: "https://www.facebook.com/morgadoquintao/",
+            instagram: "https://www.instagram.com/morgadodoquintao/",
+            website: "https://www.morgadodoquintao.pt/"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.189012!3d37.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.790358516998!2d-8.4519159232265!3d37.157684072147326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ad78519c4f4e1%3A0xe72edb7d0b164be9!2sMorgado%20do%20Quint%C3%A3o!5e0!3m2!1spt-PT!2spt!4v1748882911445!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "15%"
@@ -783,10 +747,10 @@ export const appData: AppData = {
           name: "Adega do Cantor",
           email: "info@adegadocantor.com",
           logo: "Adega do Cantor.webp",
+          type: "Winery Tours",
           description: "Descubra os sabores do Algarve na Adega do Cantor, em Albufeira. Visite as vinhas, conheça o processo de produção e prove vinhos premiados numa experiência única de enoturismo. Uma paragem obrigatória para amantes de vinho e da natureza.",
           locationIds: [7],
           rating: 5,
-          type: "Winery Tours",
           openingHours: [
             { day: "Monday", hours: "10:00 - 13:00, 14:00 - 17:00" },
             { day: "Tuesday", hours: "10:00 - 13:00, 14:00 - 17:00" },
@@ -799,11 +763,11 @@ export const appData: AppData = {
           address: "Adega do Cantor",
           phone: "+351 282 912 345",
           socialMedia: {
-            facebook: "https://www.facebook.com/adegadocantor",
-            instagram: "https://www.instagram.com/adegadocantor",
-            website: "https://www.adegadocantor.com"
+            facebook: "https://www.facebook.com/adegadocantor/?locale=pt_PT",
+            instagram: "https://www.instagram.com/adegadocantor_oficial/",
+            website: "https://winesvidanova.com/"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.198765!3d37.134567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.212284376655!2d-8.281359223227659!3d37.12386427215656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ace2f02922bbf%3A0x915f96b6f61d0948!2sAdega%20do%20Cantor!5e0!3m2!1spt-PT!2spt!4v1748883379193!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "5%"
@@ -825,10 +789,10 @@ export const appData: AppData = {
           name: "7 Seven Spa Vilamoura",
           email: "7 Seven Spa Vilamoura@cleverdetails.com",
           logo: "7spa.svg",
+          type: "Full Day Spa",
           description: "O 7 Seven Spa, no Hilton Vilamoura As Cascatas Golf Resort & Spa, oferece uma experiência de bem-estar com 14 salas de tratamento, circuito de hidroterapia, sauna, banho turco, jacuzzi e jardim zen. Ideal para relaxar e renovar energias.",
           locationIds: [3],
           rating: 5,
-          type: "Full Day Spa",
           openingHours: [
             { day: "Monday", hours: "09:45 - 21:00" },
             { day: "Tuesday", hours: "09:45 - 21:00" },
@@ -841,11 +805,11 @@ export const appData: AppData = {
           address: "Rua das oliveiras",
           phone: "912 345 678",
           socialMedia: {
-            facebook: "https://www.facebook.com/cleverdetails",
-            instagram: "https://www.instagram.com/cleverdetails",
-            website: "https://www.cleverdetails.com"
+            facebook: "https://www.facebook.com/7SevenSpaVilamoura",
+            instagram: "https://www.instagram.com/7_spa_vilamoura/",
+            website: "https://www.hilton.com/pt/hotels/faohihi-hilton-vilamoura-as-cascatas-golf-resort-and-spa/spa/"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.198765!3d37.134567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.274995797757!2d-8.123854023229336!3d37.074756772170275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5c74ac631f5%3A0xfa424fad702ea513!2sCondor%20de%20Vilamoura!5e0!3m2!1spt-PT!2spt!4v1748883412407!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Special Offer",
             description: "15% Off the Menu & €5 Off Therapeutic Circuit"
@@ -858,10 +822,10 @@ export const appData: AppData = {
           name: "Duo Spa & Life Care",
           email: "info@duospa.com",
           logo: "DuoSpacare.png",
+          type: "Wellness",
           description: "O Duo Spa & Life Care, no Cegonha Country Club em Vilamoura, oferece experiências de bem-estar com circuito de spa, sauna, banho turco e tratamentos como esfoliação ou Iyashi Dome, para momentos de relaxamento e rejuvenescimento.",
           locationIds: [3],
           rating: 5,
-          type: "Wellness",
           openingHours: [
             { day: "Monday", hours: "10:00 - 13:00, 14:30 - 19:00" },
             { day: "Tuesday", hours: "10:00 - 13:00, 14:30 - 19:00" },
@@ -874,11 +838,11 @@ export const appData: AppData = {
           address: "Vilamoura",
           phone: "+351 282 000 000",
           socialMedia: {
-            facebook: "https://www.facebook.com/duospa",
-            instagram: "https://www.instagram.com/duospa",
-            website: "https://www.duospa.com"
+            facebook: "https://www.facebook.com/profile.php?id=100092450604778",
+            instagram: "https://www.instagram.com/duospalifecare/",
+            website: "https://duospalifecare.com/"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.123456!3d37.134567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.683821499002!2d-8.153268823228066!3d37.11264317215962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ac975c94113ab%3A0xcc82fe0af660f648!2sDuoSpa%20%26%20Life%20Care!5e0!3m2!1spt-PT!2spt!4v1748882994473!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Premium Package",
             description: "20% Off Premium Treatment; €5 Off Menu; Detox Circuit Access..."
@@ -891,10 +855,10 @@ export const appData: AppData = {
           name: "DMed Clinic",
           email: "info@dmedclinic.com",
           logo: "DmedClinic.png",
+          type: "Wellness",
           description: "A DMed Clinic oferece serviços médicos ao domicílio em toda a região, incluindo consultas de Medicina Geral, Psicologia, Nutrição, Psiquiatria e Telemedicina, evitando deslocações desnecessárias.",
           locationIds: [3],
           rating: 5,
-          type: "Wellness",
           openingHours: [
             { day: "Monday", hours: "24h" },
             { day: "Tuesday", hours: "24h" },
@@ -928,11 +892,11 @@ export const appData: AppData = {
           id: 1,
           name: "Teresa",
           email: "teresa.estetica@live.com.pt",
-          logo: "Teresa Estética.jpg",
+          logo: "Teresa Estética.jpg",
+          type: "Beauty Services",
           description: "Teresa é esteticista especializada em serviços como extensão de unhas (gel/acrílico), pedicure/manicure, depilações, extensões de pestanas e tratamentos faciais. Oferece também massagens de relaxamento, tratamentos corporais como cavitação e drenagem linfática, além de maquilhagem profissional. Com uma abordagem personalizada, Teresa proporciona cuidados que visam realçar a beleza e promover o bem-estar dos seus clientes.",
           locationIds: [3],
           rating: 5,
-          type: "Beauty Services",
           openingHours: [
             { day: "Monday", hours: "Closed" },
             { day: "Tuesday", hours: "10:00 - 19:00" },
@@ -945,11 +909,11 @@ export const appData: AppData = {
           address: "Vilamoura",
           phone: "+351 282 000 000",
           socialMedia: {
-            facebook: "https://www.facebook.com/teresaestetica",
-            instagram: "https://www.instagram.com/teresaestetica",
-            website: "https://www.teresaestetica.pt"
+            facebook: "https://www.facebook.com/teresa.estetica.1/?locale=pt_PT",
+            instagram: "https://www.instagram.com/teresaestetica/",
+            website: "https://teresaestetica.blogspot.com/"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.123456!3d37.134567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.2410575051053!2d-8.119969409001797!3d37.075565200412285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab596853f1e61%3A0x4311763f59cdf941!2sTeresa%20Esteticista!5e0!3m2!1spt-PT!2spt!4v1748883059998!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
             description: "15%"
@@ -962,10 +926,10 @@ export const appData: AppData = {
           name: "Matilde",
           email: "teresa.estetica@live.com.pt",
           logo: "/images/logo/matilde.jpg",
+          type: "Beauty Services",
           description: "Expert beauty and aesthetic treatments",
           locationIds: [3],
           rating: 5,
-          type: "Beauty Services",
           openingHours: [
             { day: "Monday", hours: "09:00 - 19:00" },
             { day: "Tuesday", hours: "09:00 - 19:00" },
@@ -999,13 +963,11 @@ export const appData: AppData = {
           id: 1,
           name: "Chef André Simão",
           email: "asimao2@hotmail.com",
-          phone: "9251500",
+          logo: "ChefAndréSimao.jpg",
           type: "Personal Chef",
           description: "Chef executivo de cozinha do Monte Rei onde se encontra o restaurante recomendado pelo guia Michelin, Vistas Monte Rei. Proporciona estilos de cozinha descontraídos, para juntar amigos e familia à mesa com menus de tapas & drinks, barbecue, menu algarvio ou menu de degustação em 5 momentos para celebrações mais pormenorizadas.",
           locationIds: [6],
           rating: 5,
-          logo: "ChefAndréSimao.jpg",
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.178901!3d37.112345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           openingHours: [
             { day: "Monday", hours: "By appointment" },
             { day: "Tuesday", hours: "By appointment" },
@@ -1016,11 +978,13 @@ export const appData: AppData = {
             { day: "Sunday", hours: "By appointment" }
           ],
           address: "Service at your location",
+          phone: "9251500",
           socialMedia: {
             facebook: "https://www.facebook.com/chefandresimao",
             instagram: "https://www.instagram.com/chefandresimao",
             website: "https://www.chefandresimao.pt"
           },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.178901!3d37.112345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Welcome Package",
             description: "Porto wine and traditional Algarve sweets"
@@ -1032,12 +996,11 @@ export const appData: AppData = {
           id: 2,
           name: "Fancy Kitchen Algarve",
           email: "info@fancykitchenalgarve.com",
+          logo: "Fancy kitchen.webp",
           type: "Personal Chef",
           description: "A Fancy Kitchen Algarve oferece experiências gastronómicas exclusivas com chefs privados e catering personalizado, elevando cada momento com requinte e sabor.",
           locationIds: [4],
           rating: 5,
-          logo: "Fancy kitchen.webp",
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.142345!3d37.087654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           openingHours: [
             { day: "Monday", hours: "By appointment" },
             { day: "Tuesday", hours: "By appointment" },
@@ -1054,6 +1017,7 @@ export const appData: AppData = {
             instagram: "https://www.instagram.com/fancykitchen",
             website: "https://www.fancykitchenalgarve.com"
           },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.142345!3d37.087654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Welcome Package",
             description: "Glass of Sparkling Wine and 2 Canapés per Person"
