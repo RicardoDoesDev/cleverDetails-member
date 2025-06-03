@@ -4,6 +4,7 @@ import { emailService } from '../services/emailService';
 
 interface EmailFormData {
   name: string;
+  phone: string;
   email: string;
   subject: string;
   message: string;
@@ -14,6 +15,7 @@ const EmailPage: React.FC = () => {
   const [searchParams] = useSearchParams();
   const [formData, setFormData] = useState<EmailFormData>({
     name: '',
+    phone: '',
     email: '',
     subject: searchParams.get('subject') || '',
     message: searchParams.get('message') || '',
@@ -60,6 +62,7 @@ const EmailPage: React.FC = () => {
         });
         setFormData({
           name: '',
+          phone: '',
           email: '',
           subject: '',
           message: '',
@@ -113,6 +116,25 @@ const EmailPage: React.FC = () => {
             required
             className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-secondary"
             placeholder="Your name"
+          />
+        </div>
+
+        <div className="mb-6">
+          <label
+            htmlFor="phone"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
+            Phone
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+            className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-secondary"
+            placeholder="Your phone number"
           />
         </div>
 

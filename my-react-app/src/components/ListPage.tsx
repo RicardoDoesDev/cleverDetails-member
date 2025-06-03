@@ -27,8 +27,12 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
   const renderExtraInfo = (item: Item) => {
     return (
       <div className="font-bold mb-2 text-center">
-        <div className="text-primary text-lg md:text-xl">Special Offer:</div>
-        <div className="text-secondary text-lg">{item.specialOffer?.description}</div>
+        {item.specialOffer?.description && (
+          <>
+            <div className="text-primary text-lg md:text-xl">Special Offer:</div>
+            <div className="text-secondary text-lg">{item.specialOffer?.description}</div>
+          </>
+        )}
       </div>
     );
   };

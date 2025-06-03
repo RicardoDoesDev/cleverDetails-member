@@ -271,7 +271,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
                     </div>
                   </div>
                   {/* Phone */}
-                  <p className="text-xl md:text-2xl">{item.phone}</p>
+                  {/* <p className="text-xl md:text-2xl">{item.phone}</p> */}
                 </div>
                 {/* Social media icons */}
                 <div className="flex flex-row gap-4 mt-8">

@@ -81,10 +81,6 @@ export const appData: AppData = {
             website: "https://passeios-ria-formosa.com/"
           },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101892.91828023992!2d-7.896293302734396!3d37.05382039999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd05530a88105cfb%3A0x696d59f8bd24833d!2sPasseios%20Ria%20Formosa!5e0!3m2!1spt-PT!2spt!4v1748883183737!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "-",
-            description: "-"
-          },
           rootFolder: "Passeios Ria Formosa",
           images: ["sailing-tour.jpg", "featured-2-horas-fuseta.webp", "birdwatching.jpg", "sealife-observation.jpg", "dolphins-observation.jpg", "DJI_20240427_200812_220.webp", "dji_fly_20240425_145136_206_1714164247660_timed.webp"]
         },
