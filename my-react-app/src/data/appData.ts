@@ -463,7 +463,15 @@ export const appData: AppData = {
             description: "5% OFF"
           },
           rootFolder: "Aia Racing School",
-          images: ["295303780_10159273014723531_8030419394435337216_n.jpg", "racing-school.jpg", "AIA-Classe-A-AMG-9-scaled.jpg", "AIA-AMG-GT-Preto-27-scaled-e1744045842936.jpg", "Davanti-AIA-Racing-School.jpg"]
+          images: [
+            "295303780_10159273014723531_8030419394435337216_n.jpg",
+            "racing-school.jpg",
+            "AIA-Classe-A-AMG-9-scaled.jpg",
+            "AIA-AMG-GT-Preto-27-scaled-e1744045842936.jpg",
+            "Davanti-AIA-Racing-School.jpg",
+            "NunOrganistA_048a.jpg",
+            "parceiro_70_racing_school_cf026414_3__2___1_tonemapped2b_1__2.jpg"
+          ]
         },
         {
           id: 2,
@@ -769,7 +777,21 @@ export const appData: AppData = {
             description: "5% OFF"
           },
           rootFolder: "Adega do Cantor",
-          images: ["photo4jpg.jpg", "photo5jpg.jpg", "photo2jpg (1).jpg", "photo4jpg (1).jpg", "photo0jpg.jpg", "photo3jpg.jpg", "photo0jpg (1).jpg", "img-20190507-145609-largejpg.jpg", "img-20190507-142303-largejpg.jpg", "beautiful-cellar.jpg", "photo3jpg (1).jpg", "photo2jpg.jpg", "20181004-154037-largejpg.jpg"]
+          images: [
+            "photo4jpg.jpg",
+            "photo5jpg.jpg",
+            "photo2jpg (1).jpg",
+            "photo4jpg (1).jpg",
+            "photo0jpg.jpg",
+            "photo3jpg.jpg",
+            "photo0jpg (1).jpg",
+            "img-20190507-145609-largejpg.jpg",
+            "img-20190507-142303-largejpg.jpg",
+            "beautiful-cellar.jpg",
+            "photo3jpg (1).jpg",
+            "photo2jpg.jpg",
+            "20181004-154037-largejpg.jpg"
+          ]
         }
       ]
     },
@@ -811,7 +833,19 @@ export const appData: AppData = {
             description: "15% OFF the Menu & €5 OFF Therapeutic Circuit"
           },
           rootFolder: "7 Seven Spa Vilamoura",
-          images: ["7-Seven-Spa_-scaled.jpg", "7Spa6.jpg", "7spa-02.jpg", "7spa-01.jpg", "FAO_70271_Hilton_Vilamoura_Golf_Resort_&_Spa_0623_07.jpg", "7-seven-spa-hilton-vilamoura-bem-estar-algarve_F.webp", "faohi-spa19-hilton-vilamoura.avif", "faohi-spa25-hilton-vilamoura.avif", "faohi-spa28-hilton-vilamoura.avif", "faohi-spa11-hilton-vilamoura.avif", "faohi-spa21-hilton-vilamoura.avif"]
+          images: [
+            "7-Seven-Spa_-scaled.jpg",
+            "7Spa6.jpg",
+            "7spa-01.jpg",
+            "7spa-02.jpg",
+            "FAO_70271_Hilton_Vilamoura_Golf_Resort_&_Spa_0623_07.jpg",
+            "7-seven-spa-hilton-vilamoura-bem-estar-algarve_F.webp",
+            "faohi-spa19-hilton-vilamoura.avif",
+            "faohi-spa25-hilton-vilamoura.avif",
+            "faohi-spa28-hilton-vilamoura.avif",
+            "faohi-spa11-hilton-vilamoura.avif",
+            "faohi-spa21-hilton-vilamoura.avif"
+          ]
         },
         {
           id: 2,
@@ -844,7 +878,15 @@ export const appData: AppData = {
             description: "20% OFF Premium Treatment; €5 OFF Menu; Detox Circuit Access..."
           },
           rootFolder: "Duo Spa & Life Care",
-          images: ["474105319_527080770383605_5631574254499945256_n.jpg", "474381410_527080747050274_4179998407528808811_n.jpg", "479886329_544365938655088_6110947825713535078_n.jpg", "IMG_1721-1024x683.jpg", "piscina-interior-duo-spa-life-care-cegonha-country-club-quarteira-algarve_F.jpg"]
+          images: [
+            "474105319_527080770383605_5631574254499945256_n.jpg",
+            "474381410_527080747050274_4179998407528808811_n.jpg",
+            "479886329_544365938655088_6110947825713535078_n.jpg",
+            "IMG_1721-1024x683.jpg",
+            "piscina-interior-duo-spa-life-care-cegonha-country-club-quarteira-algarve_F.jpg",
+            "Captura de ecrã 2025-05-27, às 10.50.39.png",
+            "Captura de ecrã 2025-05-27, às 10.46.17.png"
+          ]
         },
         {
           id: 3,
@@ -1019,7 +1061,15 @@ export const appData: AppData = {
             description: "Glass of Sparkling Wine and 2 Canapés per Person"
           },
           rootFolder: "Fancy Kitchen",
-          images: ["rs=w_700,cg_true,m.webp", "rs=w_800,cg_true,m.webp", "rs=w_612,cg_true,m.webp", "rs=w_1200,cg_true,m (2).webp", "rs=w_1200,cg_true,m (3).webp", "rs=w_1200,cg_true,m.webp", "rs=w_1200,cg_true,m (1).webp"]
+          images: [
+            "rs=w_700,cg_true,m.webp",
+            "rs=w_800,cg_true,m.webp",
+            "rs=w_612,cg_true,m.webp",
+            "rs=w_1200,cg_true,m (2).webp",
+            "rs=w_1200,cg_true,m (3).webp",
+            "rs=w_1200,cg_true,m.webp",
+            "rs=w_1200,cg_true,m (1).webp"
+          ]
         }
       ]
     }
