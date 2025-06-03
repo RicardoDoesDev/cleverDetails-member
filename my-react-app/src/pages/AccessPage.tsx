@@ -55,6 +55,12 @@ const AccessPage: React.FC = () => {
               src={images[currentImageIndex]} 
               alt={`Slide ${currentImageIndex + 1}`} 
               className="absolute w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+              loading="eager"
+              decoding="async"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.src = "/images/placeholder-image.jpg";
+              }}
             />
             
             {/* Navigation arrows */}
@@ -99,6 +105,12 @@ const AccessPage: React.FC = () => {
             src="/images/access/4 casas/45 posts insta.png"
             alt="Access" 
             className="absolute w-full h-full object-cover transition-all duration-300 group-hover:brightness-110 group-hover:shadow-lg rounded-lg border-2 border-transparent group-hover:border-secondary/20"
+            loading="lazy"
+            decoding="async"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.src = "/images/placeholder-image.jpg";
+            }}
           />
         </div>
         <div className="w-2/5 aspect-[4/3] overflow-hidden rounded-lg group cursor-pointer relative">
@@ -106,6 +118,12 @@ const AccessPage: React.FC = () => {
             src="/images/access/4 casas/49762951_2284974798188748_4976247511141318656_n.jpg"
             alt="Access" 
             className="absolute w-full h-full object-cover transition-all duration-300 group-hover:brightness-110 group-hover:shadow-lg rounded-lg border-2 border-transparent group-hover:border-secondary/20"
+            loading="lazy"
+            decoding="async"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.src = "/images/placeholder-image.jpg";
+            }}
           />
         </div>
       </div>
@@ -116,6 +134,12 @@ const AccessPage: React.FC = () => {
             src="/images/access/4 casas/20230427_144655.jpg"
             alt="Access" 
             className="absolute w-full h-full object-cover transition-all duration-300 group-hover:brightness-110 group-hover:shadow-lg rounded-lg border-2 border-transparent group-hover:border-secondary/20"
+            loading="lazy"
+            decoding="async"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.src = "/images/placeholder-image.jpg";
+            }}
           />
         </div>
         <div className="w-2/5 aspect-[4/3] overflow-hidden rounded-lg group cursor-pointer relative">
@@ -123,6 +147,12 @@ const AccessPage: React.FC = () => {
             src="/images/access/4 casas/IMG_2554.JPG"
             alt="Access" 
             className="absolute w-full h-full object-cover transition-all duration-300 group-hover:brightness-110 group-hover:shadow-lg rounded-lg border-2 border-transparent group-hover:border-secondary/20"
+            loading="lazy"
+            decoding="async"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.src = "/images/placeholder-image.jpg";
+            }}
           />
         </div>
       </div>

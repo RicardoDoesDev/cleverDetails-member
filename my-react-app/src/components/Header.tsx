@@ -36,15 +36,45 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
           <div className="absolute top-0 right-0 z-[70] hidden md:block lg:block">
             <div className="flex items-center space-x-4 bg-white px-4 py-2">
               <a href="/system/languages/change/1/Lw%3D%3D" className="flex items-center hover:text-secondary transition-colors">
-                <img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="EN" className="w-5 h-4 mr-1" />
+                <img 
+                  src="https://flagicons.lipis.dev/flags/4x3/gb.svg" 
+                  alt="EN" 
+                  className="w-5 h-4 mr-1"
+                  loading="lazy"
+                  decoding="async"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = "/images/flags/gb.png";
+                  }}
+                />
                 <span>EN</span>
               </a>
               <a href="/system/languages/change/34/Lw%3D%3D" className="flex items-center hover:text-secondary transition-colors">
-                <img src="https://flagicons.lipis.dev/flags/4x3/fr.svg" alt="FR" className="w-5 h-4 mr-1" />
+                <img 
+                  src="https://flagicons.lipis.dev/flags/4x3/fr.svg" 
+                  alt="FR" 
+                  className="w-5 h-4 mr-1"
+                  loading="lazy"
+                  decoding="async"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = "/images/flags/fr.png";
+                  }}
+                />
                 <span>FR</span>
               </a>
               <a href="/system/languages/change/89/Lw%3D%3D" className="flex items-center hover:text-secondary transition-colors">
-                <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="PT" className="w-5 h-4 mr-1" />
+                <img 
+                  src="https://flagicons.lipis.dev/flags/4x3/pt.svg" 
+                  alt="PT" 
+                  className="w-5 h-4 mr-1"
+                  loading="lazy"
+                  decoding="async"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = "/images/flags/pt.png";
+                  }}
+                />
                 <span>PT</span>
               </a>
             </div>
@@ -90,6 +120,12 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
                     src="https://www.cleverdetails.com/images/logo.png" 
                     alt="Clever Details" 
                     className="h-16 md:h-20 w-auto pb-4"
+                    loading="eager"
+                    decoding="async"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = "/images/logo.png";
+                    }}
                   />
                 </Link>
               </div>
@@ -97,6 +133,12 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
                 src="https://www.cleverdetails.com/images/header-right.png" 
                 alt="Clever Details" 
                 className="hidden md:block h-16 md:h-20 w-auto"
+                loading="lazy"
+                decoding="async"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.src = "/images/header-right.png";
+                }}
               />
             </div>
           </div>

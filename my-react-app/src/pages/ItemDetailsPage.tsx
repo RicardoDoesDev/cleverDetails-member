@@ -114,7 +114,17 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 md:gap-0">
             <div className="flex items-center">
-              <img src={`/images/logo/${item.logo}`} alt={item.name} className="w-1/4 mr-12 mb-4" />
+              <img 
+                src={`/images/logo/${item.logo}`} 
+                alt={`${item.name} logo`} 
+                className="w-1/4 mr-12 mb-4"
+                loading="lazy"
+                decoding="async"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.src = "/images/placeholder-logo.png";
+                }}
+              />
               <h1 className="text-3xl md:text-4xl">{item.name}</h1>
             </div>
             <div className="text-xl md:text-2xl">{renderStars(item.rating)}</div>
@@ -141,11 +151,13 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
             <div className="hidden md:block w-1/4 aspect-[4/3] rounded-lg overflow-hidden opacity-75">
               <img
                 src={`/images/fotos/${item.rootFolder}/${images[(selectedImageIndex - 1 + images.length) % images.length]}`}
-                alt={`${item.name} previous`}
+                alt={`${item.name} - Previous image`}
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
-                  target.src = "https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600nw-1037719192.jpg";
+                  target.src = "/images/placeholder-image.jpg";
                 }}
               />
             </div>
@@ -154,11 +166,13 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
             <div className="w-full md:w-1/2 aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
               <img
                 src={`/images/fotos/${item.rootFolder}/${images[selectedImageIndex]}`}
-                alt={`${item.name} current`}
+                alt={`${item.name} - Current view`}
                 className="w-full h-full object-cover"
+                loading="eager"
+                decoding="async"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
-                  target.src = "https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600nw-1037719192.jpg";
+                  target.src = "/images/placeholder-image.jpg";
                 }}
               />
             </div>
@@ -167,11 +181,13 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
             <div className="hidden md:block w-1/4 aspect-[4/3] rounded-lg overflow-hidden opacity-75">
               <img
                 src={`/images/fotos/${item.rootFolder}/${images[(selectedImageIndex + 1) % images.length]}`}
-                alt={`${item.name} next`}
+                alt={`${item.name} - Next image`}
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
-                  target.src = "https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600nw-1037719192.jpg";
+                  target.src = "/images/placeholder-image.jpg";
                 }}
               />
             </div>
@@ -203,7 +219,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
       </div>
 
       <div className="flex flex-row items-center justify-center gap-4 text-white text-4xl py-12">
-        <p className="text-lg md:text-3xl mb-8">{item.description}</p>
+        <p className="text-lg md:text-3xl mb-8 text-justify">{item.description}</p>
       </div>
 
       <div className="px-4 md:px-0">
@@ -254,20 +270,37 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
                       ))}
                     </div>
                   </div>
-                  {/* Address and Phone */}
-                  <p className="text-xl md:text-2xl">{item.address}</p>
+                  {/* Phone */}
                   <p className="text-xl md:text-2xl">{item.phone}</p>
                 </div>
-                {/* three social media icons in a row */}
+                {/* Social media icons */}
                 <div className="flex flex-row gap-4 mt-8">
                   <a href={item.socialMedia.facebook} target="_blank" rel="noopener noreferrer">
-                    <img src="https://acbrd.org.au/wp-content/uploads/2020/08/facebook-circular-logo.png" alt="Facebook" className="w-10 h-10" />
+                    <img 
+                      src="/images/social/facebook-icon.png" 
+                      alt="Facebook" 
+                      className="w-10 h-10"
+                      loading="lazy"
+                      decoding="async" 
+                    />
                   </a>
                   <a href={item.socialMedia.instagram} target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-circle-512.png" alt="Instagram" className="w-10 h-10" />
+                    <img 
+                      src="/images/social/instagram-icon.webp" 
+                      alt="Instagram" 
+                      className="w-10 h-10"
+                      loading="lazy"
+                      decoding="async" 
+                    />
                   </a>
                   <a href={item.socialMedia.website} target="_blank" rel="noopener noreferrer">
-                    <img src="https://w7.pngwing.com/pngs/27/375/png-transparent-round-logo-computer-icons-web-button-internet-web-design-text-logo.png" alt="Website" className="w-10 h-10" />
+                    <img 
+                      src="/images/social/website-icon.svg" 
+                      alt="Website" 
+                      className="w-10 h-10"
+                      loading="lazy"
+                      decoding="async" 
+                    />
                   </a>
                 </div>
               </div>

@@ -37,7 +37,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.114271710697!2d-8.121552223229203!3d37.078585172169184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab593e20c0315%3A0xdbad05ad5ff33887!2sCool%20Charters!5e0!3m2!1spt-PT!2spt!4v1748883117704!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
-            description: "5%"
+            description: "5% OFF"
           },
           rootFolder: "Cool Charters",
           images: [
@@ -116,7 +116,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.8047220482727!2d-7.9389662732313235!3d37.014454772187065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd05533874923d89%3A0xd4bf971caf98216!2sFormosamar%20-%20Boat%20Tours%20Passeios%20na%20Ria%20Formosa!5e0!3m2!1spt-PT!2spt!4v1748883209882!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
-            description: "5%"
+            description: "5% OFF"
           },
           rootFolder: "Formosamar",
           images: ["dolphin-watching-boat.jpg", "formosamar-sailboats-ria-formosa-island.jpg", "ria-formosa-islands-boat.jpg", "ilha-deserta-and-farol.jpg", "guided-boat-trip-in-ria.jpg", "formosamar-private-tour-cruise-ria-formosa-900x500.jpg", "formosamar.jpg", "formosamar (1).jpg", "formosamar (2).jpg"]
@@ -149,7 +149,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.162307877745!2d-8.126925009001342!3d37.077441000410495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab57f81075ba9%3A0x7aa138f8f2a3e9ed!2sAlgarExperience%20-%20Marina%20de%20Vilamoura!5e0!3m2!1spt-PT!2spt!4v1748883329499!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
-            description: "10%"
+            description: "10% OFF"
           },
           rootFolder: "AlgarExperience",
           images: ["caves-coastline-tour.jpg", "dolphin-caves-catamaran.jpg", "gruta-de-benagil.jpg", "sunset.jpg", "grutas.jpg", "vista-aerea.jpg", "barbecue-na-praia.jpg", "parasailing.jpg", "belize-segundo-costa.jpg", "boat-party.jpg"]
@@ -182,7 +182,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
             type: "Discount",
-            description: "10%"
+            description: "10% OFF"
           },
           rootFolder: "condor vilamoura",
           images: ["photo0jpg.jpg", "caption (1).jpg", "vamos-para-a-praia.jpg", "caption (2).jpg", "caption.jpg", "21d228_8a694355938d49048feaba57ef829db2~mv2-1.avif", "condor-de-vilamoura (1).jpg", "condor-de-vilamoura.jpg", "21d228_28814368cb5446c1b0a8d17d8459fd48~mv2.avif", "21d228_8a694355938d49048feaba57ef829db2~mv2.avif"]
@@ -215,7 +215,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sOcean%20Quest!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
-            description: "10%"
+            description: "10% OFF"
           },
           rootFolder: "ocean quest",
           images: ["see-the-wonderful-algarvian.jpg", "swimming-stop.jpg", "traditional-cultural (1).jpg", "vilamoura-yacht-charter.jpg", "vilamoura-speed-boat-trips.jpeg", "cesar-live-on-the-guitar.jpg", "traditional-cultural.jpg", "life-is-beautiful.jpg", "exceptional-view.jpg", "dolphin-quest.jpg"]
@@ -248,7 +248,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1531357987783!2d-8.124483123229288!3d37.07765947216944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab591f6e9b21f%3A0x407948f711a9e5ab!2sVilamoura%20Watersports%20Centre!5e0!3m2!1spt-PT!2spt!4v1748883466872!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
-            description: "10%"
+            description: "10% OFF"
           },
           rootFolder: "watersports vilamoura",
           images: ["IMG_1046-scaled.webp", "photo5jpg.jpg", "foto1.webp", "jet-boat-ride-vilamoura.jpg", "Parasailing-Vilamoura-Experience-scaled.webp", "speed-boat-algarvexcite.jpg", "parasailing-boat-trips.jpg", "common-dolphin.jpg", "Fishing-In-Algarve.webp", "Dolphins-Algarve-.webp"]
@@ -389,7 +389,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.113234707878!2d-8.12375902322921!3d37.078609872169125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5d5d983cd55%3A0xec7bb7c81350d92!2sGran%20sorvete!5e0!3m2!1spt-PT!2spt!4v1748882811766!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
-            description: "10%"
+            description: "10% OFF"
           },
           rootFolder: "Gran Sorvete",
           images: ["crepes-also-served-with.jpg", "gran-gelato.jpg", "gran-sorvete-in-the-heart.jpg", "in-the-heart-of-the-vilamoura.jpg", "our-delicious-mini-pancakes.jpg", "hot-chocolate-served.jpg", "enjoy-the-delicious-combinatio.jpg", "gran-gelato (1).jpg"]
@@ -464,7 +464,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.7022489145315!2d-8.633461223223954!3d37.23104267212726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b255615ca13d7%3A0x1383e062c6c8f3e2!2sAia%20Racing%20School!5e0!3m2!1spt-PT!2spt!4v1748882929910!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
-            description: "5%"
+            description: "5% OFF"
           },
           rootFolder: "Aia Racing School",
           images: ["295303780_10159273014723531_8030419394435337216_n.jpg", "racing-school.jpg", "AIA-Classe-A-AMG-9-scaled.jpg", "AIA-AMG-GT-Preto-27-scaled-e1744045842936.jpg", "Davanti-AIA-Racing-School.jpg"]
@@ -563,7 +563,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sFamily%20Golf%20Park!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
-            description: "10%"
+            description: "10% OFF"
           },
           rootFolder: "Family Golf Park",
           images: ["family-golf-park-gallery-05-min.jpg", "family-golf-park-gallery-10-min.jpg", "Legionario_2.webp", "Family-Golf-Park_2.webp", "Looping-Crazygolfe_2.webp", "family-golf-park.jpg", "lisbon-bridge.jpg", "relaxing-and-clever-minigolf.jpg", "vulcanos.jpg", "2sd-hole.jpg", "1st-hole.jpg", "welcome-to-the-best-europe.jpg"]
@@ -596,7 +596,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.16183350874!2d-8.317631323227639!3d37.12506467215641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ace4ed8ed7ec7%3A0x8cf7b5092d8538af!2sZoomarine%20Algarve!5e0!3m2!1spt-PT!2spt!4v1748883516694!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
-            description: "-3,5€ Normal & -2,5€ Sénior/Júnior -12€ Dolphin Emotions"
+            description: "-3,5€ Normal; -2,5€ Sénior/Júnior; -12€ Dolphin Emotions"
           },
           rootFolder: "Zoomarine",
           images: ["145.jpg", "145 (1).jpg", "145 (2).jpg", "145 (3).jpg", "145 (4).jpg", "145 (5).jpg", "145 (6).jpg", "145 (7).jpg", "145 (8).jpg", "145 (9).jpg", "145 (10).jpg", "image_processing20240617-9-uc4gqx.jpg", "Zoomarine_2.jpg", "zoomarine.jpg"]
@@ -629,7 +629,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.5144440743125!2d-8.241512908997843!3d37.09286990039514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1acc1c47179d53%3A0xae8f92aa7c2a4f1e!2sAlgarve%20Riders!5e0!3m2!1spt-PT!2spt!4v1748883603455!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
-            description: "10% Discount -Tours / 5% Discount - Scooter"
+            description: "10% OFF -Tours ; 5% OFF - Scooter"
           },
           rootFolder: "Algarve Riders",
           images: ["algarve-riders-available.jpg", "algarve-riders-off-road (7).jpg", "algarve-riders-off-road (6).jpg", "algarve-riders-off-road (5).jpg", "algarve-riders-off-road (4).jpg", "algarve-riders-off-road (3).jpg", "algarve-riders-off-road (2).jpg", "algarve-riders-off-road (1).jpg", "algarve-quad-tours-fun.jpg", "team-building-buggy-tour.jpg", "algarve-riders-off-road.jpg"]
@@ -662,7 +662,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.5023582651565!2d-8.074484223228705!3d37.09315767216503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab575a4f4c3dd%3A0xfddc87f54582acc1!2sAQUASHOW%20-%20Waterpark%20Outdoor%20%26%20Indoor!5e0!3m2!1spt-PT!2spt!4v1748883493782!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
-            description: "10% off tickets"
+            description: "10% OFF"
           },
           rootFolder: "Aquashow",
           images: ["IMG_2075.jpg", "Galeria-03.jpg", "aquashow-park (6).jpg", "air-race.jpg", "aquashow-park (5).jpg", "aquashow-park (4).jpg", "aquashow-park (3).jpg", "aquashow-park (2).jpg", "aquashow-park (1).jpg", "aquashow-park.jpg"]
@@ -704,7 +704,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.675044142391!2d-8.231442223228038!3d37.11285207215955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1acf3201d06d49%3A0xa8045a2667997fdb!2sQuinta%20do%20Canhoto%20Adega!5e0!3m2!1spt-PT!2spt!4v1748882885204!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
-            description: "15%"
+            description: "15% OFF"
           },
           rootFolder: "Quinta do Canhoto",
           images: ["almoco-vinico.jpg", "as-vinhas.jpg", "espaco-exterior.jpg", "provas-de-vinho.jpg", "o-deck-da-adega.jpg", "great-day-out-lovely.jpg", "caption.jpg", "great-day-out-lovely (1).jpg", "great-day-out-lovely (2).jpg"]
@@ -737,7 +737,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.790358516998!2d-8.4519159232265!3d37.157684072147326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ad78519c4f4e1%3A0xe72edb7d0b164be9!2sMorgado%20do%20Quint%C3%A3o!5e0!3m2!1spt-PT!2spt!4v1748882911445!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
-            description: "15%"
+            description: "15% OFF"
           },
           rootFolder: "Morgado do Quintão",
           images: ["a-beautiful-plate-to.jpg", "morgado-do-quintao.jpg", "there-is-nothing-like.jpg", "wine-tasting-in-an-old.jpg", "palhete-our-best-selling.jpg", "typical-carapaus-alimados.jpg", "photo0jpg.jpg", "caption.jpg", "palhete-our-best-selling (1).jpg"]
@@ -770,7 +770,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.212284376655!2d-8.281359223227659!3d37.12386427215656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ace2f02922bbf%3A0x915f96b6f61d0948!2sAdega%20do%20Cantor!5e0!3m2!1spt-PT!2spt!4v1748883379193!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
-            description: "5%"
+            description: "5% OFF"
           },
           rootFolder: "Adega do Cantor",
           images: ["photo4jpg.jpg", "photo5jpg.jpg", "photo2jpg (1).jpg", "photo4jpg (1).jpg", "photo0jpg.jpg", "photo3jpg.jpg", "photo0jpg (1).jpg", "img-20190507-145609-largejpg.jpg", "img-20190507-142303-largejpg.jpg", "beautiful-cellar.jpg", "photo3jpg (1).jpg", "photo2jpg.jpg", "20181004-154037-largejpg.jpg"]
@@ -812,7 +812,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.274995797757!2d-8.123854023229336!3d37.074756772170275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5c74ac631f5%3A0xfa424fad702ea513!2sCondor%20de%20Vilamoura!5e0!3m2!1spt-PT!2spt!4v1748883412407!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Special Offer",
-            description: "15% Off the Menu & €5 Off Therapeutic Circuit"
+            description: "15% OFF the Menu & €5 OFF Therapeutic Circuit"
           },
           rootFolder: "7 Seven Spa Vilamoura",
           images: ["7-Seven-Spa_-scaled.jpg", "7Spa6.jpg", "7spa-02.jpg", "7spa-01.jpg", "FAO_70271_Hilton_Vilamoura_Golf_Resort_&_Spa_0623_07.jpg", "7-seven-spa-hilton-vilamoura-bem-estar-algarve_F.webp", "faohi-spa19-hilton-vilamoura.avif", "faohi-spa25-hilton-vilamoura.avif", "faohi-spa28-hilton-vilamoura.avif", "faohi-spa11-hilton-vilamoura.avif", "faohi-spa21-hilton-vilamoura.avif"]
@@ -845,7 +845,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.683821499002!2d-8.153268823228066!3d37.11264317215962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ac975c94113ab%3A0xcc82fe0af660f648!2sDuoSpa%20%26%20Life%20Care!5e0!3m2!1spt-PT!2spt!4v1748882994473!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Premium Package",
-            description: "20% Off Premium Treatment; €5 Off Menu; Detox Circuit Access..."
+            description: "20% OFF Premium Treatment; €5 OFF Menu; Detox Circuit Access..."
           },
           rootFolder: "Duo Spa & Life Care",
           images: ["474105319_527080770383605_5631574254499945256_n.jpg", "474381410_527080747050274_4179998407528808811_n.jpg", "479886329_544365938655088_6110947825713535078_n.jpg", "IMG_1721-1024x683.jpg", "piscina-interior-duo-spa-life-care-cegonha-country-club-quarteira-algarve_F.jpg"]
@@ -916,7 +916,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.2410575051053!2d-8.119969409001797!3d37.075565200412285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab596853f1e61%3A0x4311763f59cdf941!2sTeresa%20Esteticista!5e0!3m2!1spt-PT!2spt!4v1748883059998!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
-            description: "15%"
+            description: "15% OFF"
           },
           rootFolder: "Teresa",
           images: ["480701348_4010568695930914_2910058108693305940_n.jpg", "491933473_4066849246969525_5195761018195095810_n.jpg", "492114092_4066954960292287_2649987048273042468_n.jpg", "492200895_4066850363636080_3484388594312717179_n.jpg", "277158294_3199246580396467_9054406006485547937_n.jpg", "489830761_1237845965017546_3086407899245374858_n.jpg"]

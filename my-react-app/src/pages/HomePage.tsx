@@ -23,9 +23,11 @@ const HomePage: React.FC = () => {
                   src={`/images/categorias/${category.image}`}
                   alt={category.title}
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = "https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600nw-1037719192.jpg";
+                    target.src = "/images/placeholder-image.jpg";
                   }}
                 />
               </div>

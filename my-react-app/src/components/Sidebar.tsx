@@ -36,6 +36,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         <div className="flex-1 overflow-y-auto">
           <div className="p-4">
             <div className="mt-8">
+              <h2 className="py-2 px-4 mt-4 text-xl font-bold text-bold mb-4">Categories</h2>
               <nav className="space-y-2">
                 {appData.categories.map((category) => (
                   <Link
@@ -48,6 +49,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                   </Link>
                 ))}
               </nav>
+              <h2 className="py-2 px-4 mt-4 text-xl font-bold text-bold mb-4">Other</h2>
               <nav className="space-y-2 mt-4">
                 <Link
                   to="/all"
@@ -86,15 +88,45 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
             <h2 className="text-xl font-bold text-primary mb-4">Language</h2>
             <div className="flex justify-center space-x-6">
               <a href="/system/languages/change/1/Lw%3D%3D" className="flex flex-col items-center hover:text-secondary transition-colors">
-                <img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="EN" className="w-8 h-6 mb-1" />
+                <img 
+                  src="https://flagicons.lipis.dev/flags/4x3/gb.svg" 
+                  alt="EN" 
+                  className="w-8 h-6 mb-1"
+                  loading="lazy"
+                  decoding="async"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = "/images/flags/gb.png";
+                  }}
+                />
                 <span className="text-sm">EN</span>
               </a>
               <a href="/system/languages/change/34/Lw%3D%3D" className="flex flex-col items-center hover:text-secondary transition-colors">
-                <img src="https://flagicons.lipis.dev/flags/4x3/fr.svg" alt="FR" className="w-8 h-6 mb-1" />
+                <img 
+                  src="https://flagicons.lipis.dev/flags/4x3/fr.svg" 
+                  alt="FR" 
+                  className="w-8 h-6 mb-1"
+                  loading="lazy"
+                  decoding="async"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = "/images/flags/fr.png";
+                  }}
+                />
                 <span className="text-sm">FR</span>
               </a>
               <a href="/system/languages/change/89/Lw%3D%3D" className="flex flex-col items-center hover:text-secondary transition-colors">
-                <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="PT" className="w-8 h-6 mb-1" />
+                <img 
+                  src="https://flagicons.lipis.dev/flags/4x3/pt.svg" 
+                  alt="PT" 
+                  className="w-8 h-6 mb-1"
+                  loading="lazy"
+                  decoding="async"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = "/images/flags/pt.png";
+                  }}
+                />
                 <span className="text-sm">PT</span>
               </a>
             </div>
@@ -103,7 +135,17 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
 
         {/* Footer */}
         <div className="p-4 mt-auto border-t border-gray-200">
-          <img src="https://www.cleverdetails.com/images/logo.png" alt="Logo" className="h-auto mx-auto mb-2" />
+          <img 
+            src="/images/logo.png" 
+            alt="Logo" 
+            className="h-auto mx-auto mb-2"
+            loading="lazy"
+            decoding="async"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.src = "/images/placeholder-logo.png";
+            }}
+          />
           <h2 className="text-xl font-bold text-primary text-center">We ❤️ Vilamoura ...</h2>
         </div>
       </div>

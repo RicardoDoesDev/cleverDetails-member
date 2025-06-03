@@ -64,12 +64,14 @@ const Slideshow: React.FC<SlideshowProps> = ({
             style={{ transform: `translateX(${index * 100}%)` }}
           >
             <img
-              src={`${item.image}`}
+              src={item.image}
               alt={item.title || `Slide ${index + 1}`}
               className="w-full h-full object-cover"
+              loading="lazy"
+              decoding="async"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
-                target.src = item.image;
+                target.src = "/images/placeholder-image.jpg";
               }}
             />
             {showCaption && (item.title || item.description) && (
