@@ -81,6 +81,9 @@ export interface UITranslations {
     allCategories: string;
     allLocations: string;
   };
+  listPage: {
+    specialOffer: string;
+  };
   footer: {
     bookHoliday: string;
     allRightsReserved: string;

@@ -14,7 +14,7 @@ interface ListPageProps {
 
 const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllPage = false }) => {
   const navigate = useNavigate();
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
 
   const handleItemClick = (item: Item & { categoryId?: string }) => {
     if (isAllPage && item.categoryId) {
@@ -29,7 +29,7 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
       <div className="font-bold mb-2 text-center">
         {item.specialOffer?.description && (
           <>
-            <div className="text-primary text-lg md:text-xl">Special Offer:</div>
+            <div className="text-primary text-lg md:text-xl">{t.listPage.specialOffer}:</div>
             <div className="text-secondary text-lg">{item.specialOffer?.description}</div>
           </>
         )}

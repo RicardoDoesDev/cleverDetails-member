@@ -1172,6 +1172,9 @@ export const appDataFR: AppData = {
       allCategories: "Toutes les Catégories",
       allLocations: "Toutes les Localités"
     },
+    listPage: {
+      specialOffer: "Offre Spéciale"
+    },
     footer: {
       bookHoliday: "Réservez votre maison de vacances",
       allRightsReserved: "Tous droits réservés"

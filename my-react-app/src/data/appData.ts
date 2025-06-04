@@ -1161,6 +1161,9 @@ export const appData: AppData = {
       allCategories: "All Categories",
       allLocations: "All Locations"
     },
+    listPage: {
+      specialOffer: "Special Offer"
+    },
     footer: {
       bookHoliday: "Book your holiday home",
       allRightsReserved: "All rights reserved"

@@ -1170,6 +1170,9 @@ export const appDataPT: AppData = {
       allCategories: "Todas as Categorias",
       allLocations: "Todas as Localidades"
     },
+    listPage: {
+      specialOffer: "Oferta Especial"
+    },
     footer: {
       bookHoliday: "Reserve a sua casa de férias",
       allRightsReserved: "Todos os direitos reservados"
