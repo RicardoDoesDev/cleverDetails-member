@@ -1,0 +1,124 @@
+.carousel {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.carousel-items {
+  height: 100%;
+  position: relative;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s ease-in-out;
+  aspect-ratio: 14/10;
+}
+
+/* Level Styles */
+.carousel-item.level0 {  /* Center */
+  left: 10%;
+  width: 80%;
+  opacity: 1;
+  z-index: 5;
+}
+
+/* Hide side images on mobile */
+.carousel-item.level-1,
+.carousel-item.level1 {
+  display: none;
+}
+
+/* Show side images on desktop */
+@media (min-width: 768px) {
+  .carousel-item.level0 {  /* Center */
+    left: 25%;
+    width: 50%;
+  }
+
+  .carousel-item.level-1 {  /* Left */
+    display: block;
+    left: 5%;
+    width: 20%;
+    opacity: 0.5;
+    z-index: 3;
+  }
+
+  .carousel-item.level1 {  /* Right */
+    display: block;
+    left: 75%;
+    width: 20%;
+    opacity: 0.5;
+    z-index: 3;
+  }
+}
+
+/* Transitions */
+.left-enter {
+  transform: translateX(100%) translateY(-50%);
+}
+
+.left-enter-active {
+  transform: translateX(0) translateY(-50%);
+}
+
+.left-exit {
+  transform: translateX(0) translateY(-50%);
+}
+
+.left-exit-active {
+  transform: translateX(-100%) translateY(-50%);
+}
+
+.right-enter {
+  transform: translateX(-100%) translateY(-50%);
+}
+
+.right-enter-active {
+  transform: translateX(0) translateY(-50%);
+}
+
+.right-exit {
+  transform: translateX(0) translateY(-50%);
+}
+
+.right-exit-active {
+  transform: translateX(100%) translateY(-50%);
+}
+
+/* Transition durations */
+.left-enter-active,
+.left-exit-active,
+.right-enter-active,
+.right-exit-active {
+  transition: transform 500ms ease-in-out;
+}
+
+/* Add hover effect for side images */
+@media (min-width: 768px) {
+  .carousel-item.level-1:hover,
+  .carousel-item.level1:hover {
+    opacity: 0.7;
+    transform: translateY(-50%) scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+/* Ensure images maintain aspect ratio */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust carousel height for mobile */
+@media (max-width: 767px) {
+  .carousel {
+    height: 300px;
+  }
+}

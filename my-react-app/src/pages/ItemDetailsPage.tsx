@@ -4,6 +4,8 @@ import { getItemById, getLocationName } from '../services/dataService';
 import { supabaseService } from '../services/supabaseService';
 import { Item, Review } from '../types/index';
 import { useLanguage } from '../contexts/LanguageContext';
+import Carousel from '../components/Carousel';
+import '../styles/carousel.css';
 
 interface StarRatingProps {
   rating: number;
@@ -161,7 +163,6 @@ const formatDate = (dateString: string) => {
 const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [comment, setComment] = useState('');
   const [rating, setRating] = useState(5);
   const [author, setAuthor] = useState('');
@@ -186,9 +187,6 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
     };
     loadReviewData();
   }, [category, item]);
-
-  // Mock multiple images
-  const images = item?.images || [];
 
   if (!item) {
     return (
@@ -345,88 +343,10 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
 
       {/* Image Gallery */}
       <div className="relative px-4 md:px-12 bg-primary">
-        <div className="flex items-center justify-between gap-4 p-4">
-          {/* Left Arrow */}
-          <button
-            onClick={() => setSelectedImageIndex((prev) => (prev - 1 + images.length) % images.length)}
-            className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-secondary text-white p-2 rounded-full hover:bg-secondary-hover transition-colors z-10"
-          >
-            <svg className="w-4 h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-
-          {/* Images */}
-          <div className="flex-1 flex items-center justify-center gap-2 md:gap-4">
-            {/* Previous Image - Hidden on mobile */}
-            <div className="hidden md:block w-1/4 aspect-[4/3] rounded-lg overflow-hidden opacity-75">
-              <img
-                src={`/images/fotos/${item.rootFolder}/${images[(selectedImageIndex - 1 + images.length) % images.length]}`}
-                alt={`Previous view of ${item.name}`}
-                className="w-full h-full object-cover"
-                loading="lazy"
-                decoding="async"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.src = "/images/placeholder-image.jpg";
-                }}
-              />
-            </div>
-
-            {/* Current Image */}
-            <div className="w-full md:w-1/2 aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
-              <img
-                src={`/images/fotos/${item.rootFolder}/${images[selectedImageIndex]}`}
-                alt={`Current view of ${item.name}`}
-                className="w-full h-full object-cover"
-                loading="eager"
-                decoding="async"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.src = "/images/placeholder-image.jpg";
-                }}
-              />
-            </div>
-
-            {/* Next Image - Hidden on mobile */}
-            <div className="hidden md:block w-1/4 aspect-[4/3] rounded-lg overflow-hidden opacity-75">
-              <img
-                src={`/images/fotos/${item.rootFolder}/${images[(selectedImageIndex + 1) % images.length]}`}
-                alt={`Next view of ${item.name}`}
-                className="w-full h-full object-cover"
-                loading="lazy"
-                decoding="async"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.src = "/images/placeholder-image.jpg";
-                }}
-              />
-            </div>
-          </div>
-
-          {/* Right Arrow */}
-          <button
-            onClick={() => setSelectedImageIndex((prev) => (prev + 1) % images.length)}
-            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-secondary text-white p-2 rounded-full hover:bg-secondary-hover transition-colors z-10"
-          >
-            <svg className="w-4 h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-
-          {/* Dots */}
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-            {images.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setSelectedImageIndex(index)}
-                className={`w-2 h-2 rounded-full transition-all ${
-                  index === selectedImageIndex ? 'bg-white w-4' : 'bg-white bg-opacity-50'
-                }`}
-              />
-            ))}
-          </div>
-        </div>
+        <Carousel
+          items={(item?.images || []).map(image => ({ image }))}
+          rootFolder={item?.rootFolder || ''}
+        />
       </div>
 
       <div className="flex flex-row items-center justify-center gap-4 text-white text-4xl py-12">
