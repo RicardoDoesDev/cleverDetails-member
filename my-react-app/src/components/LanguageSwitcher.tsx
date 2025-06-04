@@ -3,9 +3,10 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 interface LanguageSwitcherProps {
   variant?: 'header' | 'sidebar';
+  onClose?: () => void;
 }
 
-export function LanguageSwitcher({ variant = 'header' }: LanguageSwitcherProps) {
+export function LanguageSwitcher({ variant = 'header', onClose }: LanguageSwitcherProps) {
   const { setLanguage } = useLanguage();
   
   const containerClass = variant === 'header' 
@@ -20,10 +21,17 @@ export function LanguageSwitcher({ variant = 'header' }: LanguageSwitcherProps) 
     ? "flex items-center hover:text-secondary transition-colors"
     : "flex flex-col items-center hover:text-secondary transition-colors";
 
+  const handleLanguageChange = (lang: 'en' | 'fr' | 'pt') => {
+    setLanguage(lang);
+    if (variant === 'sidebar' && onClose) {
+      onClose();
+    }
+  };
+
   return (
     <div className={containerClass}>
       <button
-        onClick={() => setLanguage('en')}
+        onClick={() => handleLanguageChange('en')}
         className={linkClass}
       >
         <img 
@@ -40,7 +48,7 @@ export function LanguageSwitcher({ variant = 'header' }: LanguageSwitcherProps) 
         <span className={variant === 'sidebar' ? "text-sm" : ""}>EN</span>
       </button>
       <button
-        onClick={() => setLanguage('fr')}
+        onClick={() => handleLanguageChange('fr')}
         className={linkClass}
       >
         <img 
@@ -57,7 +65,7 @@ export function LanguageSwitcher({ variant = 'header' }: LanguageSwitcherProps) 
         <span className={variant === 'sidebar' ? "text-sm" : ""}>FR</span>
       </button>
       <button
-        onClick={() => setLanguage('pt')}
+        onClick={() => handleLanguageChange('pt')}
         className={linkClass}
       >
         <img 

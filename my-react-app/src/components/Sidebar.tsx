@@ -87,7 +87,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
           {/* Language Selector */}
           <div className="p-4 border-t border-gray-200">
             <h2 className="text-xl font-bold text-primary mb-4">Language</h2>
-            <LanguageSwitcher variant="sidebar" />
+            <LanguageSwitcher variant="sidebar" onClose={onClose} />
           </div>
         </div>
 

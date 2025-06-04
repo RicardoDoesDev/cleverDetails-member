@@ -17,20 +17,18 @@ const HomePage: React.FC = () => {
             <Link
               key={category.id}
               to={category.route}
-              className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer transform transition-transform hover:scale-105"
             >
               <div className="h-64 relative overflow-hidden">
                 <img
                   src={`/images/categorias/${category.image}`}
                   alt={category.title}
-                  className="absolute inset-0 w-full h-full object-cover object-center transform group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
-                <div className="absolute bottom-0 left-0 p-4">
-                  <h2 className="text-white text-xl font-semibold mb-2">{category.title}</h2>
-                  <p className="text-white/80 text-sm">{category.description}</p>
-                </div>
+              <div className="p-4 text-center">
+                <h3 className="text-primary text-3xl font-semibold mb-2">{category.title}</h3>
+                <button className="text-white text-2xl bg-secondary px-4 py-2 rounded hover:bg-secondary/80 transition-colors">see more</button>
               </div>
             </Link>
           ))}

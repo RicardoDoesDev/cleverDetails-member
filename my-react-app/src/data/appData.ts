@@ -15,7 +15,8 @@ export const appData: AppData = {
           email: "info@coolchartersvilamoura.com",
           logo: "Cool-Charters-BSQUAREwhite.png",
           type: "Boat Tours",
-          description: "Oferece experiências náuticas personalizadas, ideais para ocasiões especiais como aniversários, despedidas de solteiro(a), casamentos ou eventos corporativos. Os passeios incluem visitas a grutas, praias isoladas e observação de golfinhos, além de atividades aquáticas como jet ski. A equipa dedicada assegura um serviço de excelência, criando memórias inesquecíveis no mar.",
+          //translate to english
+          description: "Offers personalized nautical experiences, ideal for special occasions such as birthdays, bachelor(ette) parties, weddings or corporate events. Tours include visits to caves, isolated beaches and dolphin watching, as well as aquatic activities like jet ski. The dedicated team ensures exceptional service, creating unforgettable memories at sea.",
           locationIds: [3],
           rating: 5,
           openingHours: [
@@ -61,7 +62,8 @@ export const appData: AppData = {
           email: "reservas@passeios-ria-formosa.com",
           logo: "Passeios ria formosa.png",
           type: "Boat Tours",
-          description: "O Passeios Ria Formosa, em Olhão, oferece experiências únicas no Parque Natural da Ria Formosa. Além de passeios de barco pelas ilhas da região, disponibiliza alojamento em barcos-casa ecológicos, ideais para quem deseja dormir com as estrelas e explorar a natureza local. Os passeios incluem observação de golfinhos, cavalos-marinhos e aves, proporcionando uma imersão completa na fauna e flora da área.",
+          //translate to english make passeios ria formosa stay as it is because that is the name of the company
+          description: "The Passeios Ria Formosa, in Olhão, offers unique experiences in the Ria Formosa Natural Park. In addition to boat tours around the islands of the region, it offers accommodation in eco-friendly houseboats, ideal for those who want to sleep under the stars and explore the local nature. Tours include dolphin watching, seahorses and bird watching, providing a complete immersion in the fauna and flora of the area.",
           locationIds: [5],
           rating: 5,
           openingHours: [
@@ -90,7 +92,8 @@ export const appData: AppData = {
           email: "info@formosamar.com",
           logo: "formosamar-main-logo-landscape-white.svg",
           type: "Boat Tours",
-          description: "A Formosamar, localizada em Faro, oferece experiências autênticas no Parque Natural da Ria Formosa. Disponibiliza passeios de barco, observação de aves e golfinhos, bem como aluguer de barcos, caiaques, bicicletas e equipamentos de desporto náutico. Ideal para quem deseja explorar a natureza e cultura local com guias experientes. A empresa é certificada em ecoturismo e compromete-se com práticas sustentáveis.",
+          //translate to english
+          description: "Formosamar, located in Faro, offers authentic experiences in the Ria Formosa Natural Park. It offers boat tours, bird and dolphin watching, as well as boat rentals, kayaks, bicycles and nautical equipment. Ideal for those who want to explore the local nature and culture with experienced guides. The company is certified in ecotourism and committed to sustainable practices.",
           locationIds: [5],
           rating: 5,
           openingHours: [
@@ -123,7 +126,8 @@ export const appData: AppData = {
           email: "info@algarexperience.com",
           logo: "algarexperience-vect.svg",
           type: "Boat Tours",
-          description: "A AlgarExperience é líder em turismo marítimo no Algarve, oferecendo experiências únicas como passeios às grutas de Benagil, observação de golfinhos, parasailing e churrascos na praia. Com uma frota moderna e uma equipa dedicada, proporciona momentos inesquecíveis no mar.",
+          //translate to english
+          description: "AlgarExperience is a leader in maritime tourism in the Algarve, offering unique experiences such as cave tours, dolphin watching, parasailing and barbecues on the beach. With a modern fleet and a dedicated team, it provides unforgettable moments at sea.",
           locationIds: [3],
           rating: 5,
           openingHours: [
