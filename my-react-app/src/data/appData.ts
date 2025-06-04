@@ -160,7 +160,8 @@ export const appData: AppData = {
           email: "info@condorvilamoura.com",
           logo: "condor_logo branco.avif",
           type: "Hotel",
-          description: "Descubra a costa algarvia a bordo do majestoso Condor de Vilamoura, um veleiro de 34 metros inspirado nas escunas americanas do século XIX. Com capacidade para até 120 passageiros, oferece cruzeiros de 3 horas até à Praia da Galé e passeios de dia inteiro até Benagil, com paragens para nadar, explorar grutas e desfrutar de um delicioso churrasco na praia. Uma experiência única para toda a família, combinando conforto, tradição e paisagens deslumbrantes.",
+          //translate to english
+          description: "Discover the Algarve coast on the majestic Condor de Vilamoura, a 34-meter-long schooner inspired by American schooners of the 19th century. With capacity for up to 120 passengers, it offers 3-hour cruises to Praia da Galé and full-day trips to Benagil, with stops for swimming, exploring caves and enjoying a delicious barbecue on the beach. A unique experience for the whole family, combining comfort, tradition and stunning landscapes.",
           locationIds: [3],
           rating: 5,
           openingHours: [
@@ -193,7 +194,8 @@ export const appData: AppData = {
           email: "info@oceanquest.com",
           logo: "Ocean Quest.png",
           type: "Boat Tours",
-          description: "Explora o melhor da costa algarvia com a Ocean Quest. Passeios de barco, grutas, golfinhos e parasailing desde Vilamoura, com uma equipa apaixonada por proporcionar experiências únicas no mar. Porque a vida é bela.",
+          //translate to english
+          description: "Explore the best of the Algarve coast with Ocean Quest. Boat tours, caves, dolphins and parasailing from Vilamoura, with a team passionate about providing unique experiences at sea. Because life is beautiful.",
           locationIds: [3],
           rating: 5,
           openingHours: [
@@ -226,7 +228,8 @@ export const appData: AppData = {
           email: "info@vilamourawatersportscentre.com",
           logo: "Vilamoura-Watersports-Centre-logo-Design-01-e1602070771419.webp",
           type: "Water Sports",
-          description: "Situado na Marina de Vilamoura, o Vilamoura Watersports Centre oferece uma vasta gama de atividades aquáticas para todas as idades. Desde passeios de barco às grutas de Benagil, observação de golfinhos, parasailing, jet ski, wakeboard, pesca e aluguer de barcos privados, há opções para todos os gostos. Com uma equipa experiente e equipamentos de qualidade, garantem segurança e diversão em todas as experiências. Aberto diariamente, é o local perfeito para explorar a costa algarvia de uma forma única.",
+          //translate to english
+          description: "Located in the Vilamoura Marina, the Vilamoura Watersports Centre offers a wide range of aquatic activities for all ages. From boat tours to Benagil caves, dolphin watching, parasailing, jet ski, wakeboard, fishing and private boat rentals, there are options for everyone. With an experienced team and quality equipment, they ensure safety and fun in all experiences. Open daily, it is the perfect place to explore the Algarve coast in a unique way.",
           locationIds: [3],
           rating: 5,
           openingHours: [
@@ -268,7 +271,8 @@ export const appData: AppData = {
           email: "restaurante@avertavira.pt",
           logo: "AverTavira.png",
           type: "Fine Dining",
-          description: "O restaurante A Ver Tavira, galardoado com uma estrela Michelin, oferece uma experiência gastronómica única no coração histórico de Tavira, com sabores algarvios e uma vista deslumbrante. Sob o comando do chef Luís Brito, junta tradição e criatividade num menu inovador.",
+          //translate to english
+          description: "The A Ver Tavira restaurant, awarded with a Michelin star, offers a unique gastronomic experience in the historic center of Tavira, with Algarvian flavors and a stunning view. Under the command of chef Luís Brito, combines tradition and creativity in an innovative menu.",
           locationIds: [0],
           rating: 5,
           openingHours: [
@@ -301,7 +305,8 @@ export const appData: AppData = {
           email: "reservations@authentic-restaurant.pt",
           logo: "Logo-Authentic-dourado.png",
           type: "Fine Dining",
-          description: "O restaurante Authentic, localizado na Quinta do Lago, oferece uma experiência gastronómica sofisticada, combinando cozinha clássica portuguesa com um toque contemporâneo, num ambiente de luxo e requinte.",
+          //translate to english
+          description: "The Authentic restaurant, located in Quinta do Lago, offers a sophisticated gastronomic experience, combining classic Portuguese cuisine with a contemporary touch, in a luxurious and refined environment.",
           locationIds: [1],
           rating: 5,
           openingHours: [
@@ -334,7 +339,8 @@ export const appData: AppData = {
           email: "cafeziquept@gmail.com",
           logo: "CAFEZIQUE-487bb404-679w.webp",
           type: "Fine Dining",
-          description: "O restaurante CaféZique, em Loulé, combina sabores algarvios com técnicas contemporâneas, oferecendo uma experiência gastronómica única num ambiente descontraído junto ao castelo.",
+          //translate to english
+          description: "The CaféZique restaurant, in Loulé, combines Algarvian flavors with contemporary techniques, offering a unique gastronomic experience in a relaxed environment next to the castle.",
           locationIds: [2],
           rating: 5,
           openingHours: [
@@ -367,7 +373,8 @@ export const appData: AppData = {
           email: "info@gransorvete.com",
           logo: "GranSorvete.avif",
           type: "Brunch Café",
-          description: "O Gran Sorvete, na Marina de Vilamoura, é conhecido pelo seu gelado artesanal italiano, crepes e waffles, servidos num ambiente acolhedor com vista para o mar.",
+          //translate to english
+          description: "The Gran Sorvete, in the Vilamoura Marina, is known for its artisanal Italian ice cream, crepes and waffles, served in a cozy environment with a view of the sea.",
           locationIds: [3],
           rating: 4,
           openingHours: [
@@ -400,7 +407,8 @@ export const appData: AppData = {
           email: "retinto.vilamoura@gmail.com",
           logo: "Retinto+Vilamoura-330w.webp",
           type: "Steakhouse",
-          description: "O Retinto Rodízio & Wine, em Vilamoura, destaca-se pelo rodízio de carnes argentinas e brasileiras, acompanhado por uma seleção cuidada de vinhos. Ambiente acolhedor e serviço de excelência.",
+          //translate to english
+          description: "The Retinto Rodízio & Wine, in Vilamoura, stands out for its Brazilian and Argentine meat buffet, accompanied by a careful selection of wines. Cozy environment and excellent service.",
           locationIds: [3],
           rating: 5,
           openingHours: [
@@ -442,7 +450,8 @@ export const appData: AppData = {
           email: "racingschool@autodromodoalgarve.com",
           logo: "Autódromo_Internacional_Algarve_logo.png",
           type: "Racing Experience",
-          description: "Localizada no Autódromo Internacional do Algarve em Portimão, oferece experiências de condução desportiva em carros de alta performance como Porsche, Mercedes entre outros. Com instrutores experientes e uma infraestrutura de excelência, proporciona uma imersão segura e emocionante no mundo do automobilismo",
+          //translate to english
+          description: "Located in the International Algarve Circuit in Portimão, offers driving experiences in high-performance cars like Porsche, Mercedes and others. With experienced instructors and an excellent infrastructure, it provides a safe and exciting immersion in the world of motorsport",
           locationIds: [6],
           rating: 5,
           openingHours: [
@@ -483,7 +492,8 @@ export const appData: AppData = {
           email: "kia@parkalgar.com",
           logo: "Kartodromoalgarve.png",
           type: "Karting",
-          description: "O Kartódromo Internacional do Algarve, em Portimão, é uma das maiores pistas de kart da Europa, com 1,531 km de extensão. Oferece experiências para todas as idades, desde crianças até adultos, com karts adaptados às diferentes faixas etárias e níveis de experiência. Além de ser palco de competições oficiais e eventos privados, dispõe de infraestrutura completa, incluindo restaurante, boxes e lojas.",
+          //translate to english
+          description: "The International Algarve Karting Circuit, in Portimão, is one of the largest karting tracks in Europe, with 1.531 km of length. It offers experiences for all ages, from children to adults, with karts adapted to different age groups and experience levels. In addition to being a stage for official competitions and private events, it has complete infrastructure, including restaurant, boxes and shops.",
           locationIds: [6],
           rating: 5,
           openingHours: [
@@ -516,7 +526,8 @@ export const appData: AppData = {
           email: "info@slidesplash.com",
           logo: "logo_slidesplash.png",
           type: "Waterpark",
-          description: "O Slide & Splash, em Lagoa, é um parque aquático familiar com diversas atrações para todas as idades. Além de escorregas emocionantes, oferece áreas infantis, zonas de relaxamento e espetáculos com animais. Ideal para um dia de diversão no Algarve.\n\nHorário Sazonal:\n- Junho: 10:00 - 17:30\n- 1 Julho a 12 Setembro: 10:00 - 18:00\n- 13 Setembro a 31 Outubro: 10:00 - 17:00",
+          //translate to english
+          description: "The Slide & Splash, in Lagoa, is a family-friendly water park with various attractions for all ages. In addition to exciting slides, it offers children's areas, relaxation zones and animal shows. Ideal for a day of fun in the Algarve.\n\nSeasonal Hours:\n- June: 10:00 - 17:30\n- July to September 12: 10:00 - 18:00\n- September 13 to October 31: 10:00 - 17:00",
           locationIds: [7],
           rating: 5,
           openingHours: [
@@ -549,7 +560,8 @@ export const appData: AppData = {
           email: "info@familygolfpark.com",
           logo: "family-golf-park-logo-white.png",
           type: "Golf",
-          description: "Situado no coração de Vilamoura, o Family Golf Park é um destino imperdível para famílias e grupos que procuram diversão e lazer. Com dois percursos de mini golfe temáticos inspirados na Roma Antiga, o Via Áppia e o Via Lusitânia, o parque oferece uma experiência única em meio a jardins exuberantes e arquitetura romana. Além disso, dispõe de uma área de jogos para crianças, sala de jogos, snack-bar com esplanada e até um comboio turístico que percorre os principais pontos de Vilamoura. Aberto diariamente, o Family Golf Park é perfeito para um dia de diversão em família.",
+          //translate to english
+          description: "Located in the heart of Vilamoura, the Family Golf Park is an unmissable destination for families and groups looking for fun and leisure. With two themed mini golf courses inspired by the Roman Via Appia and Via Lusitânia, the park offers a unique experience in the midst of lush gardens and Roman architecture. In addition, it has a games area for children, a games room, a snack bar with esplanade and even a tourist train that passes through the main points of Vilamoura. Open daily, the Family Golf Park is perfect for a day of fun with the family.",
           locationIds: [3],
           rating: 5,
           openingHours: [
@@ -582,7 +594,8 @@ export const appData: AppData = {
           email: "info@zoomarine.pt",
           logo: "logozoomarine.png",
           type: "Theme Park",
-          description: "O Zoomarine, localizado perto de Albufeira, é um parque temático que combina diversão, educação e natureza. Com espetáculos de golfinhos, leões-marinhos, aves tropicais, escorregas aquáticos e uma praia artificial, é perfeito para um dia inesquecível em família. Uma aventura mágica no coração do Algarve!\n\nHorário Sazonal:\n- Março, Outubro, Novembro: 10:00 - 17:00\n- Abril a 22 de Junho & 10 Setembro a 28 de Setembro: 10:00 - 18:00\n- 23 de Junho a 7 Setembro: 10:00 - 19:30",
+          //translate to english
+          description: "Zoomarine, located near Albufeira, is a themed park that combines fun, education and nature. With dolphin shows, sea lions, tropical birds, water slides and an artificial beach, it is perfect for an unforgettable day with the family. A magical adventure in the heart of the Algarve!\n\nSeasonal Hours:\n- March, October, November: 10:00 - 17:00\n- April to June 22 & September 10 to September 28: 10:00 - 18:00\n- June 23 to September 7: 10:00 - 19:30",
           locationIds: [4],
           rating: 5,
           openingHours: [
@@ -615,7 +628,8 @@ export const appData: AppData = {
           email: "info@algarveriders.com",
           logo: "logo_algarveriders.png",
           type: "Theme Park",
-          description: "Algarve Riders é uma empresa de aluguer de motos que oferece uma experiência única com motos de alta performance. É um local ideal para desfrutar de uma tarde de diversão.",
+          //translate to english
+          description: "Algarve Riders is a motorcycle rental company that offers a unique experience with high-performance motorcycles. It is an ideal place to enjoy an afternoon of fun.",
           locationIds: [3],
           rating: 5,
           openingHours: [
@@ -648,7 +662,8 @@ export const appData: AppData = {
           email: "info@aquashow.com",
           logo: "aquashow_logo.png",
           type: "Theme Park",
-          description: "O Aquashow Outdoor é o maior parque aquático ao ar livre de Portugal, situado no coração do Algarve. Com escorregas gigantes, piscina de ondas, atrações para todas as idades e muita animação, é o local ideal para um dia de verão cheio de diversão, adrenalina e memórias em família ou entre amigos.",
+          //translate to english
+          description: "The Aquashow Outdoor is the largest outdoor water park in Portugal, located in the heart of the Algarve. With giant slides, wave pool, attractions for all ages and lots of animation, it is the ideal place for a summer day full of fun, adrenaline and family or friends memories.",
           locationIds: [8],
           rating: 5,
           openingHours: [
@@ -690,7 +705,8 @@ export const appData: AppData = {
           email: "info@quintadocanhoto.com",
           logo: "LOGO_QDC_WHITE_NEW.png",
           type: "Winery Tours",
-          description: "A Quinta do Canhoto, em Albufeira, é uma referência em vinhos do Algarve, combinando tradição familiar com inovação, e oferece provas de vinhos e experiências únicas em enoturismo. As visitas devem ser previamente marcadas com 24h de antecedência.",
+          //translate to english
+          description: "The Quinta do Canhoto, in Albufeira, is a reference in Algarve wines, combining tradition with innovation, and offers wine tastings and unique experiences in enotourism. Visits must be previously booked with 24 hours notice.",
           locationIds: [4],
           rating: 5,
           openingHours: [
@@ -723,7 +739,8 @@ export const appData: AppData = {
           email: "info@morgadodoquintao.pt",
           logo: "Morgado do quintao.png",
           type: "Winery Tours",
-          description: "O Morgado do Quintão, em Lagoa, une tradição e sustentabilidade na produção de vinhos autênticos. Oferece provas e almoços vínicos, proporcionando uma experiência genuína e memorável no Algarve.",
+          //translate to english
+          description: "The Morgado do Quintão, in Lagoa, combines tradition and sustainability in the production of authentic wines. It offers wine tastings and unique experiences in enotourism.",
           locationIds: [7],
           rating: 5,
           openingHours: [
@@ -756,7 +773,8 @@ export const appData: AppData = {
           email: "info@adegadocantor.com",
           logo: "Adega do Cantor.webp",
           type: "Winery Tours",
-          description: "Descubra os sabores do Algarve na Adega do Cantor, em Albufeira. Visite as vinhas, conheça o processo de produção e prove vinhos premiados numa experiência única de enoturismo. Uma paragem obrigatória para amantes de vinho e da natureza.",
+          //translate to english
+          description: "Discover the flavors of the Algarve at the Adega do Cantor, in Albufeira. Visit the vineyards, learn about the production process and taste award-winning wines in a unique enotourism experience. A must-stop for wine and nature lovers.",
           locationIds: [7],
           rating: 5,
           openingHours: [
@@ -812,7 +830,8 @@ export const appData: AppData = {
           email: "7 Seven Spa Vilamoura@cleverdetails.com",
           logo: "7spa.svg",
           type: "Full Day Spa",
-          description: "O 7 Seven Spa, no Hilton Vilamoura As Cascatas Golf Resort & Spa, oferece uma experiência de bem-estar com 14 salas de tratamento, circuito de hidroterapia, sauna, banho turco, jacuzzi e jardim zen. Ideal para relaxar e renovar energias.",
+          //translate to english
+          description: "The 7 Seven Spa, at Hilton Vilamoura As Cascatas Golf Resort & Spa, offers a wellness experience with 14 treatment rooms, hydrotherapy circuit, sauna, Turkish bath, jacuzzi and zen garden. Ideal for relaxation and energy renewal.",
           locationIds: [3],
           rating: 5,
           openingHours: [
@@ -857,7 +876,8 @@ export const appData: AppData = {
           email: "info@duospa.com",
           logo: "DuoSpacare.png",
           type: "Wellness",
-          description: "O Duo Spa & Life Care, no Cegonha Country Club em Vilamoura, oferece experiências de bem-estar com circuito de spa, sauna, banho turco e tratamentos como esfoliação ou Iyashi Dome, para momentos de relaxamento e rejuvenescimento.",
+          //translate to english
+          description: "The Duo Spa & Life Care, at Cegonha Country Club in Vilamoura, offers wellness experiences with spa circuit, sauna, Turkish bath and treatments like exfoliation or Iyashi Dome, for moments of relaxation and rejuvenation.",
           locationIds: [3],
           rating: 5,
           openingHours: [
@@ -898,7 +918,8 @@ export const appData: AppData = {
           email: "info@dmedclinic.com",
           logo: "DmedClinic.png",
           type: "Wellness",
-          description: "A DMed Clinic oferece serviços médicos ao domicílio em toda a região, incluindo consultas de Medicina Geral, Psicologia, Nutrição, Psiquiatria e Telemedicina, evitando deslocações desnecessárias.",
+          //translate to english
+          description: "The DMed Clinic offers medical services at home in the entire region, including general medicine, psychology, nutrition, psychiatry and telemedicine, avoiding unnecessary trips.",
           locationIds: [3],
           rating: 5,
           openingHours: [
@@ -936,7 +957,8 @@ export const appData: AppData = {
           email: "teresa.estetica@live.com.pt",
           logo: "277158294_3199246580396467_9054406006485547937_n-removebg-preview.png",
           type: "Beauty Services",
-          description: "Teresa é esteticista especializada em serviços como extensão de unhas (gel/acrílico), pedicure/manicure, depilações, extensões de pestanas e tratamentos faciais. Oferece também massagens de relaxamento, tratamentos corporais como cavitação e drenagem linfática, além de maquilhagem profissional. Com uma abordagem personalizada, Teresa proporciona cuidados que visam realçar a beleza e promover o bem-estar dos seus clientes.",
+          //translate to english
+          description: "Teresa is a specialized esthetician offering services like nail extensions (gel/acrylic), pedicure/manicure, depilation, eyelash extensions and facial treatments. She also offers relaxation massages, body treatments like cavitation and lymphatic drainage, as well as professional makeup. With a personalized approach, Teresa provides care aimed at highlighting beauty and promoting well-being for her clients.",
           locationIds: [3],
           rating: 5,
           openingHours: [
@@ -969,6 +991,7 @@ export const appData: AppData = {
           email: "teresa.estetica@live.com.pt",
           logo: "/images/logo/matilde.jpg",
           type: "Beauty Services",
+          //translate to english
           description: "Expert beauty and aesthetic treatments",
           locationIds: [3],
           rating: 5,
@@ -1007,7 +1030,8 @@ export const appData: AppData = {
           email: "asimao2@hotmail.com",
           logo: "teste",
           type: "Personal Chef",
-          description: "Chef executivo de cozinha do Monte Rei onde se encontra o restaurante recomendado pelo guia Michelin, Vistas Monte Rei. Proporciona estilos de cozinha descontraídos, para juntar amigos e familia à mesa com menus de tapas & drinks, barbecue, menu algarvio ou menu de degustação em 5 momentos para celebrações mais pormenorizadas.",
+          //translate to english
+          description: "Executive chef of the Monte Rei where the recommended restaurant by the Michelin guide, Vistas Monte Rei. Provides relaxed cooking styles, to bring friends and family to the table with tapas & drinks, barbecue, Algarvian menu or tasting menu in 5 moments for more detailed celebrations.",
           locationIds: [6],
           rating: 5,
           openingHours: [
@@ -1040,7 +1064,8 @@ export const appData: AppData = {
           email: "info@fancykitchenalgarve.com",
           logo: "Fancy kitchen.webp",
           type: "Personal Chef",
-          description: "A Fancy Kitchen Algarve oferece experiências gastronómicas exclusivas com chefs privados e catering personalizado, elevando cada momento com requinte e sabor.",
+          //translate to english
+          description: "The Fancy Kitchen Algarve offers exclusive gastronomic experiences with private chefs and personalized catering, elevating each moment with sophistication and flavor.",
           locationIds: [4],
           rating: 5,
           openingHours: [
