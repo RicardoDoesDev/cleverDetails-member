@@ -1,6 +1,8 @@
 import React from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Footer: React.FC = () => {
+  const { t } = useLanguage();
   return (
     <footer className="bg-primary text-white py-4 px-8 relative">
       <div>
@@ -8,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="text-center">
           <h3 className="text-white text-4xl mb-6">
             <a href="https://www.cleverdetails.com" target="_blank" rel="noopener noreferrer" className="text-white no-underline opacity-90 hover:opacity-100 hover:text-secondary transition-all duration-300 text-2xl">
-              Book your holiday home
+              {t.footer.bookHoliday}
             </a>
           </h3>
         </div>
@@ -87,7 +89,7 @@ const Footer: React.FC = () => {
 
       {/* Copyright */}
       <div className="text-center text-sm mt-8 opacity-75">
-        © {new Date().getFullYear()} Clever Details. All rights reserved.
+        © {new Date().getFullYear()} Clever Details. {t.footer.allRightsReserved}
       </div>
     </footer>
   );

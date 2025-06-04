@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { useLanguage } from '../contexts/LanguageContext';
 import { appData } from '../data/appData';
+import { appDataFR } from '../data/appDataFR';
+import { appDataPT } from '../data/appDataPT';
+import { Category } from '../types';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -10,7 +13,20 @@ interface SidebarProps {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+
+  const getLocalizedAppData = () => {
+    switch (language) {
+      case 'fr':
+        return appDataFR;
+      case 'pt':
+        return appDataPT;
+      default:
+        return appData;
+    }
+  };
+
+  const localizedAppData = getLocalizedAppData();
 
   return (
     <>
@@ -74,7 +90,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
             <div className="p-4 border-b border-gray-200">
               <h2 className="text-xl font-bold text-primary mb-4">{t.sidebar.categories}</h2>
               <nav className="space-y-2">
-                {appData.categories.map((category) => (
+                {localizedAppData.categories.map((category: Category) => (
                   <Link
                     key={category.id}
                     to={category.route}

@@ -988,7 +988,6 @@ export const appDataPT: AppData = {
   ui: {
     header: {
       phoneLabel: "(Rede fixa nacional)",
-      slogan: "Nós ❤️ Vilamoura ...",
       menu: {
         advantages: "Vantagens",
         access: "Acesso",

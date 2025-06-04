@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { emailService } from '../services/emailService';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface EmailFormData {
   name: string;
@@ -12,6 +13,7 @@ interface EmailFormData {
 }
 
 const EmailPage: React.FC = () => {
+  const { t } = useLanguage();
   const [searchParams] = useSearchParams();
   const [formData, setFormData] = useState<EmailFormData>({
     name: '',
@@ -84,7 +86,7 @@ const EmailPage: React.FC = () => {
   return (
     <div className="pb-12 px-4 max-w-4xl mx-auto">
       <h1 className="text-4xl font-bold text-primary mb-8 text-center">
-        Contact Us
+        {t.contact.title}
       </h1>
       
       {submitStatus.type && (
@@ -105,7 +107,7 @@ const EmailPage: React.FC = () => {
             htmlFor="name"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
-            Name
+            {t.contact.form.name.label}
           </label>
           <input
             type="text"
@@ -115,7 +117,7 @@ const EmailPage: React.FC = () => {
             onChange={handleChange}
             required
             className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-secondary"
-            placeholder="Your name"
+            placeholder={t.contact.form.name.placeholder}
           />
         </div>
 
@@ -124,7 +126,7 @@ const EmailPage: React.FC = () => {
             htmlFor="phone"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
-            Phone
+            {t.contact.form.phone.label}
           </label>
           <input
             type="tel"
@@ -134,7 +136,7 @@ const EmailPage: React.FC = () => {
             onChange={handleChange}
             required
             className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-secondary"
-            placeholder="Your phone number"
+            placeholder={t.contact.form.phone.placeholder}
           />
         </div>
 
@@ -143,7 +145,7 @@ const EmailPage: React.FC = () => {
             htmlFor="email"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
-            Email
+            {t.contact.form.email.label}
           </label>
           <input
             type="email"
@@ -153,7 +155,7 @@ const EmailPage: React.FC = () => {
             onChange={handleChange}
             required
             className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-secondary"
-            placeholder="your.email@example.com"
+            placeholder={t.contact.form.email.placeholder}
           />
         </div>
 
@@ -162,7 +164,7 @@ const EmailPage: React.FC = () => {
             htmlFor="subject"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
-            Subject
+            {t.contact.form.subject.label}
           </label>
           <input
             type="text"
@@ -172,7 +174,7 @@ const EmailPage: React.FC = () => {
             onChange={handleChange}
             required
             className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-secondary"
-            placeholder="Message subject"
+            placeholder={t.contact.form.subject.placeholder}
           />
         </div>
 
@@ -181,7 +183,7 @@ const EmailPage: React.FC = () => {
             htmlFor="message"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
-            Message
+            {t.contact.form.message.label}
           </label>
           <textarea
             id="message"
@@ -191,7 +193,7 @@ const EmailPage: React.FC = () => {
             required
             rows={6}
             className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-secondary"
-            placeholder="Your message here..."
+            placeholder={t.contact.form.message.placeholder}
           />
         </div>
 
@@ -205,7 +207,7 @@ const EmailPage: React.FC = () => {
               ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}
             `}
           >
-            {isSubmitting ? 'Sending...' : 'Send Message'}
+            {isSubmitting ? t.contact.form.sending : t.contact.form.submit}
           </button>
         </div>
       </form>

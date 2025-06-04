@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { emailService } from '../services/emailService';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const PartnershipPage: React.FC = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     businessName: '',
     contactName: '',
@@ -33,14 +35,14 @@ const PartnershipPage: React.FC = () => {
       const emailData = {
         name: formData.contactName,
         email: formData.email,
-        subject: `Partnership Request: ${formData.businessName} - ${formData.businessType}`,
+        subject: `${t.partnership.title}: ${formData.businessName} - ${formData.businessType}`,
         message: `Business Details:
-- Business Name: ${formData.businessName}
-- Contact Name: ${formData.contactName}
-- Phone: ${formData.phone}
-- Business Type: ${formData.businessType}
+- ${t.partnership.form.businessName}: ${formData.businessName}
+- ${t.partnership.form.contactName}: ${formData.contactName}
+- ${t.partnership.form.phone}: ${formData.phone}
+- ${t.partnership.form.businessType.label}: ${formData.businessType}
 
-Description:
+${t.partnership.form.description}:
 ${formData.description}`,
         formType: 'partnership' as const
       };
@@ -61,7 +63,7 @@ ${formData.description}`,
           description: ''
         });
       } else {
-        throw new Error('Failed to send partnership request');
+        throw new Error('Failed to send partnership request. Please try again later or contact us directly at marketing@cleverdetails.pt');
       }
     } catch (error) {
       setSubmitStatus({
@@ -78,22 +80,22 @@ ${formData.description}`,
       <div className="max-w-4xl mx-auto">
         {/* Partnership Benefits */}
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <h2 className="text-2xl font-bold text-primary mb-6 text-center">Why Partner with Clever Details?</h2>
+          <h2 className="text-2xl font-bold text-primary mb-6 text-center">{t.partnership.title}</h2>
           <div className="flex flex-row items-center justify-center">
             <div className="text-center w-1/2">
-              <h3 className="font-bold mb-2 text-secondary text-xl">Reach over 6,000 quality guests annually</h3>
-              <p className="text-gray-600">A nossa rede inclui milhares de turistas nacionais e internacionais que valorizam experiências locais</p>
+              <h3 className="font-bold mb-2 text-secondary text-xl">{t.partnership.benefit1.title}</h3>
+              <p className="text-gray-600">{t.partnership.benefit1.description}</p>
             </div>
             <div className="text-center w-1/2">
-              <h3 className="font-bold mb-2 text-secondary text-xl">Boost your business visibility</h3>
-              <p className="text-gray-600">Destacamos o seu negócio no nosso website e redes sociais, aumentando o seu alcance.</p>
+              <h3 className="font-bold mb-2 text-secondary text-xl">{t.partnership.benefit2.title}</h3>
+              <p className="text-gray-600">{t.partnership.benefit2.description}</p>
             </div>
           </div>
         </div>
 
         {/* Partnership Form */}
         <div className="bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-primary mb-6">Partnership Application</h2>
+          <h2 className="text-2xl font-bold text-primary mb-6">{t.partnership.form.title}</h2>
           
           {submitStatus.type && (
             <div
@@ -111,7 +113,7 @@ ${formData.description}`,
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="businessName" className="block text-sm font-medium text-gray-700 mb-1">
-                  Business Name
+                  {t.partnership.form.businessName}
                 </label>
                 <input
                   type="text"
@@ -125,7 +127,7 @@ ${formData.description}`,
               </div>
               <div>
                 <label htmlFor="contactName" className="block text-sm font-medium text-gray-700 mb-1">
-                  Contact Name
+                  {t.partnership.form.contactName}
                 </label>
                 <input
                   type="text"
@@ -142,7 +144,7 @@ ${formData.description}`,
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                  Email
+                  {t.partnership.form.email}
                 </label>
                 <input
                   type="email"
@@ -156,7 +158,7 @@ ${formData.description}`,
               </div>
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                  Phone
+                  {t.partnership.form.phone}
                 </label>
                 <input
                   type="tel"
@@ -172,7 +174,7 @@ ${formData.description}`,
 
             <div>
               <label htmlFor="businessType" className="block text-sm font-medium text-gray-700 mb-1">
-                Business Type
+                {t.partnership.form.businessType.label}
               </label>
               <select
                 id="businessType"
@@ -182,20 +184,20 @@ ${formData.description}`,
                 className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary"
                 required
               >
-                <option value="">Select a business type</option>
-                <option value="boat-tours">Boat Tours</option>
-                <option value="restaurants">Restaurants</option>
-                <option value="activities">Activities</option>
-                <option value="winery">Winery</option>
-                <option value="wellness">Wellness</option>
-                <option value="chef-service">Chef Service</option>
-                <option value="other">Other</option>
+                <option value="">{t.partnership.form.businessType.placeholder}</option>
+                <option value="boat-tours">{t.partnership.form.businessType.options.boatTours}</option>
+                <option value="restaurants">{t.partnership.form.businessType.options.restaurants}</option>
+                <option value="activities">{t.partnership.form.businessType.options.activities}</option>
+                <option value="winery">{t.partnership.form.businessType.options.winery}</option>
+                <option value="wellness">{t.partnership.form.businessType.options.wellness}</option>
+                <option value="chef-service">{t.partnership.form.businessType.options.chefService}</option>
+                <option value="other">{t.partnership.form.businessType.options.other}</option>
               </select>
             </div>
 
             <div>
               <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
-                Business Description
+                {t.partnership.form.description}
               </label>
               <textarea
                 id="description"
@@ -216,7 +218,7 @@ ${formData.description}`,
                 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}
               `}
             >
-              {isSubmitting ? 'Submitting...' : 'Submit Application'}
+              {isSubmitting ? t.partnership.form.submitting : t.partnership.form.submit}
             </button>
           </form>
         </div>

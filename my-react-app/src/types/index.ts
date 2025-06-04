@@ -63,7 +63,6 @@ export interface Location {
 export interface UITranslations {
   header: {
     phoneLabel: string;
-    slogan: string;
     menu: {
       advantages: string;
       access: string;

@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
           <div className="absolute top-0 right-0 z-[70] hidden md:block lg:block">
             <LanguageSwitcher variant="header" />
             <div className="text-secondary font-bold text-xl py-2 text-right pr-5" style={{ fontFamily: "'Tropika Script', cursive" }}>
-              {t.header.slogan}
+              We ❤️ Vilamoura ...
             </div>
           </div>
         </div>

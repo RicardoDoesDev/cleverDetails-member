@@ -1161,7 +1161,6 @@ export const appData: AppData = {
   ui: {
     header: {
       phoneLabel: "(National fixed call network)",
-      slogan: "We ❤️ Vilamoura ...",
       menu: {
         advantages: "Advantages",
         access: "Access",
