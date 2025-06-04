@@ -62,8 +62,7 @@ export const appData: AppData = {
           email: "reservas@passeios-ria-formosa.com",
           logo: "Passeios ria formosa.png",
           type: "Boat Tours",
-          //translate to english make passeios ria formosa stay as it is because that is the name of the company
-          description: "The Passeios Ria Formosa, in Olhão, offers unique experiences in the Ria Formosa Natural Park. In addition to boat tours around the islands of the region, it offers accommodation in eco-friendly houseboats, ideal for those who want to sleep under the stars and explore the local nature. Tours include dolphin watching, seahorses and bird watching, providing a complete immersion in the fauna and flora of the area.",
+          description: "Explore the Ria Formosa with private tours in sailboats, speedboats, or traditional boats. Observe dolphins, seahorses, and birds, or enjoy unique experiences such as oysters with champagne, romantic dinners, exclusive catamaran trips, and kayak rentals. An invitation to discover the Algarve's nature with charm and authenticity.",
           locationIds: [5],
           rating: 5,
           openingHours: [
@@ -83,9 +82,12 @@ export const appData: AppData = {
             website: "https://passeios-ria-formosa.com/"
           },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101892.91828023992!2d-7.896293302734396!3d37.05382039999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd05530a88105cfb%3A0x696d59f8bd24833d!2sPasseios%20Ria%20Formosa!5e0!3m2!1spt-PT!2spt!4v1748883183737!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
           rootFolder: "Passeios Ria Formosa",
-          images: ["sailing-tour.jpg", "featured-2-horas-fuseta.webp", "birdwatching.jpg", "sealife-observation.jpg", "dolphins-observation.jpg", "DJI_20240427_200812_220.webp", "dji_fly_20240425_145136_206_1714164247660_timed.webp"],
-          isVisible: false
+          images: ["sailing-tour.jpg", "featured-2-horas-fuseta.webp", "birdwatching.jpg", "sealife-observation.jpg", "dolphins-observation.jpg", "DJI_20240427_200812_220.webp", "dji_fly_20240425_145136_206_1714164247660_timed.webp"]
         },
         {
           id: 3,
@@ -93,7 +95,6 @@ export const appData: AppData = {
           email: "info@formosamar.com",
           logo: "formosamar-main-logo-landscape-white.svg",
           type: "Boat Tours",
-          //translate to english
           description: "Formosamar, located in Faro, offers authentic experiences in the Ria Formosa Natural Park. It offers boat tours, bird and dolphin watching, as well as boat rentals, kayaks, bicycles and nautical equipment. Ideal for those who want to explore the local nature and culture with experienced guides. The company is certified in ecotourism and committed to sustainable practices.",
           locationIds: [5],
           rating: 5,
@@ -195,7 +196,6 @@ export const appData: AppData = {
           email: "info@oceanquest.com",
           logo: "Ocean Quest.png",
           type: "Boat Tours",
-          //translate to english
           description: "Explore the best of the Algarve coast with Ocean Quest. Boat tours, caves, dolphins and parasailing from Vilamoura, with a team passionate about providing unique experiences at sea. Because life is beautiful.",
           locationIds: [3],
           rating: 5,
@@ -229,7 +229,6 @@ export const appData: AppData = {
           email: "info@vilamourawatersportscentre.com",
           logo: "Vilamoura-Watersports-Centre-logo-Design-01-e1602070771419.webp",
           type: "Water Sports",
-          //translate to english
           description: "Located in the Vilamoura Marina, the Vilamoura Watersports Centre offers a wide range of aquatic activities for all ages. From boat tours to Benagil caves, dolphin watching, parasailing, jet ski, wakeboard, fishing and private boat rentals, there are options for everyone. With an experienced team and quality equipment, they ensure safety and fun in all experiences. Open daily, it is the perfect place to explore the Algarve coast in a unique way.",
           locationIds: [3],
           rating: 5,
@@ -272,7 +271,6 @@ export const appData: AppData = {
           email: "restaurante@avertavira.pt",
           logo: "AverTavira.png",
           type: "Fine Dining",
-          //translate to english
           description: "The A Ver Tavira restaurant, awarded with a Michelin star, offers a unique gastronomic experience in the historic center of Tavira, with Algarvian flavors and a stunning view. Under the command of chef Luís Brito, combines tradition and creativity in an innovative menu.",
           locationIds: [0],
           rating: 5,
@@ -340,7 +338,6 @@ export const appData: AppData = {
           email: "cafeziquept@gmail.com",
           logo: "CAFEZIQUE-487bb404-679w.webp",
           type: "Fine Dining",
-          //translate to english
           description: "The CaféZique restaurant, in Loulé, combines Algarvian flavors with contemporary techniques, offering a unique gastronomic experience in a relaxed environment next to the castle.",
           locationIds: [2],
           rating: 5,
@@ -374,7 +371,6 @@ export const appData: AppData = {
           email: "info@gransorvete.com",
           logo: "GranSorvete.avif",
           type: "Brunch Café",
-          //translate to english
           description: "The Gran Sorvete, in the Vilamoura Marina, is known for its artisanal Italian ice cream, crepes and waffles, served in a cozy environment with a view of the sea.",
           locationIds: [3],
           rating: 4,
@@ -408,7 +404,6 @@ export const appData: AppData = {
           email: "retinto.vilamoura@gmail.com",
           logo: "Retinto+Vilamoura-330w.webp",
           type: "Steakhouse",
-          //translate to english
           description: "The Retinto Rodízio & Wine, in Vilamoura, stands out for its Brazilian and Argentine meat buffet, accompanied by a careful selection of wines. Cozy environment and excellent service.",
           locationIds: [3],
           rating: 5,
@@ -451,7 +446,6 @@ export const appData: AppData = {
           email: "racingschool@autodromodoalgarve.com",
           logo: "Autódromo_Internacional_Algarve_logo.png",
           type: "Racing Experience",
-          //translate to english
           description: "Located in the International Algarve Circuit in Portimão, offers driving experiences in high-performance cars like Porsche, Mercedes and others. With experienced instructors and an excellent infrastructure, it provides a safe and exciting immersion in the world of motorsport",
           locationIds: [6],
           rating: 5,
@@ -493,7 +487,6 @@ export const appData: AppData = {
           email: "kia@parkalgar.com",
           logo: "Kartodromoalgarve.png",
           type: "Karting",
-          //translate to english
           description: "The International Algarve Karting Circuit, in Portimão, is one of the largest karting tracks in Europe, with 1.531 km of length. It offers experiences for all ages, from children to adults, with karts adapted to different age groups and experience levels. In addition to being a stage for official competitions and private events, it has complete infrastructure, including restaurant, boxes and shops.",
           locationIds: [6],
           rating: 5,
@@ -527,7 +520,6 @@ export const appData: AppData = {
           email: "info@slidesplash.com",
           logo: "logo_slidesplash.png",
           type: "Waterpark",
-          //translate to english
           description: "The Slide & Splash, in Lagoa, is a family-friendly water park with various attractions for all ages. In addition to exciting slides, it offers children's areas, relaxation zones and animal shows. Ideal for a day of fun in the Algarve.\n\nSeasonal Hours:\n- June: 10:00 - 17:30\n- July to September 12: 10:00 - 18:00\n- September 13 to October 31: 10:00 - 17:00",
           locationIds: [7],
           rating: 5,
@@ -561,7 +553,6 @@ export const appData: AppData = {
           email: "info@familygolfpark.com",
           logo: "family-golf-park-logo-white.png",
           type: "Golf",
-          //translate to english
           description: "Located in the heart of Vilamoura, the Family Golf Park is an unmissable destination for families and groups looking for fun and leisure. With two themed mini golf courses inspired by the Roman Via Appia and Via Lusitânia, the park offers a unique experience in the midst of lush gardens and Roman architecture. In addition, it has a games area for children, a games room, a snack bar with esplanade and even a tourist train that passes through the main points of Vilamoura. Open daily, the Family Golf Park is perfect for a day of fun with the family.",
           locationIds: [3],
           rating: 5,
@@ -629,7 +620,6 @@ export const appData: AppData = {
           email: "info@algarveriders.com",
           logo: "logo_algarveriders.png",
           type: "Theme Park",
-          //translate to english
           description: "Algarve Riders is a motorcycle rental company that offers a unique experience with high-performance motorcycles. It is an ideal place to enjoy an afternoon of fun.",
           locationIds: [3],
           rating: 5,
@@ -663,7 +653,6 @@ export const appData: AppData = {
           email: "info@aquashow.com",
           logo: "aquashow_logo.png",
           type: "Theme Park",
-          //translate to english
           description: "The Aquashow Outdoor is the largest outdoor water park in Portugal, located in the heart of the Algarve. With giant slides, wave pool, attractions for all ages and lots of animation, it is the ideal place for a summer day full of fun, adrenaline and family or friends memories.",
           locationIds: [8],
           rating: 5,
@@ -706,7 +695,6 @@ export const appData: AppData = {
           email: "info@quintadocanhoto.com",
           logo: "LOGO_QDC_WHITE_NEW.png",
           type: "Winery Tours",
-          //translate to english
           description: "The Quinta do Canhoto, in Albufeira, is a reference in Algarve wines, combining tradition with innovation, and offers wine tastings and unique experiences in enotourism. Visits must be previously booked with 24 hours notice.",
           locationIds: [4],
           rating: 5,
@@ -773,7 +761,6 @@ export const appData: AppData = {
           email: "info@adegadocantor.com",
           logo: "Adega do Cantor.webp",
           type: "Winery Tours",
-          //translate to english
           description: "Discover the flavors of the Algarve at the Adega do Cantor, in Albufeira. Visit the vineyards, learn about the production process and taste award-winning wines in a unique enotourism experience. A must-stop for wine and nature lovers.",
           locationIds: [7],
           rating: 5,
@@ -876,7 +863,6 @@ export const appData: AppData = {
           email: "info@duospa.com",
           logo: "DuoSpacare.png",
           type: "Wellness",
-          //translate to english
           description: "The Duo Spa & Life Care, at Cegonha Country Club in Vilamoura, offers wellness experiences with spa circuit, sauna, Turkish bath and treatments like exfoliation or Iyashi Dome, for moments of relaxation and rejuvenation.",
           locationIds: [3],
           rating: 5,
@@ -918,7 +904,6 @@ export const appData: AppData = {
           email: "info@dmedclinic.com",
           logo: "DmedClinic.png",
           type: "Wellness",
-          //translate to english
           description: "The DMed Clinic offers medical services at home in the entire region, including general medicine, psychology, nutrition, psychiatry and telemedicine, avoiding unnecessary trips.",
           locationIds: [3],
           rating: 5,
@@ -957,7 +942,6 @@ export const appData: AppData = {
           email: "teresa.estetica@live.com.pt",
           logo: "277158294_3199246580396467_9054406006485547937_n-removebg-preview.png",
           type: "Beauty Services",
-          //translate to english
           description: "Teresa is a specialized esthetician offering services like nail extensions (gel/acrylic), pedicure/manicure, depilation, eyelash extensions and facial treatments. She also offers relaxation massages, body treatments like cavitation and lymphatic drainage, as well as professional makeup. With a personalized approach, Teresa provides care aimed at highlighting beauty and promoting well-being for her clients.",
           locationIds: [3],
           rating: 5,
@@ -991,7 +975,6 @@ export const appData: AppData = {
           email: "teresa.estetica@live.com.pt",
           logo: "/images/logo/matilde.jpg",
           type: "Beauty Services",
-          //translate to english
           description: "Expert beauty and aesthetic treatments",
           locationIds: [3],
           rating: 5,
@@ -1031,7 +1014,6 @@ export const appData: AppData = {
           email: "asimao2@hotmail.com",
           logo: "teste",
           type: "Personal Chef",
-          //translate to english
           description: "Executive chef of the Monte Rei where the recommended restaurant by the Michelin guide, Vistas Monte Rei. Provides relaxed cooking styles, to bring friends and family to the table with tapas & drinks, barbecue, Algarvian menu or tasting menu in 5 moments for more detailed celebrations.",
           locationIds: [6],
           rating: 5,
@@ -1065,7 +1047,6 @@ export const appData: AppData = {
           email: "info@fancykitchenalgarve.com",
           logo: "Fancy kitchen.webp",
           type: "Personal Chef",
-          //translate to english
           description: "The Fancy Kitchen Algarve offers exclusive gastronomic experiences with private chefs and personalized catering, elevating each moment with sophistication and flavor.",
           locationIds: [4],
           rating: 5,
@@ -1174,6 +1155,11 @@ export const appData: AppData = {
       categories: "Categories",
       other: "Other",
       language: "Language"
+    },
+    searchBar: {
+      searchPlaceholder: "Search experiences...",
+      allCategories: "All Categories",
+      allLocations: "All Locations"
     },
     footer: {
       bookHoliday: "Book your holiday home",

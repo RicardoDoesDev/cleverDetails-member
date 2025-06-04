@@ -76,6 +76,11 @@ export interface UITranslations {
     other: string;
     language: string;
   };
+  searchBar: {
+    searchPlaceholder: string;
+    allCategories: string;
+    allLocations: string;
+  };
   footer: {
     bookHoliday: string;
     allRightsReserved: string;

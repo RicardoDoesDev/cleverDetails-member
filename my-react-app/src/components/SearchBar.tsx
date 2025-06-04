@@ -1,5 +1,6 @@
 import React from 'react';
 import { Category, Location } from '../types/index';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface SearchBarProps {
   searchQuery: string;
@@ -30,6 +31,9 @@ const SearchBar: React.FC<SearchBarProps> = ({
   selectedFilters = [],
   onFilterChange = () => {},
 }) => {
+  const { t } = useLanguage();
+  const { searchPlaceholder, allCategories, allLocations } = t.searchBar;
+
   const handleLocationChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const value = e.target.value;
     onLocationChange(value === '' ? '' : parseInt(value, 10));
@@ -49,7 +53,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
           type="text"
           value={searchQuery}
           onChange={(e) => onSearchChange(e.target.value)}
-          placeholder="Search experiences..."
+          placeholder={searchPlaceholder}
           className="flex-1 px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-secondary"
         />
 
@@ -59,7 +63,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
             onChange={handleLocationChange}
             className="w-full md:w-auto px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-secondary"
           >
-            <option value="">All Locations</option>
+            <option value="">{allLocations}</option>
             {locations.map(location => (
               <option key={location.id} value={location.id}>
                 {location.name}
@@ -74,7 +78,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
             onChange={handleCategoryChange}
             className="w-full md:w-auto px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-secondary"
           >
-            <option value="">All Categories</option>
+            <option value="">{allCategories}</option>
             {categories.map(category => (
               <option key={category.id} value={category.id}>
                 {category.title}
