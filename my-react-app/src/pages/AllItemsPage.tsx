@@ -1,5 +1,4 @@
 import React, { useState, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { getLocations, getCategories } from '../services/dataService';
 import ListPage from '../components/ListPage';
 import SearchBar from '../components/SearchBar';
@@ -7,13 +6,13 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { Item } from '../types/index';
 
 const AllItemsPage: React.FC = () => {
-  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedLocation, setSelectedLocation] = useState<number | ''>('');
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
   const { language } = useLanguage();
   
-  // Get all items from all categories
+  // Get all visible items from all categories
   const categories = getCategories(language);
   const allItems: (Item & { categoryId: string; uniqueId: string })[] = useMemo(() => {
     return categories.flatMap(category => 
@@ -33,7 +32,7 @@ const AllItemsPage: React.FC = () => {
   };
 
   const filteredItems = useMemo(() => {
-    console.log('Filtering with:', { selectedLocation, selectedCategory, searchQuery });
+    console.log('Filtering with:', { selectedLocation, selectedCategory, searchQuery, selectedFilters });
     
     const filtered = allItems.filter(item => {
       const matchesSearch = 
@@ -44,14 +43,17 @@ const AllItemsPage: React.FC = () => {
       
       const matchesCategory = !selectedCategory || item.categoryId === selectedCategory;
 
-      console.log('Item:', item.name, { matchesSearch, matchesLocation, matchesCategory });
+      const matchesFilters = selectedFilters.length === 0 || 
+        selectedFilters.some(filter => item.type?.toLowerCase() === filter.toLowerCase());
 
-      return matchesSearch && matchesLocation && matchesCategory;
+      console.log('Item:', item.name, { matchesSearch, matchesLocation, matchesCategory, matchesFilters });
+
+      return matchesSearch && matchesLocation && matchesCategory && matchesFilters;
     });
 
     console.log('Filtered items:', filtered.length);
     return filtered;
-  }, [allItems, searchQuery, selectedLocation, selectedCategory]);
+  }, [allItems, searchQuery, selectedLocation, selectedCategory, selectedFilters]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
@@ -66,6 +68,8 @@ const AllItemsPage: React.FC = () => {
         onCategoryChange={handleCategoryChange}
         categories={categories}
         showCategoryFilter={true}
+        selectedFilters={selectedFilters}
+        onFilterChange={setSelectedFilters}
       />
 
       <ListPage

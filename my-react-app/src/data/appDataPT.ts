@@ -6,7 +6,7 @@ export const appDataPT: AppData = {
       id: "boat-tours",
       title: "Passeios de Barco",
       route: "/boat-tours",
-      description: "Explore a costa do Algarve com os nossos passeios de barco de luxo",
+      description: "Explore a costa algarvia com os nossos passeios de barco de luxo",
       image: "ai-generated-boat-picture.jpg",
       items: [
         {
@@ -15,15 +15,15 @@ export const appDataPT: AppData = {
           email: "info@coolchartersvilamoura.com",
           logo: "Cool-Charters-BSQUAREwhite.png",
           type: "Passeios de Barco",
-          description: "Oferece experiências náuticas personalizadas, ideais para ocasiões especiais como aniversários, despedidas de solteiro(a), casamentos ou eventos corporativos. Os passeios incluem visitas a grutas, praias isoladas e observação de golfinhos, além de atividades aquáticas como jet ski. A equipa dedicada assegura um serviço de excelência, criando memórias inesquecíveis no mar.",
+          description: "Oferece experiências náuticas personalizadas, ideais para ocasiões especiais como aniversários, despedidas de solteiro(a), casamentos ou eventos empresariais. Os passeios incluem visitas a grutas, praias isoladas e observação de golfinhos, além de atividades aquáticas como jet ski. A equipa dedicada assegura um serviço de excelência, criando memórias inesquecíveis no mar.",
           locationIds: [3],
           rating: 5,
           openingHours: [
-            { day: "Segunda", hours: "09:00 - 00:00" },
-            { day: "Terça", hours: "09:00 - 00:00" },
-            { day: "Quarta", hours: "09:00 - 00:00" },
-            { day: "Quinta", hours: "09:00 - 00:00" },
-            { day: "Sexta", hours: "09:00 - 00:00" },
+            { day: "Segunda-feira", hours: "09:00 - 00:00" },
+            { day: "Terça-feira", hours: "09:00 - 00:00" },
+            { day: "Quarta-feira", hours: "09:00 - 00:00" },
+            { day: "Quinta-feira", hours: "09:00 - 00:00" },
+            { day: "Sexta-feira", hours: "09:00 - 00:00" },
             { day: "Sábado", hours: "09:00 - 00:00" },
             { day: "Domingo", hours: "09:00 - 00:00" }
           ],
@@ -61,15 +61,15 @@ export const appDataPT: AppData = {
           email: "info@passeiosriaformosa.com",
           logo: "riaformosa.png",
           type: "Passeios de Barco",
-          description: "Descubra a beleza natural da Ria Formosa com nossos passeios guiados. Observe aves marinhas, descubra ilhas desertas e aprenda sobre o ecossistema único desta área protegida. Passeios disponíveis para grupos pequenos e grandes, com guias experientes e conhecedores.",
+          description: "Descubra a beleza natural da Ria Formosa com os nossos passeios guiados. Observe aves marinhas, descubra ilhas desertas e aprenda sobre o ecossistema único desta área protegida. Passeios disponíveis para grupos pequenos e grandes, com guias experientes e conhecedores.",
           locationIds: [0],
           rating: 4.8,
           openingHours: [
-            { day: "Segunda", hours: "09:00 - 18:00" },
-            { day: "Terça", hours: "09:00 - 18:00" },
-            { day: "Quarta", hours: "09:00 - 18:00" },
-            { day: "Quinta", hours: "09:00 - 18:00" },
-            { day: "Sexta", hours: "09:00 - 18:00" },
+            { day: "Segunda-feira", hours: "09:00 - 18:00" },
+            { day: "Terça-feira", hours: "09:00 - 18:00" },
+            { day: "Quarta-feira", hours: "09:00 - 18:00" },
+            { day: "Quinta-feira", hours: "09:00 - 18:00" },
+            { day: "Sexta-feira", hours: "09:00 - 18:00" },
             { day: "Sábado", hours: "09:00 - 18:00" },
             { day: "Domingo", hours: "09:00 - 18:00" }
           ],
@@ -86,7 +86,173 @@ export const appDataPT: AppData = {
             description: "10% DE DESCONTO EM GRUPOS"
           },
           rootFolder: "Passeios Ria Formosa",
-          images: ["sailing-tour.jpg", "featured-2-horas-fuseta.webp", "birdwatching.jpg", "sealife-observation.jpg", "dolphins-observation.jpg", "DJI_20240427_200812_220.webp", "dji_fly_20240425_145136_206_1714164247660_timed.webp"]
+          images: ["sailing-tour.jpg", "featured-2-horas-fuseta.webp", "birdwatching.jpg", "sealife-observation.jpg", "dolphins-observation.jpg", "DJI_20240427_200812_220.webp", "dji_fly_20240425_145136_206_1714164247660_timed.webp"],
+          isVisible: false
+        },
+        {
+          id: 3,
+          name: "Formosamar",
+          email: "info@formosamar.com",
+          logo: "formosamar-main-logo-landscape-white.svg",
+          type: "Boat Tours",
+          description: "A Formosamar, localizada em Faro, oferece experiências autênticas no Parque Natural da Ria Formosa. Disponibiliza passeios de barco, observação de aves e golfinhos, bem como aluguer de barcos, caiaques, bicicletas e equipamentos de desporto náutico. Ideal para quem deseja explorar a natureza e cultura local com guias experientes. A empresa é certificada em ecoturismo e compromete-se com práticas sustentáveis.",
+          locationIds: [5],
+          rating: 5,
+          openingHours: [
+            { day: "Segunda-feira", hours: "09:00 - 19:00" },
+            { day: "Terça-feira", hours: "09:00 - 19:00" },
+            { day: "Quarta-feira", hours: "09:00 - 19:00" },
+            { day: "Quinta-feira", hours: "09:00 - 19:00" },
+            { day: "Sexta-feira", hours: "09:00 - 19:00" },
+            { day: "Sábado", hours: "09:00 - 19:00" },
+            { day: "Domingo", hours: "09:00 - 19:00" }
+          ],
+          address: "Ria Formosa",
+          phone: "+351 912 345 680",
+          socialMedia: {
+            facebook: "https://www.facebook.com/formosamar/",
+            instagram: "https://www.instagram.com/formosamar/",
+            website: "https://formosamar.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.8047220482727!2d-7.9389662732313235!3d37.014454772187065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd05533874923d89%3A0xd4bf971caf98216!2sFormosamar%20-%20Boat%20Tours%20Passeios%20na%20Ria%20Formosa!5e0!3m2!1spt-PT!2spt!4v1748883209882!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Desconto",
+            description: "5% OFF"
+          },
+          rootFolder: "Formosamar",
+          images: ["dolphin-watching-boat.jpg", "formosamar-sailboats-ria-formosa-island.jpg", "ria-formosa-islands-boat.jpg", "ilha-deserta-and-farol.jpg", "guided-boat-trip-in-ria.jpg", "formosamar-private-tour-cruise-ria-formosa-900x500.jpg", "formosamar.jpg", "formosamar (1).jpg", "formosamar (2).jpg"]
+        },
+        {
+          id: 4,
+          name: "AlgarExperience",
+          email: "info@algarexperience.com",
+          logo: "algarexperience-vect.svg",
+          type: "Passeios de Barco",
+          description: "A AlgarExperience é líder em turismo marítimo no Algarve, oferecendo experiências únicas como passeios às grutas de Benagil, observação de golfinhos, parasailing e churrascos na praia. Com uma frota moderna e uma equipa dedicada, proporciona momentos inesquecíveis no mar.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Segunda-feira", hours: "09:00 - 20:00" },
+            { day: "Terça-feira", hours: "09:00 - 20:00" },
+            { day: "Quarta-feira", hours: "09:00 - 20:00" },
+            { day: "Quinta-feira", hours: "09:00 - 20:00" },
+            { day: "Sexta-feira", hours: "09:00 - 20:00" },
+            { day: "Sábado", hours: "09:00 - 20:00" },
+            { day: "Domingo", hours: "09:00 - 20:00" }
+          ],
+          address: "Algarve",
+          phone: "+351 912 345 681",
+          socialMedia: {
+            facebook: "https://www.facebook.com/algarexperiencee",
+            instagram: "https://www.instagram.com/algarexperience/",
+            website: "https://algarexperience.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.162307877745!2d-8.126925009001342!3d37.077441000410495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab57f81075ba9%3A0x7aa138f8f2a3e9ed!2sAlgarExperience%20-%20Marina%20de%20Vilamoura!5e0!3m2!1spt-PT!2spt!4v1748883329499!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "AlgarExperience",
+          images: ["caves-coastline-tour.jpg", "dolphin-caves-catamaran.jpg", "gruta-de-benagil.jpg", "sunset.jpg", "grutas.jpg", "vista-aerea.jpg", "barbecue-na-praia.jpg", "parasailing.jpg", "belize-segundo-costa.jpg", "boat-party.jpg"]
+        },
+        {
+          id: 5,
+          name: "Condor de Vilamoura",
+          email: "info@condorvilamoura.com",
+          logo: "condor_logo branco.avif",
+          type: "Hotel",
+          description: "Descubra a costa algarvia a bordo do majestoso Condor de Vilamoura, um veleiro de 34 metros inspirado nas escunas americanas do século XIX. Com capacidade para até 120 passageiros, oferece cruzeiros de 3 horas até à Praia da Galé e passeios de dia inteiro até Benagil, com paragens para nadar, explorar grutas e desfrutar de um delicioso churrasco na praia. Uma experiência única para toda a família, combinando conforto, tradição e paisagens deslumbrantes.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Segunda-feira", hours: "09:00 - 18:00" },
+            { day: "Terça-feira", hours: "09:00 - 18:00" },
+            { day: "Quarta-feira", hours: "09:00 - 18:00" },
+            { day: "Quinta-feira", hours: "09:00 - 18:00" },
+            { day: "Sexta-feira", hours: "09:00 - 18:00" },
+            { day: "Sábado", hours: "09:00 - 18:00" },
+            { day: "Domingo", hours: "09:00 - 18:00" }
+          ],
+          address: "Vilamoura",
+          phone: "+351 912 345 682",
+          socialMedia: {
+            facebook: "https://www.facebook.com/CondorDeVilamoura/",
+            instagram: "https://www.instagram.com/condordevilamoura/",
+            website: "https://condorvilamoura.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "condor vilamoura",
+          images: ["photo0jpg.jpg", "caption (1).jpg", "vamos-para-a-praia.jpg", "caption (2).jpg", "caption.jpg", "21d228_8a694355938d49048feaba57ef829db2~mv2-1.avif", "condor-de-vilamoura (1).jpg", "condor-de-vilamoura.jpg", "21d228_28814368cb5446c1b0a8d17d8459fd48~mv2.avif", "21d228_8a694355938d49048feaba57ef829db2~mv2.avif"]
+        },
+        {
+          id: 6,
+          name: "Ocean Quest",
+          email: "info@oceanquest.com",
+          logo: "Ocean Quest.png",
+          type: "Boat Tours",
+          description: "Explora o melhor da costa algarvia com a Ocean Quest. Passeios de barco, grutas, golfinhos e parasailing desde Vilamoura, com uma equipa apaixonada por proporcionar experiências únicas no mar. Porque a vida é bela.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Segunda-feira", hours: "09:00 - 18:00" },
+            { day: "Terça-feira", hours: "09:00 - 18:00" },
+            { day: "Quarta-feira", hours: "09:00 - 18:00" },
+            { day: "Quinta-feira", hours: "09:00 - 18:00" },
+            { day: "Sexta-feira", hours: "09:00 - 18:00" },
+            { day: "Sábado", hours: "09:00 - 18:00" },
+            { day: "Domingo", hours: "09:00 - 18:00" }
+          ],
+          address: "Vilamoura",
+          phone: "+351 912 345 683",
+          socialMedia: {
+            facebook: "https://www.facebook.com/boattripsvilamoura",
+            instagram: "https://www.instagram.com/oceanquestalgarve/",
+            website: "https://oceanquestalgarve.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sOcean%20Quest!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "ocean quest",
+          images: ["see-the-wonderful-algarvian.jpg", "swimming-stop.jpg", "traditional-cultural (1).jpg", "vilamoura-yacht-charter.jpg", "vilamoura-speed-boat-trips.jpeg", "cesar-live-on-the-guitar.jpg", "traditional-cultural.jpg", "life-is-beautiful.jpg", "exceptional-view.jpg", "dolphin-quest.jpg"]
+        },
+        {
+          id: 7,
+          name: "Vilamoura WaterSports Centre",
+          email: "info@vilamourawatersportscentre.com",
+          logo: "Vilamoura-Watersports-Centre-logo-Design-01-e1602070771419.webp",
+          type: "Desportos Aquáticos",
+          description: "Situado na Marina de Vilamoura, o Vilamoura Watersports Centre oferece uma vasta gama de atividades aquáticas para todas as idades. Desde passeios de barco às grutas de Benagil, observação de golfinhos, parasailing, jet ski, wakeboard, pesca e aluguer de barcos privados, há opções para todos os gostos. Com uma equipa experiente e equipamentos de qualidade, garantem segurança e diversão em todas as experiências. Aberto diariamente, é o local perfeito para explorar a costa algarvia de uma forma única.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Segunda-feira", hours: "09:00 - 23:00" },
+            { day: "Terça-feira", hours: "09:00 - 23:00" },
+            { day: "Quarta-feira", hours: "09:00 - 23:00" },
+            { day: "Quinta-feira", hours: "09:00 - 23:00" },
+            { day: "Sexta-feira", hours: "09:00 - 23:00" },
+            { day: "Sábado", hours: "09:00 - 23:00" },
+            { day: "Domingo", hours: "09:00 - 23:00" }
+          ],
+          address: "Vilamoura",
+          phone: "+351 912 345 684",
+          socialMedia: {
+            facebook: "https://www.facebook.com/VilamouraWatersportsCentre/?locale=pt_PT",
+            instagram: "https://www.instagram.com/vilamoura_watersportscentre/",
+            website: "https://www.watersportsvilamoura.com/pt-pt/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1531357987783!2d-8.124483123229288!3d37.07765947216944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab591f6e9b21f%3A0x407948f711a9e5ab!2sVilamoura%20Watersports%20Centre!5e0!3m2!1spt-PT!2spt!4v1748883466872!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "watersports vilamoura",
+          images: ["IMG_1046-scaled.webp", "photo5jpg.jpg", "foto1.webp", "jet-boat-ride-vilamoura.jpg", "Parasailing-Vilamoura-Experience-scaled.webp", "speed-boat-algarvexcite.jpg", "parasailing-boat-trips.jpg", "common-dolphin.jpg", "Fishing-In-Algarve.webp", "Dolphins-Algarve-.webp"]
         }
       ]
     },
@@ -94,7 +260,7 @@ export const appDataPT: AppData = {
       id: "gastronomy",
       title: "Gastronomia",
       route: "/gastronomy",
-      description: "Experimente a excelente culinária em restaurantes selecionados",
+      description: "Experimente a excelente cozinha em restaurantes selecionados",
       image: "pexels-pixabay-262978.jpg",
       items: [
         {
@@ -103,15 +269,15 @@ export const appDataPT: AppData = {
           email: "restaurante@avertavira.pt",
           logo: "AverTavira.png",
           type: "Restaurante Gourmet",
-          description: "O restaurante A Ver Tavira, galardoado com uma estrela Michelin, oferece uma experiência gastronómica única no coração histórico de Tavira, com sabores algarvios e uma vista deslumbrante. Sob o comando do chef Luís Brito, junta tradição e criatividade num menu inovador.",
+          description: "O restaurante A Ver Tavira, galardoado com uma estrela Michelin, oferece uma experiência gastronómica única no coração histórico de Tavira, com sabores algarvios e uma vista deslumbrante. Sob a orientação do chef Luís Brito, alia tradição e criatividade num menu inovador.",
           locationIds: [0],
           rating: 5,
           openingHours: [
-            { day: "Segunda", hours: "Fechado" },
-            { day: "Terça", hours: "18:30 - 21:30" },
-            { day: "Quarta", hours: "12:00 - 14:30, 18:30 - 21:30" },
-            { day: "Quinta", hours: "12:00 - 14:30, 18:30 - 21:30" },
-            { day: "Sexta", hours: "12:00 - 14:30, 18:30 - 21:30" },
+            { day: "Segunda-feira", hours: "Fechado" },
+            { day: "Terça-feira", hours: "18:30 - 21:30" },
+            { day: "Quarta-feira", hours: "12:00 - 14:30, 18:30 - 21:30" },
+            { day: "Quinta-feira", hours: "12:00 - 14:30, 18:30 - 21:30" },
+            { day: "Sexta-feira", hours: "12:00 - 14:30, 18:30 - 21:30" },
             { day: "Sábado", hours: "12:00 - 14:30, 18:30 - 21:30" },
             { day: "Domingo", hours: "Fechado" }
           ],
@@ -151,11 +317,11 @@ export const appDataPT: AppData = {
           locationIds: [1],
           rating: 5,
           openingHours: [
-            { day: "Segunda", hours: "Fechado" },
-            { day: "Terça", hours: "Fechado" },
-            { day: "Quarta", hours: "18:00 - 23:00" },
-            { day: "Quinta", hours: "18:00 - 23:00" },
-            { day: "Sexta", hours: "18:00 - 23:00" },
+            { day: "Segunda-feira", hours: "Fechado" },
+            { day: "Terça-feira", hours: "Fechado" },
+            { day: "Quarta-feira", hours: "18:00 - 23:00" },
+            { day: "Quinta-feira", hours: "18:00 - 23:00" },
+            { day: "Sexta-feira", hours: "18:00 - 23:00" },
             { day: "Sábado", hours: "18:00 - 23:00" },
             { day: "Domingo", hours: "18:00 - 23:00" }
           ],
@@ -184,13 +350,13 @@ export const appDataPT: AppData = {
           locationIds: [2],
           rating: 5,
           openingHours: [
-            { day: "Monday", hours: "19:00 - 22:30" },
-            { day: "Tuesday", hours: "19:00 - 22:30" },
-            { day: "Wednesday", hours: "19:00 - 22:30" },
-            { day: "Thursday", hours: "19:00 - 22:30" },
-            { day: "Friday", hours: "19:00 - 22:30" },
-            { day: "Saturday", hours: "19:00 - 22:30" },
-            { day: "Sunday", hours: "Closed" }
+            { day: "Segunda-feira", hours: "19:00 - 22:30" },
+            { day: "Terça-feira", hours: "19:00 - 22:30" },
+            { day: "Quarta-feira", hours: "19:00 - 22:30" },
+            { day: "Quinta-feira", hours: "19:00 - 22:30" },
+            { day: "Sexta-feira", hours: "19:00 - 22:30" },
+            { day: "Sábado", hours: "19:00 - 22:30" },
+            { day: "Domingo", hours: "Fechado" }
           ],
           address: "Rua Cafezique, 78",
           phone: "912 345 680",
@@ -201,8 +367,8 @@ export const appDataPT: AppData = {
           },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.5625743653195!2d-8.026760923227188!3d37.13932057215254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab18b3c096f37%3A0x3d8742940db522f6!2zQ2Fmw6law69xdWU!5e0!3m2!1spt-PT!2spt!4v1748882784435!5m2!1spt-PT!2spt",
           specialOffer: {
-            type: "Welcome Drink",
-            description: "Glass of Sparkling Wine"
+            type: "Bebida de Boas-vindas",
+            description: "Taça de Espumante de Boas-vindas"
           },
           rootFolder: "CafeZique",
           images: ["0c8e01ad-d9ca-4b18-af60-26a700b19e31.avif", "b7455fd9-1912-4dc4-9d75-b6e3c18c21e1.avif", "c10b8475-9033-4f81-96a7-89723f3537a6.avif", "562a5999-384a-4fcf-876a-191a283c4417.avif", "1fc2a2ef-0625-4d3c-a43b-538301aad3c4.avif", "eb5af52c-c6c9-411a-87ba-578fa3de1e3f.avif", "47a07484-d88c-447f-91ed-4c7bf0a542c3.avif", "d59e735d-141e-4359-b024-3352c31e5b83.avif", "cff64c57-1e91-4133-a445-f033ab8f5838.avif", "98b3ee01-5726-41de-93f9-23ce6da1c1b7.avif"]
@@ -217,13 +383,13 @@ export const appDataPT: AppData = {
           locationIds: [3],
           rating: 4,
           openingHours: [
-            { day: "Monday", hours: "11:00 - 23:00" },
-            { day: "Tuesday", hours: "11:00 - 23:00" },
-            { day: "Wednesday", hours: "11:00 - 23:00" },
-            { day: "Thursday", hours: "11:00 - 23:00" },
-            { day: "Friday", hours: "11:00 - 23:00" },
-            { day: "Saturday", hours: "11:00 - 23:00" },
-            { day: "Sunday", hours: "11:00 - 23:00" }
+            { day: "Segunda-feira", hours: "11:00 - 23:00" },
+            { day: "Terça-feira", hours: "11:00 - 23:00" },
+            { day: "Quarta-feira", hours: "11:00 - 23:00" },
+            { day: "Quinta-feira", hours: "11:00 - 23:00" },
+            { day: "Sexta-feira", hours: "11:00 - 23:00" },
+            { day: "Sábado", hours: "11:00 - 23:00" },
+            { day: "Domingo", hours: "11:00 - 23:00" }
           ],
           address: "Rua Gran Sorvete, 23",
           phone: "912 345 682",
@@ -250,13 +416,13 @@ export const appDataPT: AppData = {
           locationIds: [3],
           rating: 5,
           openingHours: [
-            { day: "Monday", hours: "18:30 - 23:30" },
-            { day: "Tuesday", hours: "18:30 - 23:30" },
-            { day: "Wednesday", hours: "18:30 - 23:30" },
-            { day: "Thursday", hours: "18:30 - 23:30" },
-            { day: "Friday", hours: "18:30 - 23:30" },
-            { day: "Saturday", hours: "18:30 - 23:30" },
-            { day: "Sunday", hours: "Closed" }
+            { day: "Segunda-feira", hours: "18:30 - 23:30" },
+            { day: "Terça-feira", hours: "18:30 - 23:30" },
+            { day: "Quarta-feira", hours: "18:30 - 23:30" },
+            { day: "Quinta-feira", hours: "18:30 - 23:30" },
+            { day: "Sexta-feira", hours: "18:30 - 23:30" },
+            { day: "Sábado", hours: "18:30 - 23:30" },
+            { day: "Domingo", hours: "Fechado" }
           ],
           address: "Rua Retinto, 56",
           phone: "912 345 683",
@@ -267,8 +433,8 @@ export const appDataPT: AppData = {
           },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.0845960567867!2d-8.121846809000903!3d37.07929200040834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5940c8ecbd9%3A0x6755304fce06bfca!2sRetinto%20-%20Rod%C3%ADzio%20%26%20Wine%20-%20Vilamoura!5e0!3m2!1spt-PT!2spt!4v1748882848562!5m2!1spt-PT!2spt",
           specialOffer: {
-            type: "Welcome Drink",
-            description: "Welcome Drink"
+            type: "Bebida de Boas-vindas",
+            description: "Bebida de Boas-vindas"
           },
           rootFolder: "Retinto",
           images: ["5c594138-f690-4ea1-add1-3fce2e15ef55.avif", "photo0jpg.jpg", "entrecote-argentino-ribye.jpg", "ff1ed75b-d71b-42f7-9d93-7f3a39464c45.jpg", "59f45f21-e373-42d3-8ed2-8946008e0b3f.jpg", "b15f5500-b73f-421d-b7bc-a9412784f5d8.webp", "b8685ec1-a1b4-4cbd-bd41-3b8cdb1bfa11.avif", "d56aaf4a-be2e-4cd3-99d9-f70d63c5826c.avif", "7701aa02-a0c2-4ec5-9af1-e1c80a4263d6.webp"]
@@ -292,11 +458,11 @@ export const appDataPT: AppData = {
           locationIds: [6],
           rating: 5,
           openingHours: [
-            { day: "Segunda", hours: "09:00 - 18:00 Sob Marcação" },
-            { day: "Terça", hours: "09:00 - 18:00 Sob Marcação" },
-            { day: "Quarta", hours: "09:00 - 18:00 Sob Marcação" },
-            { day: "Quinta", hours: "09:00 - 18:00 Sob Marcação" },
-            { day: "Sexta", hours: "09:00 - 18:00 Sob Marcação" },
+            { day: "Segunda-feira", hours: "09:00 - 18:00 Sob Marcação" },
+            { day: "Terça-feira", hours: "09:00 - 18:00 Sob Marcação" },
+            { day: "Quarta-feira", hours: "09:00 - 18:00 Sob Marcação" },
+            { day: "Quinta-feira", hours: "09:00 - 18:00 Sob Marcação" },
+            { day: "Sexta-feira", hours: "09:00 - 18:00 Sob Marcação" },
             { day: "Sábado", hours: "09:00 - 18:00 Sob Marcação" },
             { day: "Domingo", hours: "09:00 - 18:00 Sob Marcação" }
           ],
@@ -332,13 +498,13 @@ export const appDataPT: AppData = {
           locationIds: [6],
           rating: 5,
           openingHours: [
-            { day: "Monday", hours: "09:00 - 13:00, 14:00 - 17:30" },
-            { day: "Tuesday", hours: "09:00 - 13:00, 14:00 - 17:30" },
-            { day: "Wednesday", hours: "09:00 - 13:00, 14:00 - 17:30" },
-            { day: "Thursday", hours: "09:00 - 13:00, 14:00 - 17:30" },
-            { day: "Friday", hours: "09:00 - 13:00, 14:00 - 17:30" },
-            { day: "Saturday", hours: "09:00 - 13:00, 14:00 - 17:30" },
-            { day: "Sunday", hours: "09:00 - 13:00, 14:00 - 17:30" }
+            { day: "Segunda-feira", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Terça-feira", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Quarta-feira", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Quinta-feira", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Sexta-feira", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Sábado", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Domingo", hours: "09:00 - 13:00, 14:00 - 17:30" }
           ],
           address: "Parkalgar, Portimão",
           phone: "+351 282 405 650",
@@ -349,7 +515,7 @@ export const appDataPT: AppData = {
           },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.658452607274!2d-8.638724023223917!3d37.23208217212703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b2498b60682cb%3A0xa6b4e4ed93bd2a1e!2sKart%C3%B3dromo%20Internacional%20do%20Algarve!5e0!3m2!1spt-PT!2spt!4v1748882967187!5m2!1spt-PT!2spt",
           specialOffer: {
-            type: "Discount",
+            type: "Desconto",
             description: "10% OFF"
           },
           rootFolder: "KartingPortimao",
@@ -365,11 +531,11 @@ export const appDataPT: AppData = {
           locationIds: [7],
           rating: 5,
           openingHours: [
-            { day: "Segunda", hours: "10:00 - 18:00 (horários variam conforme a época)" },
-            { day: "Terça", hours: "10:00 - 18:00 (horários variam conforme a época)" },
-            { day: "Quarta", hours: "10:00 - 18:00 (horários variam conforme a época)" },
-            { day: "Quinta", hours: "10:00 - 18:00 (horários variam conforme a época)" },
-            { day: "Sexta", hours: "10:00 - 18:00 (horários variam conforme a época)" },
+            { day: "Segunda-feira", hours: "10:00 - 18:00 (horários variam conforme a época)" },
+            { day: "Terça-feira", hours: "10:00 - 18:00 (horários variam conforme a época)" },
+            { day: "Quarta-feira", hours: "10:00 - 18:00 (horários variam conforme a época)" },
+            { day: "Quinta-feira", hours: "10:00 - 18:00 (horários variam conforme a época)" },
+            { day: "Sexta-feira", hours: "10:00 - 18:00 (horários variam conforme a época)" },
             { day: "Sábado", hours: "10:00 - 18:00 (horários variam conforme a época)" },
             { day: "Domingo", hours: "10:00 - 18:00 (horários variam conforme a época)" }
           ],
@@ -398,13 +564,13 @@ export const appDataPT: AppData = {
           locationIds: [3],
           rating: 5,
           openingHours: [
-            { day: "Monday", hours: "10:00 - 19:00" },
-            { day: "Tuesday", hours: "10:00 - 19:00" },
-            { day: "Wednesday", hours: "10:00 - 19:00" },
-            { day: "Thursday", hours: "10:00 - 19:00" },
-            { day: "Friday", hours: "10:00 - 19:00" },
-            { day: "Saturday", hours: "10:00 - 19:00" },
-            { day: "Sunday", hours: "10:00 - 19:00" }
+            { day: "Segunda-feira", hours: "10:00 - 19:00" },
+            { day: "Terça-feira", hours: "10:00 - 19:00" },
+            { day: "Quarta-feira", hours: "10:00 - 19:00" },
+            { day: "Quinta-feira", hours: "10:00 - 19:00" },
+            { day: "Sexta-feira", hours: "10:00 - 19:00" },
+            { day: "Sábado", hours: "10:00 - 19:00" },
+            { day: "Domingo", hours: "10:00 - 19:00" }
           ],
           address: "Family Golf Park",
           phone: "+351 282 912 345",
@@ -415,8 +581,8 @@ export const appDataPT: AppData = {
           },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sFamily%20Golf%20Park!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
           specialOffer: {
-            type: "Discount",
-            description: "10% OFF"
+            type: "Desconto",
+            description: "10% DE DESCONTO"
           },
           rootFolder: "Family Golf Park",
           images: ["family-golf-park-gallery-05-min.jpg", "family-golf-park-gallery-10-min.jpg", "Legionario_2.webp", "Family-Golf-Park_2.webp", "Looping-Crazygolfe_2.webp", "family-golf-park.jpg", "lisbon-bridge.jpg", "relaxing-and-clever-minigolf.jpg", "vulcanos.jpg", "2sd-hole.jpg", "1st-hole.jpg", "welcome-to-the-best-europe.jpg"]
@@ -431,13 +597,13 @@ export const appDataPT: AppData = {
           locationIds: [4],
           rating: 5,
           openingHours: [
-            { day: "Monday", hours: "10:00 - 19:30 (horário varia por época)" },
-            { day: "Tuesday", hours: "10:00 - 19:30 (horário varia por época)" },
-            { day: "Wednesday", hours: "10:00 - 19:30 (horário varia por época)" },
-            { day: "Thursday", hours: "10:00 - 19:30 (horário varia por época)" },
-            { day: "Friday", hours: "10:00 - 19:30 (horário varia por época)" },
-            { day: "Saturday", hours: "10:00 - 19:30 (horário varia por época)" },
-            { day: "Sunday", hours: "10:00 - 19:30 (horário varia por época)" }
+            { day: "Segunda-feira", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Terça-feira", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Quarta-feira", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Quinta-feira", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Sexta-feira", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Sábado", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Domingo", hours: "10:00 - 19:30 (horário varia por época)" }
           ],
           address: "EN 125, Km 65, 8201-864 Guia, Albufeira",
           phone: "+351 289 560 300",
@@ -459,18 +625,18 @@ export const appDataPT: AppData = {
           name: "Algarve Riders",
           email: "info@algarveriders.com",
           logo: "logo_algarveriders.png",
-          type: "Theme Park",
+          type: "Parque Temático",
           description: "Algarve Riders é uma empresa de locação de motos que oferece uma experiência única com motos de alta performance. É um local ideal para aproveitar um dia de diversão.",
           locationIds: [3],
           rating: 5,
           openingHours: [
-            { day: "Monday", hours: "8:30 - 18:00" },
-            { day: "Tuesday", hours: "8:30 - 18:00" },
-            { day: "Wednesday", hours: "8:30 - 18:00" },
-            { day: "Thursday", hours: "8:30 - 18:00" },
-            { day: "Friday", hours: "8:30 - 18:00" },
-            { day: "Saturday", hours: "8:30 - 18:00" },
-            { day: "Sunday", hours: "8:30 - 18:00" }
+            { day: "Segunda-feira", hours: "08:30 - 18:00" },
+            { day: "Terça-feira", hours: "08:30 - 18:00" },
+            { day: "Quarta-feira", hours: "08:30 - 18:00" },
+            { day: "Quinta-feira", hours: "08:30 - 18:00" },
+            { day: "Sexta-feira", hours: "08:30 - 18:00" },
+            { day: "Sábado", hours: "08:30 - 18:00" },
+            { day: "Domingo", hours: "08:30 - 18:00" }
           ],
           address: "Algarve Riders",
           phone: "+351 289 560 300",
@@ -492,18 +658,18 @@ export const appDataPT: AppData = {
           name: "Aquashow",
           email: "info@aquashow.com",
           logo: "aquashow_logo.png",
-          type: "Theme Park",
+          type: "Parque Temático",
           description: "O Aquashow Outdoor é o maior parque aquático ao ar livre de Portugal, localizado no coração do Algarve. Com escorregas gigantes, piscina de ondas, atrações para todas as idades e muita animação, é o lugar ideal para um dia de verão cheio de diversão, adrenalina e memórias familiares ou de amigos.",
           locationIds: [8],
           rating: 5,
           openingHours: [
-            { day: "Monday", hours: "10:00 - 18:00" },
-            { day: "Tuesday", hours: "10:00 - 18:00" },
-            { day: "Wednesday", hours: "10:00 - 18:00" },
-            { day: "Thursday", hours: "10:00 - 18:00" },
-            { day: "Friday", hours: "10:00 - 18:00" },
-            { day: "Saturday", hours: "10:00 - 18:00" },
-            { day: "Sunday", hours: "10:00 - 18:00" }
+            { day: "Segunda-feira", hours: "10:00 - 18:00" },
+            { day: "Terça-feira", hours: "10:00 - 18:00" },
+            { day: "Quarta-feira", hours: "10:00 - 18:00" },
+            { day: "Quinta-feira", hours: "10:00 - 18:00" },
+            { day: "Sexta-feira", hours: "10:00 - 18:00" },
+            { day: "Sábado", hours: "10:00 - 18:00" },
+            { day: "Domingo", hours: "10:00 - 18:00" }
           ],
           address: "Aquashow",
           phone: "+351 289 560 300",
@@ -539,11 +705,11 @@ export const appDataPT: AppData = {
           locationIds: [4],
           rating: 5,
           openingHours: [
-            { day: "Segunda", hours: "11:00 - 13:00, 14:30 - 18:30" },
-            { day: "Terça", hours: "11:00 - 13:00, 14:30 - 18:30" },
-            { day: "Quarta", hours: "11:00 - 13:00, 14:30 - 18:30" },
-            { day: "Quinta", hours: "11:00 - 13:00, 14:30 - 18:30" },
-            { day: "Sexta", hours: "11:00 - 13:00, 14:30 - 18:30" },
+            { day: "Segunda-feira", hours: "11:00 - 13:00, 14:30 - 18:30" },
+            { day: "Terça-feira", hours: "11:00 - 13:00, 14:30 - 18:30" },
+            { day: "Quarta-feira", hours: "11:00 - 13:00, 14:30 - 18:30" },
+            { day: "Quinta-feira", hours: "11:00 - 13:00, 14:30 - 18:30" },
+            { day: "Sexta-feira", hours: "11:00 - 13:00, 14:30 - 18:30" },
             { day: "Sábado", hours: "Fechado" },
             { day: "Domingo", hours: "Fechado" }
           ],
@@ -567,19 +733,18 @@ export const appDataPT: AppData = {
           name: "Morgado do Quintão",
           email: "info@morgadodoquintao.pt",
           logo: "Morgado do quintao.png",
-          type: "Winery Tours",
-          //translate to english
-          description: "The Morgado do Quintão, in Lagoa, combines tradition and sustainability in the production of authentic wines. It offers wine tastings and unique experiences in enotourism.",
+          type: "Desportos Aquáticos",
+          description: "O Morgado do Quintão, em Lagoa, combina tradição e sustentabilidade na produção de vinhos autênticos. Oferece provas de vinhos e experiências únicas em enoturismo.",
           locationIds: [7],
           rating: 5,
           openingHours: [
-            { day: "Monday", hours: "09:00 - 22:00" },
-            { day: "Tuesday", hours: "09:00 - 22:00" },
-            { day: "Wednesday", hours: "09:00 - 22:00" },
-            { day: "Thursday", hours: "09:00 - 22:00" },
-            { day: "Friday", hours: "09:00 - 22:00" },
-            { day: "Saturday", hours: "09:00 - 22:00" },
-            { day: "Sunday", hours: "Closed" }
+            { day: "Segunda-feira", hours: "09:00 - 23:00" },
+            { day: "Terça-feira", hours: "09:00 - 23:00" },
+            { day: "Quarta-feira", hours: "09:00 - 23:00" },
+            { day: "Quinta-feira", hours: "09:00 - 23:00" },
+            { day: "Sexta-feira", hours: "09:00 - 23:00" },
+            { day: "Sábado", hours: "09:00 - 23:00" },
+            { day: "Domingo", hours: "09:00 - 23:00" }
           ],
           address: "Morgado do Quintão",
           phone: "+351 282 912 345",
@@ -590,7 +755,7 @@ export const appDataPT: AppData = {
           },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.790358516998!2d-8.4519159232265!3d37.157684072147326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ad78519c4f4e1%3A0xe72edb7d0b164be9!2sMorgado%20do%20Quint%C3%A3o!5e0!3m2!1spt-PT!2spt!4v1748882911445!5m2!1spt-PT!2spt",
           specialOffer: {
-            type: "Discount",
+            type: "Desconto",
             description: "15% OFF"
           },
           rootFolder: "Morgado do Quintão",
@@ -606,11 +771,11 @@ export const appDataPT: AppData = {
           locationIds: [4],
           rating: 5,
           openingHours: [
-            { day: "Segunda", hours: "10:00 - 17:00" },
-            { day: "Terça", hours: "10:00 - 17:00" },
-            { day: "Quarta", hours: "10:00 - 17:00" },
-            { day: "Quinta", hours: "10:00 - 17:00" },
-            { day: "Sexta", hours: "10:00 - 17:00" },
+            { day: "Segunda-feira", hours: "10:00 - 17:00" },
+            { day: "Terça-feira", hours: "10:00 - 17:00" },
+            { day: "Quarta-feira", hours: "10:00 - 17:00" },
+            { day: "Quinta-feira", hours: "10:00 - 17:00" },
+            { day: "Sexta-feira", hours: "10:00 - 17:00" },
             { day: "Sábado", hours: "Fechado" },
             { day: "Domingo", hours: "Fechado" }
           ],
@@ -662,13 +827,13 @@ export const appDataPT: AppData = {
           locationIds: [3],
           rating: 5,
           openingHours: [
-            { day: "Segunda", hours: "09:45 - 21:00" },
-            { day: "Terça", hours: "09:45 - 21:00" },
-            { day: "Quarta", hours: "09:45 - 21:00" },
-            { day: "Quinta", hours: "09:45 - 21:00" },
-            { day: "Sexta", hours: "09:45 - 21:00" },
-            { day: "Sábado", hours: "09:45 - 20:00" },
-            { day: "Domingo", hours: "09:45 - 20:00" }
+            { day: "Segunda-feira", hours: "09:00 - 20:00" },
+            { day: "Terça-feira", hours: "09:00 - 20:00" },
+            { day: "Quarta-feira", hours: "09:00 - 20:00" },
+            { day: "Quinta-feira", hours: "09:00 - 20:00" },
+            { day: "Sexta-feira", hours: "09:00 - 20:00" },
+            { day: "Sábado", hours: "09:00 - 20:00" },
+            { day: "Domingo", hours: "09:00 - 20:00" }
           ],
           address: "Rua das oliveiras",
           phone: "912 345 678",
@@ -707,11 +872,11 @@ export const appDataPT: AppData = {
           locationIds: [3],
           rating: 5,
           openingHours: [
-            { day: "Segunda", hours: "10:00 - 13:00, 14:30 - 19:00" },
-            { day: "Terça", hours: "10:00 - 13:00, 14:30 - 19:00" },
-            { day: "Quarta", hours: "10:00 - 13:00, 14:30 - 19:00" },
-            { day: "Quinta", hours: "10:00 - 13:00, 14:30 - 19:00" },
-            { day: "Sexta", hours: "10:00 - 13:00, 14:30 - 19:00" },
+            { day: "Segunda-feira", hours: "10:00 - 13:00, 14:30 - 19:00" },
+            { day: "Terça-feira", hours: "10:00 - 13:00, 14:30 - 19:00" },
+            { day: "Quarta-feira", hours: "10:00 - 13:00, 14:30 - 19:00" },
+            { day: "Quinta-feira", hours: "10:00 - 13:00, 14:30 - 19:00" },
+            { day: "Sexta-feira", hours: "10:00 - 13:00, 14:30 - 19:00" },
             { day: "Sábado", hours: "10:00 - 13:00, 14:30 - 19:00" },
             { day: "Domingo", hours: "Fechado" }
           ],
@@ -748,11 +913,11 @@ export const appDataPT: AppData = {
           locationIds: [3],
           rating: 5,
           openingHours: [
-            { day: "Segunda", hours: "24h" },
-            { day: "Terça", hours: "24h" },
-            { day: "Quarta", hours: "24h" },
-            { day: "Quinta", hours: "24h" },
-            { day: "Sexta", hours: "24h" },
+            { day: "Segunda-feira", hours: "24h" },
+            { day: "Terça-feira", hours: "24h" },
+            { day: "Quarta-feira", hours: "24h" },
+            { day: "Quinta-feira", hours: "24h" },
+            { day: "Sexta-feira", hours: "24h" },
             { day: "Sábado", hours: "24h" },
             { day: "Domingo", hours: "24h" }
           ],
@@ -786,18 +951,18 @@ export const appDataPT: AppData = {
           name: "Teresa",
           email: "teresa.estetica@live.com.pt",
           logo: "277158294_3199246580396467_9054406006485547937_n-removebg-preview.png",
-          type: "Beauty Services",
+          type: "Serviços de Beleza",
           description: "Teresa é esteticista especializada em serviços como extensão de unhas (gel/acrílico), pedicure/manicure, depilações, extensões de pestanas e tratamentos faciais. Oferece também massagens de relaxamento, tratamentos corporais como cavitação e drenagem linfática, além de maquilhagem profissional. Com uma abordagem personalizada, Teresa proporciona cuidados que visam realçar a beleza e promover o bem-estar dos seus clientes.",
           locationIds: [3],
           rating: 5,
           openingHours: [
-            { day: "Monday", hours: "Closed" },
-            { day: "Tuesday", hours: "10:00 - 19:00" },
-            { day: "Wednesday", hours: "10:00 - 19:00" },
-            { day: "Thursday", hours: "10:00 - 19:00" },
-            { day: "Friday", hours: "10:00 - 19:00" },
-            { day: "Saturday", hours: "10:00 - 19:00" },
-            { day: "Sunday", hours: "Closed" }
+            { day: "Segunda-feira", hours: "Fechado" },
+            { day: "Terça-feira", hours: "10:00 - 19:00" },
+            { day: "Quarta-feira", hours: "10:00 - 19:00" },
+            { day: "Quinta-feira", hours: "10:00 - 19:00" },
+            { day: "Sexta-feira", hours: "10:00 - 19:00" },
+            { day: "Sábado", hours: "10:00 - 19:00" },
+            { day: "Domingo", hours: "Fechado" }
           ],
           address: "Vilamoura",
           phone: "+351 282 000 000",
@@ -808,8 +973,8 @@ export const appDataPT: AppData = {
           },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.2410575051053!2d-8.119969409001797!3d37.075565200412285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab596853f1e61%3A0x4311763f59cdf941!2sTeresa%20Esteticista!5e0!3m2!1spt-PT!2spt!4v1748883059998!5m2!1spt-PT!2spt",
           specialOffer: {
-            type: "Discount",
-            description: "15% OFF"
+            type: "Desconto",
+            description: "15% Desconto"
           },
           rootFolder: "Teresa",
           images: ["480701348_4010568695930914_2910058108693305940_n.jpg", "491933473_4066849246969525_5195761018195095810_n.jpg", "492114092_4066954960292287_2649987048273042468_n.jpg", "492200895_4066850363636080_3484388594312717179_n.jpg", "277158294_3199246580396467_9054406006485547937_n.jpg", "489830761_1237845965017546_3086407899245374858_n.jpg"]
@@ -824,13 +989,13 @@ export const appDataPT: AppData = {
           locationIds: [3],
           rating: 5,
           openingHours: [
-            { day: "Monday", hours: "09:00 - 19:00" },
-            { day: "Tuesday", hours: "09:00 - 19:00" },
-            { day: "Wednesday", hours: "09:00 - 19:00" },
-            { day: "Thursday", hours: "09:00 - 19:00" },
-            { day: "Friday", hours: "09:00 - 19:00" },
-            { day: "Saturday", hours: "09:00 - 19:00" },
-            { day: "Sunday", hours: "09:00 - 19:00" }
+            { day: "Segunda-feira", hours: "09:00 - 19:00" },
+            { day: "Terça-feira", hours: "09:00 - 19:00" },
+            { day: "Quarta-feira", hours: "09:00 - 19:00" },
+            { day: "Quinta-feira", hours: "09:00 - 19:00" },
+            { day: "Sexta-feira", hours: "09:00 - 19:00" },
+            { day: "Sábado", hours: "09:00 - 19:00" },
+            { day: "Domingo", hours: "09:00 - 19:00" }
           ],
           address: "Vilamoura",
           phone: "+351 282 000 000",
@@ -841,7 +1006,8 @@ export const appDataPT: AppData = {
           },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.123456!3d37.134567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           rootFolder: "Matilde",
-          images: ["beauty3.jpg", "beauty4.jpg"]
+          images: ["beauty3.jpg", "beauty4.jpg"],
+          isVisible: false
         }
       ]
     },
@@ -862,15 +1028,15 @@ export const appDataPT: AppData = {
           locationIds: [6],
           rating: 5,
           openingHours: [
-            { day: "Monday", hours: "By appointment" },
-            { day: "Tuesday", hours: "By appointment" },
-            { day: "Wednesday", hours: "By appointment" },
-            { day: "Thursday", hours: "By appointment" },
-            { day: "Friday", hours: "By appointment" },
-            { day: "Saturday", hours: "By appointment" },
-            { day: "Sunday", hours: "By appointment" }
+            { day: "Segunda-feira", hours: "Sob marcação" },
+            { day: "Terça-feira", hours: "Sob marcação" },
+            { day: "Quarta-feira", hours: "Sob marcação" },
+            { day: "Quinta-feira", hours: "Sob marcação" },
+            { day: "Sexta-feira", hours: "Sob marcação" },
+            { day: "Sábado", hours: "Sob marcação" },
+            { day: "Domingo", hours: "Sob marcação" }
           ],
-          address: "Service at your location",
+          address: "Serviço no seu local",
           phone: "9251500",
           socialMedia: {
             facebook: "https://www.facebook.com/chefandresimao",
@@ -879,8 +1045,8 @@ export const appDataPT: AppData = {
           },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.178901!3d37.112345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
-            type: "Welcome Package",
-            description: "Porto wine and traditional Algarve sweets"
+            type: "Pacote de Boas-vindas",
+            description: "Taça de Espumante e 2 Canapés por Pessoa"
           },
           rootFolder: "ChefAndreSimao",
           images: ["Captura de ecrã 2025-05-30, às 14.00.44.png", "Captura de ecrã 2025-05-30, às 14.01.45.png", "Captura de ecrã 2025-05-30, às 14.01.52.png", "Captura de ecrã 2025-05-30, às 14.01.18.png", "Captura de ecrã 2025-05-30, às 14.01.05.png", "Captura de ecrã 2025-05-30, às 14.02.12.png", "Captura de ecrã 2025-05-30, às 14.02.29.png", "Captura de ecrã 2025-05-30, às 14.00.58.png"]
@@ -895,15 +1061,15 @@ export const appDataPT: AppData = {
           locationIds: [4],
           rating: 5,
           openingHours: [
-            { day: "Monday", hours: "By appointment" },
-            { day: "Tuesday", hours: "By appointment" },
-            { day: "Wednesday", hours: "By appointment" },
-            { day: "Thursday", hours: "By appointment" },
-            { day: "Friday", hours: "By appointment" },
-            { day: "Saturday", hours: "By appointment" },
-            { day: "Sunday", hours: "By appointment" }
+            { day: "Segunda-feira", hours: "Sob marcação" },
+            { day: "Terça-feira", hours: "Sob marcação" },
+            { day: "Quarta-feira", hours: "Sob marcação" },
+            { day: "Quinta-feira", hours: "Sob marcação" },
+            { day: "Sexta-feira", hours: "Sob marcação" },
+            { day: "Sábado", hours: "Sob marcação" },
+            { day: "Domingo", hours: "Sob marcação" }
           ],
-          address: "Service at your location",
+          address: "Serviço no seu local",
           phone: "912 345 681",
           socialMedia: {
             facebook: "https://www.facebook.com/fancykitchen",
@@ -912,7 +1078,7 @@ export const appDataPT: AppData = {
           },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.142345!3d37.087654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           specialOffer: {
-            type: "Welcome Package",
+            type: "Pacote de Boas-vindas",
             description: "Glass of Sparkling Wine and 2 Canapés per Person"
           },
           rootFolder: "Fancy Kitchen",
@@ -992,7 +1158,7 @@ export const appDataPT: AppData = {
         advantages: "Vantagens",
         access: "Acesso",
         partnership: "Parceria",
-        contact: "Contato"
+        contact: "Contacto"
       }
     },
     sidebar: {
@@ -1001,7 +1167,7 @@ export const appDataPT: AppData = {
       language: "Idioma"
     },
     footer: {
-      bookHoliday: "Reserve sua casa de férias",
+      bookHoliday: "Reserve a sua casa de férias",
       allRightsReserved: "Todos os direitos reservados"
     },
     homepage: {
@@ -1010,25 +1176,25 @@ export const appDataPT: AppData = {
       seeMore: "ver mais"
     },
     access: {
-      mainText1: "Essas vantagens são reservadas para aqueles que reservam suas férias com a Clever Details ou nos confiam sua propriedade. É nossa forma de agradecer tornando sua estadia ou investimento ainda mais gratificante.",
+      mainText1: "Estas vantagens são reservadas para aqueles que reservam as suas férias com a Clever Details ou nos confiam a sua propriedade. É a nossa forma de agradecer tornando a sua estadia ou investimento ainda mais gratificante.",
       mainText2: "Explore a lista completa de benefícios dos parceiros e aproveite mais do que apenas uma estadia.",
-      mainText3: "Com a Clever Details, suas férias ou casa vêm com muito mais do que apenas uma chave.",
-      exploreHomes: "Explore nossas casas"
+      mainText3: "Com a Clever Details, as suas férias ou casa vêm com muito mais do que apenas uma chave.",
+      exploreHomes: "Explore as nossas casas"
     },
     partnership: {
-      title: "Por que ser parceiro da Clever Details?",
+      title: "Porquê ser parceiro da Clever Details?",
       benefit1: {
         title: "Alcance mais de 6.000 hóspedes de qualidade anualmente",
-        description: "Nossa rede inclui milhares de turistas nacionais e internacionais que valorizam experiências locais"
+        description: "A nossa rede inclui milhares de turistas nacionais e internacionais que valorizam experiências locais"
       },
       benefit2: {
         title: "Aumente a visibilidade do seu negócio",
-        description: "Destacamos seu negócio em nosso site e redes sociais, aumentando seu alcance."
+        description: "Destacamos o seu negócio no nosso site e redes sociais, aumentando o seu alcance."
       },
       form: {
-        title: "Solicitação de Parceria",
+        title: "Pedido de Parceria",
         businessName: "Nome da Empresa",
-        contactName: "Nome do Contato",
+        contactName: "Nome do Contacto",
         email: "Email",
         phone: "Telefone",
         businessType: {
@@ -1045,24 +1211,24 @@ export const appDataPT: AppData = {
           }
         },
         description: "Descrição do Negócio",
-        submit: "Enviar Solicitação",
-        submitting: "Enviando..."
+        submit: "Enviar Pedido",
+        submitting: "A enviar..."
       }
     },
     contact: {
-      title: "Entre em Contato",
+      title: "Contacte-nos",
       form: {
         name: {
           label: "Nome",
-          placeholder: "Seu nome"
+          placeholder: "O seu nome"
         },
         phone: {
           label: "Telefone",
-          placeholder: "Seu número de telefone"
+          placeholder: "O seu número de telefone"
         },
         email: {
           label: "Email",
-          placeholder: "seu.email@exemplo.com"
+          placeholder: "o.seu.email@exemplo.com"
         },
         subject: {
           label: "Assunto",
@@ -1070,27 +1236,33 @@ export const appDataPT: AppData = {
         },
         message: {
           label: "Mensagem",
-          placeholder: "Sua mensagem aqui..."
+          placeholder: "A sua mensagem aqui..."
         },
         submit: "Enviar Mensagem",
-        sending: "Enviando..."
+        sending: "A enviar..."
       }
     },
     itemDetails: {
       reviews: "avaliações",
-      bookNow: "Reservar Agora",
-      specialOffer: "Você merece!",
-      bookingNotice: "As reservas devem ser feitas diretamente com a equipe Clever Details",
+      bookNow: "Reserve Agora",
+      specialOffer: "Merece!",
+      bookingNotice: "As reservas devem ser efetuadas diretamente com a equipa Clever Details",
       details: "Detalhes",
       openingHours: "Horário de Funcionamento",
       location: "Localização",
+      bookingRequest: "Pedido de Reserva",
+      bookingMessage: "Olá, gostaria de reservar {itemName} com a seguinte oferta especial: {specialOffer}.\\n\\nPor favor, forneça mais informações.",
       reviewsSection: {
         title: "Avaliações",
+        leaveReview: "Deixe a sua Avaliação",
+        rating: "Classificação",
         writeReview: "Escrever Avaliação",
-        authorPlaceholder: "Seu nome",
-        commentPlaceholder: "Sua avaliação",
+        authorPlaceholder: "O seu nome",
+        commentPlaceholder: "Escreva o seu comentário...",
         submit: "Enviar Avaliação",
-        submitting: "Enviando..."
+        submitting: "A enviar...",
+        yourName: "O seu nome",
+        writeComment: "Escreva o seu comentário..."
       }
     }
   }

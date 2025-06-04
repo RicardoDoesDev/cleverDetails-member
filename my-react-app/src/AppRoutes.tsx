@@ -44,13 +44,7 @@ export function AppRoutes() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/all" element={<AllItemsPage />} />
-        <Route path="/boat-tours" element={<CategoryPage categoryId="boat-tours" title="Boat Tours" />} />
-        <Route path="/gastronomy" element={<CategoryPage categoryId="gastronomy" title="Gastronomy" />} />
-        <Route path="/activities" element={<CategoryPage categoryId="activities" title="Activities" />} />
-        <Route path="/winery-tours" element={<CategoryPage categoryId="winery-tours" title="Winery Tours" />} />
-        <Route path="/wellness" element={<CategoryPage categoryId="wellness" title="Wellness" />} />
-        <Route path="/beauty-and-hair-salons" element={<CategoryPage categoryId="beauty-and-hair-salons" title="Beauty & Hair Salons" />} />
-        <Route path="/chef-at-home" element={<CategoryPage categoryId="chef-at-home" title="Chef at Home" />} />
+        <Route path="/:categoryId" element={<CategoryPage />} />
         
         <Route path="/boat-tours/:id" element={<ItemDetailsPage category="boat-tours" />} />
         <Route path="/gastronomy/:id" element={<ItemDetailsPage category="gastronomy" />} />

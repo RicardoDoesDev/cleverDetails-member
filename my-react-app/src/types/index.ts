@@ -26,6 +26,7 @@ export interface Item {
   openingHours: OpeningHours[];
   address: string;
   phone: string;
+  isVisible?: boolean;
   socialMedia: {
     facebook: string;
     instagram: string;
@@ -159,13 +160,19 @@ export interface UITranslations {
     details: string;
     openingHours: string;
     location: string;
+    bookingRequest: string;
+    bookingMessage: string;
     reviewsSection: {
       title: string;
+      leaveReview: string;
+      rating: string;
       writeReview: string;
       authorPlaceholder: string;
       commentPlaceholder: string;
       submit: string;
       submitting: string;
+      yourName: string;
+      writeComment: string;
     }
   };
 }

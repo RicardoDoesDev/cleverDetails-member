@@ -86,7 +86,8 @@ export const appDataFR: AppData = {
             description: "10% DE RÉDUCTION POUR LES GROUPES"
           },
           rootFolder: "Passeios Ria Formosa",
-          images: ["sailing-tour.jpg", "featured-2-horas-fuseta.webp", "birdwatching.jpg", "sealife-observation.jpg", "dolphins-observation.jpg", "DJI_20240427_200812_220.webp", "dji_fly_20240425_145136_206_1714164247660_timed.webp"]
+          images: ["sailing-tour.jpg", "featured-2-horas-fuseta.webp", "birdwatching.jpg", "sealife-observation.jpg", "dolphins-observation.jpg", "DJI_20240427_200812_220.webp", "dji_fly_20240425_145136_206_1714164247660_timed.webp"],
+          isVisible: false
         },
         {
           id: 3,
@@ -222,7 +223,7 @@ export const appDataFR: AppData = {
         },
         {
           id: 7,
-          name: "Vilamoura Water Sports Centre",
+          name: "Vilamoura WaterSports Centre",
           email: "info@vilamourawatersportscentre.com",
           logo: "Vilamoura-Watersports-Centre-logo-Design-01-e1602070771419.webp",
           type: "Water Sports",
@@ -1006,7 +1007,8 @@ export const appDataFR: AppData = {
           },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.123456!3d37.134567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
           rootFolder: "Matilde",
-          images: ["beauty3.jpg", "beauty4.jpg"]
+          images: ["beauty3.jpg", "beauty4.jpg"],
+          isVisible: false
         }
 
       ]
@@ -1250,13 +1252,19 @@ export const appDataFR: AppData = {
       details: "Détails",
       openingHours: "Heures d'ouverture",
       location: "Emplacement",
+      bookingRequest: "Demande de Réservation",
+      bookingMessage: "Bonjour, je suis intéressé(e) par la réservation de {itemName} avec l'offre spéciale suivante : {specialOffer}.\\n\\nMerci de me fournir plus d'informations.",
       reviewsSection: {
         title: "Avis",
+        leaveReview: "Laisser un avis",
+        rating: "Note",
         writeReview: "Écrire un avis",
         authorPlaceholder: "Votre nom",
-        commentPlaceholder: "Votre avis",
-        submit: "Soumettre l'avis",
-        submitting: "Soumission en cours..."
+        commentPlaceholder: "Écrivez votre commentaire...",
+        submit: "Envoyer l'avis",
+        submitting: "Envoi en cours...",
+        yourName: "Votre nom",
+        writeComment: "Écrivez votre commentaire..."
       }
     }
   }

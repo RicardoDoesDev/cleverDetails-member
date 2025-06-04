@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getItemById, getLocationName } from '../services/dataService';
 import { supabaseService } from '../services/supabaseService';
-import { googlePlacesService } from '../services/googlePlacesService';
 import { Item, Review } from '../types/index';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -174,7 +173,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
   const [reviews, setReviews] = useState<Review[]>([]);
   const [averageRating, setAverageRating] = useState(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
 
   const item = id ? getItemById(category, Number(id), language) : undefined;
 
@@ -212,21 +211,23 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
 
   const renderExtraInfo = () => {
     const handleContactClick = () => {
-      const subject = `Booking Request: ${item.name}`;
-      const message = `Hi, I'm interested in booking ${item.name} with the following special offer: ${item.specialOffer?.description}.\n\nPlease provide me with more information.`;
+      const subject = `${t.itemDetails.bookingRequest}: ${item.name}`;
+      const message = t.itemDetails.bookingMessage
+        .replace('{itemName}', item.name)
+        .replace('{specialOffer}', item.specialOffer?.description || '');
       
       navigate(`/contact?type=item&subject=${encodeURIComponent(subject)}&message=${encodeURIComponent(message)}`);
     };
 
     return (
       <div className="bg-secondary p-6 rounded-lg mb-8 w-full md:w-3/4 mx-auto text-center text-white">
-        <h3 className="text-3xl md:text-6xl mb-2">{item.specialOffer?.description} - You deserve it!</h3>
-        <p className="text-lg md:text-2xl font-bold mb-6">Bookings must be made directly with Clever Details team</p>
+        <h3 className="text-3xl md:text-6xl mb-2">{item.specialOffer?.description} - {t.itemDetails.specialOffer}</h3>
+        <p className="text-lg md:text-2xl font-bold mb-6">{t.itemDetails.bookingNotice}</p>
         <button
           onClick={handleContactClick}
           className="bg-white text-secondary hover:bg-primary hover:text-white transition-colors duration-300 font-bold py-3 px-8 rounded-lg text-xl"
         >
-          Book Now
+          {t.itemDetails.bookNow}
         </button>
       </div>
     );
@@ -234,71 +235,39 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
 
   const handleSubmitComment = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!author.trim()) {
-      alert('Please enter your name');
-      return;
-    }
-    if (!comment.trim()) {
-      alert('Please enter a comment');
-      return;
-    }
+    if (!item || !comment.trim() || !author.trim()) return;
 
     setIsSubmitting(true);
     try {
       const newReview = await supabaseService.saveReview(category, item.id, {
-        author,
         rating,
-        comment
+        comment,
+        author
       });
 
-      setReviews([newReview, ...reviews]);
+      setReviews(prev => [...prev, newReview]);
       setComment('');
-      setRating(5);
       setAuthor('');
+      setRating(5);
+
+      // Update average rating
+      const avgRating = await supabaseService.getItemAverageRating(category, item.id);
+      setAverageRating(avgRating);
     } catch (error) {
-      console.error('Error saving review:', error);
-      alert('Failed to save review. Please try again.');
+      console.error('Error submitting review:', error);
     } finally {
       setIsSubmitting(false);
-    }
-  };
-
-  const getGoogleReviewsUrl = (mapsUrl: string): string => {
-    try {
-      // Check if it's an embed URL
-      if (mapsUrl.includes('/embed')) {
-        const params = new URLSearchParams(mapsUrl.split('?')[1]);
-        const pbParam = params.get('pb');
-        if (pbParam) {
-          // Extract coordinates
-          const lat = pbParam.match(/!3d([-\d.]+)/)?.[1];
-          const lng = pbParam.match(/!2d([-\d.]+)/)?.[1];
-          // Extract place name
-          const name = pbParam.match(/!2s([^!]+)/)?.[1]?.replace(/\+/g, ' ');
-          // Extract place ID
-          const placeId = pbParam.match(/!1s([\w\d:]+)/)?.[1];
-          
-          if (lat && lng && name && placeId) {
-            const encodedName = encodeURIComponent(name).replace(/%20/g, '+');
-            return `https://www.google.com/maps/place/${encodedName}/@${lat},${lng},17z/data=!4m7!3m6!1s${placeId}!8m2!3d${lat}!4d${lng}!9m1!1b1`;
-          }
-        }
-      }
-
-      return mapsUrl;
-    } catch {
-      return mapsUrl;
     }
   };
 
   const renderReviewsSection = () => (
     <div className="mt-8">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl md:text-4xl font-bold">Reviews</h2>
+        <h2 className="text-2xl md:text-4xl font-bold">{t.itemDetails.reviewsSection.title}</h2>
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-sm">
             <StarRating rating={averageRating} size="lg" />
-            <span className="text-lg font-medium">({reviews.length} reviews)</span>
+            <span className="text-lg font-medium">({reviews.length} {t.itemDetails.reviews})</span>
           </div>
         </div>
       </div>
@@ -320,18 +289,18 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
 
       {/* Comment Form */}
       <div className="mt-8">
-        <h2 className="text-2xl md:text-3xl mb-6">Leave a Review</h2>
+        <h2 className="text-2xl md:text-3xl mb-6">{t.itemDetails.reviewsSection.leaveReview}</h2>
         <form onSubmit={handleSubmitComment} className="space-y-4">
           <input
             type="text"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
-            placeholder="Your name"
+            placeholder={t.itemDetails.reviewsSection.yourName}
             className="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:border-secondary"
             required
           />
           <div className="flex flex-col gap-2">
-            <label className="text-lg">Rating</label>
+            <label className="text-lg">{t.itemDetails.reviewsSection.rating}</label>
             <StarRating 
               rating={rating} 
               size="lg" 
@@ -343,7 +312,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
             value={comment}
             onChange={(e) => setComment(e.target.value)}
             className="w-full h-32 p-4 rounded-lg border border-gray-300 focus:outline-none focus:border-secondary"
-            placeholder="Write your comment..."
+            placeholder={t.itemDetails.reviewsSection.writeComment}
             required
           />
           <button
@@ -355,7 +324,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
                 : 'hover:bg-secondary-hover'
             }`}
           >
-            {isSubmitting ? 'Submitting...' : 'Submit Review'}
+            {isSubmitting ? t.itemDetails.reviewsSection.submitting : t.itemDetails.reviewsSection.submit}
           </button>
         </form>
       </div>
@@ -372,7 +341,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
             <div className="flex flex-col items-end gap-2">
               <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg">
                 <StarRating rating={averageRating} size="lg" />
-                <span className="text-lg">({reviews.length} reviews)</span>
+                <span className="text-lg">({reviews.length} {t.itemDetails.reviews})</span>
               </div>
             </div>
           </div>
@@ -503,11 +472,11 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
 
               {/* Details */}
               <div className="mt-8">
-                <h2 className="text-2xl md:text-4xl mb-6 font-bold">Details</h2>
+                <h2 className="text-2xl md:text-4xl mb-6 font-bold">{t.itemDetails.details}</h2>
                 <div className="space-y-4">
                   {/* Opening Hours */}
                   <div className="mb-6">
-                    <h3 className="text-xl md:text-2xl font-semibold mb-3">Opening Hours</h3>
+                    <h3 className="text-xl md:text-2xl font-semibold mb-3">{t.itemDetails.openingHours}</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                       {item.openingHours.map((schedule) => (
                         <div key={schedule.day} className="flex justify-between items-center py-2 px-4 bg-white rounded-lg shadow-sm">

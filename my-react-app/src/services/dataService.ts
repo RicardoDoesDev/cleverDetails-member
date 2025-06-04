@@ -14,14 +14,31 @@ const getDataForLanguage = (language: string) => {
   }
 };
 
+export const getAllVisibleItems = (language: string): Item[] => {
+  const data = getDataForLanguage(language);
+  return data.categories.flatMap(category => 
+    category.items.filter(item => item.isVisible !== false)
+  );
+};
+
 export const getCategories = (language: string): Category[] => {
   const data = getDataForLanguage(language);
-  return data.categories;
+  return data.categories.map(category => ({
+    ...category,
+    items: category.items.filter(item => item.isVisible !== false)
+  }));
 };
 
 export const getCategory = (categoryId: string, language: string): Category | undefined => {
   const data = getDataForLanguage(language);
-  return data.categories.find(category => category.id === categoryId);
+  const category = data.categories.find(category => category.id === categoryId);
+  if (category) {
+    return {
+      ...category,
+      items: category.items.filter(item => item.isVisible !== false)
+    };
+  }
+  return undefined;
 };
 
 export const getCategoryItems = (categoryId: string, language: string): Item[] => {

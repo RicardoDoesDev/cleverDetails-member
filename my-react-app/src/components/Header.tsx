@@ -29,7 +29,7 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
               </svg>
               <div>
                 <div className="font-bold">
-                  <a href="tel:+351289314500" className="text-black no-underline opacity-90 hover:opacity-100 hover:text-secondary transition-all duration-300 text-xl">+351 289 314 500</a>
+                  <a href="tel:+351289314500" className="text-black no-underline opacity-90 hover:opacity-100 hover:text-secondary transition-all duration-300 text-3sm">+351 289 314 500</a>
                 </div>
                 <div className="text-sm opacity-75">{t.header.phoneLabel}</div>
               </div>
@@ -79,7 +79,7 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
                   <img 
                     src="https://www.cleverdetails.com/images/logo.png" 
                     alt="Clever Details" 
-                    className="h-16 md:h-20 w-auto pb-4"
+                    className="h-20 md:h-24 w-auto pb-4"
                     loading="eager"
                     decoding="async"
                     onError={(e) => {
@@ -136,10 +136,6 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
           </div>
         </div>
       </nav>
-
-      <div className="hidden md:block">
-        <LanguageSwitcher variant="header" />
-      </div>
     </header>
   );
 };

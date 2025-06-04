@@ -143,6 +143,13 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
               <h2 className="text-xl font-bold text-primary mb-4">{t.sidebar.language}</h2>
               <LanguageSwitcher variant="sidebar" onClose={onClose} />
             </div>
+
+            {/* add "we love vilamoura" text, make it go to bottom of the sidebar */}
+            <div className="absolute bottom-0 left-0 right-0 p-4">
+              <span className="text-secondary font-bold text-xl block" style={{ fontFamily: "'Tropika Script', cursive" }}>
+                We ❤️ Vilamoura ...
+              </span>
+            </div>
           </div>
         </div>
       </div>
