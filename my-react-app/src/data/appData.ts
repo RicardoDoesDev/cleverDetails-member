@@ -739,7 +739,6 @@ export const appData: AppData = {
           email: "info@morgadodoquintao.pt",
           logo: "Morgado do quintao.png",
           type: "Winery Tours",
-          //translate to english
           description: "The Morgado do Quintão, in Lagoa, combines tradition and sustainability in the production of authentic wines. It offers wine tastings and unique experiences in enotourism.",
           locationIds: [7],
           rating: 5,
@@ -1158,5 +1157,115 @@ export const appData: AppData = {
       image: "/location5.jpg",
       description: "Quarteira is a beautiful city in the Algarve, Portugal. It is known for its beautiful beaches and its vibrant nightlife.",
     }
-  ]
+  ],
+  ui: {
+    header: {
+      phoneLabel: "(National fixed call network)",
+      slogan: "We ❤️ Vilamoura ...",
+      menu: {
+        advantages: "Advantages",
+        access: "Access",
+        partnership: "Partnership",
+        contact: "Contact"
+      }
+    },
+    sidebar: {
+      categories: "Categories",
+      other: "Other",
+      language: "Language"
+    },
+    footer: {
+      bookHoliday: "Book your holiday home",
+      allRightsReserved: "All rights reserved"
+    },
+    homepage: {
+      title: "Clever Member",
+      subtitle: "Enjoy Exclusive Rewards",
+      seeMore: "see more"
+    },
+    access: {
+      mainText1: "These advantages are reserved for those who book their holiday with Clever Details or entrust us with their property. It's our way of saying thank you by making your stay or investment even more rewarding.",
+      mainText2: "Explore the full list of partner perks and enjoy more than just a stay.",
+      mainText3: "With Clever Details, your holiday or home comes with much more than just a key.",
+      exploreHomes: "Explore Our Homes"
+    },
+    partnership: {
+      title: "Why Partner with Clever Details?",
+      benefit1: {
+        title: "Reach over 6,000 quality guests annually",
+        description: "Our network includes thousands of national and international tourists who value local experiences"
+      },
+      benefit2: {
+        title: "Boost your business visibility",
+        description: "We highlight your business on our website and social media, increasing your reach."
+      },
+      form: {
+        title: "Partnership Application",
+        businessName: "Business Name",
+        contactName: "Contact Name",
+        email: "Email",
+        phone: "Phone",
+        businessType: {
+          label: "Business Type",
+          placeholder: "Select a business type",
+          options: {
+            boatTours: "Boat Tours",
+            restaurants: "Restaurants",
+            activities: "Activities",
+            winery: "Winery",
+            wellness: "Wellness",
+            chefService: "Chef Service",
+            other: "Other"
+          }
+        },
+        description: "Business Description",
+        submit: "Submit Application",
+        submitting: "Submitting..."
+      }
+    },
+    contact: {
+      title: "Contact Us",
+      form: {
+        name: {
+          label: "Name",
+          placeholder: "Your name"
+        },
+        phone: {
+          label: "Phone",
+          placeholder: "Your phone number"
+        },
+        email: {
+          label: "Email",
+          placeholder: "your.email@example.com"
+        },
+        subject: {
+          label: "Subject",
+          placeholder: "Message subject"
+        },
+        message: {
+          label: "Message",
+          placeholder: "Your message here..."
+        },
+        submit: "Send Message",
+        sending: "Sending..."
+      }
+    },
+    itemDetails: {
+      reviews: "reviews",
+      bookNow: "Book Now",
+      specialOffer: "You deserve it!",
+      bookingNotice: "Bookings must be made directly with Clever Details team",
+      details: "Details",
+      openingHours: "Opening Hours",
+      location: "Location",
+      reviewsSection: {
+        title: "Reviews",
+        writeReview: "Write a Review",
+        authorPlaceholder: "Your name",
+        commentPlaceholder: "Your review",
+        submit: "Submit Review",
+        submitting: "Submitting..."
+      }
+    }
+  }
 }; 

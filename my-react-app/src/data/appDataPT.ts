@@ -173,6 +173,105 @@ export const appDataPT: AppData = {
           },
           rootFolder: "Authentic",
           images: ["83dcbf96-9726-4f1b-a1c7-c13c5f223b98.avif", "5e949c5e-060e-457b-ad67-b7597677c446.avif", "44aa29bd-0300-47b5-9ba5-83d8b8b19bd1.avif", "4d07f2e9-70b3-4b8b-a1e1-91fe37279165.avif", "843ccb2d-bf51-4c6a-bf0d-24ab6463b44c.avif", "ff05a4b6-f867-4243-9e4b-7141f87220af.avif", "c4bd01b2-7c29-405a-94d6-b566a0328e36.avif", "44cf2c78-1fec-4650-9ed2-eedaf4708a25.avif", "036d2880-7465-460b-9c18-61260a3de321.avif", "f818d5b4-5d61-4cc5-b0eb-e90fd92ac501.avif"]
+        },
+        {
+          id: 3,
+          name: "CafeZique",
+          email: "cafeziquept@gmail.com",
+          logo: "CAFEZIQUE-487bb404-679w.webp",
+          type: "Fine Dining",
+          description: "O restaurante CaféZique, em Loulé, combina sabores algarvios com técnicas contemporâneas, oferecendo uma experiência gastronómica única num ambiente relaxado ao lado do castelo.",
+          locationIds: [2],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "19:00 - 22:30" },
+            { day: "Tuesday", hours: "19:00 - 22:30" },
+            { day: "Wednesday", hours: "19:00 - 22:30" },
+            { day: "Thursday", hours: "19:00 - 22:30" },
+            { day: "Friday", hours: "19:00 - 22:30" },
+            { day: "Saturday", hours: "19:00 - 22:30" },
+            { day: "Sunday", hours: "Closed" }
+          ],
+          address: "Rua Cafezique, 78",
+          phone: "912 345 680",
+          socialMedia: {
+            facebook: "https://www.facebook.com/Cafeziquept/?locale=pt_BR",
+            instagram: "https://www.instagram.com/cafeziquept/",
+            website: "https://www.cafezique.pt/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.5625743653195!2d-8.026760923227188!3d37.13932057215254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab18b3c096f37%3A0x3d8742940db522f6!2zQ2Fmw6law69xdWU!5e0!3m2!1spt-PT!2spt!4v1748882784435!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Welcome Drink",
+            description: "Glass of Sparkling Wine"
+          },
+          rootFolder: "CafeZique",
+          images: ["0c8e01ad-d9ca-4b18-af60-26a700b19e31.avif", "b7455fd9-1912-4dc4-9d75-b6e3c18c21e1.avif", "c10b8475-9033-4f81-96a7-89723f3537a6.avif", "562a5999-384a-4fcf-876a-191a283c4417.avif", "1fc2a2ef-0625-4d3c-a43b-538301aad3c4.avif", "eb5af52c-c6c9-411a-87ba-578fa3de1e3f.avif", "47a07484-d88c-447f-91ed-4c7bf0a542c3.avif", "d59e735d-141e-4359-b024-3352c31e5b83.avif", "cff64c57-1e91-4133-a445-f033ab8f5838.avif", "98b3ee01-5726-41de-93f9-23ce6da1c1b7.avif"]
+        },
+        {
+          id: 4,
+          name: "Gran Sorvete",
+          email: "info@gransorvete.com",
+          logo: "GranSorvete.avif",
+          type: "Brunch Café",
+          description: "O Gran Sorvete, na Vilamoura Marina, é conhecido por seu sorvete artesanal italiano, crepes e waffles, servidos num ambiente acolhedor com vista para o mar.",
+          locationIds: [3],
+          rating: 4,
+          openingHours: [
+            { day: "Monday", hours: "11:00 - 23:00" },
+            { day: "Tuesday", hours: "11:00 - 23:00" },
+            { day: "Wednesday", hours: "11:00 - 23:00" },
+            { day: "Thursday", hours: "11:00 - 23:00" },
+            { day: "Friday", hours: "11:00 - 23:00" },
+            { day: "Saturday", hours: "11:00 - 23:00" },
+            { day: "Sunday", hours: "11:00 - 23:00" }
+          ],
+          address: "Rua Gran Sorvete, 23",
+          phone: "912 345 682",
+          socialMedia: {
+            facebook: "https://www.facebook.com/GranSorveteVilamoura/",
+            instagram: "https://www.instagram.com/gransorvete/",
+            website: "https://gransorvete.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.113234707878!2d-8.12375902322921!3d37.078609872169125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5d5d983cd55%3A0xec7bb7c81350d92!2sGran%20sorvete!5e0!3m2!1spt-PT!2spt!4v1748882811766!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "Gran Sorvete",
+          images: ["crepes-also-served-with.jpg", "gran-gelato.jpg", "gran-sorvete-in-the-heart.jpg", "in-the-heart-of-the-vilamoura.jpg", "our-delicious-mini-pancakes.jpg", "hot-chocolate-served.jpg", "enjoy-the-delicious-combinatio.jpg", "gran-gelato (1).jpg"]
+        },
+        {
+          id: 5,
+          name: "Retinto - Rodízio & Wine",
+          email: "retinto.vilamoura@gmail.com",
+          logo: "Retinto+Vilamoura-330w.webp",
+          type: "Steakhouse",
+          description: "O Retinto Rodízio & Wine, em Vilamoura, destaca-se pelo seu buffet de carne brasileira e argentina, acompanhado por uma seleção de vinhos cuidadosa. Ambiente acolhedor e excelente serviço.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "18:30 - 23:30" },
+            { day: "Tuesday", hours: "18:30 - 23:30" },
+            { day: "Wednesday", hours: "18:30 - 23:30" },
+            { day: "Thursday", hours: "18:30 - 23:30" },
+            { day: "Friday", hours: "18:30 - 23:30" },
+            { day: "Saturday", hours: "18:30 - 23:30" },
+            { day: "Sunday", hours: "Closed" }
+          ],
+          address: "Rua Retinto, 56",
+          phone: "912 345 683",
+          socialMedia: {
+            facebook: "https://www.facebook.com/Retinto.Vilamoura/",
+            instagram: "https://www.instagram.com/retinto.vilamoura/",
+            website: "https://www.restauranteretinto.com/retinto-rodizio-n-wine"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.0845960567867!2d-8.121846809000903!3d37.07929200040834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5940c8ecbd9%3A0x6755304fce06bfca!2sRetinto%20-%20Rod%C3%ADzio%20%26%20Wine%20-%20Vilamoura!5e0!3m2!1spt-PT!2spt!4v1748882848562!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Welcome Drink",
+            description: "Welcome Drink"
+          },
+          rootFolder: "Retinto",
+          images: ["5c594138-f690-4ea1-add1-3fce2e15ef55.avif", "photo0jpg.jpg", "entrecote-argentino-ribye.jpg", "ff1ed75b-d71b-42f7-9d93-7f3a39464c45.jpg", "59f45f21-e373-42d3-8ed2-8946008e0b3f.jpg", "b15f5500-b73f-421d-b7bc-a9412784f5d8.webp", "b8685ec1-a1b4-4cbd-bd41-3b8cdb1bfa11.avif", "d56aaf4a-be2e-4cd3-99d9-f70d63c5826c.avif", "7701aa02-a0c2-4ec5-9af1-e1c80a4263d6.webp"]
         }
       ]
     },
@@ -223,6 +322,38 @@ export const appDataPT: AppData = {
             "NunOrganistA_048a.jpg",
             "parceiro_70_racing_school_cf026414_3__2___1_tonemapped2b_1__2.jpg"
           ]
+        },{
+          id: 2,
+          name: "Karting Portimão",
+          email: "kia@parkalgar.com",
+          logo: "Kartodromoalgarve.png",
+          type: "Karting",
+          description: "O Karting Internacional do Algarve, em Portimão, é um dos maiores circuitos de karting da Europa, com 1.531 km de extensão. Oferece experiências para todas as idades, desde crianças até adultos, com karts adaptados a diferentes grupos etários e níveis de experiência. Além de ser um local para competições oficiais e eventos privados, tem uma infraestrutura completa, incluindo restaurante, boxes e lojas.",
+          locationIds: [6],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Tuesday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Wednesday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Thursday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Friday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Saturday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Sunday", hours: "09:00 - 13:00, 14:00 - 17:30" }
+          ],
+          address: "Parkalgar, Portimão",
+          phone: "+351 282 405 650",
+          socialMedia: {
+            facebook: "https://www.facebook.com/kartodromo.algarve",
+            instagram: "https://www.instagram.com/kartodromodoalgarve/",
+            website: "https://autodromodoalgarve.com/pt/the-park/kartodromo/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.658452607274!2d-8.638724023223917!3d37.23208217212703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b2498b60682cb%3A0xa6b4e4ed93bd2a1e!2sKart%C3%B3dromo%20Internacional%20do%20Algarve!5e0!3m2!1spt-PT!2spt!4v1748882967187!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "KartingPortimao",
+          images: ["39129269_2071071279603968_9122454272632422400_n.jpg", "Kartodromo2-scaled.jpg", "490851637_1218406543617808_2741633398730202739_n.jpg", "488211910_1210059391119190_5497740365812582147_n.jpg", "489446312_1210956781029451_2393478272773825535_n.jpg", "kartodromo6-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg", "kartodromo3-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg", "490229418_1218688256922970_8436650453256995830_n.jpg", "IMG_2422.jpg"]
         },
         {
           id: 3,
@@ -256,7 +387,139 @@ export const appDataPT: AppData = {
           },
           rootFolder: "Slide&Splash",
           images: ["Slide-Splash-Torre-sector-4-e-aereas_3-e1679392334545.webp", "atracoes31.jpg", "Slide-Splash-Water-Park-Algarve-Portugal.jpg", "atracoes39.jpg", "slide-splash-water-slide.jpg", "new-ride-2018-disco-river.jpg", "new-rides-2018.jpg", "black-hole.jpg", "slide-splash-2019 (1).jpg", "the-big-wave.jpg", "big-slides-tower.jpg", "slide-splash-2019.jpg", "slide-2020.jpg"]
-        }
+        },
+        {
+          id: 4,
+          name: "Family Golf Park",
+          email: "info@familygolfpark.com",
+          logo: "family-golf-park-logo-white.png",
+          type: "Golf",
+          description: "Localizado no coração de Vilamoura, o Family Golf Park é um destino imperdível para famílias e grupos em busca de diversão e lazer. Com dois cursos de mini golf temáticos inspirados na Via Appia e Via Lusitânia, o parque oferece uma experiência única no meio de jardins exuberantes e arquitetura romana. Além disso, tem um espaço de jogos para crianças, uma sala de jogos, uma barzinha com esplanada e até um trem turístico que passa pelos pontos principais de Vilamoura. Aberto todos os dias, o Family Golf Park é perfeito para um dia de diversão com a família.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "10:00 - 19:00" },
+            { day: "Tuesday", hours: "10:00 - 19:00" },
+            { day: "Wednesday", hours: "10:00 - 19:00" },
+            { day: "Thursday", hours: "10:00 - 19:00" },
+            { day: "Friday", hours: "10:00 - 19:00" },
+            { day: "Saturday", hours: "10:00 - 19:00" },
+            { day: "Sunday", hours: "10:00 - 19:00" }
+          ],
+          address: "Family Golf Park",
+          phone: "+351 282 912 345",
+          socialMedia: {
+            facebook: "https://www.facebook.com/familygolfpark.pt",
+            instagram: "https://www.instagram.com/familygolfpark/",
+            website: "https://familygolfpark.pt/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sFamily%20Golf%20Park!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "Family Golf Park",
+          images: ["family-golf-park-gallery-05-min.jpg", "family-golf-park-gallery-10-min.jpg", "Legionario_2.webp", "Family-Golf-Park_2.webp", "Looping-Crazygolfe_2.webp", "family-golf-park.jpg", "lisbon-bridge.jpg", "relaxing-and-clever-minigolf.jpg", "vulcanos.jpg", "2sd-hole.jpg", "1st-hole.jpg", "welcome-to-the-best-europe.jpg"]
+        },
+        {
+          id: 5,
+          name: "Zoomarine",
+          email: "info@zoomarine.pt",
+          logo: "logozoomarine.png",
+          type: "Theme Park",
+          description: "Zoomarine, localizado perto de Albufeira, é um parque temático que combina diversão, educação e natureza. Com shows de golfinhos, leões-marinhos, pássaros tropicais, escorregas de água e uma praia artificial, é perfeito para um dia inesquecível com a família. Uma aventura mágica no coração do Algarve!\n\nHorários Sazonais:\n- Março, Outubro, Novembro: 10:00 - 17:00\n- Abril a 22 de Junho e Setembro 10 a 28: 10:00 - 18:00\n- 23 de Junho a 7 de Setembro: 10:00 - 19:30",
+          locationIds: [4],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Tuesday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Wednesday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Thursday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Friday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Saturday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Sunday", hours: "10:00 - 19:30 (horário varia por época)" }
+          ],
+          address: "EN 125, Km 65, 8201-864 Guia, Albufeira",
+          phone: "+351 289 560 300",
+          socialMedia: {
+            facebook: "https://www.facebook.com/ZoomarineAlgarve/?locale=pt_PT",
+            instagram: "https://www.instagram.com/zoomarine_algarve_oficial/",
+            website: "https://www.zoomarine.pt/pt/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.16183350874!2d-8.317631323227639!3d37.12506467215641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ace4ed8ed7ec7%3A0x8cf7b5092d8538af!2sZoomarine%20Algarve!5e0!3m2!1spt-PT!2spt!4v1748883516694!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "-3,5€ Normal; -2,5€ Sénior/Júnior; -12€ Dolphin Emotions"
+          },
+          rootFolder: "Zoomarine",
+          images: ["145.jpg", "145 (1).jpg", "145 (2).jpg", "145 (3).jpg", "145 (4).jpg", "145 (5).jpg", "145 (6).jpg", "145 (7).jpg", "145 (8).jpg", "145 (9).jpg", "145 (10).jpg", "image_processing20240617-9-uc4gqx.jpg", "Zoomarine_2.jpg", "zoomarine.jpg"]
+        },
+        {
+          id: 7,
+          name: "Algarve Riders",
+          email: "info@algarveriders.com",
+          logo: "logo_algarveriders.png",
+          type: "Theme Park",
+          description: "Algarve Riders é uma empresa de locação de motos que oferece uma experiência única com motos de alta performance. É um local ideal para aproveitar um dia de diversão.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "8:30 - 18:00" },
+            { day: "Tuesday", hours: "8:30 - 18:00" },
+            { day: "Wednesday", hours: "8:30 - 18:00" },
+            { day: "Thursday", hours: "8:30 - 18:00" },
+            { day: "Friday", hours: "8:30 - 18:00" },
+            { day: "Saturday", hours: "8:30 - 18:00" },
+            { day: "Sunday", hours: "8:30 - 18:00" }
+          ],
+          address: "Algarve Riders",
+          phone: "+351 289 560 300",
+          socialMedia: {
+            facebook: "https://www.facebook.com/algarveriders/?locale=pt_PT",
+            instagram: "https://www.instagram.com/algarveriders/",
+            website: "https://www.algarveriders.com/pt"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.5144440743125!2d-8.241512908997843!3d37.09286990039514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1acc1c47179d53%3A0xae8f92aa7c2a4f1e!2sAlgarve%20Riders!5e0!3m2!1spt-PT!2spt!4v1748883603455!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF -Tours ; 5% OFF - Scooter"
+          },
+          rootFolder: "Algarve Riders",
+          images: ["algarve-riders-available.jpg", "algarve-riders-off-road (7).jpg", "algarve-riders-off-road (6).jpg", "algarve-riders-off-road (5).jpg", "algarve-riders-off-road (4).jpg", "algarve-riders-off-road (3).jpg", "algarve-riders-off-road (2).jpg", "algarve-riders-off-road (1).jpg", "algarve-quad-tours-fun.jpg", "team-building-buggy-tour.jpg", "algarve-riders-off-road.jpg"]
+        },
+        {
+          id: 8,
+          name: "Aquashow",
+          email: "info@aquashow.com",
+          logo: "aquashow_logo.png",
+          type: "Theme Park",
+          description: "O Aquashow Outdoor é o maior parque aquático ao ar livre de Portugal, localizado no coração do Algarve. Com escorregas gigantes, piscina de ondas, atrações para todas as idades e muita animação, é o lugar ideal para um dia de verão cheio de diversão, adrenalina e memórias familiares ou de amigos.",
+          locationIds: [8],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "10:00 - 18:00" },
+            { day: "Tuesday", hours: "10:00 - 18:00" },
+            { day: "Wednesday", hours: "10:00 - 18:00" },
+            { day: "Thursday", hours: "10:00 - 18:00" },
+            { day: "Friday", hours: "10:00 - 18:00" },
+            { day: "Saturday", hours: "10:00 - 18:00" },
+            { day: "Sunday", hours: "10:00 - 18:00" }
+          ],
+          address: "Aquashow",
+          phone: "+351 289 560 300",
+          socialMedia: {
+            facebook: "https://www.facebook.com/AquashowParque/?locale=pt_PT",
+            instagram: "https://www.instagram.com/aquashowparkhotel/",
+            website: "https://aquashowpark.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.5023582651565!2d-8.074484223228705!3d37.09315767216503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab575a4f4c3dd%3A0xfddc87f54582acc1!2sAQUASHOW%20-%20Waterpark%20Outdoor%20%26%20Indoor!5e0!3m2!1spt-PT!2spt!4v1748883493782!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "Aquashow",
+          images: ["IMG_2075.jpg", "Galeria-03.jpg", "aquashow-park (6).jpg", "air-race.jpg", "aquashow-park (5).jpg", "aquashow-park (4).jpg", "aquashow-park (3).jpg", "aquashow-park (2).jpg", "aquashow-park (1).jpg", "aquashow-park.jpg"]
+        },
       ]
     },
     {
@@ -301,6 +564,40 @@ export const appDataPT: AppData = {
         },
         {
           id: 2,
+          name: "Morgado do Quintão",
+          email: "info@morgadodoquintao.pt",
+          logo: "Morgado do quintao.png",
+          type: "Winery Tours",
+          //translate to english
+          description: "The Morgado do Quintão, in Lagoa, combines tradition and sustainability in the production of authentic wines. It offers wine tastings and unique experiences in enotourism.",
+          locationIds: [7],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 22:00" },
+            { day: "Tuesday", hours: "09:00 - 22:00" },
+            { day: "Wednesday", hours: "09:00 - 22:00" },
+            { day: "Thursday", hours: "09:00 - 22:00" },
+            { day: "Friday", hours: "09:00 - 22:00" },
+            { day: "Saturday", hours: "09:00 - 22:00" },
+            { day: "Sunday", hours: "Closed" }
+          ],
+          address: "Morgado do Quintão",
+          phone: "+351 282 912 345",
+          socialMedia: {
+            facebook: "https://www.facebook.com/morgadoquintao/",
+            instagram: "https://www.instagram.com/morgadodoquintao/",
+            website: "https://www.morgadodoquintao.pt/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.790358516998!2d-8.4519159232265!3d37.157684072147326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ad78519c4f4e1%3A0xe72edb7d0b164be9!2sMorgado%20do%20Quint%C3%A3o!5e0!3m2!1spt-PT!2spt!4v1748882911445!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "15% OFF"
+          },
+          rootFolder: "Morgado do Quintão",
+          images: ["a-beautiful-plate-to.jpg", "morgado-do-quintao.jpg", "there-is-nothing-like.jpg", "wine-tasting-in-an-old.jpg", "palhete-our-best-selling.jpg", "typical-carapaus-alimados.jpg", "photo0jpg.jpg", "caption.jpg", "palhete-our-best-selling (1).jpg"]
+        },
+        {
+          id: 3,
           name: "Adega do Cantor",
           email: "info@adegadocantor.com",
           logo: "adega-do-cantor.png",
@@ -687,5 +984,115 @@ export const appDataPT: AppData = {
       image: "/location5.jpg",
       description: "Quarteira é uma cidade costeira tradicional com um extenso passeio marítimo e excelentes restaurantes de peixe e marisco.",
     }
-  ]
+  ],
+  ui: {
+    header: {
+      phoneLabel: "(Rede fixa nacional)",
+      slogan: "Nós ❤️ Vilamoura ...",
+      menu: {
+        advantages: "Vantagens",
+        access: "Acesso",
+        partnership: "Parceria",
+        contact: "Contato"
+      }
+    },
+    sidebar: {
+      categories: "Categorias",
+      other: "Outros",
+      language: "Idioma"
+    },
+    footer: {
+      bookHoliday: "Reserve sua casa de férias",
+      allRightsReserved: "Todos os direitos reservados"
+    },
+    homepage: {
+      title: "Clever Member",
+      subtitle: "Desfrute de recompensas exclusivas",
+      seeMore: "ver mais"
+    },
+    access: {
+      mainText1: "Essas vantagens são reservadas para aqueles que reservam suas férias com a Clever Details ou nos confiam sua propriedade. É nossa forma de agradecer tornando sua estadia ou investimento ainda mais gratificante.",
+      mainText2: "Explore a lista completa de benefícios dos parceiros e aproveite mais do que apenas uma estadia.",
+      mainText3: "Com a Clever Details, suas férias ou casa vêm com muito mais do que apenas uma chave.",
+      exploreHomes: "Explore nossas casas"
+    },
+    partnership: {
+      title: "Por que ser parceiro da Clever Details?",
+      benefit1: {
+        title: "Alcance mais de 6.000 hóspedes de qualidade anualmente",
+        description: "Nossa rede inclui milhares de turistas nacionais e internacionais que valorizam experiências locais"
+      },
+      benefit2: {
+        title: "Aumente a visibilidade do seu negócio",
+        description: "Destacamos seu negócio em nosso site e redes sociais, aumentando seu alcance."
+      },
+      form: {
+        title: "Solicitação de Parceria",
+        businessName: "Nome da Empresa",
+        contactName: "Nome do Contato",
+        email: "Email",
+        phone: "Telefone",
+        businessType: {
+          label: "Tipo de Negócio",
+          placeholder: "Selecione um tipo de negócio",
+          options: {
+            boatTours: "Passeios de Barco",
+            restaurants: "Restaurantes",
+            activities: "Atividades",
+            winery: "Vinícola",
+            wellness: "Bem-estar",
+            chefService: "Serviço de Chef",
+            other: "Outro"
+          }
+        },
+        description: "Descrição do Negócio",
+        submit: "Enviar Solicitação",
+        submitting: "Enviando..."
+      }
+    },
+    contact: {
+      title: "Entre em Contato",
+      form: {
+        name: {
+          label: "Nome",
+          placeholder: "Seu nome"
+        },
+        phone: {
+          label: "Telefone",
+          placeholder: "Seu número de telefone"
+        },
+        email: {
+          label: "Email",
+          placeholder: "seu.email@exemplo.com"
+        },
+        subject: {
+          label: "Assunto",
+          placeholder: "Assunto da mensagem"
+        },
+        message: {
+          label: "Mensagem",
+          placeholder: "Sua mensagem aqui..."
+        },
+        submit: "Enviar Mensagem",
+        sending: "Enviando..."
+      }
+    },
+    itemDetails: {
+      reviews: "avaliações",
+      bookNow: "Reservar Agora",
+      specialOffer: "Você merece!",
+      bookingNotice: "As reservas devem ser feitas diretamente com a equipe Clever Details",
+      details: "Detalhes",
+      openingHours: "Horário de Funcionamento",
+      location: "Localização",
+      reviewsSection: {
+        title: "Avaliações",
+        writeReview: "Escrever Avaliação",
+        authorPlaceholder: "Seu nome",
+        commentPlaceholder: "Sua avaliação",
+        submit: "Enviar Avaliação",
+        submitting: "Enviando..."
+      }
+    }
+  }
 }; 

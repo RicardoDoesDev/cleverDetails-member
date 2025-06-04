@@ -4,7 +4,7 @@ export const appDataFR: AppData = {
   categories: [
     {
       id: "boat-tours",
-      title: "Tours en Bateau",
+      title: "Excursions en Bateau",
       route: "/boat-tours",
       description: "Explorez la côte de l'Algarve avec nos excursions en bateau de luxe",
       image: "ai-generated-boat-picture.jpg",
@@ -14,8 +14,8 @@ export const appDataFR: AppData = {
           name: "Cool Charters",
           email: "info@coolchartersvilamoura.com",
           logo: "Cool-Charters-BSQUAREwhite.png",
-          type: "Tours en Bateau",
-          description: "Propose des expériences nautiques personnalisées, idéales pour les occasions spéciales comme les anniversaires, les enterrements de vie de garçon/fille, les mariages ou les événements d'entreprise. Les excursions comprennent des visites de grottes, des plages isolées et l'observation des dauphins, ainsi que des activités nautiques comme le jet ski. L'équipe dévouée assure un service d'excellence, créant des souvenirs inoubliables en mer.",
+          type: "Excursions en Bateau",
+          description: "Offre des expériences nautiques personnalisées, idéales pour les occasions spéciales comme les anniversaires, les enterrements de vie de garçon/jeune fille, les mariages ou les événements d'entreprise. Les excursions comprennent des visites de grottes, de plages isolées et l'observation des dauphins, ainsi que des activités nautiques comme le jet ski. L'équipe dévouée assure un service exceptionnel, créant des souvenirs inoubliables en mer.",
           locationIds: [3],
           rating: 5,
           openingHours: [
@@ -87,6 +87,171 @@ export const appDataFR: AppData = {
           },
           rootFolder: "Passeios Ria Formosa",
           images: ["sailing-tour.jpg", "featured-2-horas-fuseta.webp", "birdwatching.jpg", "sealife-observation.jpg", "dolphins-observation.jpg", "DJI_20240427_200812_220.webp", "dji_fly_20240425_145136_206_1714164247660_timed.webp"]
+        },
+        {
+          id: 3,
+          name: "Formosamar",
+          email: "info@formosamar.com",
+          logo: "formosamar-main-logo-landscape-white.svg",
+          type: "Boat Tours",
+          description: "Formosamar, située à Faro, propose des expériences authentiques dans le Parc Naturel de la Ria Formosa. Elle propose des excursions en bateau, des observations d'oiseaux et de dauphins, ainsi que des locations de bateaux, de kayaks, de vélos et d'équipements nautiques. Idéal pour ceux qui souhaitent explorer la nature et la culture locale avec des guides expérimentés. L'entreprise est certifiée en écotourisme et s'engage dans des pratiques durables.",
+          locationIds: [5],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 19:00" },
+            { day: "Tuesday", hours: "09:00 - 19:00" },
+            { day: "Wednesday", hours: "09:00 - 19:00" },
+            { day: "Thursday", hours: "09:00 - 19:00" },
+            { day: "Friday", hours: "09:00 - 19:00" },
+            { day: "Saturday", hours: "09:00 - 19:00" },
+            { day: "Sunday", hours: "09:00 - 19:00" }
+          ],
+          address: "Ria Formosa",
+          phone: "+351 912 345 680",
+          socialMedia: {
+            facebook: "https://www.facebook.com/formosamar/",
+            instagram: "https://www.instagram.com/formosamar/",
+            website: "https://formosamar.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.8047220482727!2d-7.9389662732313235!3d37.014454772187065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd05533874923d89%3A0xd4bf971caf98216!2sFormosamar%20-%20Boat%20Tours%20Passeios%20na%20Ria%20Formosa!5e0!3m2!1spt-PT!2spt!4v1748883209882!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "5% OFF"
+          },
+          rootFolder: "Formosamar",
+          images: ["dolphin-watching-boat.jpg", "formosamar-sailboats-ria-formosa-island.jpg", "ria-formosa-islands-boat.jpg", "ilha-deserta-and-farol.jpg", "guided-boat-trip-in-ria.jpg", "formosamar-private-tour-cruise-ria-formosa-900x500.jpg", "formosamar.jpg", "formosamar (1).jpg", "formosamar (2).jpg"]
+        },
+        {
+          id: 4,
+          name: "AlgarExperience",
+          email: "info@algarexperience.com",
+          logo: "algarexperience-vect.svg",
+          type: "Boat Tours",
+          description: "AlgarExperience est un leader dans le tourisme maritime dans l'Algarve, offrant des expériences uniques comme des visites de grottes, des observations de dauphins, du parasailing et des barbecues sur la plage. Avec un parc de bateaux modernes et une équipe dédiée, il offre des moments inoubliables à la mer.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 20:00" },
+            { day: "Tuesday", hours: "09:00 - 20:00" },
+            { day: "Wednesday", hours: "09:00 - 20:00" },
+            { day: "Thursday", hours: "09:00 - 20:00" },
+            { day: "Friday", hours: "09:00 - 20:00" },
+            { day: "Saturday", hours: "09:00 - 20:00" },
+            { day: "Sunday", hours: "09:00 - 20:00" }
+          ],
+          address: "Algarve",
+          phone: "+351 912 345 681",
+          socialMedia: {
+            facebook: "https://www.facebook.com/algarexperiencee",
+            instagram: "https://www.instagram.com/algarexperience/",
+            website: "https://algarexperience.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.162307877745!2d-8.126925009001342!3d37.077441000410495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab57f81075ba9%3A0x7aa138f8f2a3e9ed!2sAlgarExperience%20-%20Marina%20de%20Vilamoura!5e0!3m2!1spt-PT!2spt!4v1748883329499!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "AlgarExperience",
+          images: ["caves-coastline-tour.jpg", "dolphin-caves-catamaran.jpg", "gruta-de-benagil.jpg", "sunset.jpg", "grutas.jpg", "vista-aerea.jpg", "barbecue-na-praia.jpg", "parasailing.jpg", "belize-segundo-costa.jpg", "boat-party.jpg"]
+        },
+        {
+          id: 5,
+          name: "Condor de Vilamoura",
+          email: "info@condorvilamoura.com",
+          logo: "condor_logo branco.avif",
+          type: "Hotel",
+          description: "Découvrez la côte de l'Algarve sur le majestueux Condor de Vilamoura, un schooner de 34 mètres de long inspiré par les schooners américains du 19ème siècle. Avec une capacité pour 120 passagers, il offre des croisières de 3 heures à Praia da Galé et des croisières de journée à Benagil, avec des escales pour la plage, l'exploration des grottes et la dégustation d'un délicieux barbecue sur la plage. Une expérience unique pour toute la famille, combinant confort, tradition et paysages impressionnants.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 18:00" },
+            { day: "Tuesday", hours: "09:00 - 18:00" },
+            { day: "Wednesday", hours: "09:00 - 18:00" },
+            { day: "Thursday", hours: "09:00 - 18:00" },
+            { day: "Friday", hours: "09:00 - 18:00" },
+            { day: "Saturday", hours: "09:00 - 18:00" },
+            { day: "Sunday", hours: "09:00 - 18:00" }
+          ],
+          address: "Vilamoura",
+          phone: "+351 912 345 682",
+          socialMedia: {
+            facebook: "https://www.facebook.com/CondorDeVilamoura/",
+            instagram: "https://www.instagram.com/condordevilamoura/",
+            website: "https://condorvilamoura.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.126789!3d37.076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "condor vilamoura",
+          images: ["photo0jpg.jpg", "caption (1).jpg", "vamos-para-a-praia.jpg", "caption (2).jpg", "caption.jpg", "21d228_8a694355938d49048feaba57ef829db2~mv2-1.avif", "condor-de-vilamoura (1).jpg", "condor-de-vilamoura.jpg", "21d228_28814368cb5446c1b0a8d17d8459fd48~mv2.avif", "21d228_8a694355938d49048feaba57ef829db2~mv2.avif"]
+        },
+        {
+          id: 6,
+          name: "Ocean Quest",
+          email: "info@oceanquest.com",
+          logo: "Ocean Quest.png",
+          type: "Boat Tours",
+          description: "Explorez le meilleur de la côte de l'Algarve avec Ocean Quest. Croisières en bateau, grottes, dauphins et parasailing à Vilamoura, avec une équipe passionnée de fournir des expériences uniques à la mer. Parce que la vie est belle.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 18:00" },
+            { day: "Tuesday", hours: "09:00 - 18:00" },
+            { day: "Wednesday", hours: "09:00 - 18:00" },
+            { day: "Thursday", hours: "09:00 - 18:00" },
+            { day: "Friday", hours: "09:00 - 18:00" },
+            { day: "Saturday", hours: "09:00 - 18:00" },
+            { day: "Sunday", hours: "09:00 - 18:00" }
+          ],
+          address: "Vilamoura",
+          phone: "+351 912 345 683",
+          socialMedia: {
+            facebook: "https://www.facebook.com/boattripsvilamoura",
+            instagram: "https://www.instagram.com/oceanquestalgarve/",
+            website: "https://oceanquestalgarve.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sOcean%20Quest!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "ocean quest",
+          images: ["see-the-wonderful-algarvian.jpg", "swimming-stop.jpg", "traditional-cultural (1).jpg", "vilamoura-yacht-charter.jpg", "vilamoura-speed-boat-trips.jpeg", "cesar-live-on-the-guitar.jpg", "traditional-cultural.jpg", "life-is-beautiful.jpg", "exceptional-view.jpg", "dolphin-quest.jpg"]
+        },
+        {
+          id: 7,
+          name: "Vilamoura Water Sports Centre",
+          email: "info@vilamourawatersportscentre.com",
+          logo: "Vilamoura-Watersports-Centre-logo-Design-01-e1602070771419.webp",
+          type: "Water Sports",
+          description: "Situé à Vilamoura Marina, le Vilamoura Watersports Centre offre une large gamme d'activités aquatiques pour tous les âges. Des croisières en bateau aux grottes de Benagil, observation de dauphins, parasailing, jet ski, wakeboard, pêche et locations de bateaux privés, il y a des options pour tout le monde. Avec une équipe expérimentée et des équipements de qualité, ils garantissent la sécurité et le plaisir dans toutes les expériences. Ouvert quotidiennement, c'est le lieu idéal pour explorer la côte de l'Algarve de manière unique.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 23:00" },
+            { day: "Tuesday", hours: "09:00 - 23:00" },
+            { day: "Wednesday", hours: "09:00 - 23:00" },
+            { day: "Thursday", hours: "09:00 - 23:00" },
+            { day: "Friday", hours: "09:00 - 23:00" },
+            { day: "Saturday", hours: "09:00 - 23:00" },
+            { day: "Sunday", hours: "09:00 - 23:00" }
+          ],
+          address: "Vilamoura",
+          phone: "+351 912 345 684",
+          socialMedia: {
+            facebook: "https://www.facebook.com/VilamouraWatersportsCentre/?locale=pt_PT",
+            instagram: "https://www.instagram.com/vilamoura_watersportscentre/",
+            website: "https://www.watersportsvilamoura.com/pt-pt/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1531357987783!2d-8.124483123229288!3d37.07765947216944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab591f6e9b21f%3A0x407948f711a9e5ab!2sVilamoura%20Watersports%20Centre!5e0!3m2!1spt-PT!2spt!4v1748883466872!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "watersports vilamoura",
+          images: ["IMG_1046-scaled.webp", "photo5jpg.jpg", "foto1.webp", "jet-boat-ride-vilamoura.jpg", "Parasailing-Vilamoura-Experience-scaled.webp", "speed-boat-algarvexcite.jpg", "parasailing-boat-trips.jpg", "common-dolphin.jpg", "Fishing-In-Algarve.webp", "Dolphins-Algarve-.webp"]
         }
       ]
     },
@@ -173,6 +338,105 @@ export const appDataFR: AppData = {
           },
           rootFolder: "Authentic",
           images: ["83dcbf96-9726-4f1b-a1c7-c13c5f223b98.avif", "5e949c5e-060e-457b-ad67-b7597677c446.avif", "44aa29bd-0300-47b5-9ba5-83d8b8b19bd1.avif", "4d07f2e9-70b3-4b8b-a1e1-91fe37279165.avif", "843ccb2d-bf51-4c6a-bf0d-24ab6463b44c.avif", "ff05a4b6-f867-4243-9e4b-7141f87220af.avif", "c4bd01b2-7c29-405a-94d6-b566a0328e36.avif", "44cf2c78-1fec-4650-9ed2-eedaf4708a25.avif", "036d2880-7465-460b-9c18-61260a3de321.avif", "f818d5b4-5d61-4cc5-b0eb-e90fd92ac501.avif"]
+        },
+        {
+          id: 3,
+          name: "CafeZique",
+          email: "cafeziquept@gmail.com",
+          logo: "CAFEZIQUE-487bb404-679w.webp",
+          type: "Fine Dining",
+          description: "Le restaurant CaféZique, à Loulé, combine les saveurs algarviennes avec des techniques contemporaines, offrant une expérience gastronomique unique dans un environnement relaxé près du château.",
+          locationIds: [2],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "19:00 - 22:30" },
+            { day: "Tuesday", hours: "19:00 - 22:30" },
+            { day: "Wednesday", hours: "19:00 - 22:30" },
+            { day: "Thursday", hours: "19:00 - 22:30" },
+            { day: "Friday", hours: "19:00 - 22:30" },
+            { day: "Saturday", hours: "19:00 - 22:30" },
+            { day: "Sunday", hours: "Closed" }
+          ],
+          address: "Rua Cafezique, 78",
+          phone: "912 345 680",
+          socialMedia: {
+            facebook: "https://www.facebook.com/Cafeziquept/?locale=pt_BR",
+            instagram: "https://www.instagram.com/cafeziquept/",
+            website: "https://www.cafezique.pt/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.5625743653195!2d-8.026760923227188!3d37.13932057215254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab18b3c096f37%3A0x3d8742940db522f6!2zQ2Fmw6law69xdWU!5e0!3m2!1spt-PT!2spt!4v1748882784435!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Welcome Drink",
+            description: "Glass of Sparkling Wine"
+          },
+          rootFolder: "CafeZique",
+          images: ["0c8e01ad-d9ca-4b18-af60-26a700b19e31.avif", "b7455fd9-1912-4dc4-9d75-b6e3c18c21e1.avif", "c10b8475-9033-4f81-96a7-89723f3537a6.avif", "562a5999-384a-4fcf-876a-191a283c4417.avif", "1fc2a2ef-0625-4d3c-a43b-538301aad3c4.avif", "eb5af52c-c6c9-411a-87ba-578fa3de1e3f.avif", "47a07484-d88c-447f-91ed-4c7bf0a542c3.avif", "d59e735d-141e-4359-b024-3352c31e5b83.avif", "cff64c57-1e91-4133-a445-f033ab8f5838.avif", "98b3ee01-5726-41de-93f9-23ce6da1c1b7.avif"]
+        },
+        {
+          id: 4,
+          name: "Gran Sorvete",
+          email: "info@gransorvete.com",
+          logo: "GranSorvete.avif",
+          type: "Brunch Café",
+          description: "Le Gran Sorvete, à Vilamoura Marina, est connu pour son sorbet italien artisanal, ses crêpes et ses gaufres, servis dans un environnement chaleureux avec une vue sur la mer.",
+          locationIds: [3],
+          rating: 4,
+          openingHours: [
+            { day: "Monday", hours: "11:00 - 23:00" },
+            { day: "Tuesday", hours: "11:00 - 23:00" },
+            { day: "Wednesday", hours: "11:00 - 23:00" },
+            { day: "Thursday", hours: "11:00 - 23:00" },
+            { day: "Friday", hours: "11:00 - 23:00" },
+            { day: "Saturday", hours: "11:00 - 23:00" },
+            { day: "Sunday", hours: "11:00 - 23:00" }
+          ],
+          address: "Rua Gran Sorvete, 23",
+          phone: "912 345 682",
+          socialMedia: {
+            facebook: "https://www.facebook.com/GranSorveteVilamoura/",
+            instagram: "https://www.instagram.com/gransorvete/",
+            website: "https://gransorvete.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.113234707878!2d-8.12375902322921!3d37.078609872169125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5d5d983cd55%3A0xec7bb7c81350d92!2sGran%20sorvete!5e0!3m2!1spt-PT!2spt!4v1748882811766!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "Gran Sorvete",
+          images: ["crepes-also-served-with.jpg", "gran-gelato.jpg", "gran-sorvete-in-the-heart.jpg", "in-the-heart-of-the-vilamoura.jpg", "our-delicious-mini-pancakes.jpg", "hot-chocolate-served.jpg", "enjoy-the-delicious-combinatio.jpg", "gran-gelato (1).jpg"]
+        },
+        {
+          id: 5,
+          name: "Retinto - Rodízio & Wine",
+          email: "retinto.vilamoura@gmail.com",
+          logo: "Retinto+Vilamoura-330w.webp",
+          type: "Steakhouse",
+          description: "Le Retinto Rodízio & Wine, à Vilamoura, se distingue par son buffet de viande brésilienne et argentine, accompagné d'une sélection de vins soigneuse. Ambiance chaleureuse et excellent service.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "18:30 - 23:30" },
+            { day: "Tuesday", hours: "18:30 - 23:30" },
+            { day: "Wednesday", hours: "18:30 - 23:30" },
+            { day: "Thursday", hours: "18:30 - 23:30" },
+            { day: "Friday", hours: "18:30 - 23:30" },
+            { day: "Saturday", hours: "18:30 - 23:30" },
+            { day: "Sunday", hours: "Closed" }
+          ],
+          address: "Rua Retinto, 56",
+          phone: "912 345 683",
+          socialMedia: {
+            facebook: "https://www.facebook.com/Retinto.Vilamoura/",
+            instagram: "https://www.instagram.com/retinto.vilamoura/",
+            website: "https://www.restauranteretinto.com/retinto-rodizio-n-wine"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.0845960567867!2d-8.121846809000903!3d37.07929200040834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5940c8ecbd9%3A0x6755304fce06bfca!2sRetinto%20-%20Rod%C3%ADzio%20%26%20Wine%20-%20Vilamoura!5e0!3m2!1spt-PT!2spt!4v1748882848562!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Welcome Drink",
+            description: "Welcome Drink"
+          },
+          rootFolder: "Retinto",
+          images: ["5c594138-f690-4ea1-add1-3fce2e15ef55.avif", "photo0jpg.jpg", "entrecote-argentino-ribye.jpg", "ff1ed75b-d71b-42f7-9d93-7f3a39464c45.jpg", "59f45f21-e373-42d3-8ed2-8946008e0b3f.jpg", "b15f5500-b73f-421d-b7bc-a9412784f5d8.webp", "b8685ec1-a1b4-4cbd-bd41-3b8cdb1bfa11.avif", "d56aaf4a-be2e-4cd3-99d9-f70d63c5826c.avif", "7701aa02-a0c2-4ec5-9af1-e1c80a4263d6.webp"]
         }
       ]
     },
@@ -225,6 +489,39 @@ export const appDataFR: AppData = {
           ]
         },
         {
+          id: 2,
+          name: "Karting Portimão",
+          email: "kia@parkalgar.com",
+          logo: "Kartodromoalgarve.png",
+          type: "Karting",
+          description: "Le Karting International de l'Algarve, à Portimão, est l'un des plus grands circuits de karting d'Europe, avec 1.531 km de longueur. Il offre des expériences pour toutes les âges, des enfants aux adultes, avec des karts adaptés à différents groupes d'âge et niveaux d'expérience. En plus d'être un lieu pour les compétitions officielles et les événements privés, il dispose d'une infrastructure complète, y compris un restaurant, des boxes et des boutiques.",
+          locationIds: [6],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Tuesday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Wednesday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Thursday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Friday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Saturday", hours: "09:00 - 13:00, 14:00 - 17:30" },
+            { day: "Sunday", hours: "09:00 - 13:00, 14:00 - 17:30" }
+          ],
+          address: "Parkalgar, Portimão",
+          phone: "+351 282 405 650",
+          socialMedia: {
+            facebook: "https://www.facebook.com/kartodromo.algarve",
+            instagram: "https://www.instagram.com/kartodromodoalgarve/",
+            website: "https://autodromodoalgarve.com/pt/the-park/kartodromo/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.658452607274!2d-8.638724023223917!3d37.23208217212703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b2498b60682cb%3A0xa6b4e4ed93bd2a1e!2sKart%C3%B3dromo%20Internacional%20do%20Algarve!5e0!3m2!1spt-PT!2spt!4v1748882967187!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "KartingPortimao",
+          images: ["39129269_2071071279603968_9122454272632422400_n.jpg", "Kartodromo2-scaled.jpg", "490851637_1218406543617808_2741633398730202739_n.jpg", "488211910_1210059391119190_5497740365812582147_n.jpg", "489446312_1210956781029451_2393478272773825535_n.jpg", "kartodromo6-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg", "kartodromo3-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg", "490229418_1218688256922970_8436650453256995830_n.jpg", "IMG_2422.jpg"]
+        },
+        {
           id: 3,
           name: "Slide & Splash",
           email: "info@slidesplash.com",
@@ -256,7 +553,139 @@ export const appDataFR: AppData = {
           },
           rootFolder: "Slide&Splash",
           images: ["Slide-Splash-Torre-sector-4-e-aereas_3-e1679392334545.webp", "atracoes31.jpg", "Slide-Splash-Water-Park-Algarve-Portugal.jpg", "atracoes39.jpg", "slide-splash-water-slide.jpg", "new-ride-2018-disco-river.jpg", "new-rides-2018.jpg", "black-hole.jpg", "slide-splash-2019 (1).jpg", "the-big-wave.jpg", "big-slides-tower.jpg", "slide-splash-2019.jpg", "slide-2020.jpg"]
-        }
+        },
+        {
+          id: 4,
+          name: "Family Golf Park",
+          email: "info@familygolfpark.com",
+          logo: "family-golf-park-logo-white.png",
+          type: "Golf",
+          description: "Situé au cœur de Vilamoura, le Family Golf Park est un lieu incontournable pour les familles et les groupes à la recherche de divertissement et de loisir. Avec deux parcours de mini-golf thématiques inspirés de la Via Appia et de la Via Lusitânia, le parc offre une expérience unique au milieu de jardins luxurieux et d'architecture romaine. En outre, il dispose d'une zone de jeux pour les enfants, d'une salle de jeux, d'une bar-snack avec esplanade et même d'un train touristique qui passe par les points principaux de Vilamoura. Ouvert tous les jours, le Family Golf Park est parfait pour un jour de divertissement avec la famille.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "10:00 - 19:00" },
+            { day: "Tuesday", hours: "10:00 - 19:00" },
+            { day: "Wednesday", hours: "10:00 - 19:00" },
+            { day: "Thursday", hours: "10:00 - 19:00" },
+            { day: "Friday", hours: "10:00 - 19:00" },
+            { day: "Saturday", hours: "10:00 - 19:00" },
+            { day: "Sunday", hours: "10:00 - 19:00" }
+          ],
+          address: "Family Golf Park",
+          phone: "+351 282 912 345",
+          socialMedia: {
+            facebook: "https://www.facebook.com/familygolfpark.pt",
+            instagram: "https://www.instagram.com/familygolfpark/",
+            website: "https://familygolfpark.pt/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sFamily%20Golf%20Park!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "Family Golf Park",
+          images: ["family-golf-park-gallery-05-min.jpg", "family-golf-park-gallery-10-min.jpg", "Legionario_2.webp", "Family-Golf-Park_2.webp", "Looping-Crazygolfe_2.webp", "family-golf-park.jpg", "lisbon-bridge.jpg", "relaxing-and-clever-minigolf.jpg", "vulcanos.jpg", "2sd-hole.jpg", "1st-hole.jpg", "welcome-to-the-best-europe.jpg"]
+        },
+        {
+          id: 5,
+          name: "Zoomarine",
+          email: "info@zoomarine.pt",
+          logo: "logozoomarine.png",
+          type: "Theme Park",
+          description: "Zoomarine, situé près d'Albufeira, est un parc thématique qui combine divertissement, éducation et nature. Avec des spectacles de dauphins, des lions-marins, des oiseaux tropicaux, des toboggans d'eau et une plage artificielle, c'est parfait pour un jour inoubliable avec la famille. Une aventure magique au cœur de l'Algarve!\n\nHoraires Saisonniers:\n- Mars, Octobre, Novembre: 10:00 - 17:00\n- Avril à 22 Juin et Septembre 10 à 28: 10:00 - 18:00\n- 23 Juin à 7 Septembre: 10:00 - 19:30",
+          locationIds: [4],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Tuesday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Wednesday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Thursday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Friday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Saturday", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Sunday", hours: "10:00 - 19:30 (horário varia por época)" }
+          ],
+          address: "EN 125, Km 65, 8201-864 Guia, Albufeira",
+          phone: "+351 289 560 300",
+          socialMedia: {
+            facebook: "https://www.facebook.com/ZoomarineAlgarve/?locale=pt_PT",
+            instagram: "https://www.instagram.com/zoomarine_algarve_oficial/",
+            website: "https://www.zoomarine.pt/pt/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.16183350874!2d-8.317631323227639!3d37.12506467215641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ace4ed8ed7ec7%3A0x8cf7b5092d8538af!2sZoomarine%20Algarve!5e0!3m2!1spt-PT!2spt!4v1748883516694!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "-3,5€ Normal; -2,5€ Sénior/Júnior; -12€ Dolphin Emotions"
+          },
+          rootFolder: "Zoomarine",
+          images: ["145.jpg", "145 (1).jpg", "145 (2).jpg", "145 (3).jpg", "145 (4).jpg", "145 (5).jpg", "145 (6).jpg", "145 (7).jpg", "145 (8).jpg", "145 (9).jpg", "145 (10).jpg", "image_processing20240617-9-uc4gqx.jpg", "Zoomarine_2.jpg", "zoomarine.jpg"]
+        },
+        {
+          id: 7,
+          name: "Algarve Riders",
+          email: "info@algarveriders.com",
+          logo: "logo_algarveriders.png",
+          type: "Theme Park",
+          description: "Algarve Riders est une entreprise de location de motos qui offre une expérience unique avec des motos de haute performance. C'est un endroit idéal pour profiter d'un après-midi de divertissement.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "8:30 - 18:00" },
+            { day: "Tuesday", hours: "8:30 - 18:00" },
+            { day: "Wednesday", hours: "8:30 - 18:00" },
+            { day: "Thursday", hours: "8:30 - 18:00" },
+            { day: "Friday", hours: "8:30 - 18:00" },
+            { day: "Saturday", hours: "8:30 - 18:00" },
+            { day: "Sunday", hours: "8:30 - 18:00" }
+          ],
+          address: "Algarve Riders",
+          phone: "+351 289 560 300",
+          socialMedia: {
+            facebook: "https://www.facebook.com/algarveriders/?locale=pt_PT",
+            instagram: "https://www.instagram.com/algarveriders/",
+            website: "https://www.algarveriders.com/pt"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.5144440743125!2d-8.241512908997843!3d37.09286990039514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1acc1c47179d53%3A0xae8f92aa7c2a4f1e!2sAlgarve%20Riders!5e0!3m2!1spt-PT!2spt!4v1748883603455!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF -Tours ; 5% OFF - Scooter"
+          },
+          rootFolder: "Algarve Riders",
+          images: ["algarve-riders-available.jpg", "algarve-riders-off-road (7).jpg", "algarve-riders-off-road (6).jpg", "algarve-riders-off-road (5).jpg", "algarve-riders-off-road (4).jpg", "algarve-riders-off-road (3).jpg", "algarve-riders-off-road (2).jpg", "algarve-riders-off-road (1).jpg", "algarve-quad-tours-fun.jpg", "team-building-buggy-tour.jpg", "algarve-riders-off-road.jpg"]
+        },
+        {
+          id: 8,
+          name: "Aquashow",
+          email: "info@aquashow.com",
+          logo: "aquashow_logo.png",
+          type: "Theme Park",
+          description: "Aquashow Outdoor est le plus grand parc aquatique en plein air de Portugal, situé au cœur de l'Algarve. Avec des toboggans géants, une piscine à vagues, des attractions pour toutes les âges et beaucoup d'animation, c'est le lieu idéal pour un jour d'été plein de divertissement, d'adrénaline et de souvenirs familiaux ou entre amis.",
+          locationIds: [8],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "10:00 - 18:00" },
+            { day: "Tuesday", hours: "10:00 - 18:00" },
+            { day: "Wednesday", hours: "10:00 - 18:00" },
+            { day: "Thursday", hours: "10:00 - 18:00" },
+            { day: "Friday", hours: "10:00 - 18:00" },
+            { day: "Saturday", hours: "10:00 - 18:00" },
+            { day: "Sunday", hours: "10:00 - 18:00" }
+          ],
+          address: "Aquashow",
+          phone: "+351 289 560 300",
+          socialMedia: {
+            facebook: "https://www.facebook.com/AquashowParque/?locale=pt_PT",
+            instagram: "https://www.instagram.com/aquashowparkhotel/",
+            website: "https://aquashowpark.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.5023582651565!2d-8.074484223228705!3d37.09315767216503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab575a4f4c3dd%3A0xfddc87f54582acc1!2sAQUASHOW%20-%20Waterpark%20Outdoor%20%26%20Indoor!5e0!3m2!1spt-PT!2spt!4v1748883493782!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "Aquashow",
+          images: ["IMG_2075.jpg", "Galeria-03.jpg", "aquashow-park (6).jpg", "air-race.jpg", "aquashow-park (5).jpg", "aquashow-park (4).jpg", "aquashow-park (3).jpg", "aquashow-park (2).jpg", "aquashow-park (1).jpg", "aquashow-park.jpg"]
+        },
       ]
     },
     {
@@ -301,6 +730,39 @@ export const appDataFR: AppData = {
         },
         {
           id: 2,
+          name: "Morgado do Quintão",
+          email: "info@morgadodoquintao.pt",
+          logo: "Morgado do quintao.png",
+          type: "Winery Tours",
+          description: "Le Morgado do Quintão, à Lagoa, combine tradition et durabilité dans la production de vins authentiques. Il propose des dégustations de vins et des expériences uniques dans le domaine de l'enotourisme.",
+          locationIds: [7],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 22:00" },
+            { day: "Tuesday", hours: "09:00 - 22:00" },
+            { day: "Wednesday", hours: "09:00 - 22:00" },
+            { day: "Thursday", hours: "09:00 - 22:00" },
+            { day: "Friday", hours: "09:00 - 22:00" },
+            { day: "Saturday", hours: "09:00 - 22:00" },
+            { day: "Sunday", hours: "Closed" }
+          ],
+          address: "Morgado do Quintão",
+          phone: "+351 282 912 345",
+          socialMedia: {
+            facebook: "https://www.facebook.com/morgadoquintao/",
+            instagram: "https://www.instagram.com/morgadodoquintao/",
+            website: "https://www.morgadodoquintao.pt/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.790358516998!2d-8.4519159232265!3d37.157684072147326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ad78519c4f4e1%3A0xe72edb7d0b164be9!2sMorgado%20do%20Quint%C3%A3o!5e0!3m2!1spt-PT!2spt!4v1748882911445!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "15% OFF"
+          },
+          rootFolder: "Morgado do Quintão",
+          images: ["a-beautiful-plate-to.jpg", "morgado-do-quintao.jpg", "there-is-nothing-like.jpg", "wine-tasting-in-an-old.jpg", "palhete-our-best-selling.jpg", "typical-carapaus-alimados.jpg", "photo0jpg.jpg", "caption.jpg", "palhete-our-best-selling (1).jpg"]
+        },
+        {
+          id: 3,
           name: "Adega do Cantor",
           email: "info@adegadocantor.com",
           logo: "adega-do-cantor.png",
@@ -638,55 +1100,165 @@ export const appDataFR: AppData = {
       id: 0,
       name: "Tavira",
       image: "/location1.jpg",
-      description: "Tavira est une belle ville de l'Algarve, au Portugal. Elle est connue pour ses belles plages et sa vie nocturne animée.",
+      description: "Ville côtière historique connue pour son pont romain, ses ruines de château et ses belles plages accessibles en bateau.",
     },
     {
       id: 1,
       name: "Quinta do Lago",
       image: "/location2.jpg",
-      description: "Quinta do Lago est une station balnéaire de luxe en Algarve, Portugal. Elle est connue pour ses terrains de golf de classe mondiale et ses plages immaculées.",
+      description: "Station balnéaire de luxe avec des parcours de golf de classe mondiale, une cuisine raffinée et des plages immaculées.",
     },
     {
       id: 2,
       name: "Loulé",
       image: "/location3.jpg",
-      description: "Loulé est une ville historique au cœur de l'Algarve, célèbre pour son marché traditionnel et ses événements culturels.",
+      description: "Ville de marché traditionnelle célèbre pour son bâtiment de marché historique et son atmosphère portugaise authentique.",
     },
     {
       id: 3,
       name: "Vilamoura",
       image: "/location4.jpg",
-      description: "Vilamoura est une station balnéaire sophistiquée connue pour sa marina luxueuse, ses terrains de golf et sa vie nocturne animée.",
+      description: "Ville marina moderne offrant des yachts de luxe, des parcours de golf, des plages et une vie nocturne animée.",
     },
     {
       id: 4,
       name: "Albufeira",
       image: "/location5.jpg",
-      description: "Albufeira est une destination touristique populaire, connue pour ses plages dorées, sa vie nocturne animée et son centre historique charmant.",
+      description: "Station balnéaire populaire connue pour ses belles plages, sa vie nocturne animée et sa vieille ville charmante.",
     },
     {
       id: 5,
       name: "Faro",
       image: "/location5.jpg",
-      description: "Faro est la capitale de l'Algarve, avec un centre historique bien préservé et un accès privilégié à la Ria Formosa.",
+      description: "Capitale de l'Algarve, avec une vieille ville historique, des attractions culturelles et une porte d'entrée vers la Ria Formosa.",
     },
     {
       id: 6,
       name: "Portimão",
       image: "/location5.jpg",
-      description: "Portimão est une ville côtière connue pour la célèbre Praia da Rocha et son riche patrimoine maritime.",
+      description: "Grand port de pêche et station balnéaire, célèbre pour ses plages et ses activités nautiques.",
     },
     {
       id: 7,
       name: "Lagoa",
       image: "/location5.jpg",
-      description: "Lagoa est célèbre pour ses vignobles et ses plages spectaculaires, notamment Praia do Carvoeiro et Benagil.",
+      description: "Charmante ville connue pour sa production de vin et sa proximité avec de belles plages et grottes.",
     },
     {
       id: 8,
       name: "Quarteira",
       image: "/location5.jpg",
-      description: "Quarteira est une ville côtière traditionnelle avec une longue promenade maritime et d'excellents restaurants de poissons et fruits de mer.",
+      description: "Ville de pêche traditionnelle devenue station balnéaire, offrant une longue promenade en bord de mer et des restaurants de fruits de mer frais.",
     }
-  ]
+  ],
+  ui: {
+    header: {
+      phoneLabel: "(Réseau fixe national)",
+      slogan: "Nous ❤️ Vilamoura ...",
+      menu: {
+        advantages: "Avantages",
+        access: "Accès",
+        partnership: "Partenariat",
+        contact: "Contact"
+      }
+    },
+    sidebar: {
+      categories: "Catégories",
+      other: "Autre",
+      language: "Langue"
+    },
+    footer: {
+      bookHoliday: "Réservez votre maison de vacances",
+      allRightsReserved: "Tous droits réservés"
+    },
+    homepage: {
+      title: "Clever Member",
+      subtitle: "Profitez des récompenses exclusives",
+      seeMore: "voir plus"
+    },
+    access: {
+      mainText1: "Ces avantages sont réservés à ceux qui réservent leurs vacances avec Clever Details ou nous confient leur propriété. C'est notre façon de vous remercier en rendant votre séjour ou votre investissement encore plus gratifiant.",
+      mainText2: "Explorez la liste complète des avantages partenaires et profitez de bien plus qu'un simple séjour.",
+      mainText3: "Avec Clever Details, vos vacances ou votre maison viennent avec bien plus qu'une simple clé.",
+      exploreHomes: "Explorez nos maisons"
+    },
+    partnership: {
+      title: "Pourquoi devenir partenaire de Clever Details ?",
+      benefit1: {
+        title: "Touchez plus de 6 000 clients de qualité par an",
+        description: "Notre réseau comprend des milliers de touristes nationaux et internationaux qui valorisent les expériences locales"
+      },
+      benefit2: {
+        title: "Augmentez la visibilité de votre entreprise",
+        description: "Nous mettons en valeur votre entreprise sur notre site web et nos réseaux sociaux, augmentant votre portée."
+      },
+      form: {
+        title: "Demande de partenariat",
+        businessName: "Nom de l'entreprise",
+        contactName: "Nom du contact",
+        email: "Email",
+        phone: "Téléphone",
+        businessType: {
+          label: "Type d'entreprise",
+          placeholder: "Sélectionnez un type d'entreprise",
+          options: {
+            boatTours: "Tours en bateau",
+            restaurants: "Restaurants",
+            activities: "Activités",
+            winery: "Cave à vin",
+            wellness: "Bien-être",
+            chefService: "Service de chef",
+            other: "Autre"
+          }
+        },
+        description: "Description de l'entreprise",
+        submit: "Soumettre la demande",
+        submitting: "Soumission en cours..."
+      }
+    },
+    contact: {
+      title: "Contactez-nous",
+      form: {
+        name: {
+          label: "Nom",
+          placeholder: "Votre nom"
+        },
+        phone: {
+          label: "Téléphone",
+          placeholder: "Votre numéro de téléphone"
+        },
+        email: {
+          label: "Email",
+          placeholder: "votre.email@exemple.com"
+        },
+        subject: {
+          label: "Sujet",
+          placeholder: "Sujet du message"
+        },
+        message: {
+          label: "Message",
+          placeholder: "Votre message ici..."
+        },
+        submit: "Envoyer le message",
+        sending: "Envoi en cours..."
+      }
+    },
+    itemDetails: {
+      reviews: "avis",
+      bookNow: "Réserver maintenant",
+      specialOffer: "Vous le méritez !",
+      bookingNotice: "Les réservations doivent être effectuées directement auprès de l'équipe Clever Details",
+      details: "Détails",
+      openingHours: "Heures d'ouverture",
+      location: "Emplacement",
+      reviewsSection: {
+        title: "Avis",
+        writeReview: "Écrire un avis",
+        authorPlaceholder: "Votre nom",
+        commentPlaceholder: "Votre avis",
+        submit: "Soumettre l'avis",
+        submitting: "Soumission en cours..."
+      }
+    }
+  }
 }; 

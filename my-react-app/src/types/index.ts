@@ -60,7 +60,119 @@ export interface Location {
   description: string;
 }
 
+export interface UITranslations {
+  header: {
+    phoneLabel: string;
+    slogan: string;
+    menu: {
+      advantages: string;
+      access: string;
+      partnership: string;
+      contact: string;
+    }
+  };
+  sidebar: {
+    categories: string;
+    other: string;
+    language: string;
+  };
+  footer: {
+    bookHoliday: string;
+    allRightsReserved: string;
+  };
+  homepage: {
+    title: string;
+    subtitle: string;
+    seeMore: string;
+  };
+  access: {
+    mainText1: string;
+    mainText2: string;
+    mainText3: string;
+    exploreHomes: string;
+  };
+  partnership: {
+    title: string;
+    benefit1: {
+      title: string;
+      description: string;
+    };
+    benefit2: {
+      title: string;
+      description: string;
+    };
+    form: {
+      title: string;
+      businessName: string;
+      contactName: string;
+      email: string;
+      phone: string;
+      businessType: {
+        label: string;
+        placeholder: string;
+        options: {
+          boatTours: string;
+          restaurants: string;
+          activities: string;
+          winery: string;
+          wellness: string;
+          chefService: string;
+          other: string;
+        }
+      };
+      description: string;
+      submit: string;
+      submitting: string;
+    }
+  };
+  contact: {
+    title: string;
+    form: {
+      name: {
+        label: string;
+        placeholder: string;
+      };
+      phone: {
+        label: string;
+        placeholder: string;
+      };
+      email: {
+        label: string;
+        placeholder: string;
+      };
+      subject: {
+        label: string;
+        placeholder: string;
+      };
+      message: {
+        label: string;
+        placeholder: string;
+      };
+      submit: string;
+      sending: string;
+    }
+  };
+  itemDetails: {
+    reviews: string;
+    bookNow: string;
+    specialOffer: string;
+    bookingNotice: string;
+    details: string;
+    openingHours: string;
+    location: string;
+    reviewsSection: {
+      title: string;
+      writeReview: string;
+      authorPlaceholder: string;
+      commentPlaceholder: string;
+      submit: string;
+      submitting: string;
+    }
+  };
+}
+
 export interface AppData {
   categories: Category[];
   locations: Location[];
+  ui: UITranslations;
 } 

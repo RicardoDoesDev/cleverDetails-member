@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface HeaderProps {
   onToggleSidebar: () => void;
@@ -9,6 +10,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
   const location = useLocation();
+  const { t } = useLanguage();
 
   const isActive = (path: string) => {
     return location.pathname === path;
@@ -29,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
                 <div className="font-bold">
                   <a href="tel:+351289314500" className="text-black no-underline opacity-90 hover:opacity-100 hover:text-secondary transition-all duration-300 text-xl">+351 289 314 500</a>
                 </div>
-                <div className="text-sm opacity-75">(National fixed call network)</div>
+                <div className="text-sm opacity-75">{t.header.phoneLabel}</div>
               </div>
             </div>
           </div>
@@ -37,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
           <div className="absolute top-0 right-0 z-[70] hidden md:block lg:block">
             <LanguageSwitcher variant="header" />
             <div className="text-secondary font-bold text-xl py-2 text-right pr-5" style={{ fontFamily: "'Tropika Script', cursive" }}>
-              We ❤️ Vilamoura ...
+              {t.header.slogan}
             </div>
           </div>
         </div>
@@ -111,25 +113,25 @@ const Header: React.FC<HeaderProps> = ({ children, onToggleSidebar }) => {
               to="/all" 
               className={`${isActive('/all') ? 'text-secondary' : 'text-white'} hover:text-secondary transition-colors font-medium text-xl md:text-3xl`}
             >
-              Advantages
+              {t.header.menu.advantages}
             </Link>
             <Link 
               to="/access" 
               className={`${isActive('/access') ? 'text-secondary' : 'text-white'} hover:text-secondary transition-colors font-medium text-xl md:text-3xl`}
             >
-              Access
+              {t.header.menu.access}
             </Link>
             <Link 
               to="/partnership" 
               className={`${isActive('/partnership') ? 'text-secondary' : 'text-white'} hover:text-secondary transition-colors font-medium text-xl md:text-3xl`}
             >
-              Partnership
+              {t.header.menu.partnership}
             </Link>
             <Link 
               to="/contact" 
               className={`${isActive('/contact') ? 'text-secondary' : 'text-white'} hover:text-secondary transition-colors font-medium text-xl md:text-3xl`}
             >
-              Contact
+              {t.header.menu.contact}
             </Link>
           </div>
         </div>
