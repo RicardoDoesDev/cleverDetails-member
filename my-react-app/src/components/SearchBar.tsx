@@ -32,13 +32,11 @@ const SearchBar: React.FC<SearchBarProps> = ({
 }) => {
   const handleLocationChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const value = e.target.value;
-    console.log('Location selected:', value);
     onLocationChange(value === '' ? '' : parseInt(value, 10));
   };
 
   const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const value = e.target.value;
-    console.log('Category selected:', value);
     if (onCategoryChange) {
       onCategoryChange(value);
     }

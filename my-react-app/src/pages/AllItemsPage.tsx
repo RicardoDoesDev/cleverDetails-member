@@ -27,31 +27,29 @@ const AllItemsPage: React.FC = () => {
   const locations = getLocations(language);
 
   const handleCategoryChange = (categoryId: string) => {
-    console.log('Category changed to:', categoryId);
     setSelectedCategory(categoryId);
   };
 
   const filteredItems = useMemo(() => {
-    console.log('Filtering with:', { selectedLocation, selectedCategory, searchQuery, selectedFilters });
-    
     const filtered = allItems.filter(item => {
+      // Skip hidden items
+      if (item.isVisible === false) return false;
+
       const matchesSearch = 
         item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         item.description.toLowerCase().includes(searchQuery.toLowerCase());
       
-      const matchesLocation = !selectedLocation || item.locationIds.includes(selectedLocation);
+      const matchesLocation = selectedLocation === '' || 
+        (Array.isArray(item.locationIds) && item.locationIds.includes(selectedLocation));
       
       const matchesCategory = !selectedCategory || item.categoryId === selectedCategory;
 
       const matchesFilters = selectedFilters.length === 0 || 
         selectedFilters.some(filter => item.type?.toLowerCase() === filter.toLowerCase());
 
-      console.log('Item:', item.name, { matchesSearch, matchesLocation, matchesCategory, matchesFilters });
-
       return matchesSearch && matchesLocation && matchesCategory && matchesFilters;
     });
 
-    console.log('Filtered items:', filtered.length);
     return filtered;
   }, [allItems, searchQuery, selectedLocation, selectedCategory, selectedFilters]);
 

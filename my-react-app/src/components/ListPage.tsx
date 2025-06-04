@@ -13,8 +13,6 @@ interface ListPageProps {
 }
 
 const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllPage = false }) => {
-  console.log('ListPage rendering with items:', items.length);
-  
   const navigate = useNavigate();
   const { language } = useLanguage();
 
@@ -46,7 +44,6 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
       
       <div className="space-y-6 md:space-y-8 px-4 md:px-0">
         {items.map((item) => {
-          console.log('Rendering item:', item.name, 'with locations:', item.locationIds);
           const itemKey = item.uniqueId || `${item.categoryId || 'category'}-${item.id}`;
           return (
             <div

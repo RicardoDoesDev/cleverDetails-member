@@ -74,7 +74,6 @@ www.cleverdetails.com
       }
 
       const result = await response.json();
-      console.log('Email sent successfully:', result);
       return result.success || false;
     } catch (error) {
       console.error('Error sending email:', error);

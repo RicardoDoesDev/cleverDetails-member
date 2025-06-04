@@ -138,12 +138,7 @@ function LogoSection({ item }: { item: Item }) {
 
 const formatDate = (dateString: string) => {
   try {
-    console.log('Raw date string:', dateString);
-    
-    // Handle Supabase's timestamp format
     const date = new Date(dateString);
-    
-    console.log('Parsed date object:', date);
     
     if (isNaN(date.getTime())) {
       console.error('Invalid date:', dateString);
