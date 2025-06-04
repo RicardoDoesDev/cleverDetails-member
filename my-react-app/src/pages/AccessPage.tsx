@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { Link } from 'react-router-dom';
 
 const AccessPage: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -37,7 +38,7 @@ const AccessPage: React.FC = () => {
       }, 3000);
       return () => clearInterval(timer);
     }
-  }, [isHovered]);
+  }, [isHovered, images.length]);
 
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -47,10 +48,83 @@ const AccessPage: React.FC = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
+  const renderMainText1 = () => {
+    const text = t.access.mainText1;
+    const parts = text.split('Clever Details');
+    return (
+      <>
+        {parts[0]}
+        <a 
+          href="https://www.cleverdetails.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-secondary hover:text-white transition-colors underline"
+        >
+          Clever Details
+        </a>
+        {parts[1]}
+      </>
+    );
+  };
+
+  const renderMainText2 = () => {
+    const text = t.access.mainText2;
+    const parts = text.split('lista completa');
+    if (parts.length === 2) {
+      return (
+        <>
+          {parts[0]}
+          <Link 
+            to="/all"
+            className="text-secondary hover:text-white transition-colors underline"
+          >
+            lista completa
+          </Link>
+          {parts[1]}
+        </>
+      );
+    }
+    const frParts = text.split('liste complète');
+    if (frParts.length === 2) {
+      return (
+        <>
+          {frParts[0]}
+          <Link 
+            to="/all"
+            className="text-secondary hover:text-white transition-colors underline"
+          >
+            liste complète
+          </Link>
+          {frParts[1]}
+        </>
+      );
+    }
+    const enParts = text.split('full list');
+    if (enParts.length === 2) {
+      return (
+        <>
+          {enParts[0]}
+          <Link 
+            to="/all"
+            className="text-secondary hover:text-white transition-colors underline"
+          >
+            full list
+          </Link>
+          {enParts[1]}
+        </>
+      );
+    }
+    return text;
+  };
+
   return (
     <>
       <div className="container mx-auto px-4 py-8">
-        <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg group">
+        <div 
+          className="relative w-full aspect-[16/9] overflow-hidden rounded-lg group"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
           {/* Carousel container */}
           <div className="relative w-full h-full">
             <img 
@@ -95,8 +169,8 @@ const AccessPage: React.FC = () => {
         </div>
 
         <div className="text-center text-3xl py-12 text-white">
-          <p className="mb-12 text-justify">{t.access.mainText1}</p>
-          <p className="mb-12 text-justify">{t.access.mainText2}</p>
+          <p className="mb-12 text-justify">{renderMainText1()}</p>
+          <p className="mb-12 text-justify">{renderMainText2()}</p>
           <p className="mb-12 text-justify">{t.access.mainText3}</p>
         </div>
       </div>
