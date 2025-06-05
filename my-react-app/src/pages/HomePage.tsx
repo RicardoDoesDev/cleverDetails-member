@@ -49,7 +49,7 @@ const HomePage: React.FC = () => {
             <Link
               key={category.id}
               to={category.route}
-              className="bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer"
+              className="bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer transform transition-transform hover:scale-105"
             >
               <ImageWithLoading
                 src={`/images/categorias/${category.image}`}
