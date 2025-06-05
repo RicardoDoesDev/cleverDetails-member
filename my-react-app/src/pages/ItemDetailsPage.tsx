@@ -255,24 +255,24 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
 
   const renderReviewsSection = () => (
     <div className="mt-8">
-      <div className="flex justify-between items-center mb-6">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
         <h2 className="text-2xl md:text-4xl font-bold">{t.itemDetails.reviewsSection.title}</h2>
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-sm">
-            <StarRating rating={averageRating} size="lg" />
-            <span className="text-lg font-medium">({reviews.length} {t.itemDetails.reviews})</span>
+        <div className="flex items-center">
+          <div className="flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow-sm">
+            <StarRating rating={averageRating} size="md" />
+            <span className="text-base font-medium whitespace-nowrap">({reviews.length} {t.itemDetails.reviews})</span>
           </div>
         </div>
       </div>
 
       <div className="space-y-4">
         {reviews.map((review) => (
-          <div key={review.id} className="bg-white p-4 md:p-6 rounded-lg shadow-sm">
-            <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2 md:gap-0 mb-2">
-              <div className="font-bold">{review.author}</div>
+          <div key={review.id} className="bg-white p-4 rounded-lg shadow-sm">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
+              <div className="font-bold break-words max-w-full">{review.author}</div>
               <StarRating rating={review.rating} size="sm" />
             </div>
-            <p>{review.comment}</p>
+            <p className="mt-2 break-words">{review.comment}</p>
             <div className="text-sm text-gray-500 mt-2">
               {formatDate(review.createdAt)}
             </div>
@@ -289,7 +289,7 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
             placeholder={t.itemDetails.reviewsSection.yourName}
-            className="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:border-secondary"
+            className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-secondary"
             required
           />
           <div className="flex flex-col gap-2">
@@ -304,14 +304,14 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
           <textarea
             value={comment}
             onChange={(e) => setComment(e.target.value)}
-            className="w-full h-32 p-4 rounded-lg border border-gray-300 focus:outline-none focus:border-secondary"
+            className="w-full h-32 p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-secondary"
             placeholder={t.itemDetails.reviewsSection.writeComment}
             required
           />
           <button
             type="submit"
             disabled={isSubmitting || !author.trim() || !comment.trim()}
-            className={`w-full md:w-auto bg-secondary text-white px-6 py-3 rounded-lg text-lg font-medium transition-colors ${
+            className={`w-full sm:w-auto bg-secondary text-white px-6 py-3 rounded-lg text-lg font-medium transition-colors ${
               isSubmitting || !author.trim() || !comment.trim()
                 ? 'opacity-50 cursor-not-allowed'
                 : 'hover:bg-secondary-hover'
@@ -349,8 +349,10 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
         />
       </div>
 
-      <div className="flex flex-row items-center justify-center gap-4 text-white text-4xl py-12">
-        <p className="text-lg md:text-3xl mb-8 text-justify">{item.description}</p>
+      <div className="bg-primary px-4 py-12">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-lg md:text-2xl text-white text-justify">{item.description}</p>
+        </div>
       </div>
 
       <div className="px-4 md:px-0">

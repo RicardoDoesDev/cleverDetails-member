@@ -23,7 +23,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <div className="min-h-screen bg-primary">
         <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
         <Header onToggleSidebar={toggleSidebar} />
-        <main className="max-w-7xl mx-auto px-4 py-8 pt-64">
+        <main className="max-w-7xl mx-auto px-4 py-8 pt-48 md:pt-64">
           {children}
         </main>
       </div>
