@@ -11,6 +11,39 @@ export const appDataPT: AppData = {
       items: [
         {
           id: 1,
+          name: "Ocean Quest",
+          email: "info@oceanquest.com",
+          logo: "Ocean Quest.png",
+          type: "Boat Tours",
+          description: "Explora o melhor da costa algarvia com a Ocean Quest. Passeios de barco, grutas, golfinhos e parasailing desde Vilamoura, com uma equipa apaixonada por proporcionar experiências únicas no mar. Porque a vida é bela.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Segunda-feira", hours: "09:00 - 18:00" },
+            { day: "Terça-feira", hours: "09:00 - 18:00" },
+            { day: "Quarta-feira", hours: "09:00 - 18:00" },
+            { day: "Quinta-feira", hours: "09:00 - 18:00" },
+            { day: "Sexta-feira", hours: "09:00 - 18:00" },
+            { day: "Sábado", hours: "09:00 - 18:00" },
+            { day: "Domingo", hours: "09:00 - 18:00" }
+          ],
+          address: "Vilamoura",
+          phone: "+351 912 345 683",
+          socialMedia: {
+            facebook: "https://www.facebook.com/boattripsvilamoura",
+            instagram: "https://www.instagram.com/oceanquestalgarve/",
+            website: "https://oceanquestalgarve.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sOcean%20Quest!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% DE DESCONTO"
+          },
+          rootFolder: "ocean quest",
+          images: ["see-the-wonderful-algarvian.jpg", "swimming-stop.jpg", "traditional-cultural (1).jpg", "vilamoura-yacht-charter.jpg", "vilamoura-speed-boat-trips.jpeg", "cesar-live-on-the-guitar.jpg", "traditional-cultural.jpg", "life-is-beautiful.jpg", "exceptional-view.jpg", "dolphin-quest.jpg"]
+        },
+        {          
+          id: 2,
           name: "Cool Charters",
           email: "info@coolchartersvilamoura.com",
           logo: "Cool-Charters-BSQUAREwhite.png",
@@ -56,73 +89,7 @@ export const appDataPT: AppData = {
           ]
         },
         {
-          id: 2,
-          name: "Passeios Ria Formosa",
-          email: "info@passeiosriaformosa.com",
-          logo: "riaformosa.png",
-          type: "Passeios de Barco",
-          description: "Explore a Ria Formosa com passeios privados em veleiros, lanchas ou barcos tradicionais. Observe golfinhos, cavalos-marinhos e aves, ou desfrute de experiências únicas como ostras com champanhe, jantares românticos, catamarã exclusivo e aluguer de caiaques. Um convite à descoberta da natureza algarvia com charme e autenticidade.",
-          locationIds: [0],
-          rating: 4.8,
-          openingHours: [
-            { day: "Segunda-feira", hours: "09:00 - 18:00" },
-            { day: "Terça-feira", hours: "09:00 - 18:00" },
-            { day: "Quarta-feira", hours: "09:00 - 18:00" },
-            { day: "Quinta-feira", hours: "09:00 - 18:00" },
-            { day: "Sexta-feira", hours: "09:00 - 18:00" },
-            { day: "Sábado", hours: "09:00 - 18:00" },
-            { day: "Domingo", hours: "09:00 - 18:00" }
-          ],
-          address: "Marina de Tavira",
-          phone: "+351 923 456 789",
-          socialMedia: {
-            facebook: "https://www.facebook.com/passeiosriaformosa",
-            instagram: "https://www.instagram.com/passeiosriaformosa/",
-            website: "https://passeiosriaformosa.com/"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.114271710697!2d-8.121552223229203!3d37.078585172169184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab593e20c0315%3A0xdbad05ad5ff33887!2sCool%20Charters!5e0!3m2!1spt-PT!2spt!4v1748883117704!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Discount",
-            description: "10% DE DESCONTO"
-          },
-          rootFolder: "Passeios Ria Formosa",
-          images: ["sailing-tour.jpg", "featured-2-horas-fuseta.webp", "birdwatching.jpg", "sealife-observation.jpg", "dolphins-observation.jpg", "DJI_20240427_200812_220.webp", "dji_fly_20240425_145136_206_1714164247660_timed.webp"]
-        },
-        {
           id: 3,
-          name: "Formosamar",
-          email: "info@formosamar.com",
-          logo: "formosamar-main-logo-landscape-white.svg",
-          type: "Boat Tours",
-          description: "A Formosamar, localizada em Faro, oferece experiências autênticas no Parque Natural da Ria Formosa. Disponibiliza passeios de barco, observação de aves e golfinhos, bem como aluguer de barcos, caiaques, bicicletas e equipamentos de desporto náutico. Ideal para quem deseja explorar a natureza e cultura local com guias experientes. A empresa é certificada em ecoturismo e compromete-se com práticas sustentáveis.",
-          locationIds: [5],
-          rating: 5,
-          openingHours: [
-            { day: "Segunda-feira", hours: "09:00 - 19:00" },
-            { day: "Terça-feira", hours: "09:00 - 19:00" },
-            { day: "Quarta-feira", hours: "09:00 - 19:00" },
-            { day: "Quinta-feira", hours: "09:00 - 19:00" },
-            { day: "Sexta-feira", hours: "09:00 - 19:00" },
-            { day: "Sábado", hours: "09:00 - 19:00" },
-            { day: "Domingo", hours: "09:00 - 19:00" }
-          ],
-          address: "Ria Formosa",
-          phone: "+351 912 345 680",
-          socialMedia: {
-            facebook: "https://www.facebook.com/formosamar/",
-            instagram: "https://www.instagram.com/formosamar/",
-            website: "https://formosamar.com/"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.8047220482727!2d-7.9389662732313235!3d37.014454772187065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd05533874923d89%3A0xd4bf971caf98216!2sFormosamar%20-%20Boat%20Tours%20Passeios%20na%20Ria%20Formosa!5e0!3m2!1spt-PT!2spt!4v1748883209882!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Discount",
-            description: "5% DE DESCONTO"
-          },
-          rootFolder: "Formosamar",
-          images: ["dolphin-watching-boat.jpg", "formosamar-sailboats-ria-formosa-island.jpg", "ria-formosa-islands-boat.jpg", "ilha-deserta-and-farol.jpg", "guided-boat-trip-in-ria.jpg", "formosamar-private-tour-cruise-ria-formosa-900x500.jpg", "formosamar.jpg", "formosamar (1).jpg", "formosamar (2).jpg"]
-        },
-        {
-          id: 4,
           name: "AlgarExperience",
           email: "info@algarexperience.com",
           logo: "algarexperience-vect.svg",
@@ -155,7 +122,7 @@ export const appDataPT: AppData = {
           images: ["caves-coastline-tour.jpg", "dolphin-caves-catamaran.jpg", "gruta-de-benagil.jpg", "sunset.jpg", "grutas.jpg", "vista-aerea.jpg", "barbecue-na-praia.jpg", "parasailing.jpg", "belize-segundo-costa.jpg", "boat-party.jpg"]
         },
         {
-          id: 5,
+          id: 4,
           name: "Condor de Vilamoura",
           email: "info@condorvilamoura.com",
           logo: "condor_logo branco.avif",
@@ -188,40 +155,7 @@ export const appDataPT: AppData = {
           images: ["photo0jpg.jpg", "caption (1).jpg", "vamos-para-a-praia.jpg", "caption (2).jpg", "caption.jpg", "21d228_8a694355938d49048feaba57ef829db2~mv2-1.avif", "condor-de-vilamoura (1).jpg", "condor-de-vilamoura.jpg", "21d228_28814368cb5446c1b0a8d17d8459fd48~mv2.avif", "21d228_8a694355938d49048feaba57ef829db2~mv2.avif"]
         },
         {
-          id: 6,
-          name: "Ocean Quest",
-          email: "info@oceanquest.com",
-          logo: "Ocean Quest.png",
-          type: "Boat Tours",
-          description: "Explora o melhor da costa algarvia com a Ocean Quest. Passeios de barco, grutas, golfinhos e parasailing desde Vilamoura, com uma equipa apaixonada por proporcionar experiências únicas no mar. Porque a vida é bela.",
-          locationIds: [3],
-          rating: 5,
-          openingHours: [
-            { day: "Segunda-feira", hours: "09:00 - 18:00" },
-            { day: "Terça-feira", hours: "09:00 - 18:00" },
-            { day: "Quarta-feira", hours: "09:00 - 18:00" },
-            { day: "Quinta-feira", hours: "09:00 - 18:00" },
-            { day: "Sexta-feira", hours: "09:00 - 18:00" },
-            { day: "Sábado", hours: "09:00 - 18:00" },
-            { day: "Domingo", hours: "09:00 - 18:00" }
-          ],
-          address: "Vilamoura",
-          phone: "+351 912 345 683",
-          socialMedia: {
-            facebook: "https://www.facebook.com/boattripsvilamoura",
-            instagram: "https://www.instagram.com/oceanquestalgarve/",
-            website: "https://oceanquestalgarve.com/"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sOcean%20Quest!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Discount",
-            description: "10% DE DESCONTO"
-          },
-          rootFolder: "ocean quest",
-          images: ["see-the-wonderful-algarvian.jpg", "swimming-stop.jpg", "traditional-cultural (1).jpg", "vilamoura-yacht-charter.jpg", "vilamoura-speed-boat-trips.jpeg", "cesar-live-on-the-guitar.jpg", "traditional-cultural.jpg", "life-is-beautiful.jpg", "exceptional-view.jpg", "dolphin-quest.jpg"]
-        },
-        {
-          id: 7,
+          id: 5,
           name: "Vilamoura WaterSports Centre",
           email: "info@vilamourawatersportscentre.com",
           logo: "Vilamoura-Watersports-Centre-logo-Design-01-e1602070771419.webp",
@@ -253,6 +187,72 @@ export const appDataPT: AppData = {
           rootFolder: "watersports vilamoura",
           images: ["IMG_1046-scaled.webp", "photo5jpg.jpg", "foto1.webp", "jet-boat-ride-vilamoura.jpg", "Parasailing-Vilamoura-Experience-scaled.webp", "speed-boat-algarvexcite.jpg", "parasailing-boat-trips.jpg", "common-dolphin.jpg", "Fishing-In-Algarve.webp", "Dolphins-Algarve-.webp"]
         },
+        {
+          id: 6,
+          name: "Passeios Ria Formosa",
+          email: "info@passeiosriaformosa.com",
+          logo: "riaformosa.png",
+          type: "Passeios de Barco",
+          description: "Explore a Ria Formosa com passeios privados em veleiros, lanchas ou barcos tradicionais. Observe golfinhos, cavalos-marinhos e aves, ou desfrute de experiências únicas como ostras com champanhe, jantares românticos, catamarã exclusivo e aluguer de caiaques. Um convite à descoberta da natureza algarvia com charme e autenticidade.",
+          locationIds: [0],
+          rating: 4.8,
+          openingHours: [
+            { day: "Segunda-feira", hours: "09:00 - 18:00" },
+            { day: "Terça-feira", hours: "09:00 - 18:00" },
+            { day: "Quarta-feira", hours: "09:00 - 18:00" },
+            { day: "Quinta-feira", hours: "09:00 - 18:00" },
+            { day: "Sexta-feira", hours: "09:00 - 18:00" },
+            { day: "Sábado", hours: "09:00 - 18:00" },
+            { day: "Domingo", hours: "09:00 - 18:00" }
+          ],
+          address: "Marina de Tavira",
+          phone: "+351 923 456 789",
+          socialMedia: {
+            facebook: "https://www.facebook.com/passeiosriaformosa",
+            instagram: "https://www.instagram.com/passeiosriaformosa/",
+            website: "https://passeiosriaformosa.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.114271710697!2d-8.121552223229203!3d37.078585172169184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab593e20c0315%3A0xdbad05ad5ff33887!2sCool%20Charters!5e0!3m2!1spt-PT!2spt!4v1748883117704!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% DE DESCONTO"
+          },
+          rootFolder: "Passeios Ria Formosa",
+          images: ["sailing-tour.jpg", "featured-2-horas-fuseta.webp", "birdwatching.jpg", "sealife-observation.jpg", "dolphins-observation.jpg", "DJI_20240427_200812_220.webp", "dji_fly_20240425_145136_206_1714164247660_timed.webp"]
+        },
+        {
+          id: 7,
+          name: "Formosamar",
+          email: "info@formosamar.com",
+          logo: "formosamar-main-logo-landscape-white.svg",
+          type: "Boat Tours",
+          description: "A Formosamar, localizada em Faro, oferece experiências autênticas no Parque Natural da Ria Formosa. Disponibiliza passeios de barco, observação de aves e golfinhos, bem como aluguer de barcos, caiaques, bicicletas e equipamentos de desporto náutico. Ideal para quem deseja explorar a natureza e cultura local com guias experientes. A empresa é certificada em ecoturismo e compromete-se com práticas sustentáveis.",
+          locationIds: [5],
+          rating: 5,
+          openingHours: [
+            { day: "Segunda-feira", hours: "09:00 - 19:00" },
+            { day: "Terça-feira", hours: "09:00 - 19:00" },
+            { day: "Quarta-feira", hours: "09:00 - 19:00" },
+            { day: "Quinta-feira", hours: "09:00 - 19:00" },
+            { day: "Sexta-feira", hours: "09:00 - 19:00" },
+            { day: "Sábado", hours: "09:00 - 19:00" },
+            { day: "Domingo", hours: "09:00 - 19:00" }
+          ],
+          address: "Ria Formosa",
+          phone: "+351 912 345 680",
+          socialMedia: {
+            facebook: "https://www.facebook.com/formosamar/",
+            instagram: "https://www.instagram.com/formosamar/",
+            website: "https://formosamar.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.8047220482727!2d-7.9389662732313235!3d37.014454772187065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd05533874923d89%3A0xd4bf971caf98216!2sFormosamar%20-%20Boat%20Tours%20Passeios%20na%20Ria%20Formosa!5e0!3m2!1spt-PT!2spt!4v1748883209882!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "5% DE DESCONTO"
+          },
+          rootFolder: "Formosamar",
+          images: ["dolphin-watching-boat.jpg", "formosamar-sailboats-ria-formosa-island.jpg", "ria-formosa-islands-boat.jpg", "ilha-deserta-and-farol.jpg", "guided-boat-trip-in-ria.jpg", "formosamar-private-tour-cruise-ria-formosa-900x500.jpg", "formosamar.jpg", "formosamar (1).jpg", "formosamar (2).jpg"]
+        }
       ]
     },
     {
@@ -264,6 +264,72 @@ export const appDataPT: AppData = {
       items: [
         {
           id: 1,
+          name: "Gran Sorvete",
+          email: "info@gransorvete.com",
+          logo: "GranSorvete.avif",
+          type: "Brunch Café",
+          description: "O Gran Sorvete, na Vilamoura Marina, é conhecido por seu sorvete artesanal italiano, crepes e waffles, servidos num ambiente acolhedor com vista para o mar.",
+          locationIds: [3],
+          rating: 4,
+          openingHours: [
+            { day: "Segunda-feira", hours: "11:00 - 23:00" },
+            { day: "Terça-feira", hours: "11:00 - 23:00" },
+            { day: "Quarta-feira", hours: "11:00 - 23:00" },
+            { day: "Quinta-feira", hours: "11:00 - 23:00" },
+            { day: "Sexta-feira", hours: "11:00 - 23:00" },
+            { day: "Sábado", hours: "11:00 - 23:00" },
+            { day: "Domingo", hours: "11:00 - 23:00" }
+          ],
+          address: "Rua Gran Sorvete, 23",
+          phone: "912 345 682",
+          socialMedia: {
+            facebook: "https://www.facebook.com/GranSorveteVilamoura/",
+            instagram: "https://www.instagram.com/gransorvete/",
+            website: "https://gransorvete.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.113234707878!2d-8.12375902322921!3d37.078609872169125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5d5d983cd55%3A0xec7bb7c81350d92!2sGran%20sorvete!5e0!3m2!1spt-PT!2spt!4v1748882811766!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% DE DESCONTO"
+          },
+          rootFolder: "Gran Sorvete",
+          images: ["crepes-also-served-with.jpg", "gran-gelato.jpg", "gran-sorvete-in-the-heart.jpg", "in-the-heart-of-the-vilamoura.jpg", "our-delicious-mini-pancakes.jpg", "hot-chocolate-served.jpg", "enjoy-the-delicious-combinatio.jpg", "gran-gelato (1).jpg"]
+        },
+        {
+          id: 2,
+          name: "Retinto - Rodízio & Wine",
+          email: "retinto.vilamoura@gmail.com",
+          logo: "Retinto+Vilamoura-330w.webp",
+          type: "Steakhouse",
+          description: "O Retinto Rodízio & Wine, em Vilamoura, destaca-se pelo seu buffet de carne brasileira e argentina, acompanhado por uma seleção de vinhos cuidadosa. Ambiente acolhedor e excelente serviço.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Segunda-feira", hours: "18:30 - 23:30" },
+            { day: "Terça-feira", hours: "18:30 - 23:30" },
+            { day: "Quarta-feira", hours: "18:30 - 23:30" },
+            { day: "Quinta-feira", hours: "18:30 - 23:30" },
+            { day: "Sexta-feira", hours: "18:30 - 23:30" },
+            { day: "Sábado", hours: "18:30 - 23:30" },
+            { day: "Domingo", hours: "Fechado" }
+          ],
+          address: "Rua Retinto, 56",
+          phone: "912 345 683",
+          socialMedia: {
+            facebook: "https://www.facebook.com/Retinto.Vilamoura/",
+            instagram: "https://www.instagram.com/retinto.vilamoura/",
+            website: "https://www.restauranteretinto.com/retinto-rodizio-n-wine"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.0845960567867!2d-8.121846809000903!3d37.07929200040834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5940c8ecbd9%3A0x6755304fce06bfca!2sRetinto%20-%20Rod%C3%ADzio%20%26%20Wine%20-%20Vilamoura!5e0!3m2!1spt-PT!2spt!4v1748882848562!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Bebida de Boas-vindas",
+            description: "Bebida de boas-vindas de espumante"
+          },
+          rootFolder: "Retinto",
+          images: ["5c594138-f690-4ea1-add1-3fce2e15ef55.avif", "photo0jpg.jpg", "entrecote-argentino-ribye.jpg", "ff1ed75b-d71b-42f7-9d93-7f3a39464c45.jpg", "59f45f21-e373-42d3-8ed2-8946008e0b3f.jpg", "b15f5500-b73f-421d-b7bc-a9412784f5d8.webp", "b8685ec1-a1b4-4cbd-bd41-3b8cdb1bfa11.avif", "d56aaf4a-be2e-4cd3-99d9-f70d63c5826c.avif", "7701aa02-a0c2-4ec5-9af1-e1c80a4263d6.webp"]
+        },
+        {
+          id: 3,  
           name: "A ver Tavira",
           email: "restaurante@avertavira.pt",
           logo: "AverTavira.png",
@@ -307,7 +373,7 @@ export const appDataPT: AppData = {
           ]
         },
         {
-          id: 2,
+          id: 4,
           name: "Authentic",
           email: "reservations@authentic-restaurant.pt",
           logo: "Logo-Authentic-dourado.png",
@@ -340,7 +406,7 @@ export const appDataPT: AppData = {
           images: ["83dcbf96-9726-4f1b-a1c7-c13c5f223b98.avif", "5e949c5e-060e-457b-ad67-b7597677c446.avif", "44aa29bd-0300-47b5-9ba5-83d8b8b19bd1.avif", "4d07f2e9-70b3-4b8b-a1e1-91fe37279165.avif", "843ccb2d-bf51-4c6a-bf0d-24ab6463b44c.avif", "ff05a4b6-f867-4243-9e4b-7141f87220af.avif", "c4bd01b2-7c29-405a-94d6-b566a0328e36.avif", "44cf2c78-1fec-4650-9ed2-eedaf4708a25.avif", "036d2880-7465-460b-9c18-61260a3de321.avif", "f818d5b4-5d61-4cc5-b0eb-e90fd92ac501.avif"]
         },
         {
-          id: 3,
+          id: 5,
           name: "CafeZique",
           email: "cafeziquept@gmail.com",
           logo: "CAFEZIQUE-487bb404-679w.webp",
@@ -371,72 +437,6 @@ export const appDataPT: AppData = {
           },
           rootFolder: "CafeZique",
           images: ["0c8e01ad-d9ca-4b18-af60-26a700b19e31.avif", "b7455fd9-1912-4dc4-9d75-b6e3c18c21e1.avif", "c10b8475-9033-4f81-96a7-89723f3537a6.avif", "562a5999-384a-4fcf-876a-191a283c4417.avif", "1fc2a2ef-0625-4d3c-a43b-538301aad3c4.avif", "eb5af52c-c6c9-411a-87ba-578fa3de1e3f.avif", "47a07484-d88c-447f-91ed-4c7bf0a542c3.avif", "d59e735d-141e-4359-b024-3352c31e5b83.avif", "cff64c57-1e91-4133-a445-f033ab8f5838.avif", "98b3ee01-5726-41de-93f9-23ce6da1c1b7.avif"]
-        },
-        {
-          id: 4,
-          name: "Gran Sorvete",
-          email: "info@gransorvete.com",
-          logo: "GranSorvete.avif",
-          type: "Brunch Café",
-          description: "O Gran Sorvete, na Vilamoura Marina, é conhecido por seu sorvete artesanal italiano, crepes e waffles, servidos num ambiente acolhedor com vista para o mar.",
-          locationIds: [3],
-          rating: 4,
-          openingHours: [
-            { day: "Segunda-feira", hours: "11:00 - 23:00" },
-            { day: "Terça-feira", hours: "11:00 - 23:00" },
-            { day: "Quarta-feira", hours: "11:00 - 23:00" },
-            { day: "Quinta-feira", hours: "11:00 - 23:00" },
-            { day: "Sexta-feira", hours: "11:00 - 23:00" },
-            { day: "Sábado", hours: "11:00 - 23:00" },
-            { day: "Domingo", hours: "11:00 - 23:00" }
-          ],
-          address: "Rua Gran Sorvete, 23",
-          phone: "912 345 682",
-          socialMedia: {
-            facebook: "https://www.facebook.com/GranSorveteVilamoura/",
-            instagram: "https://www.instagram.com/gransorvete/",
-            website: "https://gransorvete.com/"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.113234707878!2d-8.12375902322921!3d37.078609872169125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5d5d983cd55%3A0xec7bb7c81350d92!2sGran%20sorvete!5e0!3m2!1spt-PT!2spt!4v1748882811766!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Discount",
-            description: "10% DE DESCONTO"
-          },
-          rootFolder: "Gran Sorvete",
-          images: ["crepes-also-served-with.jpg", "gran-gelato.jpg", "gran-sorvete-in-the-heart.jpg", "in-the-heart-of-the-vilamoura.jpg", "our-delicious-mini-pancakes.jpg", "hot-chocolate-served.jpg", "enjoy-the-delicious-combinatio.jpg", "gran-gelato (1).jpg"]
-        },
-        {
-          id: 5,
-          name: "Retinto - Rodízio & Wine",
-          email: "retinto.vilamoura@gmail.com",
-          logo: "Retinto+Vilamoura-330w.webp",
-          type: "Steakhouse",
-          description: "O Retinto Rodízio & Wine, em Vilamoura, destaca-se pelo seu buffet de carne brasileira e argentina, acompanhado por uma seleção de vinhos cuidadosa. Ambiente acolhedor e excelente serviço.",
-          locationIds: [3],
-          rating: 5,
-          openingHours: [
-            { day: "Segunda-feira", hours: "18:30 - 23:30" },
-            { day: "Terça-feira", hours: "18:30 - 23:30" },
-            { day: "Quarta-feira", hours: "18:30 - 23:30" },
-            { day: "Quinta-feira", hours: "18:30 - 23:30" },
-            { day: "Sexta-feira", hours: "18:30 - 23:30" },
-            { day: "Sábado", hours: "18:30 - 23:30" },
-            { day: "Domingo", hours: "Fechado" }
-          ],
-          address: "Rua Retinto, 56",
-          phone: "912 345 683",
-          socialMedia: {
-            facebook: "https://www.facebook.com/Retinto.Vilamoura/",
-            instagram: "https://www.instagram.com/retinto.vilamoura/",
-            website: "https://www.restauranteretinto.com/retinto-rodizio-n-wine"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.0845960567867!2d-8.121846809000903!3d37.07929200040834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5940c8ecbd9%3A0x6755304fce06bfca!2sRetinto%20-%20Rod%C3%ADzio%20%26%20Wine%20-%20Vilamoura!5e0!3m2!1spt-PT!2spt!4v1748882848562!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Bebida de Boas-vindas",
-            description: "Bebida de Boas-vindas"
-          },
-          rootFolder: "Retinto",
-          images: ["5c594138-f690-4ea1-add1-3fce2e15ef55.avif", "photo0jpg.jpg", "entrecote-argentino-ribye.jpg", "ff1ed75b-d71b-42f7-9d93-7f3a39464c45.jpg", "59f45f21-e373-42d3-8ed2-8946008e0b3f.jpg", "b15f5500-b73f-421d-b7bc-a9412784f5d8.webp", "b8685ec1-a1b4-4cbd-bd41-3b8cdb1bfa11.avif", "d56aaf4a-be2e-4cd3-99d9-f70d63c5826c.avif", "7701aa02-a0c2-4ec5-9af1-e1c80a4263d6.webp"]
         }
       ]
     },
@@ -449,6 +449,39 @@ export const appDataPT: AppData = {
       items: [
         {
           id: 1,
+          name: "Family Golf Park",
+          email: "info@familygolfpark.com",
+          logo: "family-golf-park-logo-white.png",
+          type: "Golf",
+          description: "Localizado no coração de Vilamoura, o Family Golf Park é um destino imperdível para famílias e grupos em busca de diversão e lazer. Com dois cursos de mini golf temáticos inspirados na Via Appia e Via Lusitânia, o parque oferece uma experiência única no meio de jardins exuberantes e arquitetura romana. Além disso, tem um espaço de jogos para crianças, uma sala de jogos, uma barzinha com esplanada e até um trem turístico que passa pelos pontos principais de Vilamoura. Aberto todos os dias, o Family Golf Park é perfeito para um dia de diversão com a família.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Segunda-feira", hours: "10:00 - 19:00" },
+            { day: "Terça-feira", hours: "10:00 - 19:00" },
+            { day: "Quarta-feira", hours: "10:00 - 19:00" },
+            { day: "Quinta-feira", hours: "10:00 - 19:00" },
+            { day: "Sexta-feira", hours: "10:00 - 19:00" },
+            { day: "Sábado", hours: "10:00 - 19:00" },
+            { day: "Domingo", hours: "10:00 - 19:00" }
+          ],
+          address: "Family Golf Park",
+          phone: "+351 282 912 345",
+          socialMedia: {
+            facebook: "https://www.facebook.com/familygolfpark.pt",
+            instagram: "https://www.instagram.com/familygolfpark/",
+            website: "https://familygolfpark.pt/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sFamily%20Golf%20Park!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% DE DESCONTO"
+          },
+          rootFolder: "Family Golf Park",
+          images: ["family-golf-park-gallery-05-min.jpg", "family-golf-park-gallery-10-min.jpg", "Legionario_2.webp", "Family-Golf-Park_2.webp", "Looping-Crazygolfe_2.webp", "family-golf-park.jpg", "lisbon-bridge.jpg", "relaxing-and-clever-minigolf.jpg", "vulcanos.jpg", "2sd-hole.jpg", "1st-hole.jpg", "welcome-to-the-best-europe.jpg"]
+        },
+        {
+          id: 2,
           name: "Aia Racing School",
           email: "racingschool@autodromodoalgarve.com",
           logo: "Autódromo_Internacional_Algarve_logo.png",
@@ -488,7 +521,7 @@ export const appDataPT: AppData = {
             "parceiro_70_racing_school_cf026414_3__2___1_tonemapped2b_1__2.jpg"
           ]
         },{
-          id: 2,
+          id: 3,
           name: "Karting Portimão",
           email: "kia@parkalgar.com",
           logo: "Kartodromoalgarve.png",
@@ -521,7 +554,7 @@ export const appDataPT: AppData = {
           images: ["39129269_2071071279603968_9122454272632422400_n.jpg", "Kartodromo2-scaled.jpg", "490851637_1218406543617808_2741633398730202739_n.jpg", "488211910_1210059391119190_5497740365812582147_n.jpg", "489446312_1210956781029451_2393478272773825535_n.jpg", "kartodromo6-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg", "kartodromo3-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg", "490229418_1218688256922970_8436650453256995830_n.jpg", "IMG_2422.jpg"]
         },
         {
-          id: 3,
+          id: 4,
           name: "Slide & Splash",
           email: "info@slidesplash.com",
           logo: "logo_slidesplash.png",
@@ -552,39 +585,6 @@ export const appDataPT: AppData = {
           },
           rootFolder: "Slide&Splash",
           images: ["Slide-Splash-Torre-sector-4-e-aereas_3-e1679392334545.webp", "atracoes31.jpg", "Slide-Splash-Water-Park-Algarve-Portugal.jpg", "atracoes39.jpg", "slide-splash-water-slide.jpg", "new-ride-2018-disco-river.jpg", "new-rides-2018.jpg", "black-hole.jpg", "slide-splash-2019 (1).jpg", "the-big-wave.jpg", "big-slides-tower.jpg", "slide-splash-2019.jpg", "slide-2020.jpg"]
-        },
-        {
-          id: 4,
-          name: "Family Golf Park",
-          email: "info@familygolfpark.com",
-          logo: "family-golf-park-logo-white.png",
-          type: "Golf",
-          description: "Localizado no coração de Vilamoura, o Family Golf Park é um destino imperdível para famílias e grupos em busca de diversão e lazer. Com dois cursos de mini golf temáticos inspirados na Via Appia e Via Lusitânia, o parque oferece uma experiência única no meio de jardins exuberantes e arquitetura romana. Além disso, tem um espaço de jogos para crianças, uma sala de jogos, uma barzinha com esplanada e até um trem turístico que passa pelos pontos principais de Vilamoura. Aberto todos os dias, o Family Golf Park é perfeito para um dia de diversão com a família.",
-          locationIds: [3],
-          rating: 5,
-          openingHours: [
-            { day: "Segunda-feira", hours: "10:00 - 19:00" },
-            { day: "Terça-feira", hours: "10:00 - 19:00" },
-            { day: "Quarta-feira", hours: "10:00 - 19:00" },
-            { day: "Quinta-feira", hours: "10:00 - 19:00" },
-            { day: "Sexta-feira", hours: "10:00 - 19:00" },
-            { day: "Sábado", hours: "10:00 - 19:00" },
-            { day: "Domingo", hours: "10:00 - 19:00" }
-          ],
-          address: "Family Golf Park",
-          phone: "+351 282 912 345",
-          socialMedia: {
-            facebook: "https://www.facebook.com/familygolfpark.pt",
-            instagram: "https://www.instagram.com/familygolfpark/",
-            website: "https://familygolfpark.pt/"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sFamily%20Golf%20Park!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Discount",
-            description: "10% DE DESCONTO"
-          },
-          rootFolder: "Family Golf Park",
-          images: ["family-golf-park-gallery-05-min.jpg", "family-golf-park-gallery-10-min.jpg", "Legionario_2.webp", "Family-Golf-Park_2.webp", "Looping-Crazygolfe_2.webp", "family-golf-park.jpg", "lisbon-bridge.jpg", "relaxing-and-clever-minigolf.jpg", "vulcanos.jpg", "2sd-hole.jpg", "1st-hole.jpg", "welcome-to-the-best-europe.jpg"]
         },
         {
           id: 5,
@@ -620,7 +620,7 @@ export const appDataPT: AppData = {
           images: ["145.jpg", "145 (1).jpg", "145 (2).jpg", "145 (3).jpg", "145 (4).jpg", "145 (5).jpg", "145 (6).jpg", "145 (7).jpg", "145 (8).jpg", "145 (9).jpg", "145 (10).jpg", "image_processing20240617-9-uc4gqx.jpg", "Zoomarine_2.jpg", "zoomarine.jpg"]
         },
         {
-          id: 7,
+          id: 6,
           name: "Algarve Riders",
           email: "info@algarveriders.com",
           logo: "logo_algarveriders.png",
@@ -653,7 +653,7 @@ export const appDataPT: AppData = {
           images: ["algarve-riders-available.jpg", "algarve-riders-off-road (7).jpg", "algarve-riders-off-road (6).jpg", "algarve-riders-off-road (5).jpg", "algarve-riders-off-road (4).jpg", "algarve-riders-off-road (3).jpg", "algarve-riders-off-road (2).jpg", "algarve-riders-off-road (1).jpg", "algarve-quad-tours-fun.jpg", "team-building-buggy-tour.jpg", "algarve-riders-off-road.jpg"]
         },
         {
-          id: 8,
+          id: 7,
           name: "Aquashow",
           email: "info@aquashow.com",
           logo: "aquashow_logo.png",
@@ -1254,6 +1254,7 @@ export const appDataPT: AppData = {
       bookNow: "Reserve Agora",
       specialOffer: "Você merece!",
       bookingNotice: "As reservas devem ser efetuadas diretamente com a equipa Clever Details",
+      bookingNotice2: "Deverá apresentar o seu cartão de membro à chegada.",
       details: "Detalhes",
       openingHours: "Horário de Funcionamento",
       location: "Localização",

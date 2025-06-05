@@ -165,6 +165,7 @@ export interface UITranslations {
     bookNow: string;
     specialOffer: string;
     bookingNotice: string;
+    bookingNotice2: string;
     details: string;
     openingHours: string;
     location: string;

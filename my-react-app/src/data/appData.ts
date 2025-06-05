@@ -326,7 +326,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.0845960567867!2d-8.121846809000903!3d37.07929200040834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5940c8ecbd9%3A0x6755304fce06bfca!2sRetinto%20-%20Rod%C3%ADzio%20%26%20Wine%20-%20Vilamoura!5e0!3m2!1spt-PT!2spt!4v1748882848562!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Welcome Drink",
-            description: "Welcome Drink"
+            description: "Sparkling wine welcome drink"
           },
           rootFolder: "Retinto",
           images: ["5c594138-f690-4ea1-add1-3fce2e15ef55.avif", "photo0jpg.jpg", "entrecote-argentino-ribye.jpg", "ff1ed75b-d71b-42f7-9d93-7f3a39464c45.jpg", "59f45f21-e373-42d3-8ed2-8946008e0b3f.jpg", "b15f5500-b73f-421d-b7bc-a9412784f5d8.webp", "b8685ec1-a1b4-4cbd-bd41-3b8cdb1bfa11.avif", "d56aaf4a-be2e-4cd3-99d9-f70d63c5826c.avif", "7701aa02-a0c2-4ec5-9af1-e1c80a4263d6.webp"]
@@ -1245,6 +1245,7 @@ export const appData: AppData = {
       bookNow: "Book Now",
       specialOffer: "You deserve it!",
       bookingNotice: "Bookings must be made directly with Clever Details team",
+      bookingNotice2: "You must present your membership card upon arrival.",
       details: "Details",
       openingHours: "Opening Hours",
       location: "Location",
