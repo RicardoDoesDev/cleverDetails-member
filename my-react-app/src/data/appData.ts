@@ -11,6 +11,39 @@ export const appData: AppData = {
       items: [
         {
           id: 1,
+          name: "Ocean Quest",
+          email: "info@oceanquest.com",
+          logo: "Ocean Quest.png",
+          type: "Boat Tours",
+          description: "Explore the best of the Algarve coast with Ocean Quest. Boat tours, caves, dolphins and parasailing from Vilamoura, with a team passionate about providing unique experiences at sea. Because life is beautiful.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 18:00" },
+            { day: "Tuesday", hours: "09:00 - 18:00" },
+            { day: "Wednesday", hours: "09:00 - 18:00" },
+            { day: "Thursday", hours: "09:00 - 18:00" },
+            { day: "Friday", hours: "09:00 - 18:00" },
+            { day: "Saturday", hours: "09:00 - 18:00" },
+            { day: "Sunday", hours: "09:00 - 18:00" }
+          ],
+          address: "Vilamoura",
+          phone: "+351 912 345 683",
+          socialMedia: {
+            facebook: "https://www.facebook.com/boattripsvilamoura",
+            instagram: "https://www.instagram.com/oceanquestalgarve/",
+            website: "https://oceanquestalgarve.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sOcean%20Quest!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "ocean quest",
+          images: ["see-the-wonderful-algarvian.jpg", "swimming-stop.jpg", "traditional-cultural (1).jpg", "vilamoura-yacht-charter.jpg", "vilamoura-speed-boat-trips.jpeg", "cesar-live-on-the-guitar.jpg", "traditional-cultural.jpg", "life-is-beautiful.jpg", "exceptional-view.jpg", "dolphin-quest.jpg"]
+        },
+        {
+          id: 2,
           name: "Cool Charters",
           email: "info@coolchartersvilamoura.com",
           logo: "Cool-Charters-BSQUAREwhite.png",
@@ -57,73 +90,7 @@ export const appData: AppData = {
           ]
         },
         {
-          id: 2,
-          name: "Passeios Ria Formosa",
-          email: "reservas@passeios-ria-formosa.com",
-          logo: "Passeios ria formosa.png",
-          type: "Boat Tours",
-          description: "Explore the Ria Formosa with private tours in sailboats, speedboats, or traditional boats. Observe dolphins, seahorses, and birds, or enjoy unique experiences such as oysters with champagne, romantic dinners, exclusive catamaran trips, and kayak rentals. An invitation to discover the Algarve's nature with charm and authenticity.",
-          locationIds: [5],
-          rating: 5,
-          openingHours: [
-            { day: "Monday", hours: "08:00 - 20:00" },
-            { day: "Tuesday", hours: "08:00 - 20:00" },
-            { day: "Wednesday", hours: "08:00 - 20:00" },
-            { day: "Thursday", hours: "08:00 - 20:00" },
-            { day: "Friday", hours: "08:00 - 20:00" },
-            { day: "Saturday", hours: "08:00 - 20:00" },
-            { day: "Sunday", hours: "08:00 - 20:00" }
-          ],
-          address: "Ria Formosa",
-          phone: "+351 912 345 679",
-          socialMedia: {
-            facebook: "https://www.facebook.com/passeiosbarcoriaformosa",
-            instagram: "https://www.instagram.com/passeiosriaformosa/",
-            website: "https://passeios-ria-formosa.com/"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101892.91828023992!2d-7.896293302734396!3d37.05382039999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd05530a88105cfb%3A0x696d59f8bd24833d!2sPasseios%20Ria%20Formosa!5e0!3m2!1spt-PT!2spt!4v1748883183737!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Discount",
-            description: "10% OFF"
-          },
-          rootFolder: "Passeios Ria Formosa",
-          images: ["sailing-tour.jpg", "featured-2-horas-fuseta.webp", "birdwatching.jpg", "sealife-observation.jpg", "dolphins-observation.jpg", "DJI_20240427_200812_220.webp", "dji_fly_20240425_145136_206_1714164247660_timed.webp"]
-        },
-        {
           id: 3,
-          name: "Formosamar",
-          email: "info@formosamar.com",
-          logo: "formosamar-main-logo-landscape-white.svg",
-          type: "Boat Tours",
-          description: "Formosamar, located in Faro, offers authentic experiences in the Ria Formosa Natural Park. It offers boat tours, bird and dolphin watching, as well as boat rentals, kayaks, bicycles and nautical equipment. Ideal for those who want to explore the local nature and culture with experienced guides. The company is certified in ecotourism and committed to sustainable practices.",
-          locationIds: [5],
-          rating: 5,
-          openingHours: [
-            { day: "Monday", hours: "09:00 - 19:00" },
-            { day: "Tuesday", hours: "09:00 - 19:00" },
-            { day: "Wednesday", hours: "09:00 - 19:00" },
-            { day: "Thursday", hours: "09:00 - 19:00" },
-            { day: "Friday", hours: "09:00 - 19:00" },
-            { day: "Saturday", hours: "09:00 - 19:00" },
-            { day: "Sunday", hours: "09:00 - 19:00" }
-          ],
-          address: "Ria Formosa",
-          phone: "+351 912 345 680",
-          socialMedia: {
-            facebook: "https://www.facebook.com/formosamar/",
-            instagram: "https://www.instagram.com/formosamar/",
-            website: "https://formosamar.com/"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.8047220482727!2d-7.9389662732313235!3d37.014454772187065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd05533874923d89%3A0xd4bf971caf98216!2sFormosamar%20-%20Boat%20Tours%20Passeios%20na%20Ria%20Formosa!5e0!3m2!1spt-PT!2spt!4v1748883209882!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Discount",
-            description: "5% OFF"
-          },
-          rootFolder: "Formosamar",
-          images: ["dolphin-watching-boat.jpg", "formosamar-sailboats-ria-formosa-island.jpg", "ria-formosa-islands-boat.jpg", "ilha-deserta-and-farol.jpg", "guided-boat-trip-in-ria.jpg", "formosamar-private-tour-cruise-ria-formosa-900x500.jpg", "formosamar.jpg", "formosamar (1).jpg", "formosamar (2).jpg"]
-        },
-        {
-          id: 4,
           name: "AlgarExperience",
           email: "info@algarexperience.com",
           logo: "algarexperience-vect.svg",
@@ -157,7 +124,7 @@ export const appData: AppData = {
           images: ["caves-coastline-tour.jpg", "dolphin-caves-catamaran.jpg", "gruta-de-benagil.jpg", "sunset.jpg", "grutas.jpg", "vista-aerea.jpg", "barbecue-na-praia.jpg", "parasailing.jpg", "belize-segundo-costa.jpg", "boat-party.jpg"]
         },
         {
-          id: 5,
+          id: 4,
           name: "Condor de Vilamoura",
           email: "info@condorvilamoura.com",
           logo: "condor_logo branco.avif",
@@ -191,40 +158,7 @@ export const appData: AppData = {
           images: ["photo0jpg.jpg", "caption (1).jpg", "vamos-para-a-praia.jpg", "caption (2).jpg", "caption.jpg", "21d228_8a694355938d49048feaba57ef829db2~mv2-1.avif", "condor-de-vilamoura (1).jpg", "condor-de-vilamoura.jpg", "21d228_28814368cb5446c1b0a8d17d8459fd48~mv2.avif", "21d228_8a694355938d49048feaba57ef829db2~mv2.avif"]
         },
         {
-          id: 6,
-          name: "Ocean Quest",
-          email: "info@oceanquest.com",
-          logo: "Ocean Quest.png",
-          type: "Boat Tours",
-          description: "Explore the best of the Algarve coast with Ocean Quest. Boat tours, caves, dolphins and parasailing from Vilamoura, with a team passionate about providing unique experiences at sea. Because life is beautiful.",
-          locationIds: [3],
-          rating: 5,
-          openingHours: [
-            { day: "Monday", hours: "09:00 - 18:00" },
-            { day: "Tuesday", hours: "09:00 - 18:00" },
-            { day: "Wednesday", hours: "09:00 - 18:00" },
-            { day: "Thursday", hours: "09:00 - 18:00" },
-            { day: "Friday", hours: "09:00 - 18:00" },
-            { day: "Saturday", hours: "09:00 - 18:00" },
-            { day: "Sunday", hours: "09:00 - 18:00" }
-          ],
-          address: "Vilamoura",
-          phone: "+351 912 345 683",
-          socialMedia: {
-            facebook: "https://www.facebook.com/boattripsvilamoura",
-            instagram: "https://www.instagram.com/oceanquestalgarve/",
-            website: "https://oceanquestalgarve.com/"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sOcean%20Quest!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Discount",
-            description: "10% OFF"
-          },
-          rootFolder: "ocean quest",
-          images: ["see-the-wonderful-algarvian.jpg", "swimming-stop.jpg", "traditional-cultural (1).jpg", "vilamoura-yacht-charter.jpg", "vilamoura-speed-boat-trips.jpeg", "cesar-live-on-the-guitar.jpg", "traditional-cultural.jpg", "life-is-beautiful.jpg", "exceptional-view.jpg", "dolphin-quest.jpg"]
-        },
-        {
-          id: 7,
+          id: 5,
           name: "Vilamoura WaterSports Centre",
           email: "info@vilamourawatersportscentre.com",
           logo: "Vilamoura-Watersports-Centre-logo-Design-01-e1602070771419.webp",
@@ -255,6 +189,72 @@ export const appData: AppData = {
           },
           rootFolder: "watersports vilamoura",
           images: ["IMG_1046-scaled.webp", "photo5jpg.jpg", "foto1.webp", "jet-boat-ride-vilamoura.jpg", "Parasailing-Vilamoura-Experience-scaled.webp", "speed-boat-algarvexcite.jpg", "parasailing-boat-trips.jpg", "common-dolphin.jpg", "Fishing-In-Algarve.webp", "Dolphins-Algarve-.webp"]
+        },
+        {
+          id: 6,
+          name: "Passeios Ria Formosa",
+          email: "reservas@passeios-ria-formosa.com",
+          logo: "Passeios ria formosa.png",
+          type: "Boat Tours",
+          description: "Explore the Ria Formosa with private tours in sailboats, speedboats, or traditional boats. Observe dolphins, seahorses, and birds, or enjoy unique experiences such as oysters with champagne, romantic dinners, exclusive catamaran trips, and kayak rentals. An invitation to discover the Algarve's nature with charm and authenticity.",
+          locationIds: [5],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "08:00 - 20:00" },
+            { day: "Tuesday", hours: "08:00 - 20:00" },
+            { day: "Wednesday", hours: "08:00 - 20:00" },
+            { day: "Thursday", hours: "08:00 - 20:00" },
+            { day: "Friday", hours: "08:00 - 20:00" },
+            { day: "Saturday", hours: "08:00 - 20:00" },
+            { day: "Sunday", hours: "08:00 - 20:00" }
+          ],
+          address: "Ria Formosa",
+          phone: "+351 912 345 679",
+          socialMedia: {
+            facebook: "https://www.facebook.com/passeiosbarcoriaformosa",
+            instagram: "https://www.instagram.com/passeiosriaformosa/",
+            website: "https://passeios-ria-formosa.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101892.91828023992!2d-7.896293302734396!3d37.05382039999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd05530a88105cfb%3A0x696d59f8bd24833d!2sPasseios%20Ria%20Formosa!5e0!3m2!1spt-PT!2spt!4v1748883183737!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "Passeios Ria Formosa",
+          images: ["sailing-tour.jpg", "featured-2-horas-fuseta.webp", "birdwatching.jpg", "sealife-observation.jpg", "dolphins-observation.jpg", "DJI_20240427_200812_220.webp", "dji_fly_20240425_145136_206_1714164247660_timed.webp"]
+        },
+        {
+          id: 7,
+          name: "Formosamar",
+          email: "info@formosamar.com",
+          logo: "formosamar-main-logo-landscape-white.svg",
+          type: "Boat Tours",
+          description: "Formosamar, located in Faro, offers authentic experiences in the Ria Formosa Natural Park. It offers boat tours, bird and dolphin watching, as well as boat rentals, kayaks, bicycles and nautical equipment. Ideal for those who want to explore the local nature and culture with experienced guides. The company is certified in ecotourism and committed to sustainable practices.",
+          locationIds: [5],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "09:00 - 19:00" },
+            { day: "Tuesday", hours: "09:00 - 19:00" },
+            { day: "Wednesday", hours: "09:00 - 19:00" },
+            { day: "Thursday", hours: "09:00 - 19:00" },
+            { day: "Friday", hours: "09:00 - 19:00" },
+            { day: "Saturday", hours: "09:00 - 19:00" },
+            { day: "Sunday", hours: "09:00 - 19:00" }
+          ],
+          address: "Ria Formosa",
+          phone: "+351 912 345 680",
+          socialMedia: {
+            facebook: "https://www.facebook.com/formosamar/",
+            instagram: "https://www.instagram.com/formosamar/",
+            website: "https://formosamar.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.8047220482727!2d-7.9389662732313235!3d37.014454772187065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd05533874923d89%3A0xd4bf971caf98216!2sFormosamar%20-%20Boat%20Tours%20Passeios%20na%20Ria%20Formosa!5e0!3m2!1spt-PT!2spt!4v1748883209882!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "5% OFF"
+          },
+          rootFolder: "Formosamar",
+          images: ["dolphin-watching-boat.jpg", "formosamar-sailboats-ria-formosa-island.jpg", "ria-formosa-islands-boat.jpg", "ilha-deserta-and-farol.jpg", "guided-boat-trip-in-ria.jpg", "formosamar-private-tour-cruise-ria-formosa-900x500.jpg", "formosamar.jpg", "formosamar (1).jpg", "formosamar (2).jpg"]
         }
       ]
     },
@@ -267,106 +267,6 @@ export const appData: AppData = {
       items: [
         {
           id: 1,
-          name: "A ver Tavira",
-          email: "restaurante@avertavira.pt",
-          logo: "AverTavira.png",
-          type: "Fine Dining",
-          description: "The A Ver Tavira restaurant, awarded with a Michelin star, offers a unique gastronomic experience in the historic center of Tavira, with Algarvian flavors and a stunning view. Under the command of chef Luís Brito, combines tradition and creativity in an innovative menu.",
-          locationIds: [0],
-          rating: 5,
-          openingHours: [
-            { day: "Monday", hours: "Closed" },
-            { day: "Tuesday", hours: "18:30 - 21:30" },
-            { day: "Wednesday", hours: "12:00 - 14:30, 18:30 - 21:30" },
-            { day: "Thursday", hours: "12:00 - 14:30, 18:30 - 21:30" },
-            { day: "Friday", hours: "12:00 - 14:30, 18:30 - 21:30" },
-            { day: "Saturday", hours: "12:00 - 14:30, 18:30 - 21:30" },
-            { day: "Sunday", hours: "Closed" }
-          ],
-          address: "Rua de Tavira, 12",
-          phone: "912 345 678",
-          socialMedia: {
-            facebook: "https://www.facebook.com/avertavira.restaurante/",
-            instagram: "https://www.instagram.com/avertavirarestaurante/",
-            website: "https://avertavira.com/"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.1350356455455!2d-7.653902723227645!3d37.125702272156204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd100379c4264773%3A0xca74ccd84b4f6fa!2sRestaurante%20A%20Ver%20Tavira!5e0!3m2!1spt-PT!2spt!4v1748882657083!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Welcome Drink",
-            description: "Welcome Glass of Champagne"
-          },
-          rootFolder: "A ver Tavira",
-          images: ["borrego-feijao-bago-de.jpg", "rooftop-tavira.webp", "chefe-luis-brito.jpg", "cavala-marinada-e-gaspacho.jpg", "peixe-de-linha.jpg", "carabineiro-caril-couve.jpg", "the-detailed-combinations.jpg", "each-plate-prepared-with.jpg", "caption.jpg", "ce86969e3cec4b7bb0d0cde9e123fa0c.webp"]
-        },
-        {
-          id: 2,
-          name: "Authentic",
-          email: "reservations@authentic-restaurant.pt",
-          logo: "Logo-Authentic-dourado.png",
-          type: "Fine Dining",
-          //translate to english
-          description: "The Authentic restaurant, located in Quinta do Lago, offers a sophisticated gastronomic experience, combining classic Portuguese cuisine with a contemporary touch, in a luxurious and refined environment.",
-          locationIds: [1],
-          rating: 5,
-          openingHours: [
-            { day: "Monday", hours: "Closed" },
-            { day: "Tuesday", hours: "Closed" },
-            { day: "Wednesday", hours: "18:00 - 23:00" },
-            { day: "Thursday", hours: "18:00 - 23:00" },
-            { day: "Friday", hours: "18:00 - 23:00" },
-            { day: "Saturday", hours: "18:00 - 23:00" },
-            { day: "Sunday", hours: "18:00 - 23:00" }
-          ],
-          address: "Rua Authentic, 45",
-          phone: "912 345 679",
-          socialMedia: {
-            facebook: "https://www.facebook.com/p/Restaurante-Authentic-61557286149118/",
-            instagram: "https://www.instagram.com/authentic_restaurant/",
-            website: "https://authentic-restaurant.pt/"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12822.135700162466!2d-8.047785783215549!3d37.07197186103477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5007ddbbb2f%3A0xe5b9924c281ad489!2sAuthentic%20Restaurant!5e0!3m2!1spt-PT!2spt!4v1748882756760!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Welcome Drink",
-            description: "Glass of Champagne"
-          },
-          rootFolder: "Authentic",
-          images: ["83dcbf96-9726-4f1b-a1c7-c13c5f223b98.avif", "5e949c5e-060e-457b-ad67-b7597677c446.avif", "44aa29bd-0300-47b5-9ba5-83d8b8b19bd1.avif", "4d07f2e9-70b3-4b8b-a1e1-91fe37279165.avif", "843ccb2d-bf51-4c6a-bf0d-24ab6463b44c.avif", "ff05a4b6-f867-4243-9e4b-7141f87220af.avif", "c4bd01b2-7c29-405a-94d6-b566a0328e36.avif", "44cf2c78-1fec-4650-9ed2-eedaf4708a25.avif", "036d2880-7465-460b-9c18-61260a3de321.avif", "f818d5b4-5d61-4cc5-b0eb-e90fd92ac501.avif"]
-        },
-        {
-          id: 3,
-          name: "CafeZique",
-          email: "cafeziquept@gmail.com",
-          logo: "CAFEZIQUE-487bb404-679w.webp",
-          type: "Fine Dining",
-          description: "The CaféZique restaurant, in Loulé, combines Algarvian flavors with contemporary techniques, offering a unique gastronomic experience in a relaxed environment next to the castle.",
-          locationIds: [2],
-          rating: 5,
-          openingHours: [
-            { day: "Monday", hours: "19:00 - 22:30" },
-            { day: "Tuesday", hours: "19:00 - 22:30" },
-            { day: "Wednesday", hours: "19:00 - 22:30" },
-            { day: "Thursday", hours: "19:00 - 22:30" },
-            { day: "Friday", hours: "19:00 - 22:30" },
-            { day: "Saturday", hours: "19:00 - 22:30" },
-            { day: "Sunday", hours: "Closed" }
-          ],
-          address: "Rua Cafezique, 78",
-          phone: "912 345 680",
-          socialMedia: {
-            facebook: "https://www.facebook.com/Cafeziquept/?locale=pt_BR",
-            instagram: "https://www.instagram.com/cafeziquept/",
-            website: "https://www.cafezique.pt/"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.5625743653195!2d-8.026760923227188!3d37.13932057215254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab18b3c096f37%3A0x3d8742940db522f6!2zQ2Fmw6law69xdWU!5e0!3m2!1spt-PT!2spt!4v1748882784435!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Welcome Drink",
-            description: "Glass of Sparkling Wine"
-          },
-          rootFolder: "CafeZique",
-          images: ["0c8e01ad-d9ca-4b18-af60-26a700b19e31.avif", "b7455fd9-1912-4dc4-9d75-b6e3c18c21e1.avif", "c10b8475-9033-4f81-96a7-89723f3537a6.avif", "562a5999-384a-4fcf-876a-191a283c4417.avif", "1fc2a2ef-0625-4d3c-a43b-538301aad3c4.avif", "eb5af52c-c6c9-411a-87ba-578fa3de1e3f.avif", "47a07484-d88c-447f-91ed-4c7bf0a542c3.avif", "d59e735d-141e-4359-b024-3352c31e5b83.avif", "cff64c57-1e91-4133-a445-f033ab8f5838.avif", "98b3ee01-5726-41de-93f9-23ce6da1c1b7.avif"]
-        },
-        {
-          id: 4,
           name: "Gran Sorvete",
           email: "info@gransorvete.com",
           logo: "GranSorvete.avif",
@@ -399,7 +299,7 @@ export const appData: AppData = {
           images: ["crepes-also-served-with.jpg", "gran-gelato.jpg", "gran-sorvete-in-the-heart.jpg", "in-the-heart-of-the-vilamoura.jpg", "our-delicious-mini-pancakes.jpg", "hot-chocolate-served.jpg", "enjoy-the-delicious-combinatio.jpg", "gran-gelato (1).jpg"]
         },
         {
-          id: 5,
+          id: 2,
           name: "Retinto - Rodízio & Wine",
           email: "retinto.vilamoura@gmail.com",
           logo: "Retinto+Vilamoura-330w.webp",
@@ -430,6 +330,106 @@ export const appData: AppData = {
           },
           rootFolder: "Retinto",
           images: ["5c594138-f690-4ea1-add1-3fce2e15ef55.avif", "photo0jpg.jpg", "entrecote-argentino-ribye.jpg", "ff1ed75b-d71b-42f7-9d93-7f3a39464c45.jpg", "59f45f21-e373-42d3-8ed2-8946008e0b3f.jpg", "b15f5500-b73f-421d-b7bc-a9412784f5d8.webp", "b8685ec1-a1b4-4cbd-bd41-3b8cdb1bfa11.avif", "d56aaf4a-be2e-4cd3-99d9-f70d63c5826c.avif", "7701aa02-a0c2-4ec5-9af1-e1c80a4263d6.webp"]
+        },
+        {
+          id: 3,
+          name: "A ver Tavira",
+          email: "restaurante@avertavira.pt",
+          logo: "AverTavira.png",
+          type: "Fine Dining",
+          description: "The A Ver Tavira restaurant, awarded with a Michelin star, offers a unique gastronomic experience in the historic center of Tavira, with Algarvian flavors and a stunning view. Under the command of chef Luís Brito, combines tradition and creativity in an innovative menu.",
+          locationIds: [0],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "Closed" },
+            { day: "Tuesday", hours: "18:30 - 21:30" },
+            { day: "Wednesday", hours: "12:00 - 14:30, 18:30 - 21:30" },
+            { day: "Thursday", hours: "12:00 - 14:30, 18:30 - 21:30" },
+            { day: "Friday", hours: "12:00 - 14:30, 18:30 - 21:30" },
+            { day: "Saturday", hours: "12:00 - 14:30, 18:30 - 21:30" },
+            { day: "Sunday", hours: "Closed" }
+          ],
+          address: "Rua de Tavira, 12",
+          phone: "912 345 678",
+          socialMedia: {
+            facebook: "https://www.facebook.com/avertavira.restaurante/",
+            instagram: "https://www.instagram.com/avertavirarestaurante/",
+            website: "https://avertavira.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.1350356455455!2d-7.653902723227645!3d37.125702272156204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd100379c4264773%3A0xca74ccd84b4f6fa!2sRestaurante%20A%20Ver%20Tavira!5e0!3m2!1spt-PT!2spt!4v1748882657083!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Welcome Drink",
+            description: "Welcome Glass of Champagne"
+          },
+          rootFolder: "A ver Tavira",
+          images: ["borrego-feijao-bago-de.jpg", "rooftop-tavira.webp", "chefe-luis-brito.jpg", "cavala-marinada-e-gaspacho.jpg", "peixe-de-linha.jpg", "carabineiro-caril-couve.jpg", "the-detailed-combinations.jpg", "each-plate-prepared-with.jpg", "caption.jpg", "ce86969e3cec4b7bb0d0cde9e123fa0c.webp"]
+        },
+        {
+          id: 4,
+          name: "Authentic",
+          email: "reservations@authentic-restaurant.pt",
+          logo: "Logo-Authentic-dourado.png",
+          type: "Fine Dining",
+          //translate to english
+          description: "The Authentic restaurant, located in Quinta do Lago, offers a sophisticated gastronomic experience, combining classic Portuguese cuisine with a contemporary touch, in a luxurious and refined environment.",
+          locationIds: [1],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "Closed" },
+            { day: "Tuesday", hours: "Closed" },
+            { day: "Wednesday", hours: "18:00 - 23:00" },
+            { day: "Thursday", hours: "18:00 - 23:00" },
+            { day: "Friday", hours: "18:00 - 23:00" },
+            { day: "Saturday", hours: "18:00 - 23:00" },
+            { day: "Sunday", hours: "18:00 - 23:00" }
+          ],
+          address: "Rua Authentic, 45",
+          phone: "912 345 679",
+          socialMedia: {
+            facebook: "https://www.facebook.com/p/Restaurante-Authentic-61557286149118/",
+            instagram: "https://www.instagram.com/authentic_restaurant/",
+            website: "https://authentic-restaurant.pt/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12822.135700162466!2d-8.047785783215549!3d37.07197186103477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5007ddbbb2f%3A0xe5b9924c281ad489!2sAuthentic%20Restaurant!5e0!3m2!1spt-PT!2spt!4v1748882756760!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Welcome Drink",
+            description: "Welcome drink and 5% off dinner"
+          },
+          rootFolder: "Authentic",
+          images: ["83dcbf96-9726-4f1b-a1c7-c13c5f223b98.avif", "5e949c5e-060e-457b-ad67-b7597677c446.avif", "44aa29bd-0300-47b5-9ba5-83d8b8b19bd1.avif", "4d07f2e9-70b3-4b8b-a1e1-91fe37279165.avif", "843ccb2d-bf51-4c6a-bf0d-24ab6463b44c.avif", "ff05a4b6-f867-4243-9e4b-7141f87220af.avif", "c4bd01b2-7c29-405a-94d6-b566a0328e36.avif", "44cf2c78-1fec-4650-9ed2-eedaf4708a25.avif", "036d2880-7465-460b-9c18-61260a3de321.avif", "f818d5b4-5d61-4cc5-b0eb-e90fd92ac501.avif"]
+        },
+        {
+          id: 5,
+          name: "CafeZique",
+          email: "cafeziquept@gmail.com",
+          logo: "CAFEZIQUE-487bb404-679w.webp",
+          type: "Fine Dining",
+          description: "The CaféZique restaurant, in Loulé, combines Algarvian flavors with contemporary techniques, offering a unique gastronomic experience in a relaxed environment next to the castle.",
+          locationIds: [2],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "19:00 - 22:30" },
+            { day: "Tuesday", hours: "19:00 - 22:30" },
+            { day: "Wednesday", hours: "19:00 - 22:30" },
+            { day: "Thursday", hours: "19:00 - 22:30" },
+            { day: "Friday", hours: "19:00 - 22:30" },
+            { day: "Saturday", hours: "19:00 - 22:30" },
+            { day: "Sunday", hours: "Closed" }
+          ],
+          address: "Rua Cafezique, 78",
+          phone: "912 345 680",
+          socialMedia: {
+            facebook: "https://www.facebook.com/Cafeziquept/?locale=pt_BR",
+            instagram: "https://www.instagram.com/cafeziquept/",
+            website: "https://www.cafezique.pt/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.5625743653195!2d-8.026760923227188!3d37.13932057215254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab18b3c096f37%3A0x3d8742940db522f6!2zQ2Fmw6law69xdWU!5e0!3m2!1spt-PT!2spt!4v1748882784435!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Welcome Drink",
+            description: "Glass of sparkling wine"
+          },
+          rootFolder: "CafeZique",
+          images: ["0c8e01ad-d9ca-4b18-af60-26a700b19e31.avif", "b7455fd9-1912-4dc4-9d75-b6e3c18c21e1.avif", "c10b8475-9033-4f81-96a7-89723f3537a6.avif", "562a5999-384a-4fcf-876a-191a283c4417.avif", "1fc2a2ef-0625-4d3c-a43b-538301aad3c4.avif", "eb5af52c-c6c9-411a-87ba-578fa3de1e3f.avif", "47a07484-d88c-447f-91ed-4c7bf0a542c3.avif", "d59e735d-141e-4359-b024-3352c31e5b83.avif", "cff64c57-1e91-4133-a445-f033ab8f5838.avif", "98b3ee01-5726-41de-93f9-23ce6da1c1b7.avif"]
         }
       ]
     },
@@ -442,6 +442,72 @@ export const appData: AppData = {
       items: [
         {
           id: 1,
+          name: "Family Golf Park",
+          email: "info@familygolfpark.com",
+          logo: "family-golf-park-logo-white.png",
+          type: "Golf",
+          description: "Located in the heart of Vilamoura, the Family Golf Park is an unmissable destination for families and groups looking for fun and leisure. With two themed mini golf courses inspired by the Roman Via Appia and Via Lusitânia, the park offers a unique experience in the midst of lush gardens and Roman architecture. In addition, it has a games area for children, a games room, a snack bar with esplanade and even a tourist train that passes through the main points of Vilamoura. Open daily, the Family Golf Park is perfect for a day of fun with the family.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "10:00 - 19:00" },
+            { day: "Tuesday", hours: "10:00 - 19:00" },
+            { day: "Wednesday", hours: "10:00 - 19:00" },
+            { day: "Thursday", hours: "10:00 - 19:00" },
+            { day: "Friday", hours: "10:00 - 19:00" },
+            { day: "Saturday", hours: "10:00 - 19:00" },
+            { day: "Sunday", hours: "10:00 - 19:00" }
+          ],
+          address: "Family Golf Park",
+          phone: "+351 282 912 345",
+          socialMedia: {
+            facebook: "https://www.facebook.com/familygolfpark.pt",
+            instagram: "https://www.instagram.com/familygolfpark/",
+            website: "https://familygolfpark.pt/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sFamily%20Golf%20Park!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF"
+          },
+          rootFolder: "Family Golf Park",
+          images: ["family-golf-park-gallery-05-min.jpg", "family-golf-park-gallery-10-min.jpg", "Legionario_2.webp", "Family-Golf-Park_2.webp", "Looping-Crazygolfe_2.webp", "family-golf-park.jpg", "lisbon-bridge.jpg", "relaxing-and-clever-minigolf.jpg", "vulcanos.jpg", "2sd-hole.jpg", "1st-hole.jpg", "welcome-to-the-best-europe.jpg"]
+        },
+        {
+          id: 7,
+          name: "Algarve Riders",
+          email: "info@algarveriders.com",
+          logo: "logo_algarveriders.png",
+          type: "Theme Park",
+          description: "Algarve Riders is a motorcycle rental company that offers a unique experience with high-performance motorcycles. It is an ideal place to enjoy an afternoon of fun.",
+          locationIds: [4],
+          rating: 5,
+          openingHours: [
+            { day: "Monday", hours: "8:30 - 18:00" },
+            { day: "Tuesday", hours: "8:30 - 18:00" },
+            { day: "Wednesday", hours: "8:30 - 18:00" },
+            { day: "Thursday", hours: "8:30 - 18:00" },
+            { day: "Friday", hours: "8:30 - 18:00" },
+            { day: "Saturday", hours: "8:30 - 18:00" },
+            { day: "Sunday", hours: "8:30 - 18:00" }
+          ],
+          address: "Algarve Riders",
+          phone: "+351 289 560 300",
+          socialMedia: {
+            facebook: "https://www.facebook.com/algarveriders/?locale=pt_PT",
+            instagram: "https://www.instagram.com/algarveriders/",
+            website: "https://www.algarveriders.com/pt"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.5144440743125!2d-8.241512908997843!3d37.09286990039514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1acc1c47179d53%3A0xae8f92aa7c2a4f1e!2sAlgarve%20Riders!5e0!3m2!1spt-PT!2spt!4v1748883603455!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% OFF -Tours ; 5% OFF - Scooter"
+          },
+          rootFolder: "Algarve Riders",
+          images: ["algarve-riders-available.jpg", "algarve-riders-off-road (7).jpg", "algarve-riders-off-road (6).jpg", "algarve-riders-off-road (5).jpg", "algarve-riders-off-road (4).jpg", "algarve-riders-off-road (3).jpg", "algarve-riders-off-road (2).jpg", "algarve-riders-off-road (1).jpg", "algarve-quad-tours-fun.jpg", "team-building-buggy-tour.jpg", "algarve-riders-off-road.jpg"]
+        },
+        {
+          id: 2,
           name: "Aia Racing School",
           email: "racingschool@autodromodoalgarve.com",
           logo: "Autódromo_Internacional_Algarve_logo.png",
@@ -482,7 +548,7 @@ export const appData: AppData = {
           ]
         },
         {
-          id: 2,
+          id: 3,
           name: "Karting Portimão",
           email: "kia@parkalgar.com",
           logo: "Kartodromoalgarve.png",
@@ -515,7 +581,7 @@ export const appData: AppData = {
           images: ["39129269_2071071279603968_9122454272632422400_n.jpg", "Kartodromo2-scaled.jpg", "490851637_1218406543617808_2741633398730202739_n.jpg", "488211910_1210059391119190_5497740365812582147_n.jpg", "489446312_1210956781029451_2393478272773825535_n.jpg", "kartodromo6-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg", "kartodromo3-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg", "490229418_1218688256922970_8436650453256995830_n.jpg", "IMG_2422.jpg"]
         },
         {
-          id: 3,
+          id: 4,
           name: "Slide & Splash",
           email: "info@slidesplash.com",
           logo: "logo_slidesplash.png",
@@ -546,39 +612,6 @@ export const appData: AppData = {
           },
           rootFolder: "Slide&Splash",
           images: ["Slide-Splash-Torre-sector-4-e-aereas_3-e1679392334545.webp", "atracoes31.jpg", "Slide-Splash-Water-Park-Algarve-Portugal.jpg", "atracoes39.jpg", "slide-splash-water-slide.jpg", "new-ride-2018-disco-river.jpg", "new-rides-2018.jpg", "black-hole.jpg", "slide-splash-2019 (1).jpg", "the-big-wave.jpg", "big-slides-tower.jpg", "slide-splash-2019.jpg", "slide-2020.jpg"]
-        },
-        {
-          id: 4,
-          name: "Family Golf Park",
-          email: "info@familygolfpark.com",
-          logo: "family-golf-park-logo-white.png",
-          type: "Golf",
-          description: "Located in the heart of Vilamoura, the Family Golf Park is an unmissable destination for families and groups looking for fun and leisure. With two themed mini golf courses inspired by the Roman Via Appia and Via Lusitânia, the park offers a unique experience in the midst of lush gardens and Roman architecture. In addition, it has a games area for children, a games room, a snack bar with esplanade and even a tourist train that passes through the main points of Vilamoura. Open daily, the Family Golf Park is perfect for a day of fun with the family.",
-          locationIds: [3],
-          rating: 5,
-          openingHours: [
-            { day: "Monday", hours: "10:00 - 19:00" },
-            { day: "Tuesday", hours: "10:00 - 19:00" },
-            { day: "Wednesday", hours: "10:00 - 19:00" },
-            { day: "Thursday", hours: "10:00 - 19:00" },
-            { day: "Friday", hours: "10:00 - 19:00" },
-            { day: "Saturday", hours: "10:00 - 19:00" },
-            { day: "Sunday", hours: "10:00 - 19:00" }
-          ],
-          address: "Family Golf Park",
-          phone: "+351 282 912 345",
-          socialMedia: {
-            facebook: "https://www.facebook.com/familygolfpark.pt",
-            instagram: "https://www.instagram.com/familygolfpark/",
-            website: "https://familygolfpark.pt/"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1293522678575!2d-8.12651112322924!3d37.07822597216927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab5921a12b7dd%3A0x8c7a9a7499808406!2sFamily%20Golf%20Park!5e0!3m2!1spt-PT!2spt!4v1748883359829!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Discount",
-            description: "10% OFF"
-          },
-          rootFolder: "Family Golf Park",
-          images: ["family-golf-park-gallery-05-min.jpg", "family-golf-park-gallery-10-min.jpg", "Legionario_2.webp", "Family-Golf-Park_2.webp", "Looping-Crazygolfe_2.webp", "family-golf-park.jpg", "lisbon-bridge.jpg", "relaxing-and-clever-minigolf.jpg", "vulcanos.jpg", "2sd-hole.jpg", "1st-hole.jpg", "welcome-to-the-best-europe.jpg"]
         },
         {
           id: 5,
@@ -615,40 +648,7 @@ export const appData: AppData = {
           images: ["145.jpg", "145 (1).jpg", "145 (2).jpg", "145 (3).jpg", "145 (4).jpg", "145 (5).jpg", "145 (6).jpg", "145 (7).jpg", "145 (8).jpg", "145 (9).jpg", "145 (10).jpg", "image_processing20240617-9-uc4gqx.jpg", "Zoomarine_2.jpg", "zoomarine.jpg"]
         },
         {
-          id: 7,
-          name: "Algarve Riders",
-          email: "info@algarveriders.com",
-          logo: "logo_algarveriders.png",
-          type: "Theme Park",
-          description: "Algarve Riders is a motorcycle rental company that offers a unique experience with high-performance motorcycles. It is an ideal place to enjoy an afternoon of fun.",
-          locationIds: [3],
-          rating: 5,
-          openingHours: [
-            { day: "Monday", hours: "8:30 - 18:00" },
-            { day: "Tuesday", hours: "8:30 - 18:00" },
-            { day: "Wednesday", hours: "8:30 - 18:00" },
-            { day: "Thursday", hours: "8:30 - 18:00" },
-            { day: "Friday", hours: "8:30 - 18:00" },
-            { day: "Saturday", hours: "8:30 - 18:00" },
-            { day: "Sunday", hours: "8:30 - 18:00" }
-          ],
-          address: "Algarve Riders",
-          phone: "+351 289 560 300",
-          socialMedia: {
-            facebook: "https://www.facebook.com/algarveriders/?locale=pt_PT",
-            instagram: "https://www.instagram.com/algarveriders/",
-            website: "https://www.algarveriders.com/pt"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.5144440743125!2d-8.241512908997843!3d37.09286990039514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1acc1c47179d53%3A0xae8f92aa7c2a4f1e!2sAlgarve%20Riders!5e0!3m2!1spt-PT!2spt!4v1748883603455!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Discount",
-            description: "10% OFF -Tours ; 5% OFF - Scooter"
-          },
-          rootFolder: "Algarve Riders",
-          images: ["algarve-riders-available.jpg", "algarve-riders-off-road (7).jpg", "algarve-riders-off-road (6).jpg", "algarve-riders-off-road (5).jpg", "algarve-riders-off-road (4).jpg", "algarve-riders-off-road (3).jpg", "algarve-riders-off-road (2).jpg", "algarve-riders-off-road (1).jpg", "algarve-quad-tours-fun.jpg", "team-building-buggy-tour.jpg", "algarve-riders-off-road.jpg"]
-        },
-        {
-          id: 8,
+          id: 6,
           name: "Aquashow",
           email: "info@aquashow.com",
           logo: "aquashow_logo.png",
