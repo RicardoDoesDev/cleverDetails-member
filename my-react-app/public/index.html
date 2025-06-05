@@ -58,6 +58,72 @@
     <link rel="dns-prefetch" href="https://welovevilamoura.pt">
     <link rel="preconnect" href="https://www.cleverdetails.com">
     <link rel="dns-prefetch" href="https://www.cleverdetails.com">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "We Love Vilamoura",
+        "url": "https://welovevilamoura.pt",
+        "description": "Exclusive benefits and premium experiences in Vilamoura and the Algarve region",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Clever Details",
+          "url": "https://www.cleverdetails.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.cleverdetails.com/images/logo.png"
+          }
+        },
+        "inLanguage": ["en", "pt"],
+        "potentialAction": {
+          "@type": "JoinAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://welovevilamoura.pt/access",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "MembershipCard",
+            "name": "We Love Vilamoura Membership"
+          }
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Clever Details",
+        "url": "https://www.cleverdetails.com",
+        "logo": "https://www.cleverdetails.com/images/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/cleverdetails",
+          "https://www.instagram.com/cleverdetails"
+        ],
+        "subOrganization": {
+          "@type": "Organization",
+          "name": "We Love Vilamoura",
+          "url": "https://welovevilamoura.pt",
+          "areaServed": {
+            "@type": "City",
+            "name": "Vilamoura",
+            "containedIn": {
+              "@type": "State",
+              "name": "Algarve",
+              "containedInPlace": {
+                "@type": "Country",
+                "name": "Portugal"
+              }
+            }
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

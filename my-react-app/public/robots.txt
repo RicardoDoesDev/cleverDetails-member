@@ -1,3 +1,61 @@
-# https://www.robotstxt.org/robotstxt.html
+# We Love Vilamoura - https://welovevilamoura.pt
+# Hosted on Vercel
+
+# Allow all crawlers by default
 User-agent: *
-Disallow:
+Allow: /
+Allow: /*.js
+Allow: /*.css
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.ico
+Allow: /*.woff
+Allow: /*.woff2
+
+# Prevent crawling of error pages and internal routes
+Disallow: /404
+Disallow: /500
+Disallow: /_next
+Disallow: /api/*
+Disallow: /_vercel
+
+# Block common bot-targeted paths
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Allow: /*.js
+Allow: /*.css
+Crawl-delay: 1
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Allow: /*.js
+Allow: /*.css
+Crawl-delay: 2
+
+# Block GPTBot (to prevent content scraping for AI training)
+User-agent: GPTBot
+Disallow: /
+
+# Block Common Crawl
+User-agent: CCBot
+Disallow: /
+
+# Sitemap
+Sitemap: https://welovevilamoura.pt/sitemap.xml
+
+# Cache directives
+Cache-Control: max-age=3600
+
+# Clean parameters
+Clean-Param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&fbclid&gclid
