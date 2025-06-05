@@ -53,9 +53,3 @@ Disallow: /
 
 # Sitemap
 Sitemap: https://welovevilamoura.pt/sitemap.xml
-
-# Cache directives
-Cache-Control: max-age=3600
-
-# Clean parameters
-Clean-Param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&fbclid&gclid
