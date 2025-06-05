@@ -482,6 +482,39 @@ export const appDataPT: AppData = {
         },
         {
           id: 2,
+          name: "Algarve Riders",
+          email: "info@algarveriders.com",
+          logo: "logo_algarveriders.png",
+          type: "Parque Temático",
+          description: "Algarve Riders é uma empresa de locação de motos que oferece uma experiência única com motos de alta performance. É um local ideal para aproveitar um dia de diversão.",
+          locationIds: [4],
+          rating: 5,
+          openingHours: [
+            { day: "Segunda-feira", hours: "08:30 - 18:00" },
+            { day: "Terça-feira", hours: "08:30 - 18:00" },
+            { day: "Quarta-feira", hours: "08:30 - 18:00" },
+            { day: "Quinta-feira", hours: "08:30 - 18:00" },
+            { day: "Sexta-feira", hours: "08:30 - 18:00" },
+            { day: "Sábado", hours: "08:30 - 18:00" },
+            { day: "Domingo", hours: "08:30 - 18:00" }
+          ],
+          address: "Algarve Riders",
+          phone: "+351 289 560 300",
+          socialMedia: {
+            facebook: "https://www.facebook.com/algarveriders/?locale=pt_PT",
+            instagram: "https://www.instagram.com/algarveriders/",
+            website: "https://www.algarveriders.com/pt"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.5144440743125!2d-8.241512908997843!3d37.09286990039514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1acc1c47179d53%3A0xae8f92aa7c2a4f1e!2sAlgarve%20Riders!5e0!3m2!1spt-PT!2spt!4v1748883603455!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% DE DESCONTO -Tours ; 5% DE DESCONTO - Scooter"
+          },
+          rootFolder: "Algarve Riders",
+          images: ["algarve-riders-available.jpg", "algarve-riders-off-road (7).jpg", "algarve-riders-off-road (6).jpg", "algarve-riders-off-road (5).jpg", "algarve-riders-off-road (4).jpg", "algarve-riders-off-road (3).jpg", "algarve-riders-off-road (2).jpg", "algarve-riders-off-road (1).jpg", "algarve-quad-tours-fun.jpg", "team-building-buggy-tour.jpg", "algarve-riders-off-road.jpg"]
+        },
+        {
+          id: 3,
           name: "Aia Racing School",
           email: "racingschool@autodromodoalgarve.com",
           logo: "Autódromo_Internacional_Algarve_logo.png",
@@ -521,7 +554,7 @@ export const appDataPT: AppData = {
             "parceiro_70_racing_school_cf026414_3__2___1_tonemapped2b_1__2.jpg"
           ]
         },{
-          id: 3,
+          id: 4,
           name: "Karting Portimão",
           email: "kia@parkalgar.com",
           logo: "Kartodromoalgarve.png",
@@ -554,7 +587,7 @@ export const appDataPT: AppData = {
           images: ["39129269_2071071279603968_9122454272632422400_n.jpg", "Kartodromo2-scaled.jpg", "490851637_1218406543617808_2741633398730202739_n.jpg", "488211910_1210059391119190_5497740365812582147_n.jpg", "489446312_1210956781029451_2393478272773825535_n.jpg", "kartodromo6-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg", "kartodromo3-pqchj12nib2vumiq0zqzcru0robuxlzilx7rhu5n6o.jpg", "490229418_1218688256922970_8436650453256995830_n.jpg", "IMG_2422.jpg"]
         },
         {
-          id: 4,
+          id: 5,
           name: "Slide & Splash",
           email: "info@slidesplash.com",
           logo: "logo_slidesplash.png",
@@ -587,7 +620,7 @@ export const appDataPT: AppData = {
           images: ["Slide-Splash-Torre-sector-4-e-aereas_3-e1679392334545.webp", "atracoes31.jpg", "Slide-Splash-Water-Park-Algarve-Portugal.jpg", "atracoes39.jpg", "slide-splash-water-slide.jpg", "new-ride-2018-disco-river.jpg", "new-rides-2018.jpg", "black-hole.jpg", "slide-splash-2019 (1).jpg", "the-big-wave.jpg", "big-slides-tower.jpg", "slide-splash-2019.jpg", "slide-2020.jpg"]
         },
         {
-          id: 5,
+          id: 6,
           name: "Zoomarine",
           email: "info@zoomarine.pt",
           logo: "logozoomarine.png",
@@ -618,39 +651,6 @@ export const appDataPT: AppData = {
           },
           rootFolder: "Zoomarine",
           images: ["145.jpg", "145 (1).jpg", "145 (2).jpg", "145 (3).jpg", "145 (4).jpg", "145 (5).jpg", "145 (6).jpg", "145 (7).jpg", "145 (8).jpg", "145 (9).jpg", "145 (10).jpg", "image_processing20240617-9-uc4gqx.jpg", "Zoomarine_2.jpg", "zoomarine.jpg"]
-        },
-        {
-          id: 6,
-          name: "Algarve Riders",
-          email: "info@algarveriders.com",
-          logo: "logo_algarveriders.png",
-          type: "Parque Temático",
-          description: "Algarve Riders é uma empresa de locação de motos que oferece uma experiência única com motos de alta performance. É um local ideal para aproveitar um dia de diversão.",
-          locationIds: [4],
-          rating: 5,
-          openingHours: [
-            { day: "Segunda-feira", hours: "08:30 - 18:00" },
-            { day: "Terça-feira", hours: "08:30 - 18:00" },
-            { day: "Quarta-feira", hours: "08:30 - 18:00" },
-            { day: "Quinta-feira", hours: "08:30 - 18:00" },
-            { day: "Sexta-feira", hours: "08:30 - 18:00" },
-            { day: "Sábado", hours: "08:30 - 18:00" },
-            { day: "Domingo", hours: "08:30 - 18:00" }
-          ],
-          address: "Algarve Riders",
-          phone: "+351 289 560 300",
-          socialMedia: {
-            facebook: "https://www.facebook.com/algarveriders/?locale=pt_PT",
-            instagram: "https://www.instagram.com/algarveriders/",
-            website: "https://www.algarveriders.com/pt"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.5144440743125!2d-8.241512908997843!3d37.09286990039514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1acc1c47179d53%3A0xae8f92aa7c2a4f1e!2sAlgarve%20Riders!5e0!3m2!1spt-PT!2spt!4v1748883603455!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Discount",
-            description: "10% DE DESCONTO -Tours ; 5% DE DESCONTO - Scooter"
-          },
-          rootFolder: "Algarve Riders",
-          images: ["algarve-riders-available.jpg", "algarve-riders-off-road (7).jpg", "algarve-riders-off-road (6).jpg", "algarve-riders-off-road (5).jpg", "algarve-riders-off-road (4).jpg", "algarve-riders-off-road (3).jpg", "algarve-riders-off-road (2).jpg", "algarve-riders-off-road (1).jpg", "algarve-quad-tours-fun.jpg", "team-building-buggy-tour.jpg", "algarve-riders-off-road.jpg"]
         },
         {
           id: 7,
