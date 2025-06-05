@@ -252,7 +252,7 @@ export const appDataPT: AppData = {
           },
           rootFolder: "watersports vilamoura",
           images: ["IMG_1046-scaled.webp", "photo5jpg.jpg", "foto1.webp", "jet-boat-ride-vilamoura.jpg", "Parasailing-Vilamoura-Experience-scaled.webp", "speed-boat-algarvexcite.jpg", "parasailing-boat-trips.jpg", "common-dolphin.jpg", "Fishing-In-Algarve.webp", "Dolphins-Algarve-.webp"]
-        }
+        },
       ]
     },
     {
@@ -1007,7 +1007,40 @@ export const appDataPT: AppData = {
           rootFolder: "Matilde",
           images: ["beauty3.jpg", "beauty4.jpg"],
           isVisible: false
-        }
+        },
+        {
+          id: 3,
+          name: "kjbjgig",
+          email: "teresa.estetica@live.com.pt",
+          logo: "277158294_3199246580396467_9054406006485547937_n-removebg-preview.png",
+          type: "Serviços de Beleza",
+          description: "Teresa é esteticista especializada em serviços como extensão de unhas (gel/acrílico), pedicure/manicure, depilações, extensões de pestanas e tratamentos faciais. Oferece também massagens de relaxamento, tratamentos corporais como cavitação e drenagem linfática, além de maquilhagem profissional. Com uma abordagem personalizada, Teresa proporciona cuidados que visam realçar a beleza e promover o bem-estar dos seus clientes.",
+          locationIds: [3],
+          rating: 5,
+          openingHours: [
+            { day: "Segunda-feira", hours: "Fechado" },
+            { day: "Terça-feira", hours: "10:00 - 19:00" },
+            { day: "Quarta-feira", hours: "10:00 - 19:00" },
+            { day: "Quinta-feira", hours: "10:00 - 19:00" },
+            { day: "Sexta-feira", hours: "10:00 - 19:00" },
+            { day: "Sábado", hours: "10:00 - 19:00" },
+            { day: "Domingo", hours: "Fechado" }
+          ],
+          address: "Vilamoura",
+          phone: "+351 282 000 000",
+          socialMedia: {
+            facebook: "https://www.facebook.com/teresa.estetica.1/?locale=pt_PT",
+            instagram: "https://www.instagram.com/teresaestetica/",
+            website: "https://teresaestetica.blogspot.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.2410575051053!2d-8.119969409001797!3d37.075565200412285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab596853f1e61%3A0x4311763f59cdf941!2sTeresa%20Esteticista!5e0!3m2!1spt-PT!2spt!4v1748883059998!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "15% DE DESCONTO"
+          },
+          rootFolder: "Teresa",
+          images: ["480701348_4010568695930914_2910058108693305940_n.jpg", "491933473_4066849246969525_5195761018195095810_n.jpg", "492114092_4066954960292287_2649987048273042468_n.jpg", "492200895_4066850363636080_3484388594312717179_n.jpg", "277158294_3199246580396467_9054406006485547937_n.jpg", "489830761_1237845965017546_3086407899245374858_n.jpg"]
+        },
       ]
     },
     {
