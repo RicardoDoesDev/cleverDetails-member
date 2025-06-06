@@ -851,6 +851,7 @@ export const appDataFR: AppData = {
           logo: "DuoSpacare.png",
           type: "Bien-être",
           description: "Le Duo Spa & Life Care, situé au Cegonha Country Club à Vilamoura, propose des expériences bien-être avec circuit spa, sauna, hammam et soins comme l'exfoliation ou l'Iyashi Dome, pour des moments de détente et de rajeunissement.",
+          cardInfo:"Vous devez présenter votre carte de membre à votre arrivée.",
           locationIds: [3],
           openingHours: [
             { day: "Lundi", hours: "10:00 - 13:00, 14:30 - 19:00" },
@@ -891,6 +892,7 @@ export const appDataFR: AppData = {
           logo: "DmedClinic.png",
           type: "Bien-être",
           description: "La DMed Clinic propose des services médicaux à domicile dans toute la région, incluant des consultations de Médecine Générale, Psychologie, Nutrition, Psychiatrie et Télémédecine, évitant les déplacements inutiles.",
+          cardInfo:"Pour toute assistance médicale, veuillez contacter directement la clinique DMed au +351 916 546 408 et indiquer que vous êtes client de Clever Details.",
           locationIds: [3],
           openingHours: [
             { day: "Lundi", hours: "24h" },

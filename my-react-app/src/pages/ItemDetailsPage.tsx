@@ -110,9 +110,12 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
 
     return (
       <div className="bg-secondary p-6 rounded-lg mb-8 w-full md:w-3/4 mx-auto text-center text-white">
-        <h3 className="text-3xl md:text-6xl mb-2">{item.specialOffer?.description} - {t.itemDetails.specialOffer}</h3>
-        {/* show bookingNotice2 if gastronomy else bookingNotice */}
-        {category === 'gastronomy' ? (
+        <h3 className="text-3xl md:text-6xl font-bold p-6">{item.specialOffer?.description}</h3>
+        <h3 className="text-3xl md:text-6xl mb-8">{t.itemDetails.specialOffer}</h3>
+        {/* show cardInfo if item has cardInfo or bookingNotice2 if gastronomy else bookingNotice */}
+        {item.cardInfo ? (
+          <p className="text-lg md:text-2xl font-bold mb-6">{item.cardInfo}</p>
+        ) : category === 'gastronomy' ? (
           <p className="text-lg md:text-2xl font-bold mb-6">{t.itemDetails.bookingNotice2}</p>
         ) : (
           <>
