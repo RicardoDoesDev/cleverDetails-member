@@ -268,15 +268,27 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
       {/* Description and Reviews Section */}
       <div className="relative left-[50%] right-[50%] mx-[-50vw] w-screen bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
+          <h2 className="text-2xl md:text-4xl mb-6 font-bold">{t.itemDetails.details}</h2>
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Left Column - Details and Reviews */}
             <div className="flex-1">
 
               {/* Location */}
               <div className="flex items-center text-primary mb-8">
-                <span className="mr-2">📍</span>
-                {getLocationName(item.locationIds, language)}
+                <span className="mr-2 font-black font-bold">📍</span> 
+                <span className="font-black font-bold">{getLocationName(item.locationIds, language)}</span>
               </div>
+
+              {/* Type */}
+              {item.type && (
+                <div className="flex items-center text-primary mb-8">
+                  <span className="mr-2 font-black">☞</span>
+                  <span className="mr-2 font-black">{item.type}</span>
+                  <span className="mr-2 font-bold">
+                    {item.priceRange !== undefined && ` - ${item.priceRange === 1 ? '€' : item.priceRange === 2 ? '€€' : '€€€'}`}
+                  </span>
+                </div>
+              )}
 
               {/* Map - Shown on mobile */}
               <div className="lg:hidden mb-8">
@@ -295,7 +307,6 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
 
               {/* Details */}
               <div className="mt-8">
-                <h2 className="text-2xl md:text-4xl mb-6 font-bold">{t.itemDetails.details}</h2>
                 <div className="space-y-4">
                   {/* Opening Hours */}
                   <div className="mb-6">
