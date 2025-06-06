@@ -215,13 +215,20 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
     return (
       <div className="bg-secondary p-6 rounded-lg mb-8 w-full md:w-3/4 mx-auto text-center text-white">
         <h3 className="text-3xl md:text-6xl mb-2">{item.specialOffer?.description} - {t.itemDetails.specialOffer}</h3>
-        <p className="text-lg md:text-2xl font-bold mb-6">{t.itemDetails.bookingNotice}</p>
-        <button
-          onClick={handleContactClick}
-          className="bg-white text-secondary hover:bg-primary hover:text-white transition-colors duration-300 font-bold py-3 px-8 rounded-lg text-xl"
-        >
-          {t.itemDetails.bookNow}
-        </button>
+        {/* show bookingNotice2 if gastronomy else bookingNotice */}
+        {category === 'gastronomy' ? (
+          <p className="text-lg md:text-2xl font-bold mb-6">{t.itemDetails.bookingNotice2}</p>
+        ) : (
+          <>
+            <p className="text-lg md:text-2xl font-bold mb-6">{t.itemDetails.bookingNotice}</p>
+            <button
+              onClick={handleContactClick}
+              className="bg-white text-secondary hover:bg-primary hover:text-white transition-colors duration-300 font-bold py-3 px-8 rounded-lg text-xl"
+            >
+              {t.itemDetails.bookNow}
+            </button>
+          </>
+        )}
       </div>
     );
   };
