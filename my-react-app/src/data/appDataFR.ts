@@ -14,7 +14,6 @@ export const appDataFR: AppData = {
           name: "Ocean Quest",
           email: "info@oceanquest.com",
           logo: "Ocean Quest.png",
-          type: "Boat Tours",
           description: "Explorez le meilleur de la côte de l'Algarve avec Ocean Quest. Croisières en bateau, grottes, dauphins et parasailing à Vilamoura, avec une équipe passionnée de fournir des expériences uniques à la mer. Parce que la vie est belle.",
           locationIds: [3],
           openingHours: [
@@ -46,7 +45,6 @@ export const appDataFR: AppData = {
           name: "Cool Charters",
           email: "info@coolchartersvilamoura.com",
           logo: "Cool-Charters-BSQUAREwhite.png",
-          type: "Excursions en Bateau",
           description: "Offre des expériences nautiques personnalisées, idéales pour les occasions spéciales comme les anniversaires, les enterrements de vie de garçon/jeune fille, les mariages ou les événements d'entreprise. Les excursions comprennent des visites de grottes, de plages isolées et l'observation des dauphins, ainsi que des activités nautiques comme le jet ski. L'équipe dévouée assure un service exceptionnel, créant des souvenirs inoubliables en mer.",
           locationIds: [3],
           openingHours: [
@@ -91,7 +89,6 @@ export const appDataFR: AppData = {
           name: "AlgarExperience",
           email: "info@algarexperience.com",
           logo: "algarexperience-vect.svg",
-          type: "Boat Tours",
           description: "AlgarExperience est un leader dans le tourisme maritime dans l'Algarve, offrant des expériences uniques comme des visites de grottes, des observations de dauphins, du parasailing et des barbecues sur la plage. Avec un parc de bateaux modernes et une équipe dédiée, il offre des moments inoubliables à la mer.",
           locationIds: [3],
           openingHours: [
@@ -123,7 +120,6 @@ export const appDataFR: AppData = {
           name: "Condor de Vilamoura",
           email: "info@condorvilamoura.com",
           logo: "condor_logo branco.avif",
-          type: "Hotel",
           description: "Découvrez la côte de l'Algarve sur le majestueux Condor de Vilamoura, un schooner de 34 mètres de long inspiré par les schooners américains du 19ème siècle. Avec une capacité pour 120 passagers, il offre des croisières de 3 heures à Praia da Galé et des croisières de journée à Benagil, avec des escales pour la plage, l'exploration des grottes et la dégustation d'un délicieux barbecue sur la plage. Une expérience unique pour toute la famille, combinant confort, tradition et paysages impressionnants.",
           locationIds: [3],
           openingHours: [
@@ -155,7 +151,6 @@ export const appDataFR: AppData = {
           name: "Vilamoura WaterSports Centre",
           email: "info@vilamourawatersportscentre.com",
           logo: "Vilamoura-Watersports-Centre-logo-Design-01-e1602070771419.webp",
-          type: "Water Sports",
           description: "Situé à Vilamoura Marina, le Vilamoura Watersports Centre offre une large gamme d'activités aquatiques pour tous les âges. Des croisières en bateau aux grottes de Benagil, observation de dauphins, parasailing, jet ski, wakeboard, pêche et locations de bateaux privés, il y a des options pour tout le monde. Avec une équipe expérimentée et des équipements de qualité, ils garantissent la sécurité et le plaisir dans toutes les expériences. Ouvert quotidiennement, c'est le lieu idéal pour explorer la côte de l'Algarve de manière unique.",
           locationIds: [3],
           openingHours: [
@@ -187,7 +182,6 @@ export const appDataFR: AppData = {
           name: "Passeios Ria Formosa",
           email: "info@passeiosriaformosa.com",
           logo: "riaformosa.png",
-          type: "Tours en Bateau",
           description: "Explorez la beauté naturelle de la Ria Formosa avec nos visites guidées. Observez les oiseaux marins, découvrez des îles désertes et apprenez-en davantage sur l'écosystème unique de cette zone protégée. Visites disponibles pour petits et grands groupes, avec des guides expérimentés et compétents.",
           locationIds: [0],
           openingHours: [
@@ -219,7 +213,6 @@ export const appDataFR: AppData = {
           name: "Formosamar",
           email: "info@formosamar.com",
           logo: "formosamar-main-logo-landscape-white.svg",
-          type: "Boat Tours",
           description: "Formosamar, située à Faro, propose des expériences authentiques dans le Parc Naturel de la Ria Formosa. Elle propose des excursions en bateau, des observations d'oiseaux et de dauphins, ainsi que des locations de bateaux, de kayaks, de vélos et d'équipements nautiques. Idéal pour ceux qui souhaitent explorer la nature et la culture locale avec des guides expérimentés. L'entreprise est certifiée en écotourisme et s'engage dans des pratiques durables.",
           locationIds: [5],
           openingHours: [
@@ -445,7 +438,6 @@ export const appDataFR: AppData = {
           name: "Family Golf Park",
           email: "info@familygolfpark.com",
           logo: "family-golf-park-logo-white.png",
-          type: "Golf",
           description: "Situé au cœur de Vilamoura, le Family Golf Park est un lieu incontournable pour les familles et les groupes à la recherche de divertissement et de loisir. Avec deux parcours de mini-golf thématiques inspirés de la Via Appia et de la Via Lusitânia, le parc offre une expérience unique au milieu de jardins luxurieux et d'architecture romaine. En outre, il dispose d'une zone de jeux pour les enfants, d'une salle de jeux, d'une bar-snack avec esplanade et même d'un train touristique qui passe par les points principaux de Vilamoura. Ouvert tous les jours, le Family Golf Park est parfait pour un jour de divertissement avec la famille.",
           locationIds: [3],
           openingHours: [
@@ -477,7 +469,6 @@ export const appDataFR: AppData = {
           name: "Algarve Riders",
           email: "info@algarveriders.com",
           logo: "logo_algarveriders.png",
-          type: "Theme Park",
           description: "Algarve Riders est une entreprise de location de motos qui offre une expérience unique avec des motos de haute performance. C'est un endroit idéal pour profiter d'un après-midi de divertissement.",
           locationIds: [4],
           openingHours: [
@@ -509,7 +500,6 @@ export const appDataFR: AppData = {
           name: "Aia Racing School",
           email: "racingschool@autodromodoalgarve.com",
           logo: "Autódromo_Internacional_Algarve_logo.png",
-          type: "Expérience de Course",
           description: "Située sur l'Autodrome International de l'Algarve à Portimão, elle propose des expériences de conduite sportive dans des voitures haute performance comme Porsche, Mercedes et autres. Avec des instructeurs expérimentés et une infrastructure d'excellence, elle offre une immersion sûre et passionnante dans le monde du sport automobile.",
           locationIds: [6],
           openingHours: [
@@ -549,7 +539,6 @@ export const appDataFR: AppData = {
           name: "Karting Portimão",
           email: "kia@parkalgar.com",
           logo: "Kartodromoalgarve.png",
-          type: "Karting",
           description: "Le Karting International de l'Algarve, à Portimão, est l'un des plus grands circuits de karting d'Europe, avec 1.531 km de longueur. Il offre des expériences pour toutes les âges, des enfants aux adultes, avec des karts adaptés à différents groupes d'âge et niveaux d'expérience. En plus d'être un lieu pour les compétitions officielles et les événements privés, il dispose d'une infrastructure complète, y compris un restaurant, des boxes et des boutiques.",
           locationIds: [6],
           openingHours: [
@@ -581,7 +570,6 @@ export const appDataFR: AppData = {
           name: "Slide & Splash",
           email: "info@slidesplash.com",
           logo: "logo_slidesplash.png",
-          type: "Parc Aquatique",
           description: "Le Slide & Splash, à Lagoa, est un parc aquatique familial avec diverses attractions pour tous les âges. En plus des toboggans excitants, il propose des zones pour enfants, des espaces de détente et des spectacles d'animaux. Idéal pour une journée de divertissement en Algarve.\n\nHoraires Saisonniers:\n- Juin: 10:00 - 17:30\n- 1 Juillet au 12 Septembre: 10:00 - 18:00\n- 13 Septembre au 31 Octobre: 10:00 - 17:00",
           locationIds: [7],
           openingHours: [
@@ -613,7 +601,6 @@ export const appDataFR: AppData = {
           name: "Zoomarine",
           email: "info@zoomarine.pt",
           logo: "logozoomarine.png",
-          type: "Theme Park",
           description: "Zoomarine, situé près d'Albufeira, est un parc thématique qui combine divertissement, éducation et nature. Avec des spectacles de dauphins, des lions-marins, des oiseaux tropicaux, des toboggans d'eau et une plage artificielle, c'est parfait pour un jour inoubliable avec la famille. Une aventure magique au cœur de l'Algarve!\n\nHoraires Saisonniers:\n- Mars, Octobre, Novembre: 10:00 - 17:00\n- Avril à 22 Juin et Septembre 10 à 28: 10:00 - 18:00\n- 23 Juin à 7 Septembre: 10:00 - 19:30",
           locationIds: [4],
           openingHours: [
@@ -645,7 +632,6 @@ export const appDataFR: AppData = {
           name: "Aquashow",
           email: "info@aquashow.com",
           logo: "aquashow_logo.png",
-          type: "Theme Park",
           description: "Aquashow Outdoor est le plus grand parc aquatique en plein air de Portugal, situé au cœur de l'Algarve. Avec des toboggans géants, une piscine à vagues, des attractions pour toutes les âges et beaucoup d'animation, c'est le lieu idéal pour un jour d'été plein de divertissement, d'adrénaline et de souvenirs familiaux ou entre amis.",
           locationIds: [8],
           openingHours: [
@@ -671,7 +657,7 @@ export const appDataFR: AppData = {
           },
           rootFolder: "Aquashow",
           images: ["IMG_2075.jpg", "Galeria-03.jpg", "aquashow-park (6).jpg", "air-race.jpg", "aquashow-park (5).jpg", "aquashow-park (4).jpg", "aquashow-park (3).jpg", "aquashow-park (2).jpg", "aquashow-park (1).jpg", "aquashow-park.jpg"]
-        },
+        }
       ]
     },
     {
@@ -686,7 +672,6 @@ export const appDataFR: AppData = {
           name: "Quinta do Canhoto",
           email: "info@quintadocanhoto.com",
           logo: "LOGO_QDC_WHITE_NEW.png",
-          type: "Visites de Caves",
           description: "La Quinta do Canhoto, à Albufeira, est une référence en matière de vins de l'Algarve, alliant tradition familiale et innovation. Elle propose des dégustations de vins et des expériences uniques d'œnotourisme. Les visites doivent être réservées 24h à l'avance.",
           locationIds: [4],
           openingHours: [
@@ -718,7 +703,6 @@ export const appDataFR: AppData = {
           name: "Morgado do Quintão",
           email: "info@morgadodoquintao.pt",
           logo: "Morgado do quintao.png",
-          type: "Winery Tours",
           description: "Le Morgado do Quintão, à Lagoa, combine tradition et durabilité dans la production de vins authentiques. Il propose des dégustations de vins et des expériences uniques dans le domaine de l'enotourisme.",
           locationIds: [7],
           openingHours: [
@@ -750,7 +734,6 @@ export const appDataFR: AppData = {
           name: "Adega do Cantor",
           email: "info@adegadocantor.com",
           logo: "adega-do-cantor.png",
-          type: "Visites de Caves",
           description: "L'Adega do Cantor, propriété du célèbre chanteur Sir Cliff Richard, produit des vins primés comme le Vida Nova. Elle propose des visites guidées des vignobles et de la cave, avec des dégustations de vins et des expériences gastronomiques uniques.",
           locationIds: [4],
           openingHours: [
@@ -805,7 +788,6 @@ export const appDataFR: AppData = {
           name: "7 Seven Spa Vilamoura",
           email: "7 Seven Spa Vilamoura@cleverdetails.com",
           logo: "7spa.svg",
-          type: "Spa Complet",
           description: "Le 7 Seven Spa, situé au Hilton Vilamoura As Cascatas Golf Resort & Spa, offre une expérience bien-être avec 14 salles de soins, un circuit d'hydrothérapie, sauna, hammam, jacuzzi et jardin zen. Idéal pour se détendre et se ressourcer.",
           locationIds: [3],
           openingHours: [
@@ -849,7 +831,6 @@ export const appDataFR: AppData = {
           name: "Duo Spa & Life Care",
           email: "info@duospa.com",
           logo: "DuoSpacare.png",
-          type: "Bien-être",
           description: "Le Duo Spa & Life Care, situé au Cegonha Country Club à Vilamoura, propose des expériences bien-être avec circuit spa, sauna, hammam et soins comme l'exfoliation ou l'Iyashi Dome, pour des moments de détente et de rajeunissement.",
           cardInfo:"Vous devez présenter votre carte de membre à votre arrivée.",
           locationIds: [3],
@@ -890,7 +871,6 @@ export const appDataFR: AppData = {
           name: "DMed Clinic",
           email: "info@dmedclinic.com",
           logo: "DmedClinic.png",
-          type: "Bien-être",
           description: "La DMed Clinic propose des services médicaux à domicile dans toute la région, incluant des consultations de Médecine Générale, Psychologie, Nutrition, Psychiatrie et Télémédecine, évitant les déplacements inutiles.",
           cardInfo:"Pour toute assistance médicale, veuillez contacter directement la clinique DMed au +351 916 546 408 et indiquer que vous êtes client de Clever Details.",
           locationIds: [3],
@@ -933,7 +913,6 @@ export const appDataFR: AppData = {
           name: "Teresa",
           email: "teresa.estetica@live.com.pt",
           logo: "277158294_3199246580396467_9054406006485547937_n-removebg-preview.png",
-          type: "Beauty Services",
           description: "Teresa est un esthéticien spécialisé dans les services de manucure (gel/acrylique), pédicure/manucure, dépilations, extensions de cils et des traitements visage. Elle offre également des massages de relaxation, des traitements corporels comme la cavitation et la démangeaison lymphatique, ainsi que la maquillage professionnel. Avec une approche personnalisée, Teresa offre des soins qui visent à mettre en valeur la beauté et à promouvoir le bien-être de ses clients.",
           locationIds: [3],
           openingHours: [
@@ -965,7 +944,6 @@ export const appDataFR: AppData = {
           name: "Matilde",
           email: "teresa.estetica@live.com.pt",
           logo: "/images/logo/matilde.jpg",
-          type: "Beauty Services",
           description: "Expertise en beauté et traitements esthétiques",
           locationIds: [3],
           openingHours: [
@@ -1004,7 +982,6 @@ export const appDataFR: AppData = {
           name: "Chef André Simão",
           email: "asimao2@hotmail.com",
           logo: "teste",
-          type: "Personal Chef",
           description: "Chef executivo de cozinha do Monte Rei onde se encontra o restaurante recomendado pelo guia Michelin, Vistas Monte Rei. Proporciona estilos de cozinha descontraídos, para juntar amigos e familia à mesa com menus de tapas & drinks, barbecue, menu algarvio ou menu de degustação em 5 momentos para celebrações mais pormenorizadas.",
           locationIds: [6],
           openingHours: [
@@ -1036,7 +1013,6 @@ export const appDataFR: AppData = {
           name: "Fancy Kitchen Algarve",
           email: "info@fancykitchenalgarve.com",
           logo: "Fancy kitchen.webp",
-          type: "Personal Chef",
           description: "A Fancy Kitchen Algarve oferece experiências gastronómicas exclusivas com chefs privados e catering personalizado, elevando cada momento com requinte e sabor.",
           locationIds: [4],
           openingHours: [
