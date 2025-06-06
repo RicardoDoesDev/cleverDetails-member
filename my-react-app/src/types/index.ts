@@ -35,6 +35,7 @@ export interface Item {
     type: string;
     description: string;
   };
+  priceRange?: number;
   cuisine?: string;
   price?: string;
   duration?: string;

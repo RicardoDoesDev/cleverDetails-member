@@ -260,9 +260,10 @@ export const appDataPT: AppData = {
           name: "Gran Sorvete",
           email: "info@gransorvete.com",
           logo: "GranSorvete.avif",
-          type: "Brunch Café",
+          type: "Café e Gelataria",
           description: "O Gran Sorvete, na Vilamoura Marina, é conhecido por seu sorvete artesanal italiano, crepes e waffles, servidos num ambiente acolhedor com vista para o mar.",
           locationIds: [3],
+          priceRange: 1,
           openingHours: [
             { day: "Segunda-feira", hours: "11:00 - 23:00" },
             { day: "Terça-feira", hours: "11:00 - 23:00" },
@@ -295,6 +296,7 @@ export const appDataPT: AppData = {
           type: "Steakhouse",
           description: "O Retinto Rodízio & Wine, em Vilamoura, destaca-se pelo seu buffet de carne brasileira e argentina, acompanhado por uma seleção de vinhos cuidadosa. Ambiente acolhedor e excelente serviço.",
           locationIds: [3],
+          priceRange: 2,
           openingHours: [
             { day: "Segunda-feira", hours: "18:30 - 23:30" },
             { day: "Terça-feira", hours: "18:30 - 23:30" },
@@ -324,9 +326,10 @@ export const appDataPT: AppData = {
           name: "Authentic",
           email: "reservations@authentic-restaurant.pt",
           logo: "Logo-Authentic-dourado.png",
-          type: "Restaurante Gourmet",
+          type: "Cozinha Internacional",
           description: "O restaurante Authentic, localizado na Quinta do Lago, oferece uma experiência gastronómica sofisticada, combinando cozinha clássica portuguesa com um toque contemporâneo, num ambiente de luxo e requinte.",
           locationIds: [1],
+          priceRange: 3,
           openingHours: [
             { day: "Segunda-feira", hours: "Fechado" },
             { day: "Terça-feira", hours: "Fechado" },
@@ -356,9 +359,10 @@ export const appDataPT: AppData = {
           name: "CafeZique",
           email: "cafeziquept@gmail.com",
           logo: "CAFEZIQUE-487bb404-679w.webp",
-          type: "Fine Dining",
+          type: "Internacional & Mediterrâneo",
           description: "O restaurante CaféZique, em Loulé, combina sabores algarvios com técnicas contemporâneas, oferecendo uma experiência gastronómica única num ambiente relaxado ao lado do castelo.",
           locationIds: [2],
+          priceRange: 2,
           openingHours: [
             { day: "Segunda-feira", hours: "19:00 - 22:30" },
             { day: "Terça-feira", hours: "19:00 - 22:30" },
@@ -391,6 +395,7 @@ export const appDataPT: AppData = {
           type: "Restaurante Gourmet",
           description: "O restaurante A Ver Tavira, galardoado com uma estrela Michelin, oferece uma experiência gastronómica única no coração histórico de Tavira, com sabores algarvios e uma vista deslumbrante. Sob a orientação do chef Luís Brito, alia tradição e criatividade num menu inovador.",
           locationIds: [0],
+          priceRange: 3,
           openingHours: [
             { day: "Segunda-feira", hours: "Fechado" },
             { day: "Terça-feira", hours: "18:30 - 21:30" },
