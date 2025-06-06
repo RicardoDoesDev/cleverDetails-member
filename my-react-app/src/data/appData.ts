@@ -17,7 +17,6 @@ export const appData: AppData = {
           type: "Boat Tours",
           description: "Explore the best of the Algarve coast with Ocean Quest. Boat tours, caves, dolphins and parasailing from Vilamoura, with a team passionate about providing unique experiences at sea. Because life is beautiful.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "09:00 - 18:00" },
             { day: "Tuesday", hours: "09:00 - 18:00" },
@@ -51,7 +50,6 @@ export const appData: AppData = {
           //translate to english
           description: "Offers personalized nautical experiences, ideal for special occasions such as birthdays, bachelor(ette) parties, weddings or corporate events. Tours include visits to caves, isolated beaches and dolphin watching, as well as aquatic activities like jet ski. The dedicated team ensures exceptional service, creating unforgettable memories at sea.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "09:00 - 00:00" },
             { day: "Tuesday", hours: "09:00 - 00:00" },
@@ -98,7 +96,6 @@ export const appData: AppData = {
           //translate to english
           description: "AlgarExperience is a leader in maritime tourism in the Algarve, offering unique experiences such as cave tours, dolphin watching, parasailing and barbecues on the beach. With a modern fleet and a dedicated team, it provides unforgettable moments at sea.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "09:00 - 20:00" },
             { day: "Tuesday", hours: "09:00 - 20:00" },
@@ -132,7 +129,6 @@ export const appData: AppData = {
           //translate to english
           description: "Discover the Algarve coast on the majestic Condor de Vilamoura, a 34-meter-long schooner inspired by American schooners of the 19th century. With capacity for up to 120 passengers, it offers 3-hour cruises to Praia da Galé and full-day trips to Benagil, with stops for swimming, exploring caves and enjoying a delicious barbecue on the beach. A unique experience for the whole family, combining comfort, tradition and stunning landscapes.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "09:00 - 18:00" },
             { day: "Tuesday", hours: "09:00 - 18:00" },
@@ -165,7 +161,6 @@ export const appData: AppData = {
           type: "Water Sports",
           description: "Located in the Vilamoura Marina, the Vilamoura Watersports Centre offers a wide range of aquatic activities for all ages. From boat tours to Benagil caves, dolphin watching, parasailing, jet ski, wakeboard, fishing and private boat rentals, there are options for everyone. With an experienced team and quality equipment, they ensure safety and fun in all experiences. Open daily, it is the perfect place to explore the Algarve coast in a unique way.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "09:00 - 23:00" },
             { day: "Tuesday", hours: "09:00 - 23:00" },
@@ -198,7 +193,6 @@ export const appData: AppData = {
           type: "Boat Tours",
           description: "Explore the Ria Formosa with private tours in sailboats, speedboats, or traditional boats. Observe dolphins, seahorses, and birds, or enjoy unique experiences such as oysters with champagne, romantic dinners, exclusive catamaran trips, and kayak rentals. An invitation to discover the Algarve's nature with charm and authenticity.",
           locationIds: [5],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "08:00 - 20:00" },
             { day: "Tuesday", hours: "08:00 - 20:00" },
@@ -231,7 +225,6 @@ export const appData: AppData = {
           type: "Boat Tours",
           description: "Formosamar, located in Faro, offers authentic experiences in the Ria Formosa Natural Park. It offers boat tours, bird and dolphin watching, as well as boat rentals, kayaks, bicycles and nautical equipment. Ideal for those who want to explore the local nature and culture with experienced guides. The company is certified in ecotourism and committed to sustainable practices.",
           locationIds: [5],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "09:00 - 19:00" },
             { day: "Tuesday", hours: "09:00 - 19:00" },
@@ -273,7 +266,6 @@ export const appData: AppData = {
           type: "Brunch Café",
           description: "The Gran Sorvete, in the Vilamoura Marina, is known for its artisanal Italian ice cream, crepes and waffles, served in a cozy environment with a view of the sea.",
           locationIds: [3],
-          rating: 4,
           openingHours: [
             { day: "Monday", hours: "11:00 - 23:00" },
             { day: "Tuesday", hours: "11:00 - 23:00" },
@@ -306,7 +298,6 @@ export const appData: AppData = {
           type: "Steakhouse",
           description: "The Retinto Rodízio & Wine, in Vilamoura, stands out for its Brazilian and Argentine meat buffet, accompanied by a careful selection of wines. Cozy environment and excellent service.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "18:30 - 23:30" },
             { day: "Tuesday", hours: "18:30 - 23:30" },
@@ -333,39 +324,6 @@ export const appData: AppData = {
         },
         {
           id: 3,
-          name: "A ver Tavira",
-          email: "restaurante@avertavira.pt",
-          logo: "AverTavira.png",
-          type: "Fine Dining",
-          description: "The A Ver Tavira restaurant, awarded with a Michelin star, offers a unique gastronomic experience in the historic center of Tavira, with Algarvian flavors and a stunning view. Under the command of chef Luís Brito, combines tradition and creativity in an innovative menu.",
-          locationIds: [0],
-          rating: 5,
-          openingHours: [
-            { day: "Monday", hours: "Closed" },
-            { day: "Tuesday", hours: "18:30 - 21:30" },
-            { day: "Wednesday", hours: "12:00 - 14:30, 18:30 - 21:30" },
-            { day: "Thursday", hours: "12:00 - 14:30, 18:30 - 21:30" },
-            { day: "Friday", hours: "12:00 - 14:30, 18:30 - 21:30" },
-            { day: "Saturday", hours: "12:00 - 14:30, 18:30 - 21:30" },
-            { day: "Sunday", hours: "Closed" }
-          ],
-          address: "Rua de Tavira, 12",
-          phone: "912 345 678",
-          socialMedia: {
-            facebook: "https://www.facebook.com/avertavira.restaurante/",
-            instagram: "https://www.instagram.com/avertavirarestaurante/",
-            website: "https://avertavira.com/"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.1350356455455!2d-7.653902723227645!3d37.125702272156204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd100379c4264773%3A0xca74ccd84b4f6fa!2sRestaurante%20A%20Ver%20Tavira!5e0!3m2!1spt-PT!2spt!4v1748882657083!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Welcome Drink",
-            description: "Welcome Glass of Champagne"
-          },
-          rootFolder: "A ver Tavira",
-          images: ["borrego-feijao-bago-de.jpg", "rooftop-tavira.webp", "chefe-luis-brito.jpg", "cavala-marinada-e-gaspacho.jpg", "peixe-de-linha.jpg", "carabineiro-caril-couve.jpg", "the-detailed-combinations.jpg", "each-plate-prepared-with.jpg", "caption.jpg", "ce86969e3cec4b7bb0d0cde9e123fa0c.webp"]
-        },
-        {
-          id: 4,
           name: "Authentic",
           email: "reservations@authentic-restaurant.pt",
           logo: "Logo-Authentic-dourado.png",
@@ -373,7 +331,6 @@ export const appData: AppData = {
           //translate to english
           description: "The Authentic restaurant, located in Quinta do Lago, offers a sophisticated gastronomic experience, combining classic Portuguese cuisine with a contemporary touch, in a luxurious and refined environment.",
           locationIds: [1],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "Closed" },
             { day: "Tuesday", hours: "Closed" },
@@ -399,14 +356,13 @@ export const appData: AppData = {
           images: ["83dcbf96-9726-4f1b-a1c7-c13c5f223b98.avif", "5e949c5e-060e-457b-ad67-b7597677c446.avif", "44aa29bd-0300-47b5-9ba5-83d8b8b19bd1.avif", "4d07f2e9-70b3-4b8b-a1e1-91fe37279165.avif", "843ccb2d-bf51-4c6a-bf0d-24ab6463b44c.avif", "ff05a4b6-f867-4243-9e4b-7141f87220af.avif", "c4bd01b2-7c29-405a-94d6-b566a0328e36.avif", "44cf2c78-1fec-4650-9ed2-eedaf4708a25.avif", "036d2880-7465-460b-9c18-61260a3de321.avif", "f818d5b4-5d61-4cc5-b0eb-e90fd92ac501.avif"]
         },
         {
-          id: 5,
+          id: 4,
           name: "CafeZique",
           email: "cafeziquept@gmail.com",
           logo: "CAFEZIQUE-487bb404-679w.webp",
           type: "Fine Dining",
           description: "The CaféZique restaurant, in Loulé, combines Algarvian flavors with contemporary techniques, offering a unique gastronomic experience in a relaxed environment next to the castle.",
           locationIds: [2],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "19:00 - 22:30" },
             { day: "Tuesday", hours: "19:00 - 22:30" },
@@ -430,7 +386,39 @@ export const appData: AppData = {
           },
           rootFolder: "CafeZique",
           images: ["0c8e01ad-d9ca-4b18-af60-26a700b19e31.avif", "b7455fd9-1912-4dc4-9d75-b6e3c18c21e1.avif", "c10b8475-9033-4f81-96a7-89723f3537a6.avif", "562a5999-384a-4fcf-876a-191a283c4417.avif", "1fc2a2ef-0625-4d3c-a43b-538301aad3c4.avif", "eb5af52c-c6c9-411a-87ba-578fa3de1e3f.avif", "47a07484-d88c-447f-91ed-4c7bf0a542c3.avif", "d59e735d-141e-4359-b024-3352c31e5b83.avif", "cff64c57-1e91-4133-a445-f033ab8f5838.avif", "98b3ee01-5726-41de-93f9-23ce6da1c1b7.avif"]
-        }
+        },
+        {
+          id: 5,
+          name: "A ver Tavira",
+          email: "restaurante@avertavira.pt",
+          logo: "AverTavira.png",
+          type: "Fine Dining",
+          description: "The A Ver Tavira restaurant, awarded with a Michelin star, offers a unique gastronomic experience in the historic center of Tavira, with Algarvian flavors and a stunning view. Under the command of chef Luís Brito, combines tradition and creativity in an innovative menu.",
+          locationIds: [0],
+          openingHours: [
+            { day: "Monday", hours: "Closed" },
+            { day: "Tuesday", hours: "18:30 - 21:30" },
+            { day: "Wednesday", hours: "12:00 - 14:30, 18:30 - 21:30" },
+            { day: "Thursday", hours: "12:00 - 14:30, 18:30 - 21:30" },
+            { day: "Friday", hours: "12:00 - 14:30, 18:30 - 21:30" },
+            { day: "Saturday", hours: "12:00 - 14:30, 18:30 - 21:30" },
+            { day: "Sunday", hours: "Closed" }
+          ],
+          address: "Rua de Tavira, 12",
+          phone: "912 345 678",
+          socialMedia: {
+            facebook: "https://www.facebook.com/avertavira.restaurante/",
+            instagram: "https://www.instagram.com/avertavirarestaurante/",
+            website: "https://avertavira.com/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.1350356455455!2d-7.653902723227645!3d37.125702272156204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd100379c4264773%3A0xca74ccd84b4f6fa!2sRestaurante%20A%20Ver%20Tavira!5e0!3m2!1spt-PT!2spt!4v1748882657083!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Welcome Drink",
+            description: "Welcome Glass of Champagne"
+          },
+          rootFolder: "A ver Tavira",
+          images: ["borrego-feijao-bago-de.jpg", "rooftop-tavira.webp", "chefe-luis-brito.jpg", "cavala-marinada-e-gaspacho.jpg", "peixe-de-linha.jpg", "carabineiro-caril-couve.jpg", "the-detailed-combinations.jpg", "each-plate-prepared-with.jpg", "caption.jpg", "ce86969e3cec4b7bb0d0cde9e123fa0c.webp"]
+        },
       ]
     },
     {
@@ -448,7 +436,6 @@ export const appData: AppData = {
           type: "Golf",
           description: "Located in the heart of Vilamoura, the Family Golf Park is an unmissable destination for families and groups looking for fun and leisure. With two themed mini golf courses inspired by the Roman Via Appia and Via Lusitânia, the park offers a unique experience in the midst of lush gardens and Roman architecture. In addition, it has a games area for children, a games room, a snack bar with esplanade and even a tourist train that passes through the main points of Vilamoura. Open daily, the Family Golf Park is perfect for a day of fun with the family.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "10:00 - 19:00" },
             { day: "Tuesday", hours: "10:00 - 19:00" },
@@ -481,7 +468,6 @@ export const appData: AppData = {
           type: "Theme Park",
           description: "Algarve Riders is a motorcycle rental company that offers a unique experience with high-performance motorcycles. It is an ideal place to enjoy an afternoon of fun.",
           locationIds: [4],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "8:30 - 18:00" },
             { day: "Tuesday", hours: "8:30 - 18:00" },
@@ -514,7 +500,6 @@ export const appData: AppData = {
           type: "Racing Experience",
           description: "Located in the International Algarve Circuit in Portimão, offers driving experiences in high-performance cars like Porsche, Mercedes and others. With experienced instructors and an excellent infrastructure, it provides a safe and exciting immersion in the world of motorsport",
           locationIds: [6],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "09:00 - 18:00 By appointment" },
             { day: "Tuesday", hours: "09:00 - 18:00 By appointment" },
@@ -555,7 +540,6 @@ export const appData: AppData = {
           type: "Karting",
           description: "The International Algarve Karting Circuit, in Portimão, is one of the largest karting tracks in Europe, with 1.531 km of length. It offers experiences for all ages, from children to adults, with karts adapted to different age groups and experience levels. In addition to being a stage for official competitions and private events, it has complete infrastructure, including restaurant, boxes and shops.",
           locationIds: [6],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "09:00 - 13:00, 14:00 - 17:30" },
             { day: "Tuesday", hours: "09:00 - 13:00, 14:00 - 17:30" },
@@ -588,7 +572,6 @@ export const appData: AppData = {
           type: "Waterpark",
           description: "The Slide & Splash, in Lagoa, is a family-friendly water park with various attractions for all ages. In addition to exciting slides, it offers children's areas, relaxation zones and animal shows. Ideal for a day of fun in the Algarve.\n\nSeasonal Hours:\n- June: 10:00 - 17:30\n- July to September 12: 10:00 - 18:00\n- September 13 to October 31: 10:00 - 17:00",
           locationIds: [7],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "10:00 - 18:00 (horário varia por época)" },
             { day: "Tuesday", hours: "10:00 - 18:00 (horário varia por época)" },
@@ -622,7 +605,6 @@ export const appData: AppData = {
           //translate to english
           description: "Zoomarine, located near Albufeira, is a themed park that combines fun, education and nature. With dolphin shows, sea lions, tropical birds, water slides and an artificial beach, it is perfect for an unforgettable day with the family. A magical adventure in the heart of the Algarve!\n\nSeasonal Hours:\n- March, October, November: 10:00 - 17:00\n- April to June 22 & September 10 to September 28: 10:00 - 18:00\n- June 23 to September 7: 10:00 - 19:30",
           locationIds: [4],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "10:00 - 19:30 (horário varia por época)" },
             { day: "Tuesday", hours: "10:00 - 19:30 (horário varia por época)" },
@@ -655,7 +637,6 @@ export const appData: AppData = {
           type: "Theme Park",
           description: "The Aquashow Outdoor is the largest outdoor water park in Portugal, located in the heart of the Algarve. With giant slides, wave pool, attractions for all ages and lots of animation, it is the ideal place for a summer day full of fun, adrenaline and family or friends memories.",
           locationIds: [8],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "10:00 - 18:00" },
             { day: "Tuesday", hours: "10:00 - 18:00" },
@@ -697,7 +678,6 @@ export const appData: AppData = {
           type: "Winery Tours",
           description: "The Quinta do Canhoto, in Albufeira, is a reference in Algarve wines, combining tradition with innovation, and offers wine tastings and unique experiences in enotourism. Visits must be previously booked with 24 hours notice.",
           locationIds: [4],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "11:00 - 13:00, 14:30 - 18:30" },
             { day: "Tuesday", hours: "11:00 - 13:00, 14:30 - 18:30" },
@@ -730,7 +710,6 @@ export const appData: AppData = {
           type: "Winery Tours",
           description: "The Morgado do Quintão, in Lagoa, combines tradition and sustainability in the production of authentic wines. It offers wine tastings and unique experiences in enotourism.",
           locationIds: [7],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "09:00 - 22:00" },
             { day: "Tuesday", hours: "09:00 - 22:00" },
@@ -763,7 +742,6 @@ export const appData: AppData = {
           type: "Winery Tours",
           description: "Discover the flavors of the Algarve at the Adega do Cantor, in Albufeira. Visit the vineyards, learn about the production process and taste award-winning wines in a unique enotourism experience. A must-stop for wine and nature lovers.",
           locationIds: [7],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "10:00 - 13:00, 14:00 - 17:00" },
             { day: "Tuesday", hours: "10:00 - 13:00, 14:00 - 17:00" },
@@ -820,7 +798,6 @@ export const appData: AppData = {
           //translate to english
           description: "The 7 Seven Spa, at Hilton Vilamoura As Cascatas Golf Resort & Spa, offers a wellness experience with 14 treatment rooms, hydrotherapy circuit, sauna, Turkish bath, jacuzzi and zen garden. Ideal for relaxation and energy renewal.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "09:45 - 21:00" },
             { day: "Tuesday", hours: "09:45 - 21:00" },
@@ -865,7 +842,6 @@ export const appData: AppData = {
           type: "Wellness",
           description: "The Duo Spa & Life Care, at Cegonha Country Club in Vilamoura, offers wellness experiences with spa circuit, sauna, Turkish bath and treatments like exfoliation or Iyashi Dome, for moments of relaxation and rejuvenation.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "10:00 - 13:00, 14:30 - 19:00" },
             { day: "Tuesday", hours: "10:00 - 13:00, 14:30 - 19:00" },
@@ -906,7 +882,6 @@ export const appData: AppData = {
           type: "Wellness",
           description: "The DMed Clinic offers medical services at home in the entire region, including general medicine, psychology, nutrition, psychiatry and telemedicine, avoiding unnecessary trips.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "24h" },
             { day: "Tuesday", hours: "24h" },
@@ -944,7 +919,6 @@ export const appData: AppData = {
           type: "Beauty Services",
           description: "Teresa is a specialized esthetician offering services like nail extensions (gel/acrylic), pedicure/manicure, depilation, eyelash extensions and facial treatments. She also offers relaxation massages, body treatments like cavitation and lymphatic drainage, as well as professional makeup. With a personalized approach, Teresa provides care aimed at highlighting beauty and promoting well-being for her clients.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "Closed" },
             { day: "Tuesday", hours: "10:00 - 19:00" },
@@ -977,7 +951,6 @@ export const appData: AppData = {
           type: "Beauty Services",
           description: "Expert beauty and aesthetic treatments",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "09:00 - 19:00" },
             { day: "Tuesday", hours: "09:00 - 19:00" },
@@ -1016,7 +989,6 @@ export const appData: AppData = {
           type: "Personal Chef",
           description: "Executive chef of the Monte Rei where the recommended restaurant by the Michelin guide, Vistas Monte Rei. Provides relaxed cooking styles, to bring friends and family to the table with tapas & drinks, barbecue, Algarvian menu or tasting menu in 5 moments for more detailed celebrations.",
           locationIds: [6],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "By appointment" },
             { day: "Tuesday", hours: "By appointment" },
@@ -1049,7 +1021,6 @@ export const appData: AppData = {
           type: "Personal Chef",
           description: "The Fancy Kitchen Algarve offers exclusive gastronomic experiences with private chefs and personalized catering, elevating each moment with sophistication and flavor.",
           locationIds: [4],
-          rating: 5,
           openingHours: [
             { day: "Monday", hours: "By appointment" },
             { day: "Tuesday", hours: "By appointment" },

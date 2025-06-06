@@ -1,9 +1,34 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Item } from '../types/index';
-import { getLocationName } from '../services/dataService';
+import { getLocationName, getCategories } from '../services/dataService';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useItemRating } from '../hooks/useItemRating';
 import Slideshow from './Slideshow';
+import StarRating from './StarRating';
+
+interface ItemRatingProps {
+  category: string;
+  itemId: number;
+}
+
+const ItemRating: React.FC<ItemRatingProps> = ({ category, itemId }) => {
+  const { rating, isLoading } = useItemRating(category, itemId);
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center text-primary mb-8 animate-pulse">
+        <StarRating rating={0} size="sm" />
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex items-center text-primary">
+      <StarRating rating={rating} size="sm" />
+    </div>
+  );
+};
 
 interface ListPageProps {
   title: string;
@@ -15,6 +40,8 @@ interface ListPageProps {
 const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllPage = false }) => {
   const navigate = useNavigate();
   const { language, t } = useLanguage();
+  const categories = getCategories(language);
+  const currentCategory = categories.find(cat => cat.route === categoryRoute);
 
   const handleItemClick = (item: Item & { categoryId?: string }) => {
     if (isAllPage && item.categoryId) {
@@ -36,7 +63,6 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
       </div>
     );
   };
-  
 
   return (
     <div className="pb-8">
@@ -45,6 +71,8 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
       <div className="space-y-6 md:space-y-8 px-4 md:px-0">
         {items.map((item) => {
           const itemKey = item.uniqueId || `${item.categoryId || 'category'}-${item.id}`;
+          const itemCategory = isAllPage ? item.categoryId : currentCategory?.id;
+          
           return (
             <div
               key={itemKey}
@@ -63,17 +91,28 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
                     showDots={false}
                   />
                 </div>
-                <div className="p-4 md:p-6 flex-1">
+                <div className="p-4 flex-1">
                   <h2 className="text-xl md:text-2xl text-primary mb-2 md:mb-4 font-bold">{item.name}</h2>
                   <p className="text-gray-600 mb-3 md:mb-4 text-sm md:text-base">
                     {item.description.length > 150 ?
                       `${item.description.substring(0, 150)}...` : item.description
                     }
                   </p>
-                  <div className="flex items-center text-primary text-sm md:text-base">
+                  <div className="flex items-center text-primary text-sm md:text-base mb-2">
                     <span className="mr-2">📍</span>
                     {getLocationName(item.locationIds, language)}
                   </div>
+                  {/* type add icon */}
+                  <div className="flex items-center text-primary mb-2">
+                    <span className="mr-2">☞</span>
+                    <span className="mr-2">{item.type}</span>
+                  </div>
+                  {/* price range rate as stars but from € to €€€€€ */}
+                  <div className="flex items-center text-primary mb-2">
+                    <span className="mr-2">{item.price?.replace('€', '€€€€€')}</span>
+                  </div>
+                  {/* rating */}
+                  {itemCategory && <ItemRating category={itemCategory} itemId={item.id} />}
                 </div>
                 <div className="p-4 md:p-4 bg-gray-50 flex flex-col justify-center items-center w-full md:w-48">
                   {renderExtraInfo(item)}

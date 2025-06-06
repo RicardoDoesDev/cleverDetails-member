@@ -17,7 +17,6 @@ export const appDataPT: AppData = {
           type: "Boat Tours",
           description: "Explora o melhor da costa algarvia com a Ocean Quest. Passeios de barco, grutas, golfinhos e parasailing desde Vilamoura, com uma equipa apaixonada por proporcionar experiências únicas no mar. Porque a vida é bela.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "09:00 - 18:00" },
             { day: "Terça-feira", hours: "09:00 - 18:00" },
@@ -50,7 +49,6 @@ export const appDataPT: AppData = {
           type: "Passeios de Barco",
           description: "Oferece experiências náuticas personalizadas, ideais para ocasiões especiais como aniversários, despedidas de solteiro(a), casamentos ou eventos empresariais. Os passeios incluem visitas a grutas, praias isoladas e observação de golfinhos, além de atividades aquáticas como jet ski. A equipa dedicada assegura um serviço de excelência, criando memórias inesquecíveis no mar.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "09:00 - 00:00" },
             { day: "Terça-feira", hours: "09:00 - 00:00" },
@@ -96,7 +94,6 @@ export const appDataPT: AppData = {
           type: "Passeios de Barco",
           description: "A AlgarExperience é líder em turismo marítimo no Algarve, oferecendo experiências únicas como passeios às grutas de Benagil, observação de golfinhos, parasailing e churrascos na praia. Com uma frota moderna e uma equipa dedicada, proporciona momentos inesquecíveis no mar.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "09:00 - 20:00" },
             { day: "Terça-feira", hours: "09:00 - 20:00" },
@@ -129,7 +126,6 @@ export const appDataPT: AppData = {
           type: "Hotel",
           description: "Descubra a costa algarvia a bordo do majestoso Condor de Vilamoura, um veleiro de 34 metros inspirado nas escunas americanas do século XIX. Com capacidade para até 120 passageiros, oferece cruzeiros de 3 horas até à Praia da Galé e passeios de dia inteiro até Benagil, com paragens para nadar, explorar grutas e desfrutar de um delicioso churrasco na praia. Uma experiência única para toda a família, combinando conforto, tradição e paisagens deslumbrantes.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "09:00 - 18:00" },
             { day: "Terça-feira", hours: "09:00 - 18:00" },
@@ -162,7 +158,6 @@ export const appDataPT: AppData = {
           type: "Desportos Aquáticos",
           description: "Situado na Marina de Vilamoura, o Vilamoura Watersports Centre oferece uma vasta gama de atividades aquáticas para todas as idades. Desde passeios de barco às grutas de Benagil, observação de golfinhos, parasailing, jet ski, wakeboard, pesca e aluguer de barcos privados, há opções para todos os gostos. Com uma equipa experiente e equipamentos de qualidade, garantem segurança e diversão em todas as experiências. Aberto diariamente, é o local perfeito para explorar a costa algarvia de uma forma única.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "09:00 - 23:00" },
             { day: "Terça-feira", hours: "09:00 - 23:00" },
@@ -195,7 +190,6 @@ export const appDataPT: AppData = {
           type: "Passeios de Barco",
           description: "Explore a Ria Formosa com passeios privados em veleiros, lanchas ou barcos tradicionais. Observe golfinhos, cavalos-marinhos e aves, ou desfrute de experiências únicas como ostras com champanhe, jantares românticos, catamarã exclusivo e aluguer de caiaques. Um convite à descoberta da natureza algarvia com charme e autenticidade.",
           locationIds: [0],
-          rating: 4.8,
           openingHours: [
             { day: "Segunda-feira", hours: "09:00 - 18:00" },
             { day: "Terça-feira", hours: "09:00 - 18:00" },
@@ -228,7 +222,6 @@ export const appDataPT: AppData = {
           type: "Boat Tours",
           description: "A Formosamar, localizada em Faro, oferece experiências autênticas no Parque Natural da Ria Formosa. Disponibiliza passeios de barco, observação de aves e golfinhos, bem como aluguer de barcos, caiaques, bicicletas e equipamentos de desporto náutico. Ideal para quem deseja explorar a natureza e cultura local com guias experientes. A empresa é certificada em ecoturismo e compromete-se com práticas sustentáveis.",
           locationIds: [5],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "09:00 - 19:00" },
             { day: "Terça-feira", hours: "09:00 - 19:00" },
@@ -270,7 +263,6 @@ export const appDataPT: AppData = {
           type: "Brunch Café",
           description: "O Gran Sorvete, na Vilamoura Marina, é conhecido por seu sorvete artesanal italiano, crepes e waffles, servidos num ambiente acolhedor com vista para o mar.",
           locationIds: [3],
-          rating: 4,
           openingHours: [
             { day: "Segunda-feira", hours: "11:00 - 23:00" },
             { day: "Terça-feira", hours: "11:00 - 23:00" },
@@ -303,7 +295,6 @@ export const appDataPT: AppData = {
           type: "Steakhouse",
           description: "O Retinto Rodízio & Wine, em Vilamoura, destaca-se pelo seu buffet de carne brasileira e argentina, acompanhado por uma seleção de vinhos cuidadosa. Ambiente acolhedor e excelente serviço.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "18:30 - 23:30" },
             { day: "Terça-feira", hours: "18:30 - 23:30" },
@@ -329,14 +320,77 @@ export const appDataPT: AppData = {
           images: ["5c594138-f690-4ea1-add1-3fce2e15ef55.avif", "photo0jpg.jpg", "entrecote-argentino-ribye.jpg", "ff1ed75b-d71b-42f7-9d93-7f3a39464c45.jpg", "59f45f21-e373-42d3-8ed2-8946008e0b3f.jpg", "b15f5500-b73f-421d-b7bc-a9412784f5d8.webp", "b8685ec1-a1b4-4cbd-bd41-3b8cdb1bfa11.avif", "d56aaf4a-be2e-4cd3-99d9-f70d63c5826c.avif", "7701aa02-a0c2-4ec5-9af1-e1c80a4263d6.webp"]
         },
         {
-          id: 3,  
+          id: 3,
+          name: "Authentic",
+          email: "reservations@authentic-restaurant.pt",
+          logo: "Logo-Authentic-dourado.png",
+          type: "Restaurante Gourmet",
+          description: "O restaurante Authentic, localizado na Quinta do Lago, oferece uma experiência gastronómica sofisticada, combinando cozinha clássica portuguesa com um toque contemporâneo, num ambiente de luxo e requinte.",
+          locationIds: [1],
+          openingHours: [
+            { day: "Segunda-feira", hours: "Fechado" },
+            { day: "Terça-feira", hours: "Fechado" },
+            { day: "Quarta-feira", hours: "18:00 - 23:00" },
+            { day: "Quinta-feira", hours: "18:00 - 23:00" },
+            { day: "Sexta-feira", hours: "18:00 - 23:00" },
+            { day: "Sábado", hours: "18:00 - 23:00" },
+            { day: "Domingo", hours: "18:00 - 23:00" }
+          ],
+          address: "Rua Authentic, 45",
+          phone: "912 345 679",
+          socialMedia: {
+            facebook: "https://www.facebook.com/authenticrestaurant",
+            instagram: "https://www.instagram.com/authenticrestaurant",
+            website: "https://www.authenticrestaurant.pt"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.123456!3d37.134567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          specialOffer: {
+            type: "Bebida de Boas-vindas",
+            description: "Bebida de boas-vindas e 5% de desconto no jantar"
+          },
+          rootFolder: "Authentic",
+          images: ["83dcbf96-9726-4f1b-a1c7-c13c5f223b98.avif", "5e949c5e-060e-457b-ad67-b7597677c446.avif", "44aa29bd-0300-47b5-9ba5-83d8b8b19bd1.avif", "4d07f2e9-70b3-4b8b-a1e1-91fe37279165.avif", "843ccb2d-bf51-4c6a-bf0d-24ab6463b44c.avif", "ff05a4b6-f867-4243-9e4b-7141f87220af.avif", "c4bd01b2-7c29-405a-94d6-b566a0328e36.avif", "44cf2c78-1fec-4650-9ed2-eedaf4708a25.avif", "036d2880-7465-460b-9c18-61260a3de321.avif", "f818d5b4-5d61-4cc5-b0eb-e90fd92ac501.avif"]
+        },
+        {
+          id: 4,
+          name: "CafeZique",
+          email: "cafeziquept@gmail.com",
+          logo: "CAFEZIQUE-487bb404-679w.webp",
+          type: "Fine Dining",
+          description: "O restaurante CaféZique, em Loulé, combina sabores algarvios com técnicas contemporâneas, oferecendo uma experiência gastronómica única num ambiente relaxado ao lado do castelo.",
+          locationIds: [2],
+          openingHours: [
+            { day: "Segunda-feira", hours: "19:00 - 22:30" },
+            { day: "Terça-feira", hours: "19:00 - 22:30" },
+            { day: "Quarta-feira", hours: "19:00 - 22:30" },
+            { day: "Quinta-feira", hours: "19:00 - 22:30" },
+            { day: "Sexta-feira", hours: "19:00 - 22:30" },
+            { day: "Sábado", hours: "19:00 - 22:30" },
+            { day: "Domingo", hours: "Fechado" }
+          ],
+          address: "Rua Cafezique, 78",
+          phone: "912 345 680",
+          socialMedia: {
+            facebook: "https://www.facebook.com/Cafeziquept/?locale=pt_BR",
+            instagram: "https://www.instagram.com/cafeziquept/",
+            website: "https://www.cafezique.pt/"
+          },
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.5625743653195!2d-8.026760923227188!3d37.13932057215254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab18b3c096f37%3A0x3d8742940db522f6!2zQ2Fmw6law69xdWU!5e0!3m2!1spt-PT!2spt!4v1748882784435!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Bebida de Boas-vindas",
+            description: "Copo de espumante"
+          },
+          rootFolder: "CafeZique",
+          images: ["0c8e01ad-d9ca-4b18-af60-26a700b19e31.avif", "b7455fd9-1912-4dc4-9d75-b6e3c18c21e1.avif", "c10b8475-9033-4f81-96a7-89723f3537a6.avif", "562a5999-384a-4fcf-876a-191a283c4417.avif", "1fc2a2ef-0625-4d3c-a43b-538301aad3c4.avif", "eb5af52c-c6c9-411a-87ba-578fa3de1e3f.avif", "47a07484-d88c-447f-91ed-4c7bf0a542c3.avif", "d59e735d-141e-4359-b024-3352c31e5b83.avif", "cff64c57-1e91-4133-a445-f033ab8f5838.avif", "98b3ee01-5726-41de-93f9-23ce6da1c1b7.avif"]
+        },
+        {
+          id: 5,  
           name: "A ver Tavira",
           email: "restaurante@avertavira.pt",
           logo: "AverTavira.png",
           type: "Restaurante Gourmet",
           description: "O restaurante A Ver Tavira, galardoado com uma estrela Michelin, oferece uma experiência gastronómica única no coração histórico de Tavira, com sabores algarvios e uma vista deslumbrante. Sob a orientação do chef Luís Brito, alia tradição e criatividade num menu inovador.",
           locationIds: [0],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "Fechado" },
             { day: "Terça-feira", hours: "18:30 - 21:30" },
@@ -372,72 +426,6 @@ export const appDataPT: AppData = {
             "ce86969e3cec4b7bb0d0cde9e123fa0c.webp"
           ]
         },
-        {
-          id: 4,
-          name: "Authentic",
-          email: "reservations@authentic-restaurant.pt",
-          logo: "Logo-Authentic-dourado.png",
-          type: "Restaurante Gourmet",
-          description: "O restaurante Authentic, localizado na Quinta do Lago, oferece uma experiência gastronómica sofisticada, combinando cozinha clássica portuguesa com um toque contemporâneo, num ambiente de luxo e requinte.",
-          locationIds: [1],
-          rating: 5,
-          openingHours: [
-            { day: "Segunda-feira", hours: "Fechado" },
-            { day: "Terça-feira", hours: "Fechado" },
-            { day: "Quarta-feira", hours: "18:00 - 23:00" },
-            { day: "Quinta-feira", hours: "18:00 - 23:00" },
-            { day: "Sexta-feira", hours: "18:00 - 23:00" },
-            { day: "Sábado", hours: "18:00 - 23:00" },
-            { day: "Domingo", hours: "18:00 - 23:00" }
-          ],
-          address: "Rua Authentic, 45",
-          phone: "912 345 679",
-          socialMedia: {
-            facebook: "https://www.facebook.com/authenticrestaurant",
-            instagram: "https://www.instagram.com/authenticrestaurant",
-            website: "https://www.authenticrestaurant.pt"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.123456!3d37.134567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
-          specialOffer: {
-            type: "Bebida de Boas-vindas",
-            description: "Bebida de boas-vindas e 5% de desconto no jantar"
-          },
-          rootFolder: "Authentic",
-          images: ["83dcbf96-9726-4f1b-a1c7-c13c5f223b98.avif", "5e949c5e-060e-457b-ad67-b7597677c446.avif", "44aa29bd-0300-47b5-9ba5-83d8b8b19bd1.avif", "4d07f2e9-70b3-4b8b-a1e1-91fe37279165.avif", "843ccb2d-bf51-4c6a-bf0d-24ab6463b44c.avif", "ff05a4b6-f867-4243-9e4b-7141f87220af.avif", "c4bd01b2-7c29-405a-94d6-b566a0328e36.avif", "44cf2c78-1fec-4650-9ed2-eedaf4708a25.avif", "036d2880-7465-460b-9c18-61260a3de321.avif", "f818d5b4-5d61-4cc5-b0eb-e90fd92ac501.avif"]
-        },
-        {
-          id: 5,
-          name: "CafeZique",
-          email: "cafeziquept@gmail.com",
-          logo: "CAFEZIQUE-487bb404-679w.webp",
-          type: "Fine Dining",
-          description: "O restaurante CaféZique, em Loulé, combina sabores algarvios com técnicas contemporâneas, oferecendo uma experiência gastronómica única num ambiente relaxado ao lado do castelo.",
-          locationIds: [2],
-          rating: 5,
-          openingHours: [
-            { day: "Segunda-feira", hours: "19:00 - 22:30" },
-            { day: "Terça-feira", hours: "19:00 - 22:30" },
-            { day: "Quarta-feira", hours: "19:00 - 22:30" },
-            { day: "Quinta-feira", hours: "19:00 - 22:30" },
-            { day: "Sexta-feira", hours: "19:00 - 22:30" },
-            { day: "Sábado", hours: "19:00 - 22:30" },
-            { day: "Domingo", hours: "Fechado" }
-          ],
-          address: "Rua Cafezique, 78",
-          phone: "912 345 680",
-          socialMedia: {
-            facebook: "https://www.facebook.com/Cafeziquept/?locale=pt_BR",
-            instagram: "https://www.instagram.com/cafeziquept/",
-            website: "https://www.cafezique.pt/"
-          },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.5625743653195!2d-8.026760923227188!3d37.13932057215254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab18b3c096f37%3A0x3d8742940db522f6!2zQ2Fmw6law69xdWU!5e0!3m2!1spt-PT!2spt!4v1748882784435!5m2!1spt-PT!2spt",
-          specialOffer: {
-            type: "Bebida de Boas-vindas",
-            description: "Copo de espumante"
-          },
-          rootFolder: "CafeZique",
-          images: ["0c8e01ad-d9ca-4b18-af60-26a700b19e31.avif", "b7455fd9-1912-4dc4-9d75-b6e3c18c21e1.avif", "c10b8475-9033-4f81-96a7-89723f3537a6.avif", "562a5999-384a-4fcf-876a-191a283c4417.avif", "1fc2a2ef-0625-4d3c-a43b-538301aad3c4.avif", "eb5af52c-c6c9-411a-87ba-578fa3de1e3f.avif", "47a07484-d88c-447f-91ed-4c7bf0a542c3.avif", "d59e735d-141e-4359-b024-3352c31e5b83.avif", "cff64c57-1e91-4133-a445-f033ab8f5838.avif", "98b3ee01-5726-41de-93f9-23ce6da1c1b7.avif"]
-        }
       ]
     },
     {
@@ -455,7 +443,6 @@ export const appDataPT: AppData = {
           type: "Golf",
           description: "Localizado no coração de Vilamoura, o Family Golf Park é um destino imperdível para famílias e grupos em busca de diversão e lazer. Com dois cursos de mini golf temáticos inspirados na Via Appia e Via Lusitânia, o parque oferece uma experiência única no meio de jardins exuberantes e arquitetura romana. Além disso, tem um espaço de jogos para crianças, uma sala de jogos, uma barzinha com esplanada e até um trem turístico que passa pelos pontos principais de Vilamoura. Aberto todos os dias, o Family Golf Park é perfeito para um dia de diversão com a família.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "10:00 - 19:00" },
             { day: "Terça-feira", hours: "10:00 - 19:00" },
@@ -488,7 +475,6 @@ export const appDataPT: AppData = {
           type: "Parque Temático",
           description: "Algarve Riders é uma empresa de locação de motos que oferece uma experiência única com motos de alta performance. É um local ideal para aproveitar um dia de diversão.",
           locationIds: [4],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "08:30 - 18:00" },
             { day: "Terça-feira", hours: "08:30 - 18:00" },
@@ -521,7 +507,6 @@ export const appDataPT: AppData = {
           type: "Experiência de Corrida",
           description: "Situada no Autódromo Internacional do Algarve em Portimão, oferece experiências de condução desportiva em carros de alta performance como Porsche, Mercedes e outros. Com instrutores experientes e infraestrutura de excelência, proporciona uma imersão segura e emocionante no mundo do automobilismo.",
           locationIds: [6],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "09:00 - 18:00 Sob Marcação" },
             { day: "Terça-feira", hours: "09:00 - 18:00 Sob Marcação" },
@@ -561,7 +546,6 @@ export const appDataPT: AppData = {
           type: "Karting",
           description: "O Karting Internacional do Algarve, em Portimão, é um dos maiores circuitos de karting da Europa, com 1.531 km de extensão. Oferece experiências para todas as idades, desde crianças até adultos, com karts adaptados a diferentes grupos etários e níveis de experiência. Além de ser um local para competições oficiais e eventos privados, tem uma infraestrutura completa, incluindo restaurante, boxes e lojas.",
           locationIds: [6],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "09:00 - 13:00, 14:00 - 17:30" },
             { day: "Terça-feira", hours: "09:00 - 13:00, 14:00 - 17:30" },
@@ -594,7 +578,6 @@ export const appDataPT: AppData = {
           type: "Parque Aquático",
           description: "O Slide & Splash, em Lagoa, é um parque aquático familiar com diversas atrações para todas as idades. Além dos escorregas emocionantes, oferece áreas infantis, espaços de relaxamento e shows com animais. Ideal para um dia de diversão no Algarve.\n\nHorários Sazonais:\n- Junho: 10:00 - 17:30\n- 1 Julho a 12 Setembro: 10:00 - 18:00\n- 13 Setembro a 31 Outubro: 10:00 - 17:00",
           locationIds: [7],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "10:00 - 18:00 (horários variam conforme a época)" },
             { day: "Terça-feira", hours: "10:00 - 18:00 (horários variam conforme a época)" },
@@ -627,7 +610,6 @@ export const appDataPT: AppData = {
           type: "Theme Park",
           description: "Zoomarine, localizado perto de Albufeira, é um parque temático que combina diversão, educação e natureza. Com shows de golfinhos, leões-marinhos, pássaros tropicais, escorregas de água e uma praia artificial, é perfeito para um dia inesquecível com a família. Uma aventura mágica no coração do Algarve!\n\nHorários Sazonais:\n- Março, Outubro, Novembro: 10:00 - 17:00\n- Abril a 22 de Junho e Setembro 10 a 28: 10:00 - 18:00\n- 23 de Junho a 7 de Setembro: 10:00 - 19:30",
           locationIds: [4],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "10:00 - 19:30 (horário varia por época)" },
             { day: "Terça-feira", hours: "10:00 - 19:30 (horário varia por época)" },
@@ -660,7 +642,6 @@ export const appDataPT: AppData = {
           type: "Parque Temático",
           description: "O Aquashow Outdoor é o maior parque aquático ao ar livre de Portugal, localizado no coração do Algarve. Com escorregas gigantes, piscina de ondas, atrações para todas as idades e muita animação, é o lugar ideal para um dia de verão cheio de diversão, adrenalina e memórias familiares ou de amigos.",
           locationIds: [8],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "10:00 - 18:00" },
             { day: "Terça-feira", hours: "10:00 - 18:00" },
@@ -702,7 +683,6 @@ export const appDataPT: AppData = {
           type: "Visitas às Adegas",
           description: "A Quinta do Canhoto, em Albufeira, é uma referência em vinhos do Algarve, combinando tradição familiar com inovação, e oferece provas de vinhos e experiências únicas em enoturismo. As visitas devem ser previamente marcadas com 24h de antecedência.",
           locationIds: [4],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "11:00 - 13:00, 14:30 - 18:30" },
             { day: "Terça-feira", hours: "11:00 - 13:00, 14:30 - 18:30" },
@@ -735,7 +715,6 @@ export const appDataPT: AppData = {
           type: "Desportos Aquáticos",
           description: "O Morgado do Quintão, em Lagoa, combina tradição e sustentabilidade na produção de vinhos autênticos. Oferece provas de vinhos e experiências únicas em enoturismo.",
           locationIds: [7],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "09:00 - 23:00" },
             { day: "Terça-feira", hours: "09:00 - 23:00" },
@@ -768,7 +747,6 @@ export const appDataPT: AppData = {
           type: "Visitas às Adegas",
           description: "A Adega do Cantor, propriedade do famoso cantor Sir Cliff Richard, produz vinhos premiados como o Vida Nova. Oferece visitas guiadas às vinhas e adega, com provas de vinho e experiências gastronómicas únicas.",
           locationIds: [4],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "10:00 - 17:00" },
             { day: "Terça-feira", hours: "10:00 - 17:00" },
@@ -824,7 +802,6 @@ export const appDataPT: AppData = {
           type: "Spa Completo",
           description: "O 7 Seven Spa, no Hilton Vilamoura As Cascatas Golf Resort & Spa, oferece uma experiência de bem-estar com 14 salas de tratamento, circuito de hidroterapia, sauna, banho turco, jacuzzi e jardim zen. Ideal para relaxar e renovar energias.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "09:00 - 20:00" },
             { day: "Terça-feira", hours: "09:00 - 20:00" },
@@ -869,7 +846,6 @@ export const appDataPT: AppData = {
           type: "Bem-estar",
           description: "O Duo Spa & Life Care, no Cegonha Country Club em Vilamoura, oferece experiências de bem-estar com circuito de spa, sauna, banho turco e tratamentos como esfoliação ou Iyashi Dome, para momentos de relaxamento e rejuvenescimento.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "10:00 - 13:00, 14:30 - 19:00" },
             { day: "Terça-feira", hours: "10:00 - 13:00, 14:30 - 19:00" },
@@ -910,7 +886,6 @@ export const appDataPT: AppData = {
           type: "Bem-estar",
           description: "A DMed Clinic oferece serviços médicos ao domicílio em toda a região, incluindo consultas de Medicina Geral, Psicologia, Nutrição, Psiquiatria e Telemedicina, evitando deslocações desnecessárias.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "24h" },
             { day: "Terça-feira", hours: "24h" },
@@ -953,7 +928,6 @@ export const appDataPT: AppData = {
           type: "Serviços de Beleza",
           description: "Teresa é esteticista especializada em serviços como extensão de unhas (gel/acrílico), pedicure/manicure, depilações, extensões de pestanas e tratamentos faciais. Oferece também massagens de relaxamento, tratamentos corporais como cavitação e drenagem linfática, além de maquilhagem profissional. Com uma abordagem personalizada, Teresa proporciona cuidados que visam realçar a beleza e promover o bem-estar dos seus clientes.",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "Fechado" },
             { day: "Terça-feira", hours: "10:00 - 19:00" },
@@ -986,7 +960,6 @@ export const appDataPT: AppData = {
           type: "Beauty Services",
           description: "Expertise em beleza e tratamentos estéticos",
           locationIds: [3],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "09:00 - 19:00" },
             { day: "Terça-feira", hours: "09:00 - 19:00" },
@@ -1025,7 +998,6 @@ export const appDataPT: AppData = {
           type: "Personal Chef",
           description: "Chef executivo de cozinha do Monte Rei onde se encontra o restaurante recomendado pelo guia Michelin, Vistas Monte Rei. Proporciona estilos de cozinha descontraídos, para juntar amigos e familia à mesa com menus de tapas & drinks, barbecue, menu algarvio ou menu de degustação em 5 momentos para celebrações mais pormenorizadas.",
           locationIds: [6],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "Sob marcação" },
             { day: "Terça-feira", hours: "Sob marcação" },
@@ -1058,7 +1030,6 @@ export const appDataPT: AppData = {
           type: "Personal Chef",
           description: "A Fancy Kitchen Algarve oferece experiências gastronómicas exclusivas com chefs privados e catering personalizado, elevando cada momento com requinte e sabor.",
           locationIds: [4],
-          rating: 5,
           openingHours: [
             { day: "Segunda-feira", hours: "Sob marcação" },
             { day: "Terça-feira", hours: "Sob marcação" },

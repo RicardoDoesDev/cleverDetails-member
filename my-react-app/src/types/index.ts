@@ -21,7 +21,6 @@ export interface Item {
   logo: string;
   description: string;
   locationIds: number[];
-  rating: number;
   mapsUrl: string;
   openingHours: OpeningHours[];
   address: string;
