@@ -103,13 +103,15 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
                     {getLocationName(item.locationIds, language)}
                   </div>
                   {/* Show type and price range only if price range is defined */}
-                  <div className="flex items-center text-primary mb-2">
-                    <span className="mr-2">☞</span>
-                    <span className="mr-2">{item.type}</span>
-                    <span className="mr-2 font-bold">
-                      {item.priceRange !== undefined && ` - ${item.priceRange === 1 ? '€' : item.priceRange === 2 ? '€€' : '€€€'}`}
-                    </span>
-                  </div>
+                  {item.type && (
+                    <div className="flex items-center text-primary mb-2">
+                      <span className="mr-2">☞</span>
+                      <span className="mr-2">{item.type}</span>
+                      <span className="mr-2 font-bold">
+                        {item.priceRange !== undefined && ` - ${item.priceRange === 1 ? '€' : item.priceRange === 2 ? '€€' : '€€€'}`}
+                      </span>
+                    </div>
+                  )}
                   {/* rating */}
                   {itemCategory && <ItemRating category={itemCategory} itemId={item.id} />}
                 </div>
