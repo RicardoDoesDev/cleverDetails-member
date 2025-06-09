@@ -7,7 +7,7 @@ O microsite **cleverDetails member** foi concebido para apresentar as nossas emp
 - [Tradução PT](https://github.com/RicardoDoesDev/cleverDetails-member/edit/main/my-react-app/src/data/appDataPT.ts)  
 - [Tradução EN](https://github.com/RicardoDoesDev/cleverDetails-member/edit/main/my-react-app/src/data/appData.ts)  
 - [Tradução FR](https://github.com/RicardoDoesDev/cleverDetails-member/edit/main/my-react-app/src/data/appDataFR.ts)
-
+- [Imagens]([https://github.com/RicardoDoesDev/cleverDetails-member/edit/main/my-react-app/src/data/appDataFR.ts](https://github.com/RicardoDoesDev/cleverDetails-member/tree/main/my-react-app/public/images)
 ---
 
 # Guia de Gestão de Traduções
