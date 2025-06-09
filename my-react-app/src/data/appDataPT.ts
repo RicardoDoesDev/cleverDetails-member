@@ -1133,6 +1133,12 @@ export const appDataPT: AppData = {
       name: "Quarteira",
       image: "/location5.jpg",
       description: "Quarteira é uma cidade costeira tradicional com um extenso passeio marítimo e excelentes restaurantes de peixe e marisco.",
+    },
+    {
+      id: 9,
+      name: "Alcantarilha",
+      image: "/location5.jpg",
+      description: "Quarteira é uma cidade costeira tradicional com um extenso passeio marítimo e excelentes restaurantes de peixe e marisco.",
     }
   ],
   ui: {
