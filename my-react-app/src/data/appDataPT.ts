@@ -683,7 +683,7 @@ export const appDataPT: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101808.49895831558!2d-8.355817944620606!3d37.116646827524605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ad0e39d6bfd4b%3A0x81a56dd58df0e845!2sAqualand%20Algarve!5e0!3m2!1spt-PT!2spt!4v1749485410610!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade",
           specialOffer: {
             type: "Discount",
-            description: "10% DE DESCONTO"
+            description: "28% de Desconto - Bilhete Adulto"
           },
           rootFolder: "Aqualand",
           images: ["IMG_2075.jpg", "Galeria-03.jpg", "aquashow-park (6).jpg", "air-race.jpg", "aquashow-park (5).jpg", "aquashow-park (4).jpg", "aquashow-park (3).jpg", "aquashow-park (2).jpg", "aquashow-park (1).jpg", "aquashow-park.jpg"]
