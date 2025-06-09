@@ -1087,6 +1087,12 @@ export const appData: AppData = {
       name: "Quarteira",
       image: "/location5.jpg",
       description: "Quarteira is a beautiful city in the Algarve, Portugal. It is known for its beautiful beaches and its vibrant nightlife.",
+    },
+    {
+      id: 9,
+      name: "Alcantarilha",
+      image: "/location5.jpg",
+      description: "Quarteira é uma cidade costeira tradicional com um extenso passeio marítimo e excelentes restaurantes de peixe e marisco.",
     }
   ],
   ui: {
