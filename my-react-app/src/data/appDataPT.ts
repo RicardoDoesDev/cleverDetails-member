@@ -661,7 +661,7 @@ export const appDataPT: AppData = {
           id: 8,
           name: "Aqualand Algarve",
           email: "aqualandalgarve@asproparks.com",
-          logo: "aquashow_logo.png",
+          logo: "aqualand.webp",
           description: "O Aqualand Algarve é um dos maiores parques aquáticos do país, com áreas adaptadas a famílias, zonas para os mais pequenos e espaços relaxantes para recarregar energias. Entre mergulhos, piscinas de ondas e rios tranquilos, é o destino perfeito para um dia completo de entretenimento em família.",
           locationIds: [9],
           openingHours: [
