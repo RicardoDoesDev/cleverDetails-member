@@ -966,7 +966,7 @@ export const appData: AppData = {
           email: "asimao2@hotmail.com",
           logo: "teste",
           description: "Executive chef of the Monte Rei where the recommended restaurant by the Michelin guide, Vistas Monte Rei. Provides relaxed cooking styles, to bring friends and family to the table with tapas & drinks, barbecue, Algarvian menu or tasting menu in 5 moments for more detailed celebrations.",
-          locationIds: [6],
+          locationIds: [],
           openingHours: [
             { day: "Monday", hours: "By appointment" },
             { day: "Tuesday", hours: "By appointment" },
@@ -997,7 +997,7 @@ export const appData: AppData = {
           email: "info@fancykitchenalgarve.com",
           logo: "Fancy kitchen.webp",
           description: "The Fancy Kitchen Algarve offers exclusive gastronomic experiences with private chefs and personalized catering, elevating each moment with sophistication and flavor.",
-          locationIds: [4],
+          locationIds: [],
           openingHours: [
             { day: "Monday", hours: "By appointment" },
             { day: "Tuesday", hours: "By appointment" },

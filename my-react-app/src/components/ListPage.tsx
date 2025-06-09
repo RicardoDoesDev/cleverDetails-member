@@ -99,8 +99,12 @@ const ListPage: React.FC<ListPageProps> = ({ title, items, categoryRoute, isAllP
                     }
                   </p>
                   <div className="flex items-center text-primary text-sm md:text-base mb-2">
-                    <span className="mr-2">📍</span>
-                    {getLocationName(item.locationIds, language)}
+                    {item.locationIds.length > 0 && (
+                      <>
+                        <span className="mr-2">📍</span>
+                        {getLocationName(item.locationIds, language)}
+                      </>
+                    )}
                   </div>
                   {/* Show type and price range only if price range is defined */}
                   {item.type && (
