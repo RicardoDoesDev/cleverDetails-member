@@ -1104,6 +1104,12 @@ export const appDataFR: AppData = {
       name: "Quarteira",
       image: "/location5.jpg",
       description: "Ville de pêche traditionnelle devenue station balnéaire, offrant une longue promenade en bord de mer et des restaurants de fruits de mer frais.",
+    },
+    {
+      id: 9,
+      name: "Alcantarilha",
+      image: "/location5.jpg",
+      description: "Quarteira é uma cidade costeira tradicional com um extenso passeio marítimo e excelentes restaurantes de peixe e marisco.",
     }
   ],
   ui: {
