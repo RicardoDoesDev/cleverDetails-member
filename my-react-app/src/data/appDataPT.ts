@@ -981,7 +981,7 @@ export const appDataPT: AppData = {
           email: "asimao2@hotmail.com",
           logo: "teste",
           description: "Chef executivo de cozinha do Monte Rei onde se encontra o restaurante recomendado pelo guia Michelin, Vistas Monte Rei. Proporciona estilos de cozinha descontraídos, para juntar amigos e familia à mesa com menus de tapas & drinks, barbecue, menu algarvio ou menu de degustação em 5 momentos para celebrações mais pormenorizadas.",
-          locationIds: [6],
+          locationIds: [],
           openingHours: [
             { day: "Segunda-feira", hours: "Sob marcação" },
             { day: "Terça-feira", hours: "Sob marcação" },
@@ -1012,7 +1012,7 @@ export const appDataPT: AppData = {
           email: "info@fancykitchenalgarve.com",
           logo: "Fancy kitchen.webp",
           description: "A Fancy Kitchen Algarve oferece experiências gastronómicas exclusivas com chefs privados e catering personalizado, elevando cada momento com requinte e sabor.",
-          locationIds: [4],
+          locationIds: [],
           openingHours: [
             { day: "Segunda-feira", hours: "Sob marcação" },
             { day: "Terça-feira", hours: "Sob marcação" },
