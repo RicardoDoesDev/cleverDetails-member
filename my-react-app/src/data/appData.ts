@@ -655,13 +655,14 @@ export const appData: AppData = {
           description: "Aqualand Algarve is one of the largest water parks in the country, with areas adapted for families, zones for little ones, and relaxing spaces to recharge. Between splashes, wave pools, and lazy rivers, it’s the perfect destination for a full day of family fun.",
           locationIds: [9],
           openingHours: [
-              { day: "Monday", hours: "10:00 - 18:00" },
-            { day: "Tuesday", hours: "10:00 - 18:00" },
-            { day: "Wednesday", hours: "10:00 - 18:00" },
-            { day: "Thursday", hours: "10:00 - 18:00" },
-            { day: "Friday", hours: "10:00 - 18:00" },
-            { day: "Saturday", hours: "10:00 - 18:00" },
-            { day: "Sunday", hours: "10:00 - 18:00" }
+              { day: "Monday", hours: "10:00 - 18:00 (hours may vary by season)" },
+              { day: "Tuesday", hours: "10:00 - 18:00 (hours may vary by season)" },
+              { day: "Wednesday", hours: "10:00 - 18:00 (hours may vary by season)" },
+              { day: "Thursday", hours: "10:00 - 18:00 (hours may vary by season)" },
+              { day: "Friday", hours: "10:00 - 18:00 (hours may vary by season)" },
+              { day: "Saturday", hours: "10:00 - 18:00 (hours may vary by season)" },
+              { day: "Sunday", hours: "10:00 - 18:00 (hours may vary by season)" }
+
           ],
           address: "Aqualand Algarve",
           phone: "+351 282 320 230",
