@@ -685,7 +685,7 @@ export const appDataPT: AppData = {
             type: "Discount",
             description: "28% de Desconto - Bilhete Adulto"
           },
-          rootFolder: "Aqualand",
+          rootFolder: "aqualand",
           images: ["ALG-Banzai-1-1-scaled.webp", "ALG-Kamikaze-scaled.webp", "ALG-rapids-scaled.webp", "Hydra-scaled.webp", "atracciones-1-scaled-w.webp", "banner-atracciones-1-w-1.webp", "hydra.jpg", "king-cobra.jpg", "plano-parque-scaled.webp"]
         },
       ]
