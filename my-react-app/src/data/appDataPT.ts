@@ -686,7 +686,7 @@ export const appDataPT: AppData = {
             description: "28% de Desconto - Bilhete Adulto"
           },
           rootFolder: "Aqualand",
-          images: ["IMG_2075.jpg", "Galeria-03.jpg", "aquashow-park (6).jpg", "air-race.jpg", "aquashow-park (5).jpg", "aquashow-park (4).jpg", "aquashow-park (3).jpg", "aquashow-park (2).jpg", "aquashow-park (1).jpg", "aquashow-park.jpg"]
+          images: ["ALG-Banzai-1-1-scaled.webp", "ALG-Kamikaze-scaled.webp", "ALG-rapids-scaled.webp", "Hydra-scaled.webp", "atracciones-1-scaled-w.webp", "banner-atracciones-1-w-1.webp", "hydra.jpg", "king-cobra.jpg", "plano-parque-scaled.webp"]
         },
       ]
     },
