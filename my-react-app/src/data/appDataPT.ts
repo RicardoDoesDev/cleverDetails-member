@@ -665,13 +665,13 @@ export const appDataPT: AppData = {
           description: "O Aqualand Algarve é um dos maiores parques aquáticos do país, com áreas adaptadas a famílias, zonas para os mais pequenos e espaços relaxantes para recarregar energias. Entre mergulhos, piscinas de ondas e rios tranquilos, é o destino perfeito para um dia completo de entretenimento em família.",
           locationIds: [9],
           openingHours: [
-            { day: "Segunda-feira", hours: "10:00 - 18:00" },
-            { day: "Terça-feira", hours: "10:00 - 18:00" },
-            { day: "Quarta-feira", hours: "10:00 - 18:00" },
-            { day: "Quinta-feira", hours: "10:00 - 18:00" },
-            { day: "Sexta-feira", hours: "10:00 - 18:00" },
-            { day: "Sábado", hours: "10:00 - 18:00" },
-            { day: "Domingo", hours: "10:00 - 18:00" }
+            { day: "Segunda-feira", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Terça-feira", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Quarta-feira", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Quinta-feira", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Sexta-feira", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Sábado", hours: "10:00 - 19:30 (horário varia por época)" },
+            { day: "Domingo", hours: "10:00 - 19:30 (horário varia por época)" }
           ],
           address: "Aqualand Algarve",
           phone: "+351 282 320 230",
