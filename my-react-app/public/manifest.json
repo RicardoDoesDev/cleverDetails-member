@@ -4,16 +4,9 @@
   "description": "Join We Love Vilamoura by Clever Details and unlock exclusive rewards across the Algarve. From luxury boat tours to fine dining, wellness experiences, and more.",
   "icons": [
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "any maskable"
+      "src": "favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "16x16 32x32 48x48"
     }
   ],
   "start_url": ".",
