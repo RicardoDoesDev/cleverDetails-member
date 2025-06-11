@@ -674,7 +674,7 @@ export const appData: AppData = {
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101808.49895831558!2d-8.355817944620606!3d37.116646827524605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ad0e39d6bfd4b%3A0x81a56dd58df0e845!2sAqualand%20Algarve!5e0!3m2!1spt-PT!2spt!4v1749485410610!5m2!1spt-PT!2spt",
           specialOffer: {
             type: "Discount",
-            description: "€9 discount on adult tickets"
+            description: "Adult tickets: €9 off"
           },
           rootFolder: "aqualand",
           images: ["ALG-Banzai-1-1-scaled.webp", "ALG-Kamikaze-scaled.webp", "ALG-rapids-scaled.webp", "Hydra-scaled.webp", "atracciones-1-scaled-w.webp", "banner-atracciones-1-w-1.webp", "hydra.jpg", "king-cobra.jpg", "plano-parque-scaled.webp"]
