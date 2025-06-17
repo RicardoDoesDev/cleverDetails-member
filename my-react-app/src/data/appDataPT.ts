@@ -1263,6 +1263,15 @@ export const appDataPT: AppData = {
         submitting: "A enviar...",
         yourName: "O seu nome",
         writeComment: "Escreva o seu comentário..."
+      },
+      dateList: {
+        monday: "Segunda-feira",
+        tuesday: "Terça-feira",
+        wednesday: "Quarta-feira",
+        thursday: "Quinta-feira",
+        friday: "Sexta-feira",
+        saturday: "Sábado",
+        sunday: "Domingo"
       }
     }
   }

@@ -1249,6 +1249,15 @@ export const appData: AppData = {
         submitting: "Submitting...",
         yourName: "Your name",
         writeComment: "Write your comment..."
+      },
+      dateList: {
+        monday: "Monday",
+        tuesday: "Tuesday",
+        wednesday: "Wednesday",
+        thursday: "Thursday",
+        friday: "Friday",
+        saturday: "Saturday",
+        sunday: "Sunday"
       }
     }
   }

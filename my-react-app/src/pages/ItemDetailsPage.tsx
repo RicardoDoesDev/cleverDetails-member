@@ -312,12 +312,26 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
                   <div className="mb-6">
                     <h3 className="text-xl md:text-2xl font-semibold mb-3">{t.itemDetails.openingHours}</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                      {item.openingHours.map((schedule) => (
-                        <div key={schedule.day} className="flex justify-between items-center py-2 px-4 bg-white rounded-lg shadow-sm">
-                          <span className="font-medium">{schedule.day}</span>
-                          <span>{schedule.hours}</span>
-                        </div>
-                      ))}
+                      {/* show the day of the week in the language of the user */}
+                      {Object.values(t.itemDetails.dateList).map((day: string) => {
+                        // Try to find schedule with translated day name or English day name
+                        const schedule = item.openingHours.find(
+                          schedule => schedule.day === day || 
+                          schedule.day === day.replace('Lundi', 'Monday')
+                            .replace('Mardi', 'Tuesday')
+                            .replace('Mercredi', 'Wednesday')
+                            .replace('Jeudi', 'Thursday')
+                            .replace('Vendredi', 'Friday')
+                            .replace('Samedi', 'Saturday')
+                            .replace('Dimanche', 'Sunday')
+                        );
+                        return (
+                          <div key={day} className="flex justify-between items-center py-2 px-4 bg-white rounded-lg shadow-sm">
+                            <span className="font-medium">{day}</span>
+                            <span>{schedule?.hours}</span>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                   {/* Phone */}

@@ -1265,6 +1265,15 @@ export const appDataFR: AppData = {
         submitting: "Envoi en cours...",
         yourName: "Votre nom",
         writeComment: "Écrivez votre commentaire..."
+      },
+      dateList: {
+        monday: "Lundi",
+        tuesday: "Mardi",
+        wednesday: "Mercredi",
+        thursday: "Jeudi",
+        friday: "Vendredi",
+        saturday: "Samedi",
+        sunday: "Dimanche"
       }
     }
   }
