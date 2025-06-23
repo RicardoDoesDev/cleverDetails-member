@@ -974,7 +974,7 @@ export const appDataPT: AppData = {
           id: 2,
           name: "Matilde",
           email: "alvesmatilde1@hotmail.com",
-          logo: "/images/logo/matildelogo2.png",
+          logo: "matildelogo2.png",
           description: "Matilde Alves Hair Studio em Vilamoura oferece serviço de excelência e resultados incríveis. Situado na Av. Tivoli, em frente ao Hotel Dom Pedro, é reconhecido pela competência, profissionalismo e simpatia.",
           locationIds: [3],
           openingHours: [
