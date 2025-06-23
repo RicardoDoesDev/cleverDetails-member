@@ -55,7 +55,13 @@ const EmailPage: React.FC = () => {
     setSubmitStatus({ type: null, message: '' });
     
     try {
-      const success = await emailService.sendEmail(formData);
+      const success = await emailService.sendBookingRequest({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        subject: formData.subject,
+        message: formData.message
+      });
       
       if (success) {
         setSubmitStatus({

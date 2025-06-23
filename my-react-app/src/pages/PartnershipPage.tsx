@@ -32,22 +32,14 @@ const PartnershipPage: React.FC = () => {
     setSubmitStatus({ type: null, message: '' });
 
     try {
-      const emailData = {
-        name: formData.contactName,
+      const success = await emailService.sendPartnershipRequest({
+        businessName: formData.businessName,
+        contactName: formData.contactName,
         email: formData.email,
-        subject: `${t.partnership.title}: ${formData.businessName} - ${formData.businessType}`,
-        message: `Business Details:
-- ${t.partnership.form.businessName}: ${formData.businessName}
-- ${t.partnership.form.contactName}: ${formData.contactName}
-- ${t.partnership.form.phone}: ${formData.phone}
-- ${t.partnership.form.businessType.label}: ${formData.businessType}
-
-${t.partnership.form.description}:
-${formData.description}`,
-        formType: 'partnership' as const
-      };
-
-      const success = await emailService.sendEmail(emailData);
+        phone: formData.phone,
+        businessType: formData.businessType,
+        description: formData.description
+      });
       
       if (success) {
         setSubmitStatus({

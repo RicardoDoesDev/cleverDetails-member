@@ -7,6 +7,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import Carousel from '../components/Carousel';
 import StarRating from '../components/StarRating';
 import '../styles/carousel.css';
+import { emailService } from '../services/emailService';
 
 interface ItemDetailsPageProps {
   category: string;
@@ -143,6 +144,20 @@ const ItemDetailsPage: React.FC<ItemDetailsPageProps> = ({ category }) => {
         comment,
         author
       });
+
+      // Send email notification
+      try {
+        await emailService.sendReviewNotification({
+          itemName: item.name,
+          category,
+          author,
+          rating,
+          comment
+        });
+      } catch (emailError) {
+        console.error('Error sending review notification email:', emailError);
+        // Don't throw the error as we still want to save the review
+      }
 
       setReviews(prev => [...prev, newReview]);
       setComment('');
