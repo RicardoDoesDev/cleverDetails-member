@@ -999,8 +999,7 @@ export const appDataPT: AppData = {
             description: "10% DE DESCONTO"
           },
           rootFolder: "Matilde",
-          images: ["beauty3.jpg", "beauty4.jpg"],
-          isVisible: false
+          images: ["matilde1.webp", "matilde2.webp", "matilde3.webp", "matilde4.webp", "matilde5.webp", "matilde6.webp", "matilde7.webp", "matilde8.webp", "matilde9.webp"],
         },
       ]
     },
