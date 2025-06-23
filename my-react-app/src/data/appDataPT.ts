@@ -956,7 +956,7 @@ export const appDataPT: AppData = {
             { day: "Domingo", hours: "Fechado" }
           ],
           address: "Vilamoura",
-          phone: "+351 282 000 000",
+          phone: "+351 965 383 482",
           socialMedia: {
             facebook: "https://www.facebook.com/teresa.estetica.1/?locale=pt_PT",
             instagram: "https://www.instagram.com/teresaestetica/",
@@ -973,27 +973,31 @@ export const appDataPT: AppData = {
         {
           id: 2,
           name: "Matilde",
-          email: "teresa.estetica@live.com.pt",
+          email: "alvesmatilde1@hotmail.com",
           logo: "/images/logo/matilde.jpg",
           description: "Expertise em beleza e tratamentos estéticos",
           locationIds: [3],
           openingHours: [
-            { day: "Segunda-feira", hours: "09:00 - 19:00" },
+            { day: "Segunda-feira", hours: "Fechado" },
             { day: "Terça-feira", hours: "09:00 - 19:00" },
             { day: "Quarta-feira", hours: "09:00 - 19:00" },
             { day: "Quinta-feira", hours: "09:00 - 19:00" },
             { day: "Sexta-feira", hours: "09:00 - 19:00" },
             { day: "Sábado", hours: "09:00 - 19:00" },
-            { day: "Domingo", hours: "09:00 - 19:00" }
+            { day: "Domingo", hours: "Fechado" }
           ],
           address: "Vilamoura",
-          phone: "+351 282 000 000",
+          phone: "+351 289 302 807",
           socialMedia: {
-            facebook: "https://www.facebook.com/matildeestetica",
+            facebook: "https://www.facebook.com/MatildeCabeleireiroVilamoura",
             instagram: "https://www.instagram.com/matildeestetica",
             website: "https://www.matildeestetica.pt"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.123456!3d37.134567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6366.490908187981!2d-8.117661923229319!3d37.07546047216995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab597022a1131%3A0x6f4e5cea9d557db8!2sMatilde%20Cabeleireiro%20(%20vilamoura%20Portugal%20)!5e0!3m2!1spt-PT!2spt!4v1750672594399!5m2!1spt-PT!2spt",
+           specialOffer: {
+            type: "Discount",
+            description: "10% DE DESCONTO"
+          },
           rootFolder: "Matilde",
           images: ["beauty3.jpg", "beauty4.jpg"],
           isVisible: false
