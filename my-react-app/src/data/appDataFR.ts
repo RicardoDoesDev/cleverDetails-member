@@ -948,13 +948,13 @@ export const appDataFR: AppData = {
           description: "Teresa est un esthéticien spécialisé dans les services de manucure (gel/acrylique), pédicure/manucure, dépilations, extensions de cils et des traitements visage. Elle offre également des massages de relaxation, des traitements corporels comme la cavitation et la démangeaison lymphatique, ainsi que la maquillage professionnel. Avec une approche personnalisée, Teresa offre des soins qui visent à mettre en valeur la beauté et à promouvoir le bien-être de ses clients.",
           locationIds: [3],
           openingHours: [
-            { day: "Monday", hours: "Closed" },
+            { day: "Monday", hours: "Fermé" },
             { day: "Tuesday", hours: "10:00 - 19:00" },
             { day: "Wednesday", hours: "10:00 - 19:00" },
             { day: "Thursday", hours: "10:00 - 19:00" },
             { day: "Friday", hours: "10:00 - 19:00" },
             { day: "Saturday", hours: "10:00 - 19:00" },
-            { day: "Sunday", hours: "Closed" }
+            { day: "Sunday", hours: "Fermé" }
           ],
           address: "Vilamoura",
           phone: "+351 965 383 482",
@@ -975,26 +975,30 @@ export const appDataFR: AppData = {
           id: 2,
           name: "Matilde",
           email: "teresa.estetica@live.com.pt",
-          logo: "/images/logo/matilde.jpg",
-          description: "Expertise en beauté et traitements esthétiques",
+          logo: "/images/logo/matildelogo2.png",
+          description: "Le salon Matilde Alves à Vilamoura propose un service de qualité et des résultats magnifiques. Situé sur l’Avenue Tivoli, en face de l’Hôtel Dom Pedro, il est reconnu pour son savoir-faire et son accueil chaleureux.",
           locationIds: [3],
           openingHours: [
-            { day: "Monday", hours: "09:00 - 19:00" },
+            { day: "Monday", hours: "Fermé" },
             { day: "Tuesday", hours: "09:00 - 19:00" },
             { day: "Wednesday", hours: "09:00 - 19:00" },
             { day: "Thursday", hours: "09:00 - 19:00" },
             { day: "Friday", hours: "09:00 - 19:00" },
             { day: "Saturday", hours: "09:00 - 19:00" },
-            { day: "Sunday", hours: "09:00 - 19:00" }
+            { day: "Sunday", hours: "Fermé" }
           ],
           address: "Vilamoura",
           phone: "+351 289 302 807",
           socialMedia: {
-            facebook: "https://www.facebook.com/matildeestetica",
-            instagram: "https://www.instagram.com/matildeestetica",
-            website: "https://www.matildeestetica.pt"
+            facebook: "https://www.facebook.com/MatildeCabeleireiroVilamoura",
+            instagram: "https://www.instagram.com/matilde_cabeleireiro/",
+            website: "https://quarteira.empresasportugal.net/hair-care/matilde-cabeleireiro/"
           },
-          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.835434509374!2d-8.123456!3d37.134567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sen!2spt!4v1616581234567!5m2!1sen!2spt",
+          mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6366.490908187981!2d-8.117661923229319!3d37.07546047216995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab597022a1131%3A0x6f4e5cea9d557db8!2sMatilde%20Cabeleireiro%20(%20vilamoura%20Portugal%20)!5e0!3m2!1spt-PT!2spt!4v1750672594399!5m2!1spt-PT!2spt",
+          specialOffer: {
+            type: "Discount",
+            description: "10% DE RÉDUCTION"
+          },
           rootFolder: "Matilde",
           images: ["beauty3.jpg", "beauty4.jpg"],
           isVisible: false
