@@ -942,7 +942,7 @@ export const appData: AppData = {
             { day: "Sunday", hours: "Closed" }
           ],
           address: "Vilamoura",
-          phone: "+351 282 000 000",
+          phone: "+351 965 383 482",
           socialMedia: {
             facebook: "https://www.facebook.com/teresa.estetica.1/?locale=pt_PT",
             instagram: "https://www.instagram.com/teresaestetica/",
@@ -964,16 +964,16 @@ export const appData: AppData = {
           description: "Expert beauty and aesthetic treatments",
           locationIds: [3],
           openingHours: [
-            { day: "Monday", hours: "09:00 - 19:00" },
+            { day: "Monday", hours: "Closed" },
             { day: "Tuesday", hours: "09:00 - 19:00" },
             { day: "Wednesday", hours: "09:00 - 19:00" },
             { day: "Thursday", hours: "09:00 - 19:00" },
             { day: "Friday", hours: "09:00 - 19:00" },
             { day: "Saturday", hours: "09:00 - 19:00" },
-            { day: "Sunday", hours: "09:00 - 19:00" }
+            { day: "Sunday", hours: "Closed" }
           ],
           address: "Vilamoura",
-          phone: "+351 282 000 000",
+          phone: "+351 289 302 807",
           socialMedia: {
             facebook: "https://www.facebook.com/matildeestetica",
             instagram: "https://www.instagram.com/matildeestetica",
