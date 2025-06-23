@@ -974,8 +974,8 @@ export const appDataPT: AppData = {
           id: 2,
           name: "Matilde",
           email: "alvesmatilde1@hotmail.com",
-          logo: "/images/logo/matilde.jpg",
-          description: "Expertise em beleza e tratamentos estéticos",
+          logo: "/images/logo/matildelogo2.png",
+          description: "Matilde Alves Hair Studio em Vilamoura oferece serviço de excelência e resultados incríveis. Situado na Av. Tivoli, em frente ao Hotel Dom Pedro, é reconhecido pela competência, profissionalismo e simpatia.",
           locationIds: [3],
           openingHours: [
             { day: "Segunda-feira", hours: "Fechado" },
@@ -990,8 +990,8 @@ export const appDataPT: AppData = {
           phone: "+351 289 302 807",
           socialMedia: {
             facebook: "https://www.facebook.com/MatildeCabeleireiroVilamoura",
-            instagram: "https://www.instagram.com/matildeestetica",
-            website: "https://www.matildeestetica.pt"
+            instagram: "https://www.instagram.com/matilde_cabeleireiro/",
+            website: "https://quarteira.empresasportugal.net/hair-care/matilde-cabeleireiro/"
           },
           mapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6366.490908187981!2d-8.117661923229319!3d37.07546047216995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab597022a1131%3A0x6f4e5cea9d557db8!2sMatilde%20Cabeleireiro%20(%20vilamoura%20Portugal%20)!5e0!3m2!1spt-PT!2spt!4v1750672594399!5m2!1spt-PT!2spt",
            specialOffer: {
