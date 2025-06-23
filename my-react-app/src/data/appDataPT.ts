@@ -970,6 +970,13 @@ export const appDataPT: AppData = {
           rootFolder: "Teresa",
           images: ["480701348_4010568695930914_2910058108693305940_n.jpg", "491933473_4066849246969525_5195761018195095810_n.jpg", "492114092_4066954960292287_2649987048273042468_n.jpg", "492200895_4066850363636080_3484388594312717179_n.jpg", "277158294_3199246580396467_9054406006485547937_n.jpg", "489830761_1237845965017546_3086407899245374858_n.jpg"]
         },
+      {
+      id: "beauty-and-hair-salons",
+      title: "Salões de Beleza",
+      route: "/beauty-and-hair-salons",
+      description: "Cuide da sua beleza com os melhores profissionais",
+      image: "pexels-valeriya-939836.jpg",
+      items: [
         {
           id: 2,
           name: "Matilde",
