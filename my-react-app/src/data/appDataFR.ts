@@ -975,7 +975,7 @@ export const appDataFR: AppData = {
           id: 2,
           name: "Matilde",
           email: "teresa.estetica@live.com.pt",
-          logo: "/images/logo/matildelogo2.png",
+          logo: "matildelogo2.png",
           description: "Le salon Matilde Alves à Vilamoura propose un service de qualité et des résultats magnifiques. Situé sur l’Avenue Tivoli, en face de l’Hôtel Dom Pedro, il est reconnu pour son savoir-faire et son accueil chaleureux.",
           locationIds: [3],
           openingHours: [

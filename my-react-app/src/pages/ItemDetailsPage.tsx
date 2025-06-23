@@ -17,6 +17,7 @@ function LogoSection({ item }: { item: Item }) {
   const [imageFailed, setImageFailed] = useState(false);
 
   const hasLogo = item.logo && item.logo.trim() !== "";
+  console.log("logo:", item.logo);
 
   return (
     <div className="flex items-center">
