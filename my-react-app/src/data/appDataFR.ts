@@ -957,7 +957,7 @@ export const appDataFR: AppData = {
             { day: "Sunday", hours: "Closed" }
           ],
           address: "Vilamoura",
-          phone: "+351 282 000 000",
+          phone: "+351 965 383 482",
           socialMedia: {
             facebook: "https://www.facebook.com/teresa.estetica.1/?locale=pt_PT",
             instagram: "https://www.instagram.com/teresaestetica/",
@@ -988,7 +988,7 @@ export const appDataFR: AppData = {
             { day: "Sunday", hours: "09:00 - 19:00" }
           ],
           address: "Vilamoura",
-          phone: "+351 282 000 000",
+          phone: "+351 289 302 807",
           socialMedia: {
             facebook: "https://www.facebook.com/matildeestetica",
             instagram: "https://www.instagram.com/matildeestetica",
