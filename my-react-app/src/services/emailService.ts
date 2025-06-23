@@ -79,7 +79,7 @@ export const emailService = {
           _captcha: false,
           _subject: `New Booking Request: ${data.subject}`,
           name: data.name,
-          email: data.email,
+          email: 'info@cleverdetails.com',
           message: formattedMessage,
           _autoresponse: autoResponse
         })
@@ -153,7 +153,7 @@ export const emailService = {
           _captcha: false,
           _subject: `New Partnership Request: ${data.businessName} - ${data.businessType}`,
           name: data.contactName,
-          email: data.email,
+          email: 'marketing@cleverdetails.pt',
           message: formattedMessage,
           _autoresponse: autoResponse
         })
